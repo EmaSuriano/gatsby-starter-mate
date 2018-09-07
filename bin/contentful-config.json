@@ -1,0 +1,740 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5scdtcm7a1zr"
+          }
+        },
+        "id": "project",
+        "type": "ContentType",
+        "createdAt": "2018-07-30T19:33:49.667Z",
+        "updatedAt": "2018-08-15T21:21:25.765Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedCounter": 11,
+        "version": 22,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedVersion": 21,
+        "firstPublishedAt": "2018-07-30T19:33:50.384Z",
+        "publishedAt": "2018-08-15T21:21:25.765Z"
+      },
+      "displayField": "name",
+      "name": "Project",
+      "description": "Project description",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "publishedDate",
+          "name": "PublishedDate",
+          "type": "Date",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "logo",
+          "name": "Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "repositoryUrl",
+          "name": "RepositoryUrl",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "projectUrl",
+          "name": "ProjectUrl",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "type",
+          "name": "Type",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5scdtcm7a1zr"
+          }
+        },
+        "id": "talk",
+        "type": "ContentType",
+        "createdAt": "2018-08-15T20:11:25.587Z",
+        "updatedAt": "2018-08-15T20:11:26.114Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedVersion": 1,
+        "firstPublishedAt": "2018-08-15T20:11:26.114Z",
+        "publishedAt": "2018-08-15T20:11:26.114Z"
+      },
+      "displayField": "name",
+      "name": "Talk",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "cover",
+          "name": "Cover",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5scdtcm7a1zr"
+          }
+        },
+        "id": "about",
+        "type": "ContentType",
+        "createdAt": "2018-08-23T08:36:02.211Z",
+        "updatedAt": "2018-09-01T14:13:48.751Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedCounter": 10,
+        "version": 20,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedVersion": 19,
+        "firstPublishedAt": "2018-08-23T08:36:02.649Z",
+        "publishedAt": "2018-09-01T14:13:48.751Z"
+      },
+      "displayField": "name",
+      "name": "About",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "roles",
+          "name": "Roles",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": []
+          }
+        },
+        {
+          "id": "socialLinks",
+          "name": "Social Links",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Link",
+            "validations": [],
+            "linkType": "Entry"
+          }
+        },
+        {
+          "id": "profile",
+          "name": "Profile",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "aboutMe",
+          "name": "About me",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5scdtcm7a1zr"
+          }
+        },
+        "id": "socialLink",
+        "type": "ContentType",
+        "createdAt": "2018-09-01T10:04:26.962Z",
+        "updatedAt": "2018-09-01T10:06:19.832Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "publishedVersion": 3,
+        "firstPublishedAt": "2018-09-01T10:04:27.349Z",
+        "publishedAt": "2018-09-01T10:06:19.832Z"
+      },
+      "displayField": "name",
+      "name": "Social Link",
+      "description": "",
+      "fields": [
+        {
+          "id": "name",
+          "name": "Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "url",
+          "name": "URL",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "fontAwesomeIcon",
+          "name": "Font Awesome Icon",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5scdtcm7a1zr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 22,
+        "createdAt": "2018-07-30T19:33:50.550Z",
+        "createdBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-15T21:21:26.545Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "project",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "publishedDate",
+          "widgetId": "datePicker"
+        },
+        {
+          "fieldId": "logo",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "repositoryUrl",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "projectUrl",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "type",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5scdtcm7a1zr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2018-08-15T20:11:26.331Z",
+        "createdBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-08-15T20:11:27.005Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "talk",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "cover",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5scdtcm7a1zr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 20,
+        "createdAt": "2018-08-23T08:36:02.817Z",
+        "createdBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-09-01T14:13:49.414Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "about",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "roles",
+          "widgetId": "tagEditor"
+        },
+        {
+          "fieldId": "socialLinks",
+          "widgetId": "entryLinksEditor"
+        },
+        {
+          "fieldId": "profile",
+          "widgetId": "assetLinkEditor"
+        },
+        {
+          "fieldId": "aboutMe",
+          "widgetId": "markdown"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "5scdtcm7a1zr",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2018-09-01T10:04:27.549Z",
+        "createdBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2018-09-01T10:06:20.624Z",
+        "updatedBy": {
+          "sys": {
+            "id": "2XGcyQ3vKgm55htxMAIqsM",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "socialLink",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "name",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "url",
+          "widgetId": "singleLine"
+        },
+        {
+          "fieldId": "fontAwesomeIcon",
+          "widgetId": "singleLine"
+        }
+      ]
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "5zspjsZOGMYzgePz7fSrDg",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "5scdtcm7a1zr"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "createdAt": "2018-07-30T19:28:52Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "2XGcyQ3vKgm55htxMAIqsM"
+          }
+        },
+        "updatedAt": "2018-07-30T19:28:52Z"
+      }
+    }
+  ]
+}
