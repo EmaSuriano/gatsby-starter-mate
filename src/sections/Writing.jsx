@@ -59,7 +59,7 @@ const Post = ({ title, text, image, url, date, time }) => {
       <EllipsisHeading m={3} p={1}>
         {title}
       </EllipsisHeading>
-      <CoverImage src={image} height="200px" alt={title} />
+      {image && <CoverImage src={image} height="200px" alt={title} />}
       <Text m={3}>{text}</Text>
       <ImageSubtitle bg="primaryLight" color="white">
         {timestamp}
@@ -79,24 +79,23 @@ const parsePost = postFromGraphql => {
     virtuals,
     author,
   } = postFromGraphql;
+  const image =
+    virtuals.previewImage.imageId &&
+    `${MEDIUM_CDN}/${virtuals.previewImage.imageId}`;
   return {
     id,
     title,
     time: virtuals.readingTime,
     date: createdAt,
     text: virtuals.subtitle,
-    image: `${MEDIUM_CDN}/${virtuals.previewImage.imageId}`,
+    image,
     url: `${MEDIUM_URL}/${author.username}/${uniqueSlug}`,
   };
 };
 
 const Writing = () => (
   <Section.Container id="writing" Background={Background}>
-    <Section.Header
-      name="Writing - picked from Medium"
-      icon="✍️"
-      label="writing"
-    />
+    <Section.Header name="Writing" icon="✍️" label="writing" />
     <StaticQuery
       query={graphql`
         query MediumPostQuery {

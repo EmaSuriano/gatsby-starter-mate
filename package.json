@@ -31,6 +31,7 @@
     "contentful-import": "^7.3.0",
     "dotenv": "^6.0.0",
     "gatsby": "^2.0.0-rc.0",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-manifest": "^2.0.2-rc.1",

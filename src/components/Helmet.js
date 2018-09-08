@@ -33,7 +33,7 @@ const Helmet = () => (
       return (
         <ReactHelmet>
           <meta charSet="utf-8" />
-          <title>{title}</title>
+          {/* <title>{title}</title>
           <meta name="description" content={description} />
           <link rel="shortcut icon" href={profile.favicon32.src} />
           <meta name="theme-color" content="#ffffff" />
@@ -71,7 +71,7 @@ const Helmet = () => (
             type="image/png"
             sizes="16x16"
             href={profile.favicon16.src}
-          />
+          /> */}
 
           <link
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"

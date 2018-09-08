@@ -1,5 +1,5 @@
 module.exports = {
-  name: 'EmaSuriano',
+  name: 'Mate Gatsby Starter',
   icon: 'media/icon.png',
   mediumUser: '@emasuriano',
 };

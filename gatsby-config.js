@@ -4,6 +4,12 @@ const dotenv = require('dotenv').config({
 const theme = require('./src/theme');
 const config = require('./data-config');
 
+const {
+  CONTENTFUL_ACCESS_TOKEN,
+  CONTENTFUL_SPACE_ID,
+  ANALYTICS_TRACKING_ID,
+} = dotenv.parsed;
+
 module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -29,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: dotenv.parsed.CONTENTFUL_SPACE_ID,
-        accessToken: dotenv.parsed.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: CONTENTFUL_SPACE_ID,
+        accessToken: CONTENTFUL_ACCESS_TOKEN,
       },
     },
     {
@@ -40,13 +46,47 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: dotenv.parsed.ANALYTICS_TRACKING_ID,
-        head: true,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-favicon`,
+    //   options: {
+    //     logo: './media/icon.png',
+    //     appName: 'Mate Gatsby Starter',
+    //     appDescription: 'Gatsby v2 starter to create a top notch portfolio!',
+    //     developerName: 'EmanuelSuriano',
+    //     developerURL: 'emasuriano.com',
+    //     dir: 'auto',
+    //     lang: 'en-US',
+    //     background: '#fff',
+    //     theme_color: '#fff',
+    //     display: 'standalone',
+    //     orientation: 'any',
+    //     start_url: '/',
+    //     version: '1.0',
+
+    //     icons: {
+    //       android: true,
+    //       appleIcon: true,
+    //       appleStartup: true,
+    //       coast: true,
+    //       favicons: true,
+    //       firefox: true,
+    //       opengraph: true,
+    //       twitter: true,
+    //       yandex: true,
+    //       windows: true,
+    //     },
+    //   },
+    // },
     'gatsby-plugin-offline',
   ],
 };
+
+// ANALYTICS_TRACKING_ID
+//   ? {
+//       resolve: 'gatsby-plugin-google-analytics',
+//       options: {
+//         trackingId: ANALYTICS_TRACKING_ID,
+//         head: true,
+//       },
+//     }
+//   : undefined,
