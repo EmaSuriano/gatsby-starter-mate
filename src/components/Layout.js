@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
-import { injectGlobal } from 'styled-components';
+import styled, { injectGlobal } from 'styled-components';
 import { Provider } from 'rebass';
+import PropTypes from 'prop-types';
 import { configureAnchors } from 'react-scrollable-anchor';
 import 'react-tippy/dist/tippy.css';
 import theme from '../theme';
@@ -18,13 +19,22 @@ body {
 configureAnchors({ scrollDuration: 600, offset: 0 });
 resetCss();
 
+const ScrollContainer = styled.div`
+  scroll-behavior: smooth;
+  display: block;
+`;
+
 const Layout = ({ children }) => (
   <Provider theme={theme}>
-    <Fragment>
+    <ScrollContainer>
       <Helmet />
       {children}
-    </Fragment>
+    </ScrollContainer>
   </Provider>
 );
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Layout;

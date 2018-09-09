@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactHelmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import { withTheme } from 'styled-components';
 
-const Helmet = () => (
+const Helmet = ({ theme }) => (
   <StaticQuery
     query={graphql`
       query HelmetQuery {
@@ -33,10 +34,10 @@ const Helmet = () => (
       return (
         <ReactHelmet>
           <meta charSet="utf-8" />
-          {/* <title>{title}</title>
+          <title>{title}</title>
           <meta name="description" content={description} />
           <link rel="shortcut icon" href={profile.favicon32.src} />
-          <meta name="theme-color" content="#ffffff" />
+          <meta name="theme-color" content={theme.background} />
           <meta name="image" content={profile.favicon32.src} />
 
           <meta itemProp="name" content={title} />
@@ -71,7 +72,7 @@ const Helmet = () => (
             type="image/png"
             sizes="16x16"
             href={profile.favicon16.src}
-          /> */}
+          />
 
           <link
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -85,4 +86,4 @@ const Helmet = () => (
   />
 );
 
-export default Helmet;
+export default withTheme(Helmet);

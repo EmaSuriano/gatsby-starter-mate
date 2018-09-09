@@ -13,6 +13,7 @@ const LinkAnimated = styled.a`
     props.selected &&
     `${props.borderWidth} solid ${props.theme.colors.primaryLight}`};
   transition: 0.4s;
+  scroll-behavior: smooth;
 
   &:after {
     content: '';

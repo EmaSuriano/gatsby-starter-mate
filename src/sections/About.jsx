@@ -74,6 +74,16 @@ const AboutText = styled(Box)`
   }
 `;
 
+const ProfilePicture = styled(Image)`
+  transition: opacity 0.25s ease;
+  border-radius: 50%;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
 const About = () => (
   <Section.Container id="about" Background={Background}>
     <Section.Header name="About me" icon="🙋‍♂️" label="person" />
@@ -111,13 +121,14 @@ const About = () => (
               width={[1, 1, 2 / 6]}
               css={{ maxWidth: '300px', margin: 'auto' }}
             >
-              <Image
-                src={profile.image.src}
-                alt={profile.title}
-                ml={[0, 0, 1]}
+              <Box
+                bg="primaryLight"
                 mt={[4, 4, 0]}
+                ml={[0, 0, 1]}
                 css={{ borderRadius: '50%' }}
-              />
+              >
+                <ProfilePicture src={profile.image.src} alt={profile.title} />
+              </Box>
             </Box>
           </Flex>
         );

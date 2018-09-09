@@ -55,7 +55,9 @@ const Footer = () => (
         alt="Powered by Contentful"
       />
       <Text m={2} fontSize={4}>
-        +
+        <span role="img" aria-label="heart">
+          ❤️
+        </span>
       </Text>
       <LogoFooter
         url="https://www.gatsbyjs.org/"
@@ -63,7 +65,6 @@ const Footer = () => (
         alt="Gatsby Logo"
       />
     </Flex>
-    {/* <Text textAlign="right">MIT © - 2018</Text> */}
   </FooterContainer>
 );
 

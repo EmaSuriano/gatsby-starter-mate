@@ -19,7 +19,8 @@ export const CardContainer = styled.div`
 
 const NewCard = styled(CardRebass)`
   position: relative;
-  transition: all 0.5s;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
   top: 0;
 
   &:hover {
@@ -30,7 +31,9 @@ const NewCard = styled(CardRebass)`
 
 export const Card = ({ children, ...props }) => (
   <Box>
-    <NewCard {...props}>{children}</NewCard>
+    <NewCard {...props} boxShadow={0}>
+      {children}
+    </NewCard>
   </Box>
 );
 

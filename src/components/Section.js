@@ -13,6 +13,7 @@ const SectionContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   padding: 5em 1em;
+  scroll-behavior: smooth;
 `;
 
 const defaultBackground = () => <div />;
