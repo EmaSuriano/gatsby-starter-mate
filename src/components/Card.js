@@ -17,9 +17,20 @@ export const CardContainer = styled.div`
   }
 `;
 
+const NewCard = styled(CardRebass)`
+  position: relative;
+  transition: all 0.5s;
+  top: 0;
+
+  &:hover {
+    top: -10px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+`;
+
 export const Card = ({ children, ...props }) => (
   <Box>
-    <CardRebass {...props}>{children}</CardRebass>
+    <NewCard {...props}>{children}</NewCard>
   </Box>
 );
 

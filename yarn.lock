@@ -2783,6 +2783,16 @@ contentful@^6.1.0:
     json-stringify-safe "^5.0.1"
     lodash "^4.17.5"
 
+contentful@^7.0.3:
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.0.3.tgz#1066af69102ab033a8115ccb0c11488038314f82"
+  dependencies:
+    "@contentful/axios" "^0.18.0"
+    contentful-resolve-response "^1.1.4"
+    contentful-sdk-core "^6.0.1"
+    json-stringify-safe "^5.0.1"
+    lodash "^4.17.5"
+
 convert-hrtime@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/convert-hrtime/-/convert-hrtime-2.0.0.tgz#19bfb2c9162f9e11c2f04c2c79de2b7e8095c627"

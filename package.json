@@ -28,6 +28,7 @@
     "babel-plugin-styled-components": "^1.6.3",
     "chalk": "^2.4.1",
     "clean-dir": "^1.0.3",
+    "contentful": "^7.0.3",
     "contentful-import": "^7.3.0",
     "dotenv": "^6.0.0",
     "gatsby": "^2.0.0-rc.0",
