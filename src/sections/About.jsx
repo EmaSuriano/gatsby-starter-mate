@@ -35,12 +35,16 @@ const AboutText = styled(Box)`
   }
 
   p {
-    margin-top: 2em;
     line-height: 2em;
   }
 
   ul {
     margin: 0;
+
+    li {
+      margin: 1em 0;
+      line-height: 2em;
+    }
   }
 
   a {
@@ -75,12 +79,11 @@ const AboutText = styled(Box)`
 `;
 
 const ProfilePicture = styled(Image)`
-  transition: opacity 0.25s ease;
   border-radius: 50%;
-  opacity: 1;
+  transition: all 0.25s ease-out;
 
   &:hover {
-    opacity: 0.7;
+    border-radius: 20%;
   }
 `;
 
@@ -121,14 +124,12 @@ const About = () => (
               width={[1, 1, 2 / 6]}
               css={{ maxWidth: '300px', margin: 'auto' }}
             >
-              <Box
-                bg="primaryLight"
+              <ProfilePicture
+                src={profile.image.src}
+                alt={profile.title}
                 mt={[4, 4, 0]}
                 ml={[0, 0, 1]}
-                css={{ borderRadius: '50%' }}
-              >
-                <ProfilePicture src={profile.image.src} alt={profile.title} />
-              </Box>
+              />
             </Box>
           </Flex>
         );
