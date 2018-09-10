@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
+import withNavigation from '../utils/withNavigation';
 
 const Background = () => (
   <div>
@@ -138,4 +139,4 @@ const About = () => (
   </Section.Container>
 );
 
-export default About;
+export default withNavigation({ label: 'About', id: 'about' })(About);

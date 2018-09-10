@@ -7,6 +7,7 @@ import { edgeToArray } from '../utils/contentful';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
+import withNavigation from '../utils/withNavigation';
 
 const Background = () => (
   <div>
@@ -135,4 +136,4 @@ const Writing = () => (
   </Section.Container>
 );
 
-export default Writing;
+export default withNavigation({ label: 'Writing', id: 'writing' })(Writing);

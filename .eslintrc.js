@@ -3,4 +3,5 @@ module.exports = {
   rules: {
     'react/jsx-filename-extension': 'off',
   },
+  parser: 'babel-eslint',
 };

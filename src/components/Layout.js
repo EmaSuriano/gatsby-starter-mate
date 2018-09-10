@@ -6,6 +6,7 @@ import { configureAnchors } from 'react-scrollable-anchor';
 import 'react-tippy/dist/tippy.css';
 import theme from '../theme';
 import Helmet from './Helmet';
+import { SectionProvider } from './SectionContext';
 
 const resetCss = () => injectGlobal`
 * { box-sizing: border-box; }
@@ -26,10 +27,12 @@ const ScrollContainer = styled.div`
 
 const Layout = ({ children }) => (
   <Provider theme={theme}>
-    <ScrollContainer>
-      <Helmet />
-      {children}
-    </ScrollContainer>
+    <SectionProvider>
+      <ScrollContainer>
+        <Helmet />
+        {children}
+      </ScrollContainer>
+    </SectionProvider>
   </Provider>
 );
 

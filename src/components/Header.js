@@ -4,6 +4,7 @@ import { Flex, Image } from 'rebass';
 import styled from 'styled-components';
 import RouteLink from './RouteLink';
 import Logo from './Logo/Portfolio.svg';
+import { SectionConsumer } from './SectionContext';
 
 const HeaderContainer = styled(Headroom)`
   .headroom--pinned {
@@ -26,9 +27,11 @@ const Header = () => (
         <Image src={Logo} width="50px" alt="Portfolio Logo" />
       </a>
       <Flex mr={[0, 3, 5]}>
-        <RouteLink label="About" to="about" />
-        <RouteLink label="Projects" to="projects" />
-        <RouteLink label="Writing" to="writing" />
+        <SectionConsumer>
+          {({ sections }) =>
+            sections.map(({ label, id }) => <RouteLink label={label} to={id} />)
+          }
+        </SectionConsumer>
       </Flex>
     </Flex>
   </HeaderContainer>
