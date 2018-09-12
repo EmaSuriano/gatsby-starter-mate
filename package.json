@@ -16,7 +16,9 @@
   "keywords": [
     "gatsby",
     "starter",
-    "contentful"
+    "contentful",
+    "PWA",
+    "portfolio"
   ],
   "author": "Ema Suriano",
   "license": "MIT",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
+    "@reach/router": "^1.1.1",
     "babel-plugin-styled-components": "^1.6.3",
     "chalk": "^2.4.1",
     "clean-dir": "^1.0.3",
@@ -33,6 +36,7 @@
     "dotenv": "^6.0.0",
     "gatsby": "^2.0.0-rc.0",
     "gatsby-plugin-favicon": "^3.1.4",
+    "gatsby-plugin-flow": "^1.0.1-beta.0",
     "gatsby-plugin-google-analytics": "^1.0.31",
     "gatsby-plugin-google-fonts": "^0.0.4",
     "gatsby-plugin-manifest": "^2.0.2-rc.1",
@@ -51,6 +55,7 @@
     "react-headroom": "^2.2.2",
     "react-helmet": "^5.2.0",
     "react-scrollable-anchor": "^0.6.1",
+    "react-text-loop": "^1.1.0",
     "react-tippy": "^1.2.2",
     "react-typist": "^2.0.4",
     "react-typist-loop": "^0.0.5",

@@ -1,4 +1,6 @@
-import React from 'react';
+// @flow
+
+import * as React from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Heading } from 'rebass';
@@ -16,25 +18,46 @@ const SectionContainer = styled.section`
   scroll-behavior: smooth;
 `;
 
-const defaultBackground = () => <div />;
+type ContainerProps = {
+  id: string,
+  Background?: React.ComponentType<any>,
+  children: React.Node,
+};
 
-const Container = ({ id, children, Background = defaultBackground, css }) => (
+const Container = ({ id, children, Background }: ContainerProps) => (
   <div style={{ position: 'relative' }}>
     <Background />
     <ScrollableAnchor id={id}>
-      <SectionContainer style={css}>{children}</SectionContainer>
+      <SectionContainer>{children}</SectionContainer>
     </ScrollableAnchor>
   </div>
 );
 
-const Header = ({ name, icon, label }) => (
+Container.defaultProps = {
+  Background: () => <div />,
+};
+
+type HeaderProps = {
+  name: string,
+  label?: string,
+  icon?: string,
+};
+
+const Header = ({ name, icon, label }: HeaderProps) => (
   <Heading color="secondaryDark" mb={4}>
     {name}
-    <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
-      {icon}
-    </span>
+    {icon && (
+      <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
+        {icon}
+      </span>
+    )}
   </Heading>
 );
+
+Header.defaultProps = {
+  label: '',
+  icon: '',
+};
 
 export default {
   Container,

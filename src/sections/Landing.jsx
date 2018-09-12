@@ -1,8 +1,9 @@
+//@flow
+
 import React, { Fragment } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { Heading, Flex, Label } from 'rebass';
-import Typist from 'react-typist';
-import TypistLoop from 'react-typist-loop';
+import TextLoop from 'react-text-loop';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
@@ -77,15 +78,11 @@ const LandingPage = () => (
               mb={[2, 4]}
               textAlign="center"
             >
-              <TypistLoop interval={500}>
+              <TextLoop>
                 {roles.map(text => (
-                  <Typist key={text} delayStart={500}>
-                    {text}
-                    <Typist.Delay ms={500} />
-                    <Typist.Backspace count={text.length} delay={200} />
-                  </Typist>
+                  <p style={{ width: 400 }}>{text}</p>
                 ))}
-              </TypistLoop>
+              </TextLoop>
             </Heading>
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
               {socialLinks.map(({ id, ...rest }) => (
