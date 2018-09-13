@@ -1,6 +1,8 @@
 [ignore]
+node_modules/.*
 
 [include]
+src/.*
 
 [libs]
 

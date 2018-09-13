@@ -1,18 +1,30 @@
-import React from 'react';
+// @flow
 
-const noop = () => false;
+import * as React from 'react';
+import { noop } from '../utils/utils';
 
 const { Provider, Consumer } = React.createContext({
   sections: [],
   addSection: noop,
 });
 
-export class SectionProvider extends React.Component {
+type SectionProps = {
+  children: React.Node,
+};
+
+type SectionState = {
+  sections: Array<string>,
+};
+
+export class SectionProvider extends React.Component<
+  SectionProps,
+  SectionState,
+> {
   state = {
     sections: [],
   };
 
-  addSection = section =>
+  addSection = (section: string) =>
     this.setState(state => {
       const { sections } = state;
       return { sections: [...sections, section] };

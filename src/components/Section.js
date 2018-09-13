@@ -18,10 +18,12 @@ const SectionContainer = styled.section`
   scroll-behavior: smooth;
 `;
 
+const DefaultBackground = () => <div />;
+
 type ContainerProps = {
   id: string,
-  Background?: React.ComponentType<any>,
   children: React.Node,
+  Background?: Function,
 };
 
 const Container = ({ id, children, Background }: ContainerProps) => (
@@ -34,7 +36,7 @@ const Container = ({ id, children, Background }: ContainerProps) => (
 );
 
 Container.defaultProps = {
-  Background: () => <div />,
+  Background: DefaultBackground,
 };
 
 type HeaderProps = {
@@ -55,8 +57,8 @@ const Header = ({ name, icon, label }: HeaderProps) => (
 );
 
 Header.defaultProps = {
-  label: '',
   icon: '',
+  label: '',
 };
 
 export default {

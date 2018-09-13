@@ -3,7 +3,7 @@ import { Heading, Text } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Section from '../components/Section';
-import { edgeToArray } from '../utils/contentful';
+import { edgeToArray } from '../utils/utils';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
