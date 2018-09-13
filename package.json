@@ -34,6 +34,7 @@
     "contentful": "^7.0.3",
     "contentful-import": "^7.3.0",
     "dotenv": "^6.0.0",
+    "eslint-plugin-flowtype": "^2.50.0",
     "gatsby": "^2.0.0-rc.0",
     "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-flow": "^1.0.1-beta.0",

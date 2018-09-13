@@ -26,7 +26,11 @@ type ContainerProps = {
   Background?: Function,
 };
 
-const Container = ({ id, children, Background }: ContainerProps) => (
+const Container = ({
+  id,
+  children,
+  Background = DefaultBackground,
+}: ContainerProps) => (
   <div style={{ position: 'relative' }}>
     <Background />
     <ScrollableAnchor id={id}>
@@ -34,10 +38,6 @@ const Container = ({ id, children, Background }: ContainerProps) => (
     </ScrollableAnchor>
   </div>
 );
-
-Container.defaultProps = {
-  Background: DefaultBackground,
-};
 
 type HeaderProps = {
   name: string,
