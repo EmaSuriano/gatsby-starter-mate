@@ -1,5 +1,7 @@
 ![Gastby Starter Mate logo](./media/gatsby-starter-mate-logo.svg)
 
+WIP: Making the final changes to the codebase. version 1.0.0 will be released soon!
+
 Gatsby v2 starter to create a top notch portfolio!
 
 ## Understanding Component Structure
