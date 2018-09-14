@@ -1,9 +1,8 @@
-// @flow
-
 import * as React from 'react';
 import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Heading } from 'rebass';
+import PropTypes from 'prop-types';
 
 const SectionContainer = styled.section`
   min-height: 100vh;
@@ -20,17 +19,7 @@ const SectionContainer = styled.section`
 
 const DefaultBackground = () => <div />;
 
-type ContainerProps = {
-  id: string,
-  children: React.Node,
-  Background?: Function,
-};
-
-const Container = ({
-  id,
-  children,
-  Background = DefaultBackground,
-}: ContainerProps) => (
+const Container = ({ id, children, Background = DefaultBackground }) => (
   <div style={{ position: 'relative' }}>
     <Background />
     <ScrollableAnchor id={id}>
@@ -39,13 +28,13 @@ const Container = ({
   </div>
 );
 
-type HeaderProps = {
-  name: string,
-  label?: string,
-  icon?: string,
+Container.propTypes = {
+  id: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  Background: PropTypes.func,
 };
 
-const Header = ({ name, icon, label }: HeaderProps) => (
+const Header = ({ name, icon = '', label = '' }) => (
   <Heading color="secondaryDark" mb={4}>
     {name}
     {icon && (
@@ -56,9 +45,10 @@ const Header = ({ name, icon, label }: HeaderProps) => (
   </Heading>
 );
 
-Header.defaultProps = {
-  icon: '',
-  label: '',
+Header.propTypes = {
+  name: PropTypes.string.isRequired,
+  icon: PropTypes.string,
+  label: PropTypes.string,
 };
 
 export default {

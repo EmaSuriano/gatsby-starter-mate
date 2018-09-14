@@ -1,6 +1,5 @@
-// @flow
-
-import * as React from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { noop } from '../utils/utils';
 
 const { Provider, Consumer } = React.createContext({
@@ -8,23 +7,12 @@ const { Provider, Consumer } = React.createContext({
   addSection: noop,
 });
 
-type SectionProps = {
-  children: React.Node,
-};
-
-type SectionState = {
-  sections: Array<string>,
-};
-
-export class SectionProvider extends React.Component<
-  SectionProps,
-  SectionState,
-> {
+export class SectionProvider extends React.Component {
   state = {
     sections: [],
   };
 
-  addSection = (section: string) =>
+  addSection = section =>
     this.setState(state => {
       const { sections } = state;
       return { sections: [...sections, section] };
@@ -41,5 +29,9 @@ export class SectionProvider extends React.Component<
     return <Provider value={value}>{children}</Provider>;
   }
 }
+
+SectionProvider.propTypes = {
+  children: PropTypes.node,
+};
 
 export const SectionConsumer = Consumer;

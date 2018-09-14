@@ -1,6 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'plugin:flowtype/recommended'],
-  plugins: ['flowtype'],
+  extends: ['airbnb', 'prettier'],
   rules: {
     'react/jsx-filename-extension': 'off',
     'react/require-default-props': 'off',
