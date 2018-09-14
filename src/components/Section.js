@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
+import Slide from 'react-reveal/Slide';
 
 const SectionContainer = styled.section`
   min-height: 100vh;
@@ -35,14 +36,16 @@ Container.propTypes = {
 };
 
 const Header = ({ name, icon = '', label = '' }) => (
-  <Heading color="secondaryDark" mb={4}>
-    {name}
-    {icon && (
-      <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
-        {icon}
-      </span>
-    )}
-  </Heading>
+  <Slide left>
+    <Heading color="secondaryDark" mb={4}>
+      {name}
+      {icon && (
+        <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
+          {icon}
+        </span>
+      )}
+    </Heading>
+  </Slide>
 );
 
 Header.propTypes = {

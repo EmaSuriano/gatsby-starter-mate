@@ -1,9 +1,10 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled, { injectGlobal } from 'styled-components';
 import { Provider } from 'rebass';
 import PropTypes from 'prop-types';
 import { configureAnchors } from 'react-scrollable-anchor';
 import 'react-tippy/dist/tippy.css';
+// import config from 'react-reveal/globals';
 import theme from '../theme';
 import Helmet from './Helmet';
 import { SectionProvider } from './SectionContext';
@@ -17,8 +18,9 @@ body {
 }
 `;
 
-configureAnchors({ scrollDuration: 600, offset: 0 });
 resetCss();
+configureAnchors({ scrollDuration: 600, offset: 0 });
+// config({ ssrFadeout: true });
 
 const ScrollContainer = styled.div`
   scroll-behavior: smooth;

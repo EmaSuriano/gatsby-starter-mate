@@ -2,6 +2,7 @@ import React from 'react';
 import { Subhead, Image, Text, Flex, Label } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { edgeToArray } from '../utils/utils';
 import { CardContainer, Card } from '../components/Card';
@@ -190,8 +191,10 @@ const Projects = () => (
         const projects = edgeToArray(data.allContentfulProject);
         return (
           <CardContainer minWidth="350px">
-            {projects.map(p => (
-              <Project key={p.id} {...p} />
+            {projects.map((p, i) => (
+              <Fade bottom delay={i * 200}>
+                <Project key={p.id} {...p} />
+              </Fade>
             ))}
           </CardContainer>
         );

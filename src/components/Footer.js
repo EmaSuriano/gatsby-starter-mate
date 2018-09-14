@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Text, Flex, Box } from 'rebass';
+import Fade from 'react-reveal/Fade';
 import ContentfulLogo from './Logo/Contenful.svg';
 import GatsbyLogo from './Logo/Gatsby.svg';
 
@@ -35,36 +36,38 @@ const LogoFooter = ({ url, logo, alt }) => (
 
 const Footer = () => (
   <FooterContainer>
-    <span>
-      <Text
-        mb={2}
-        pb={1}
-        css={{
-          textTransform: 'uppercase',
-          borderBottom: 'white 3px solid',
-          display: 'table',
-        }}
-      >
-        Powered By
-      </Text>
-    </span>
-    <Flex justifyContent="center" alignItems="center">
-      <LogoFooter
-        url="https://www.contentful.com/"
-        logo={ContentfulLogo}
-        alt="Powered by Contentful"
-      />
-      <Text m={2} fontSize={4}>
-        <span role="img" aria-label="heart">
-          ❤️
-        </span>
-      </Text>
-      <LogoFooter
-        url="https://www.gatsbyjs.org/"
-        logo={GatsbyLogo}
-        alt="Gatsby Logo"
-      />
-    </Flex>
+    <Fade bottom>
+      <span>
+        <Text
+          mb={2}
+          pb={1}
+          css={{
+            textTransform: 'uppercase',
+            borderBottom: 'white 3px solid',
+            display: 'table',
+          }}
+        >
+          Powered By
+        </Text>
+      </span>
+      <Flex justifyContent="center" alignItems="center">
+        <LogoFooter
+          url="https://www.contentful.com/"
+          logo={ContentfulLogo}
+          alt="Powered by Contentful"
+        />
+        <Text m={2} fontSize={4}>
+          <span role="img" aria-label="heart">
+            ❤️
+          </span>
+        </Text>
+        <LogoFooter
+          url="https://www.gatsbyjs.org/"
+          logo={GatsbyLogo}
+          alt="Gatsby Logo"
+        />
+      </Flex>
+    </Fade>
   </FooterContainer>
 );
 

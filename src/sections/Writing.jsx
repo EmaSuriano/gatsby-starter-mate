@@ -2,6 +2,7 @@ import React from 'react';
 import { Heading, Text } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { edgeToArray } from '../utils/utils';
 import { CardContainer, Card } from '../components/Card';
@@ -126,8 +127,10 @@ const Writing = () => (
         const posts = edgeToArray(data.allMediumPost).map(parsePost);
         return (
           <CardContainer minWidth="300px">
-            {posts.map(p => (
-              <Post key={p.id} {...p} />
+            {posts.map((p, i) => (
+              <Fade bottom>
+                <Post key={p.id} {...p} />
+              </Fade>
             ))}
           </CardContainer>
         );
