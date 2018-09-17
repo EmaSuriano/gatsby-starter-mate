@@ -20,11 +20,16 @@ const SectionContainer = styled.section`
 
 const DefaultBackground = () => <div />;
 
-const Container = ({ id, children, Background = DefaultBackground }) => (
+const Container = ({
+  id,
+  children,
+  Background = DefaultBackground,
+  css = {},
+}) => (
   <div style={{ position: 'relative' }}>
     <Background />
     <ScrollableAnchor id={id}>
-      <SectionContainer>{children}</SectionContainer>
+      <SectionContainer style={css}>{children}</SectionContainer>
     </ScrollableAnchor>
   </div>
 );
@@ -32,6 +37,7 @@ const Container = ({ id, children, Background = DefaultBackground }) => (
 Container.propTypes = {
   id: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  css: PropTypes.object,
   Background: PropTypes.func,
 };
 

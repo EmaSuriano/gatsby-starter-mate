@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { noop } from '../utils/utils';
+
+const noop = () => false;
 
 const { Provider, Consumer } = React.createContext({
   sections: [],
@@ -13,10 +14,7 @@ export class SectionProvider extends React.Component {
   };
 
   addSection = section =>
-    this.setState(state => {
-      const { sections } = state;
-      return { sections: [...sections, section] };
-    });
+    this.setState(state => ({ sections: [...state.sections, section] }));
 
   render() {
     const { sections } = this.state;

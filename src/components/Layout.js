@@ -4,7 +4,7 @@ import { Provider } from 'rebass';
 import PropTypes from 'prop-types';
 import { configureAnchors } from 'react-scrollable-anchor';
 import 'react-tippy/dist/tippy.css';
-// import config from 'react-reveal/globals';
+import config from 'react-reveal/globals';
 import theme from '../theme';
 import Helmet from './Helmet';
 import { SectionProvider } from './SectionContext';
@@ -20,7 +20,7 @@ body {
 
 resetCss();
 configureAnchors({ scrollDuration: 600, offset: 0 });
-// config({ ssrFadeout: true });
+config({ ssrFadeout: true });
 
 const ScrollContainer = styled.div`
   scroll-behavior: smooth;

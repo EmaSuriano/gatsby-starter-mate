@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
-import { edgeToArray } from '../utils/utils';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
@@ -95,6 +94,8 @@ const parsePost = postFromGraphql => {
   };
 };
 
+const edgeToArray = data => data.edges.map(edge => edge.node);
+
 const Writing = () => (
   <Section.Container id="writing" Background={Background}>
     <Section.Header name="Writing" icon="✍️" label="writing" />
@@ -123,11 +124,11 @@ const Writing = () => (
           }
         }
       `}
-      render={data => {
-        const posts = edgeToArray(data.allMediumPost).map(parsePost);
+      render={({ allMediumPost }) => {
+        const posts = edgeToArray(allMediumPost).map(parsePost);
         return (
           <CardContainer minWidth="300px">
-            {posts.map((p, i) => (
+            {posts.map(p => (
               <Fade bottom>
                 <Post key={p.id} {...p} />
               </Fade>

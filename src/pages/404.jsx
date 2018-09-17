@@ -13,7 +13,7 @@ const Background = () => (
     />
 
     <Triangle
-      color="primaryLight"
+      color="primary"
       height={['25vh', '35vh']}
       width={['75vw', '60vw']}
       invertX
@@ -31,7 +31,7 @@ const Background = () => (
 
 const NotFoundPage = () => (
   <Layout>
-    <Section.Container id="404" Background={Background}>
+    <Section.Container id="404" Background={Background} css={{ padding: 0 }}>
       <Box w={[320, 400, 600]} m="auto">
         <Heading color="primaryDark" fontSize={['9rem', '13rem', '16rem']}>
           404

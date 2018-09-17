@@ -89,19 +89,17 @@ const LandingPage = () => (
               </Heading>
             </Fade>
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
-              {[...socialLinks, ...socialLinks, ...socialLinks].map(
-                ({ id, ...rest }, i) => (
-                  <Fade bottom delay={i * 200}>
-                    <Label mx={3} fontSize={[5, 6, 6]} key={id}>
-                      <SocialLink
-                        color="primary"
-                        hoverColor="primaryLight"
-                        {...rest}
-                      />
-                    </Label>
-                  </Fade>
-                ),
-              )}
+              {socialLinks.map(({ id, ...rest }, i) => (
+                <Fade bottom delay={i * 300}>
+                  <Label mx={3} fontSize={[5, 6, 6]} key={id}>
+                    <SocialLink
+                      color="primary"
+                      hoverColor="primaryLight"
+                      {...rest}
+                    />
+                  </Label>
+                </Fade>
+              ))}
             </Flex>
             <MouseIcon />
           </Fragment>
