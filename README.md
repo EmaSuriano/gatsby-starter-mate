@@ -1,8 +1,27 @@
 ![Gastby Starter Mate logo](./media/gatsby-starter-mate-logo.svg)
 
-WIP: Making the final changes to the codebase. version 1.0.0 will be released soon!
+# Gatsby Starter Portfolio: Mate
 
-Gatsby v2 starter to create a top notch portfolio!
+A portfolio starter for Gatsby. The target audience are developers and tech writers.
+
+[Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)
+
+## Why?
+
+In case you are looking for a quick setup portfolio or upgrade your current, you have to definitely try Mate!
+
+This starter is totally content based on [Contentful](https://contentful.com), which is basically a headless CMS where we can write the content for our page. In summary, Contentful is our Model when Gatsby with React is our View.
+
+At the same, as this portfolio is written with Gatsby is extremely easy to add more than one source of data! For example, the demo comes with an integration of [Medium](https://medium.com) posts based on a user name.
+
+Follow the structure of this starter! --> https://github.com/LeKoArts/gatsby-starter-portfolio-cara
+
+## Features
+
+- Gatsby V2
+- Rebass (Styled components)
+- react-reveal
+- Contentful
 
 ## Understanding Component Structure
 
