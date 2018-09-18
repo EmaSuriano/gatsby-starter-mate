@@ -7,6 +7,8 @@ const manifestConfig = require('./manifest-config');
 const dotenvConf = dotenv.config({
   path: `.env`,
 });
+console.log(process.env);
+
 console.log('.env', dotenvConf.parsed);
 
 const config = toml.parse(fs.readFileSync('./netlify.toml', 'utf-8'));
