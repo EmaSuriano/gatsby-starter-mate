@@ -1,11 +1,16 @@
 const contentful = require('contentful');
 const fs = require('fs');
 const toml = require('toml');
+const dotenv = require('dotenv');
 const manifestConfig = require('./manifest-config');
 
-const config = toml.parse(fs.readFileSync('./netlify.toml', 'utf-8'));
+const dotenvConf = dotenv.config({
+  path: `.env`,
+});
+console.log('.env', dotenvConf.parsed);
 
-console.log(config);
+const config = toml.parse(fs.readFileSync('./netlify.toml', 'utf-8'));
+console.log('.netlify', config);
 
 const { ACCESS_TOKEN, SPACE_ID } = config;
 
