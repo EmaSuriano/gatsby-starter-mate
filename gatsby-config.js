@@ -1,21 +1,9 @@
 const contentful = require('contentful');
-const fs = require('fs');
-const toml = require('toml');
-const dotenv = require('dotenv');
 const manifestConfig = require('./manifest-config');
+require('dotenv').config();
 
-const dotenvConf = dotenv.config({
-  path: `.env`,
-});
-console.log(process.env);
-
-console.log('.env', dotenvConf.parsed);
-
-const config = toml.parse(fs.readFileSync('./netlify.toml', 'utf-8'));
-console.log('.netlify', config);
-
-const { ACCESS_TOKEN, SPACE_ID } = config;
-
+const { ACCESS_TOKEN, SPACE_ID } = process.env;
+console.log(ACCESS_TOKEN);
 const client = contentful.createClient({
   space: SPACE_ID,
   accessToken: ACCESS_TOKEN,
