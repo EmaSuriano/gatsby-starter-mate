@@ -37,6 +37,7 @@ const Container = ({
 Container.propTypes = {
   id: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  // eslint-disable-next-line
   css: PropTypes.object,
   Background: PropTypes.func,
 };

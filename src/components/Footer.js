@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Text, Flex, Box } from 'rebass';
 import Fade from 'react-reveal/Fade';
+import PropTypes from 'prop-types';
 import ContentfulLogo from './Logo/Contenful.svg';
 import GatsbyLogo from './Logo/Gatsby.svg';
 
@@ -26,13 +27,19 @@ const RenponsiveLogo = styled.img`
   }
 `;
 
-const LogoFooter = ({ url, logo, alt }) => (
+const Logo = ({ url, logo, alt = '' }) => (
   <Box>
     <a href={url} rel="noopener noreferrer" target="_blank">
       <RenponsiveLogo src={logo} alt={alt} />
     </a>
   </Box>
 );
+
+Logo.propTypes = {
+  url: PropTypes.string.isRequired,
+  logo: PropTypes.string.isRequired,
+  alt: PropTypes.string,
+};
 
 const Footer = () => (
   <FooterContainer>
@@ -51,7 +58,7 @@ const Footer = () => (
         </Text>
       </span>
       <Flex justifyContent="center" alignItems="center">
-        <LogoFooter
+        <Logo
           url="https://www.contentful.com/"
           logo={ContentfulLogo}
           alt="Powered by Contentful"
@@ -61,7 +68,7 @@ const Footer = () => (
             ❤️
           </span>
         </Text>
-        <LogoFooter
+        <Logo
           url="https://www.gatsbyjs.org/"
           logo={GatsbyLogo}
           alt="Gatsby Logo"

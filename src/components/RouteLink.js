@@ -1,6 +1,7 @@
 import React from 'react';
 import { Label } from 'rebass';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import withLocation from '../utils/withLocation';
 
 const LinkAnimated = styled.a`
@@ -45,10 +46,16 @@ const RouteLink = ({ label, to, location }) => {
       css={{ cursor: 'pointer' }}
     >
       <LinkAnimated href={href} selected={location === href} borderWidth="4px">
-        {label}
+        {label || to}
       </LinkAnimated>
     </Label>
   );
+};
+
+RouteLink.propTypes = {
+  label: PropTypes.string,
+  to: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
 };
 
 export default withLocation(RouteLink);
