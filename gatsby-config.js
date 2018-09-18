@@ -1,12 +1,17 @@
 const contentful = require('contentful');
-const contentfulConfig = require('./.contentful.json');
+const fs = require('fs');
+const toml = require('toml');
 const manifestConfig = require('./manifest-config');
 
-const { accessToken, spaceId } = contentfulConfig;
+const config = toml.parse(fs.readFileSync('./netlify.toml', 'utf-8'));
+
+console.log(config);
+
+const { ACCESS_TOKEN, SPACE_ID } = config;
 
 const client = contentful.createClient({
-  space: spaceId,
-  accessToken,
+  space: SPACE_ID,
+  accessToken: ACCESS_TOKEN,
 });
 
 module.exports = client.getEntries().then(entries => {
@@ -33,8 +38,8 @@ module.exports = client.getEntries().then(entries => {
       {
         resolve: `gatsby-source-contentful`,
         options: {
-          spaceId,
-          accessToken,
+          spaceId: SPACE_ID,
+          accessToken: ACCESS_TOKEN,
         },
       },
       {

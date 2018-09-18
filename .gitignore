@@ -64,3 +64,4 @@ typings/
 .cache/
 public/
 .gatsby-context.js
+netlify.toml
