@@ -29,6 +29,40 @@ Follow the structure of this starter! --> https://github.com/LeKoArts/gatsby-sta
 - react-reveal
 - Contentful
 
+## How to start
+
+```bash
+$ npm install gatsby-cli -g
+$ gatsby new mate-portofolio https://github.com/EmaSuriano/gatsby-starter-mate
+```
+
+At this point you have the repository download with all the dependencies installed, but if you try to start by running `yarn develop` you are going to received this message in the console:
+
+```bash
+  TypeError: Expected parameter accessToken
+```
+
+This is because you didn't specify from which `Contentful` space the portfolio will take the information. So the next step is create a space in [Contentful](https://www.contentful.com/)!
+
+After that you have to Settings --> API keys. Here you will find `Space ID` and `Content Delivery API - access token` in the `Content delivery / preview tokens`, both are really important for the next step. Also we need to create a `Personal Access Token` (which is in the tab of `Content management tokens`) and copy the access token, it has the following structure: `CFPAT-{lots of characters}`.
+Now we run the following command:
+
+```bash
+yarn setup
+```
+
+This CLI will request for these 3 values, and automatically start copying all the `Content models` and `Contents` from `mate-demo-contentful`. Also, create a `.env` file which wil have the credentials as input for `gatsby-node.js`. After this step we can finally run the project 😃
+
+```bash
+yarn develop
+```
+
+Install this starter (assuming Gatsby is installed and updated) by running from your CLI:
+
+gatsby new YourProjectName https://github.com/Vagr9K/gatsby-material-starter
+npm install # or yarn install
+npm run develop # or gatsby develop
+
 ## Understanding Component Structure
 
 Mate starter is a SPA so routing is not needed (except for 404 error). The structure for the main page is the following:
