@@ -57,12 +57,6 @@ This CLI will request for these 3 values, and automatically start copying all th
 yarn develop
 ```
 
-Install this starter (assuming Gatsby is installed and updated) by running from your CLI:
-
-gatsby new YourProjectName https://github.com/Vagr9K/gatsby-material-starter
-npm install # or yarn install
-npm run develop # or gatsby develop
-
 ## Understanding Component Structure
 
 Mate starter is a SPA so routing is not needed (except for 404 error). The structure for the main page is the following:
