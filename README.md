@@ -115,11 +115,15 @@ Config file /Users/emanuelsuriano/Git/test/mate-portofolio/.env written
 Finished importing all data
 ```
 
-After this step we can finally run the project 😃
+After this step we can finally run the project and see the result in http://localhost:8000/ 😃
 
 ```bash
 yarn develop
 ```
+
+![Landing mate page](./media/home.png)
+
+This is the basic setup, afterwards this I'll explain how to customize the content or add more sections.
 
 ## Understanding Component Structure
 

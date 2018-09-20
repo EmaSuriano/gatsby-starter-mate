@@ -34,18 +34,18 @@ const questions = [
       'Space ID must be 12 lowercase characters',
   },
   {
-    name: 'managementToken',
-    message: 'Your Content Management API access token',
-  },
-  {
     name: 'deliveryToken',
     message: 'Your Content Delivery API access token',
+  },
+  {
+    name: 'managementToken',
+    message: 'Your Content Management API access token',
   },
 ];
 
 inquirer
   .prompt(questions)
-  .then(({ spaceId, managementToken, deliveryToken }) => {
+  .then(({ spaceId, deliveryToken, managementToken }) => {
     console.log('Writing config file...');
 
     const configFilePath = path.resolve(__dirname, '..', '.env');
