@@ -57,6 +57,64 @@ yarn setup
 
 This CLI will request for these 3 values, and automatically starts copying all the `Content models` and `Contents` from `mate-demo-contentful`. Also, it creates a `.env` file which wil have the credentials as input for `gatsby-node.js`. For privacy reason this file is excluded from the repository, so in case you want to deploy it later you should add it as environment variables.
 
+If everything went smooth you should see something like this in your terminal:
+
+```text
+➜  mate-portofolio yarn setup
+$ node ./bin/setup.js
+
+  To set up this project you need to provide your Space ID
+  and the belonging API access tokens.
+  You can find all the needed information in your Contentful space under:
+  app.contentful.com -> Space Settings -> API keys
+  The Content Management API Token
+    will be used to import and write data to your space.
+  The Content Delivery API Token
+    will be used to ship published production-ready content in your Gatsby app.
+  The Content Preview API Token
+    will be used to show not published data in your development environment.
+  Ready? Let's do it! 🎉
+
+? Your Space ID YOUR_SPACE_ID
+? Your Content Management API access token YOUR_CONTENT_MANAGEMENT_ID
+? Your Content Delivery API access token YOUR_ACCESS_TOKEN
+Writing config file...
+Config file /Users/emanuelsuriano/Git/test/mate-portofolio/.env written
+┌──────────────────────────────────────────────────┐
+│ The following entities are going to be imported: │
+├─────────────────────────────────┬────────────────┤
+│ Content Types                   │ 3              │
+├─────────────────────────────────┼────────────────┤
+│ Editor Interfaces               │ 3              │
+├─────────────────────────────────┼────────────────┤
+│ Entries                         │ 8              │
+├─────────────────────────────────┼────────────────┤
+│ Assets                          │ 6              │
+├─────────────────────────────────┼────────────────┤
+│ Locales                         │ 1              │
+├─────────────────────────────────┼────────────────┤
+│ Webhooks                        │ 0              │
+└─────────────────────────────────┴────────────────┘
+ ✔ Validating content-file
+ ✔ Initialize client (1s)
+ ✔ Checking if destination space already has any content and retrieving it (2s)
+ ✔ Apply transformations to source data (1s)
+ ✔ Push content to destination space
+   ✔ Connecting to space (1s)
+   ✔ Importing Locales (1s)
+   ✔ Importing Content Types (4s)
+   ✔ Publishing Content Types (3s)
+   ✔ Importing Editor Interfaces (3s)
+   ✔ Importing Assets (7s)
+   ✔ Publishing Assets (3s)
+   ✔ Archiving Assets (1s)
+   ✔ Importing Content Entries (1s)
+   ✔ Publishing Content Entries (5s)
+   ✔ Archiving Entries (1s)
+   ✔ Creating Web Hooks (0s)
+Finished importing all data
+```
+
 After this step we can finally run the project 😃
 
 ```bash
