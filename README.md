@@ -6,6 +6,10 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c8fc076b30bd493f0cfc/maintainability)](https://codeclimate.com/github/EmaSuriano/gatsby-starter-mate/maintainability)
 
+** This starter is not ready for production yet, I'm still making some changes to the codebase ⚠️ **
+
+If you want to keep updated, please follow me on Twitter @emasuriano.
+
 # Gatsby Starter Portfolio: Mate
 
 A portfolio starter for Gatsby. The target audience are developers and tech writers.
@@ -44,14 +48,16 @@ At this point you have the repository download with all the dependencies install
 
 This is because you didn't specify from which `Contentful` space the portfolio will take the information. So the next step is create a space in [Contentful](https://www.contentful.com/)!
 
-After that you have to Settings --> API keys. Here you will find `Space ID` and `Content Delivery API - access token` in the `Content delivery / preview tokens`, both are really important for the next step. Also we need to create a `Personal Access Token` (which is in the tab of `Content management tokens`) and copy the access token, it has the following structure: `CFPAT-{lots of characters}`.
+After that you have to Settings --> API keys. Here you will find `Space ID` and `Content Delivery API - access token` in the `Content delivery / preview tokens`, both are really important for the next step. Also we need to create a `Personal Access Token` (which is in the tab of `Content management tokens`) and copy the access token, _save it somewhere else because you are able to see it once_.
 Now we run the following command:
 
 ```bash
 yarn setup
 ```
 
-This CLI will request for these 3 values, and automatically start copying all the `Content models` and `Contents` from `mate-demo-contentful`. Also, create a `.env` file which wil have the credentials as input for `gatsby-node.js`. After this step we can finally run the project 😃
+This CLI will request for these 3 values, and automatically starts copying all the `Content models` and `Contents` from `mate-demo-contentful`. Also, it creates a `.env` file which wil have the credentials as input for `gatsby-node.js`. For privacy reason this file is excluded from the repository, so in case you want to deploy it later you should add it as environment variables.
+
+After this step we can finally run the project 😃
 
 ```bash
 yarn develop
