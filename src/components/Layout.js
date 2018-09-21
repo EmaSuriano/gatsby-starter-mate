@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { injectGlobal } from 'styled-components';
+import { injectGlobal } from 'styled-components';
 import { Provider } from 'rebass';
 import PropTypes from 'prop-types';
 import { configureAnchors } from 'react-scrollable-anchor';
@@ -8,6 +8,8 @@ import config from 'react-reveal/globals';
 import theme from '../theme';
 import Helmet from './Helmet';
 import { SectionProvider } from './SectionContext';
+import Header from './Header';
+import Footer from './Footer';
 
 const resetCss = () => injectGlobal`
 * { box-sizing: border-box; }
@@ -22,18 +24,13 @@ resetCss();
 configureAnchors({ scrollDuration: 600, offset: 0 });
 config({ ssrFadeout: true });
 
-const ScrollContainer = styled.div`
-  scroll-behavior: smooth;
-  display: block;
-`;
-
 const Layout = ({ children }) => (
   <Provider theme={theme}>
     <SectionProvider>
-      <ScrollContainer>
-        <Helmet />
-        {children}
-      </ScrollContainer>
+      <Helmet />
+      <Header />
+      {children}
+      <Footer />
     </SectionProvider>
   </Provider>
 );

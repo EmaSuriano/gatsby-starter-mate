@@ -1,4 +1,4 @@
-![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.svg)
+![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/EmaSuriano/gatsby-starter-mate.svg)](https://greenkeeper.io/)
 [![Travis badge](https://api.travis-ci.org/EmaSuriano/gatsby-starter-mate.svg)](https://travis-ci.org/EmaSuriano/gatsby-starter-mate)
@@ -6,37 +6,49 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c8fc076b30bd493f0cfc/maintainability)](https://codeclimate.com/github/EmaSuriano/gatsby-starter-mate/maintainability)
 
-** This starter is not ready for production yet, I'm still making some changes to the codebase ⚠️ **
+# Gatsby Starter Portfolio: Mate
+
+**This starter is not ready for production yet, I'm still making some changes to the codebase ⚠️**
 
 If you want to keep updated, please follow me on Twitter @emasuriano.
 
-# Gatsby Starter Portfolio: Mate
+A portfolio starter for Gatsby integrated with Contentful CMS. The target audience are developers and tech writers.
 
-A portfolio starter for Gatsby. The target audience are developers and tech writers.
+**[Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)**
 
-[Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)
-
-## Why?
+## Why? 🤔
 
 In case you are looking for a quick setup portfolio or upgrade your current, you have to definitely try Mate!
 
-This starter is totally content based on [Contentful](https://contentful.com), which is basically a headless CMS where we can write the content for our page. In summary, Contentful is our Model when Gatsby with React is our View.
+This starter is totally content based on [Contentful](https://contentful.com), which is a headless CMS where we can write the content for our page. In summary, Contentful is our Model when Gatsby with React is our View.
 
-At the same, as this portfolio is written with Gatsby is extremely easy to add more than one source of data! For example, the demo comes with an integration of [Medium](https://medium.com) posts based on a user name.
+At the same time, as this portfolio is written with Gatsby is extremely easy to add more than one source of data! For example, the demo comes with an integration of [Medium](https://medium.com) posts based on a user name ✌️
 
-Follow the structure of this starter! --> https://github.com/LeKoArts/gatsby-starter-portfolio-cara
+## Features 🛠
 
-## Features
+- [Gatsby v2](https://www.gatsbyjs.org/)
+- [Rebass](https://rebassjs.org/): styled component system
+- [React Reveal](https://www.react-reveal.com/)
+- Dynamic content from [Contentful](https://contentful.com)
+- Offline support
+- PWA ready
+- SEO
+- Responsive design
+- Icons from [font-awesome](https://fontawesome.com/)
+- [Netlify](https://www.netlify.com) Deployment Friendly
+- Medium integration
+- Social sharing (Twitter, Facebook, Google, LinkedIn)
+- Developer tools:
+  - eslint
+  - prettier
 
-- Gatsby V2
-- Rebass (Styled components)
-- react-reveal
-- Contentful
+## How to start ▶️
 
-## How to start
+If you never used Gatsby before, I highly recommend you to [Set up your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)!
+
+To copy and install this starter run this command:
 
 ```bash
-$ npm install gatsby-cli -g
 $ gatsby new mate-portofolio https://github.com/EmaSuriano/gatsby-starter-mate
 ```
 
@@ -79,7 +91,7 @@ $ node ./bin/setup.js
 ? Your Content Management API access token YOUR_CONTENT_MANAGEMENT_ID
 ? Your Content Delivery API access token YOUR_ACCESS_TOKEN
 Writing config file...
-Config file /Users/emanuelsuriano/Git/test/mate-portofolio/.env written
+Config file /Users/my-user/Git/test/mate-portofolio/.env written
 ┌──────────────────────────────────────────────────┐
 │ The following entities are going to be imported: │
 ├─────────────────────────────────┬────────────────┤
@@ -125,25 +137,38 @@ yarn develop
 
 This is the basic setup, afterwards this I'll explain how to customize the content or add more sections.
 
-## Understanding Component Structure
+## Building your site 📦
 
-Mate starter is a SPA so routing is not needed (except for 404 error). The structure for the main page is the following:
+As we are dealing with environment variables, the `.env` file won't be upload to our repository. Therefore, we are force to send when running our `build` command.
+
+```bash
+SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy yarn build
+```
+
+The result will be stored inside the `public` folder, so you can upload to your webhost. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
+
+## Configuration 👷‍♂️
+
+Mate starter is a SPA (Single Page Application), so basically you have only two pages:
+
+- Main.js (portfolio itself)
+- 404.js (nice 404 error page that match the style)
+
+The structure for the main page is the following:
 
 ```javascript
 <Layout>
-  <Header />
   <Landing />
   <About />
   <Projects />
   <Writing />
-  <Footer />
 </Layout>
 ```
 
-Basically Layout will set the theme for the application and a few general styles.
+`Layout` is the core of the application, it manages the theme for the application, the navigation between sections, also it defines the `header`.
 
-## Adding section to the starter with navigation
+All the components inside `Layout` are `Section` components. A section can have a link inside the `Header` or not, in order to add you need to wrapped the exported `Section` with `withNavigation` HOC and it will be automatically registered (Context magic ✨).
 
-By default the starter comes with 4 sections: Landing, About, Projects and Writing. You can find them on `sections` folder. Basically all of them are rendering a `Section`.
+## License 📝
 
-In case you want to add the new section and also a navigation link in the Header, just wrapped it with `withNavigation` and when your section is going to be mounted it will automatically register a new RouteLink in the Header.
+MIT.
