@@ -4,6 +4,7 @@ import ScrollableAnchor from 'react-scrollable-anchor';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
+import withLocation from '../utils/withLocation';
 
 const SectionContainer = styled.section`
   min-height: 100vh;
@@ -42,18 +43,50 @@ Container.propTypes = {
   Background: PropTypes.func,
 };
 
-const Header = ({ name, icon = '', label = '' }) => (
+const LinkAnimated = styled.span`
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  color: inherit;
+  border-bottom: ${props =>
+    `${props.borderWidth} dashed ${props.theme.colors.primaryLight}`};
+  transition: 0.4s;
+
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: -${props => props.borderWidth};
+    background: ${props => props.theme.colors.secondaryLight};
+    height: ${props => props.borderWidth};
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  &:hover:after {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+`;
+
+const Header = withLocation(({ name, icon = '', label = '' }) => (
   <Slide left>
     <Heading color="secondaryDark" mb={4}>
-      {name}
-      {icon && (
-        <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
-          {icon}
-        </span>
-      )}
+      <LinkAnimated borderWidth="5px">
+        {name}
+        {icon && (
+          <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
+            {icon}
+          </span>
+        )}
+      </LinkAnimated>
     </Heading>
   </Slide>
-);
+));
 
 Header.propTypes = {
   name: PropTypes.string.isRequired,

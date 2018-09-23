@@ -1253,80 +1253,10 @@
             "id": "ntiequ7mc6q6"
           }
         },
-        "id": "56kEoMQd72keM0siwUGosu",
-        "type": "Asset",
-        "createdAt": "2018-09-08T08:15:07.361Z",
-        "updatedAt": "2018-09-08T08:18:21.848Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 24,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "publishedVersion": 23,
-        "firstPublishedAt": "2018-09-08T08:18:21.848Z",
-        "publishedAt": "2018-09-08T08:18:21.848Z"
-      },
-      "fields": {
-        "title": {
-          "en-US": "Profile"
-        },
-        "description": {
-          "en-US": "Picture of myself"
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/ntiequ7mc6q6/56kEoMQd72keM0siwUGosu/b5091078ff4fc2d3fff6888fcb6c40f0/kisscc0-facebook-computer-icons-user-profile-silhouette-bl-ninja-fb-profile-5b744db21c1f94.2548423215343487221152.png",
-            "details": {
-              "size": 2909,
-              "image": {
-                "width": 180,
-                "height": 180
-              }
-            },
-            "fileName": "kisscc0-facebook-computer-icons-user-profile-silhouette-bl-ninja-fb-profile-5b744db21c1f94.2548423215343487221152.png",
-            "contentType": "image/png"
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ntiequ7mc6q6"
-          }
-        },
         "id": "3AorRmtWOsGQ4o8gK0YWKG",
         "type": "Asset",
         "createdAt": "2018-09-08T08:26:24.437Z",
-        "updatedAt": "2018-09-08T08:29:51.622Z",
+        "updatedAt": "2018-09-23T09:26:16.789Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1348,8 +1278,8 @@
             "id": "2XGcyQ3vKgm55htxMAIqsM"
           }
         },
-        "publishedCounter": 1,
-        "version": 23,
+        "publishedCounter": 2,
+        "version": 27,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1357,9 +1287,9 @@
             "id": "2XGcyQ3vKgm55htxMAIqsM"
           }
         },
-        "publishedVersion": 22,
+        "publishedVersion": 26,
         "firstPublishedAt": "2018-09-08T08:29:51.622Z",
-        "publishedAt": "2018-09-08T08:29:51.622Z"
+        "publishedAt": "2018-09-23T09:26:16.789Z"
       },
       "fields": {
         "title": {
@@ -1370,85 +1300,15 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/ntiequ7mc6q6/3AorRmtWOsGQ4o8gK0YWKG/2c7439d1e43f6616c13cc38bd0cb7fad/camiseta-google-logo-site-internet-marca-g-camisa-blusa-D_NQ_NP_977347-MLB25875698293_082017-F.png",
+            "url": "//images.ctfassets.net/ntiequ7mc6q6/3AorRmtWOsGQ4o8gK0YWKG/bafdc9f6551a2b487fe0126158630b27/google_PNG19630.png",
             "details": {
-              "size": 72775,
+              "size": 39228,
               "image": {
-                "width": 575,
-                "height": 586
+                "width": 1000,
+                "height": 1000
               }
             },
-            "fileName": "camiseta-google-logo-site-internet-marca-g-camisa-blusa-D_NQ_NP_977347-MLB25875698293_082017-F.png",
-            "contentType": "image/png"
-          }
-        }
-      }
-    },
-    {
-      "sys": {
-        "space": {
-          "sys": {
-            "type": "Link",
-            "linkType": "Space",
-            "id": "ntiequ7mc6q6"
-          }
-        },
-        "id": "6Or3YLaZawesKieGcw6kA2",
-        "type": "Asset",
-        "createdAt": "2018-09-08T08:42:19.751Z",
-        "updatedAt": "2018-09-08T08:42:39.678Z",
-        "environment": {
-          "sys": {
-            "id": "master",
-            "type": "Link",
-            "linkType": "Environment"
-          }
-        },
-        "createdBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "updatedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "publishedCounter": 1,
-        "version": 41,
-        "publishedBy": {
-          "sys": {
-            "type": "Link",
-            "linkType": "User",
-            "id": "2XGcyQ3vKgm55htxMAIqsM"
-          }
-        },
-        "publishedVersion": 40,
-        "firstPublishedAt": "2018-09-08T08:42:39.678Z",
-        "publishedAt": "2018-09-08T08:42:39.678Z"
-      },
-      "fields": {
-        "title": {
-          "en-US": "Profile picture"
-        },
-        "description": {
-          "en-US": "Picture of myself"
-        },
-        "file": {
-          "en-US": {
-            "url": "//images.ctfassets.net/ntiequ7mc6q6/6Or3YLaZawesKieGcw6kA2/02f1dd13eaa8b250ac13435b74a6275d/fb_stormshadow.png",
-            "details": {
-              "size": 47973,
-              "image": {
-                "width": 2400,
-                "height": 2400
-              }
-            },
-            "fileName": "fb_stormshadow.png",
+            "fileName": "google_PNG19630.png",
             "contentType": "image/png"
           }
         }
