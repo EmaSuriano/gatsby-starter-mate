@@ -14,7 +14,7 @@ If you want to keep updated, please follow me on Twitter @emasuriano.
 
 A portfolio starter for Gatsby integrated with Contentful CMS. The target audience are developers and tech writers.
 
-**[Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)**
+## [Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)
 
 ## Why? 🤔
 
