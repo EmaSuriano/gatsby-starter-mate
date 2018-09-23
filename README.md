@@ -6,13 +6,11 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c8fc076b30bd493f0cfc/maintainability)](https://codeclimate.com/github/EmaSuriano/gatsby-starter-mate/maintainability)
 
-# Gatsby Starter Portfolio: Mate
+# Gatsby Starter: Mate
 
-**This starter is not ready for production yet, I'm still making some changes to the codebase ⚠️**
+> A portfolio starter for Gatsby integrated with Contentful CMS.
 
-If you want to keep updated, please follow me on Twitter @emasuriano.
-
-A portfolio starter for Gatsby integrated with Contentful CMS. The target audience are developers and tech writers.
+The target audience are developers 💻 and tech writers ✍️.
 
 **[Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)**
 
@@ -20,7 +18,7 @@ A portfolio starter for Gatsby integrated with Contentful CMS. The target audien
 
 In case you are looking for a quick setup portfolio or upgrade your current, you have to definitely try Mate!
 
-This starter is totally content based on [Contentful](https://contentful.com), which is a headless CMS where we can write the content for our page. In summary, Contentful is our Model when Gatsby with React is our View.
+This starter is totally content based on [Contentful](https://contentful.com), which is a headless CMS where you can write the content for your page. In summary, Contentful is the Model when Gatsby with React is the View.
 
 At the same time, as this portfolio is written with Gatsby is extremely easy to add more than one source of data! For example, the demo comes with an integration of [Medium](https://medium.com) posts based on a user name ✌️
 
@@ -58,38 +56,27 @@ At this point you have the repository download with all the dependencies install
   TypeError: Expected parameter accessToken
 ```
 
-This is because you didn't specify from which `Contentful` space the portfolio will take the information. So the next step is create a space in [Contentful](https://www.contentful.com/)!
+This is because you didn't specify from which `Contentful` space the portfolio will take the information. So the next step is create an empty space in [Contentful](https://www.contentful.com/)!
 
-After that you have to Settings --> API keys. Here you will find `Space ID` and `Content Delivery API - access token` in the `Content delivery / preview tokens`, both are really important for the next step. Also we need to create a `Personal Access Token` (which is in the tab of `Content management tokens`) and copy the access token, _save it somewhere else because you are able to see it once_.
-Now we run the following command:
+After the space is created, run the following command:
 
 ```bash
 yarn setup
 ```
 
-This CLI will request for these 3 values, and automatically starts copying all the `Content models` and `Contents` from `mate-demo-contentful`. Also, it creates a `.env` file which wil have the credentials as input for `gatsby-node.js`. For privacy reason this file is excluded from the repository, so in case you want to deploy it later you should add it as environment variables.
+This CLI will request 3 values:
+
+- `Space ID`
+- `Content Delivery API - access token`
+- `Personal Access Token`
+
+These 3 values are inside the Settings section --> API keys.
+
+After you provide them the CLI will automatically starts copying all the `Content models` and `Contents` from `mate-demo-contentful` to your space ✨
 
 If everything went smooth you should see something like this in your terminal:
 
 ```text
-➜  mate-portofolio yarn setup
-$ node ./bin/setup.js
-
-  To set up this project you need to provide your Space ID
-  and the belonging API access tokens.
-  You can find all the needed information in your Contentful space under:
-  app.contentful.com -> Space Settings -> API keys
-  The Content Management API Token
-    will be used to import and write data to your space.
-  The Content Delivery API Token
-    will be used to ship published production-ready content in your Gatsby app.
-  The Content Preview API Token
-    will be used to show not published data in your development environment.
-  Ready? Let's do it! 🎉
-
-? Your Space ID YOUR_SPACE_ID
-? Your Content Management API access token YOUR_CONTENT_MANAGEMENT_ID
-? Your Content Delivery API access token YOUR_ACCESS_TOKEN
 Writing config file...
 Config file /Users/my-user/Git/test/mate-portofolio/.env written
 ┌──────────────────────────────────────────────────┐
@@ -135,17 +122,23 @@ yarn develop
 
 ![Landing mate page](./media/home.png)
 
-This is the basic setup, afterwards this I'll explain how to customize the content or add more sections.
-
 ## Building your site 📦
 
-As we are dealing with environment variables, the `.env` file won't be upload to our repository. Therefore, we are force to send when running our `build` command.
+As we are dealing with environment variables, the `.env` file is excluded from `.gitignore` file. Therefore, in order to deploy the website you have to send `SPACE_ID` and `ACCESS_TOKEN` with the `build` command.
 
 ```bash
 SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy yarn build
 ```
 
 The result will be stored inside the `public` folder, so you can upload to your webhost. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
+
+## Adding your information 📝
+
+All the text of this starter live inside Contentful, more spefically inside the Content of `About`. In order to change it, just go to `Content` section and change the entity of About with the information you want.
+
+![Contentful About change](./media/contentful-about-change.png)
+
+Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
 ## Configuration 👷‍♂️
 
@@ -168,6 +161,14 @@ The structure for the main page is the following:
 `Layout` is the core of the application, it manages the theme for the application, the navigation between sections, also it defines the `header`.
 
 All the components inside `Layout` are `Section` components. A section can have a link inside the `Header` or not, in order to add you need to wrapped the exported `Section` with `withNavigation` HOC and it will be automatically registered (Context magic ✨).
+
+## Contributing 💪
+
+I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](emasuriano.com).
+
+Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
+
+I'm totally for new PRs with bug fixes, change in Documentation, and new features to the starter 🙌
 
 ## License 📝
 
