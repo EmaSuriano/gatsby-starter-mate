@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
-import Slide from 'react-reveal/Slide';
 import withLocation from '../utils/withLocation';
 
 const SectionContainer = styled.section`
@@ -74,18 +73,16 @@ const LinkAnimated = styled.span`
 `;
 
 const Header = withLocation(({ name, icon = '', label = '' }) => (
-  <Slide left>
-    <Heading color="secondaryDark" mb={4}>
-      <LinkAnimated borderWidth="5px">
-        {name}
-        {icon && (
-          <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
-            {icon}
-          </span>
-        )}
-      </LinkAnimated>
-    </Heading>
-  </Slide>
+  <Heading color="secondaryDark" mb={4}>
+    <LinkAnimated borderWidth="5px">
+      {name}
+      {icon && (
+        <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
+          {icon}
+        </span>
+      )}
+    </LinkAnimated>
+  </Heading>
 ));
 
 Header.propTypes = {

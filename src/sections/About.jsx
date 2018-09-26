@@ -2,7 +2,7 @@ import React from 'react';
 import { Box, Image, Flex } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import withNavigation from '../utils/withNavigation';
@@ -115,27 +115,23 @@ const About = () => (
         return (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
             <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
-              <Fade bottom>
-                <AboutText
-                  dangerouslySetInnerHTML={{
-                    __html: aboutMe.childMarkdownRemark.html,
-                  }}
-                />
-              </Fade>
+              <AboutText
+                dangerouslySetInnerHTML={{
+                  __html: aboutMe.childMarkdownRemark.html,
+                }}
+              />
             </Box>
 
             <Box
               width={[1, 1, 2 / 6]}
               css={{ maxWidth: '300px', margin: 'auto' }}
             >
-              <Fade right>
-                <ProfilePicture
-                  src={profile.image.src}
-                  alt={profile.title}
-                  mt={[4, 4, 0]}
-                  ml={[0, 0, 1]}
-                />
-              </Fade>
+              <ProfilePicture
+                src={profile.image.src}
+                alt={profile.title}
+                mt={[4, 4, 0]}
+                ml={[0, 0, 1]}
+              />
             </Box>
           </Flex>
         );

@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading, Text } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
@@ -129,9 +129,7 @@ const Writing = () => (
         return (
           <CardContainer minWidth="300px">
             {posts.map(p => (
-              <Fade bottom>
-                <Post key={p.id} {...p} />
-              </Fade>
+              <Post key={p.id} {...p} />
             ))}
           </CardContainer>
         );
