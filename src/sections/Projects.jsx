@@ -48,7 +48,7 @@ const Title = styled(Subhead)`
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${props => props.theme.colors.primary} 5px solid;
+  border-bottom: ${props => props.theme.colors.primary} 3px solid;
 `;
 
 const TextContainer = styled.div`

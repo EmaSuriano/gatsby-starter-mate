@@ -57,7 +57,7 @@ const Post = ({ title, text, image, url, date, time }) => {
       css={{ cursor: 'pointer' }}
       p={0}
     >
-      <EllipsisHeading m={3} p={1}>
+      <EllipsisHeading m={3} p={1} fontSize={4}>
         {title}
       </EllipsisHeading>
       {image && <CoverImage src={image} height="200px" alt={title} />}

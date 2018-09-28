@@ -63,7 +63,7 @@ const AboutText = styled(Box)`
       left: 50%;
       transform: translateX(-50%);
       content: '';
-      width: 100%;
+      width: 90%;
       height: 3px;
       background-color: ${props => props.theme.colors.primaryLight};
       transition: all 250ms;
@@ -73,8 +73,8 @@ const AboutText = styled(Box)`
       color: white;
 
       &::after {
-        height: 110%;
-        width: 110%;
+        height: 105%;
+        width: 105%;
       }
     }
   }
