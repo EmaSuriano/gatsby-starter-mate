@@ -75,6 +75,7 @@ const LandingPage = () => (
               color="primary"
               fontSize={[4, 5, 6]}
               mb={[2, 4]}
+              mx="auto"
               textAlign="center"
             >
               <TextLoop>
