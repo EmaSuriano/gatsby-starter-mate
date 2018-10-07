@@ -63,7 +63,7 @@
     "rebass": "^2.3.4",
     "styled-components": "^3.4.9",
     "toml": "^2.3.3",
-    "yargs-parser": "^10.1.0"
+    "yargs-parser": "^11.0.0"
   },
   "devDependencies": {
     "eslint": "^5.6.0",
