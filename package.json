@@ -61,7 +61,7 @@
     "react-typist": "^2.0.4",
     "react-typist-loop": "^0.0.5",
     "rebass": "^2.3.4",
-    "styled-components": "^3.4.9",
+    "styled-components": "^4.0.0",
     "toml": "^2.3.3",
     "yargs-parser": "^11.0.0"
   },
