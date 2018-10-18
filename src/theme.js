@@ -1,4 +1,4 @@
-const pinkPalette = {
+const colors = {
   background: '#FFFFFF',
   backgroundDark: '#f0e6f6',
 
@@ -12,5 +12,5 @@ const pinkPalette = {
 };
 
 module.exports = {
-  colors: pinkPalette,
+  colors,
 };
