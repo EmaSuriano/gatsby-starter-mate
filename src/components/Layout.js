@@ -1,5 +1,5 @@
 import React from 'react';
-import { injectGlobal } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 import { Provider } from 'rebass';
 import PropTypes from 'prop-types';
 import { configureAnchors } from 'react-scrollable-anchor';
@@ -11,8 +11,8 @@ import { SectionProvider } from './SectionContext';
 import Header from './Header';
 import Footer from './Footer';
 
-const resetCss = () => injectGlobal`
-* { box-sizing: border-box; }
+const GlobalStyle = createGlobalStyle`
+  * { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -20,19 +20,20 @@ body {
 }
 `;
 
-resetCss();
 configureAnchors({ scrollDuration: 600, offset: 0 });
 config({ ssrFadeout: true });
 
 const Layout = ({ children }) => (
-  <Provider theme={theme}>
-    <SectionProvider>
-      <Helmet />
-      <Header />
-      {children}
-      <Footer />
-    </SectionProvider>
-  </Provider>
+  <GlobalStyle>
+    <Provider theme={theme}>
+      <SectionProvider>
+        <Helmet />
+        <Header />
+        {children}
+        <Footer />
+      </SectionProvider>
+    </Provider>
+  </GlobalStyle>
 );
 
 Layout.propTypes = {
