@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { createGlobalStyle } from 'styled-components';
-import { Provider } from 'rebass';
+import { Provider as RebassProvider } from 'rebass';
 import PropTypes from 'prop-types';
-import { configureAnchors } from 'react-scrollable-anchor';
+// import { configureAnchors } from 'react-scrollable-anchor';
+import { ScrollingProvider } from 'react-scroll-section';
 import 'react-tippy/dist/tippy.css';
 import config from 'react-reveal/globals';
 import theme from '../theme';
@@ -20,20 +21,23 @@ body {
 }
 `;
 
-configureAnchors({ scrollDuration: 600, offset: 0 });
+// configureAnchors({ scrollDuration: 600, offset: 0 });
 config({ ssrFadeout: true });
 
 const Layout = ({ children }) => (
-  <GlobalStyle>
-    <Provider theme={theme}>
-      <SectionProvider>
-        <Helmet />
-        <Header />
-        {children}
-        <Footer />
-      </SectionProvider>
-    </Provider>
-  </GlobalStyle>
+  <Fragment>
+    <GlobalStyle />
+    <RebassProvider theme={theme}>
+      <ScrollingProvider>
+        <SectionProvider>
+          <Helmet />
+          <Header />
+          {children}
+          <Footer />
+        </SectionProvider>
+      </ScrollingProvider>
+    </RebassProvider>
+  </Fragment>
 );
 
 Layout.propTypes = {

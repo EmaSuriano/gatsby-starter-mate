@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import ScrollableAnchor from 'react-scrollable-anchor';
+// import ScrollableAnchor from 'react-scrollable-anchor';
+import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
@@ -29,9 +30,9 @@ const Container = ({
 }) => (
   <div style={{ position: 'relative' }}>
     <Background />
-    <ScrollableAnchor id={id}>
+    <Section id={id}>
       <SectionContainer style={css}>{children}</SectionContainer>
-    </ScrollableAnchor>
+    </Section>
   </div>
 );
 
