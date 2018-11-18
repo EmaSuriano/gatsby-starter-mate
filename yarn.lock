@@ -11626,6 +11626,11 @@ react-fontawesome@^1.6.1:
   dependencies:
     prop-types "^15.5.6"
 
+react-github-corner@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/react-github-corner/-/react-github-corner-2.3.0.tgz#73ab17324b670c9cd955567b09663d385cfb05ef"
+  integrity sha512-yVh8wtAfVA5CQYn8ygyxtsuCMoyiSEBVnzQJ3ynyWxZ1BzT2MHop4baZn/PnUnU9Yh8mwhLS5Y1RVxM5zNotGw==
+
 react-headroom@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/react-headroom/-/react-headroom-2.2.4.tgz#e931bf5f91d0ea2c2fbf0f156a2b82d7db6cbe3b"
@@ -11696,13 +11701,14 @@ react-reveal@^1.2.2:
   dependencies:
     prop-types "^15.5.10"
 
-react-scroll-section@^1.2.0:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-1.2.1.tgz#45cc83a6e3fb9b495c1040cfe2866de37c552062"
-  integrity sha512-mUglgLnYLe6C4ExTpv/V+rQ4fMV17AiOiPkWePdqsd9ry9IwNQ0w4311MWGpnkMlZ6xhtLVZUZ+nsddl5YDSMA==
+react-scroll-section@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-1.3.0.tgz#632914bb935e29c0cf4feebb16bcb75f79feb116"
+  integrity sha512-pnkKe27CgA7RNGnUDIfin63QthF3UXO26nTi+m1oLUTYho/MdUh+AVruFyDRTnPVr3cX0fM+cKdM09anfb5VmA==
   dependencies:
     debounce "^1.2.0"
     prop-types "^15.6.2"
+    react-github-corner "^2.3.0"
 
 react-side-effect@^1.1.0:
   version "1.1.5"

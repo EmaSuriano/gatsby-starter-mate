@@ -37,7 +37,7 @@ const LinkAnimated = styled.span`
   }
 `;
 
-const RouteLink = ({ label, to }) => {
+const RouteLink = ({ onClick, selected, children }) => {
   // const href = `#${to}`;
   return (
     <Label
@@ -46,17 +46,9 @@ const RouteLink = ({ label, to }) => {
       fontSize={[2, 3]}
       css={{ cursor: 'pointer' }}
     >
-      <SectionLink section={to}>
-        {({ onClick, isSelected }) => (
-          <LinkAnimated
-            onClick={onClick}
-            selected={isSelected}
-            borderWidth="4px"
-          >
-            {label || to}
-          </LinkAnimated>
-        )}
-      </SectionLink>
+      <LinkAnimated onClick={onClick} selected={selected} borderWidth="4px">
+        {children}
+      </LinkAnimated>
     </Label>
   );
 };
