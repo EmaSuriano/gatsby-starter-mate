@@ -8,7 +8,6 @@ import { CardContainer, Card } from '../components/Card';
 import SocialLink from '../components/SocialLink';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
-import withNavigation from '../utils/withNavigation';
 
 const Background = () => (
   <div>
@@ -197,4 +196,4 @@ const Projects = () => (
   </Section.Container>
 );
 
-export default withNavigation({ label: 'Project', id: 'projects' })(Projects);
+export default Projects;

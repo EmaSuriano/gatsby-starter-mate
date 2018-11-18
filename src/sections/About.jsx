@@ -2,10 +2,11 @@ import React from 'react';
 import { Box, Image, Flex } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import ReactMarkdown from 'react-markdown';
+import { SectionLink } from 'react-scroll-section';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
-import withNavigation from '../utils/withNavigation';
 
 const Background = () => (
   <div>
@@ -31,55 +32,6 @@ const Background = () => (
   </div>
 );
 
-const AboutText = styled(Box)`
-  p:first-child {
-    margin-top: 0em;
-  }
-
-  p {
-    line-height: 2em;
-  }
-
-  ul {
-    margin: 0;
-
-    li {
-      margin: 1em 0;
-      line-height: 2em;
-    }
-  }
-
-  a {
-    display: inline-block;
-    transition: color 250ms, text-shadow 250ms;
-    color: black;
-    text-decoration: none;
-    position: relative;
-
-    &:after {
-      position: absolute;
-      z-index: -1;
-      bottom: -1px;
-      left: 50%;
-      transform: translateX(-50%);
-      content: '';
-      width: 100%;
-      height: 3px;
-      background-color: ${props => props.theme.colors.primaryLight};
-      transition: all 250ms;
-    }
-
-    &:hover {
-      color: white;
-
-      &::after {
-        height: 110%;
-        width: 110%;
-      }
-    }
-  }
-`;
-
 const ProfilePicture = styled(Image)`
   border-radius: 50%;
   transition: all 0.25s ease-out;
@@ -88,6 +40,68 @@ const ProfilePicture = styled(Image)`
     border-radius: 20%;
   }
 `;
+
+const fixStyledComponent = StyledComponent => ({ children }) => (
+  <StyledComponent>{children}</StyledComponent>
+);
+
+const StyledLink = styled.a`
+  display: inline-block;
+  transition: color 250ms, text-shadow 250ms;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    z-index: -1;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: ${props => props.theme.colors.primaryLight};
+    transition: all 250ms;
+  }
+
+  &:hover {
+    color: white;
+
+    &::after {
+      height: 110%;
+      width: 110%;
+    }
+  }
+`;
+
+const aboutMeRenderers = {
+  paragraph: fixStyledComponent(styled.p`
+    line-height: 2em;
+
+    &:first-child {
+      margin-top: 0em;
+    }
+  `),
+  list: fixStyledComponent(styled.ul`
+    margin: 0;
+  `),
+  listItem: fixStyledComponent(styled.li`
+    margin: 1em 0;
+    line-height: 2em;
+  `),
+  link: ({ href, children }) => {
+    const isInnerLink = href.startsWith('#');
+    return isInnerLink ? (
+      <SectionLink section={href.substring(1, href.length)}>
+        {({ onClick }) => <StyledLink onClick={onClick}>{children}</StyledLink>}
+      </SectionLink>
+    ) : (
+      <StyledLink href={href}>{children}</StyledLink>
+    );
+  },
+};
 
 const About = () => (
   <Section.Container id="about" Background={Background}>
@@ -99,6 +113,7 @@ const About = () => (
             aboutMe {
               childMarkdownRemark {
                 html
+                rawMarkdownBody
               }
             }
             profile {
@@ -116,10 +131,9 @@ const About = () => (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
             <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
               <Fade bottom>
-                <AboutText
-                  dangerouslySetInnerHTML={{
-                    __html: aboutMe.childMarkdownRemark.html,
-                  }}
+                <ReactMarkdown
+                  source={aboutMe.childMarkdownRemark.rawMarkdownBody}
+                  renderers={aboutMeRenderers}
                 />
               </Fade>
             </Box>
@@ -144,4 +158,4 @@ const About = () => (
   </Section.Container>
 );
 
-export default withNavigation({ label: 'About', id: 'about' })(About);
+export default About;

@@ -1,11 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
-// import ScrollableAnchor from 'react-scrollable-anchor';
 import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
-// import withLocation from '../utils/withLocation';
 
 const SectionContainer = styled.div`
   min-height: 100vh;
