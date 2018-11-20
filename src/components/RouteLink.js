@@ -2,8 +2,6 @@ import React from 'react';
 import { Label } from 'rebass';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-// import withLocation from '../utils/withLocation';
-import { SectionLink } from 'react-scroll-section';
 
 const LinkAnimated = styled.span`
   text-decoration: none;
@@ -37,28 +35,23 @@ const LinkAnimated = styled.span`
   }
 `;
 
-const RouteLink = ({ onClick, selected, children }) => {
-  // const href = `#${to}`;
-  return (
-    <Label
-      ml={[2, 3]}
-      color="background"
-      fontSize={[2, 3]}
-      css={{ cursor: 'pointer' }}
-    >
-      <LinkAnimated onClick={onClick} selected={selected} borderWidth="4px">
-        {children}
-      </LinkAnimated>
-    </Label>
-  );
-};
+const RouteLink = ({ onClick, selected, children }) => (
+  <Label
+    ml={[2, 3]}
+    color="background"
+    fontSize={[2, 3]}
+    css={{ cursor: 'pointer' }}
+  >
+    <LinkAnimated onClick={onClick} selected={selected} borderWidth="4px">
+      {children}
+    </LinkAnimated>
+  </Label>
+);
 
 RouteLink.propTypes = {
-  label: PropTypes.string,
-  to: PropTypes.string.isRequired,
-  // location: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  selected: PropTypes.bool,
+  children: PropTypes.node,
 };
-
-// export default withLocation(RouteLink);
 
 export default RouteLink;

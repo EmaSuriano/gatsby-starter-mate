@@ -18,6 +18,23 @@ const HeaderContainer = styled(Headroom)`
   width: 100%;
 `;
 
+const formatLinks = allLinks =>
+  Object.entries(allLinks).reduce(
+    (acc, [key, value]) => {
+      const isHome = key === 'home';
+      return isHome
+        ? {
+            ...acc,
+            home: value,
+          }
+        : {
+            ...acc,
+            links: [...acc.links, { name: capitalize(key), value }],
+          };
+    },
+    { links: [], home: null },
+  );
+
 const Header = () => (
   <HeaderContainer>
     <Fade top>
@@ -27,47 +44,32 @@ const Header = () => (
         alignItems="center"
         p={3}
       >
-        {/* <a href="#home">
-          <Image src={Logo} width="50px" alt="Portfolio Logo" />
-        </a> */}
-        {/* <Flex mr={[0, 3, 5]}> */}
         <SectionLinks>
           {({ allLinks }) => {
-            const links = Object.entries(allLinks).reduce(
-              (acc, [key, value]) => {
-                const isHome = key === 'home';
-                return isHome
-                  ? {
-                      ...acc,
-                      home: (
-                        <Image
-                          src={Logo}
-                          width="50px"
-                          alt="Portfolio Logo"
-                          onClick={value.onClick}
-                        />
-                      ),
-                    }
-                  : {
-                      ...acc,
-                      links: [
-                        ...acc.links,
-                        <RouteLink
-                          onClick={value.onClick}
-                          selected={value.selected}
-                        >
-                          {capitalize(key)}
-                        </RouteLink>,
-                      ],
-                    };
-              },
-              { links: [], home: null },
+            const { home, links } = formatLinks(allLinks);
+
+            const homeLink = home && (
+              <Image
+                src={Logo}
+                width="50px"
+                alt="Portfolio Logo"
+                onClick={home.onClick}
+              />
             );
+            const navLinks = links.map(({ name, value }) => (
+              <RouteLink
+                key={name}
+                onClick={value.onClick}
+                selected={value.selected}
+              >
+                {name}
+              </RouteLink>
+            ));
 
             return (
               <Fragment>
-                {links.home}
-                <Flex mr={[0, 3, 5]}>{links.links}</Flex>
+                {homeLink}
+                <Flex mr={[0, 3, 5]}>{navLinks}</Flex>
               </Fragment>
             );
           }}
