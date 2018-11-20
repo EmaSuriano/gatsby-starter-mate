@@ -3,10 +3,10 @@ import { Box, Image, Flex } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
-import { SectionLink } from 'react-scroll-section';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
+import markdownRenderer from '../components/MarkdownRenderer';
 
 const Background = () => (
   <div>
@@ -41,68 +41,6 @@ const ProfilePicture = styled(Image)`
   }
 `;
 
-const fixStyledComponent = StyledComponent => ({ children }) => (
-  <StyledComponent>{children}</StyledComponent>
-);
-
-const StyledLink = styled.a`
-  display: inline-block;
-  transition: color 250ms, text-shadow 250ms;
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
-
-  &:after {
-    position: absolute;
-    z-index: -1;
-    bottom: -1px;
-    left: 50%;
-    transform: translateX(-50%);
-    content: '';
-    width: 100%;
-    height: 3px;
-    background-color: ${props => props.theme.colors.primaryLight};
-    transition: all 250ms;
-  }
-
-  &:hover {
-    color: white;
-
-    &::after {
-      height: 110%;
-      width: 110%;
-    }
-  }
-`;
-
-const aboutMeRenderers = {
-  paragraph: fixStyledComponent(styled.p`
-    line-height: 2em;
-
-    &:first-child {
-      margin-top: 0em;
-    }
-  `),
-  list: fixStyledComponent(styled.ul`
-    margin: 0;
-  `),
-  listItem: fixStyledComponent(styled.li`
-    margin: 1em 0;
-    line-height: 2em;
-  `),
-  link: ({ href, children }) => {
-    const isInnerLink = href.startsWith('#');
-    return isInnerLink ? (
-      <SectionLink section={href.substring(1, href.length)}>
-        {({ onClick }) => <StyledLink onClick={onClick}>{children}</StyledLink>}
-      </SectionLink>
-    ) : (
-      <StyledLink href={href}>{children}</StyledLink>
-    );
-  },
-};
-
 const About = () => (
   <Section.Container id="about" Background={Background}>
     <Section.Header name="About me" icon="🙋‍♂️" label="person" />
@@ -112,7 +50,6 @@ const About = () => (
           contentfulAbout {
             aboutMe {
               childMarkdownRemark {
-                html
                 rawMarkdownBody
               }
             }
@@ -133,7 +70,7 @@ const About = () => (
               <Fade bottom>
                 <ReactMarkdown
                   source={aboutMe.childMarkdownRemark.rawMarkdownBody}
-                  renderers={aboutMeRenderers}
+                  renderers={markdownRenderer}
                 />
               </Fade>
             </Box>
