@@ -1,12 +1,11 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import ScrollableAnchor from 'react-scrollable-anchor';
+import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
-import withLocation from '../utils/withLocation';
 
-const SectionContainer = styled.section`
+const SectionContainer = styled.div`
   min-height: 100vh;
   min-width: 320px;
   max-width: 1366px;
@@ -27,12 +26,10 @@ const Container = ({
   Background = DefaultBackground,
   css = {},
 }) => (
-  <div style={{ position: 'relative' }}>
+  <Section id={id} style={{ position: 'relative' }}>
     <Background />
-    <ScrollableAnchor id={id}>
-      <SectionContainer style={css}>{children}</SectionContainer>
-    </ScrollableAnchor>
-  </div>
+    <SectionContainer style={css}>{children}</SectionContainer>
+  </Section>
 );
 
 Container.propTypes = {
@@ -73,7 +70,7 @@ const LinkAnimated = styled.span`
   }
 `;
 
-const Header = withLocation(({ name, icon = '', label = '' }) => (
+const Header = ({ name, icon = '', label = '' }) => (
   <Slide left>
     <Heading color="secondaryDark" mb={4}>
       <LinkAnimated borderWidth="5px">
@@ -86,7 +83,7 @@ const Header = withLocation(({ name, icon = '', label = '' }) => (
       </LinkAnimated>
     </Heading>
   </Slide>
-));
+);
 
 Header.propTypes = {
   name: PropTypes.string.isRequired,
