@@ -2,11 +2,10 @@ import React, { Fragment } from 'react';
 import Headroom from 'react-headroom';
 import { Flex, Image } from 'rebass';
 import styled from 'styled-components';
+import { SectionLinks } from 'react-scroll-section';
 import Fade from 'react-reveal/Fade';
 import RouteLink from './RouteLink';
 import Logo from './Logo/Portfolio.svg';
-import { SectionConsumer } from './SectionContext';
-import { SectionLinks } from 'react-scroll-section';
 
 const capitalize = s => s && s[0].toUpperCase() + s.slice(1);
 
@@ -62,7 +61,7 @@ const Header = () => (
                       ],
                     };
               },
-              { links: [] },
+              { links: [], home: null },
             );
 
             return (
@@ -73,12 +72,6 @@ const Header = () => (
             );
           }}
         </SectionLinks>
-        {/* <SectionConsumer>
-          {({ sections }) =>
-            sections.map(({ label, id }) => <RouteLink label={label} to={id} />)
-          }
-        </SectionConsumer> */}
-        {/* </Flex> */}
       </Flex>
     </Fade>
   </HeaderContainer>

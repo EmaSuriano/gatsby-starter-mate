@@ -7,7 +7,6 @@ import 'react-tippy/dist/tippy.css';
 import config from 'react-reveal/globals';
 import theme from '../theme';
 import Helmet from './Helmet';
-import { SectionProvider } from './SectionContext';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -27,12 +26,10 @@ const Layout = ({ children }) => (
     <GlobalStyle />
     <RebassProvider theme={theme}>
       <ScrollingProvider>
-        <SectionProvider>
-          <Helmet />
-          <Header />
-          {children}
-          <Footer />
-        </SectionProvider>
+        <Helmet />
+        <Header />
+        {children}
+        <Footer />
       </ScrollingProvider>
     </RebassProvider>
   </Fragment>
