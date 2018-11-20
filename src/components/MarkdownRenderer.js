@@ -1,6 +1,7 @@
 import React from 'react';
 import { SectionLink } from 'react-scroll-section';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const fixStyledComponent = StyledComponent => ({ children, ...props }) => (
   <StyledComponent {...props}>{children}</StyledComponent>
@@ -64,6 +65,12 @@ const MarkdownLink = ({ href, children }) => {
     <StyledLink href={href}>{children}</StyledLink>
   );
 };
+
+MarkdownLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  children: PropTypes.node,
+};
+
 const markdownRenderer = {
   paragraph: fixStyledComponent(MarkdownParagraph),
   list: fixStyledComponent(MarkdownList),
