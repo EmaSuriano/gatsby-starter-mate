@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-mate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Gatsby v2 starter to create a top notch portfolio!",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,6 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
-    "@reach/router": "^1.2.0",
     "babel-plugin-styled-components": "^1.7.1",
     "chalk": "^2.4.1",
     "clean-dir": "^1.0.3",
@@ -54,8 +53,9 @@
     "react-fontawesome": "^1.6.1",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
+    "react-markdown": "^4.0.3",
     "react-reveal": "^1.2.2",
-    "react-scrollable-anchor": "^0.6.1",
+    "react-scroll-section": "^1.3.0",
     "react-text-loop": "^1.1.0",
     "react-tippy": "^1.2.2",
     "react-typist": "^2.0.4",

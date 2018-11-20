@@ -79,7 +79,9 @@ const LandingPage = () => (
             >
               <TextLoop>
                 {roles.map(text => (
-                  <p style={{ width: 400 }}>{text}</p>
+                  <p style={{ width: 400 }} key={text}>
+                    {text}
+                  </p>
                 ))}
               </TextLoop>
             </Heading>

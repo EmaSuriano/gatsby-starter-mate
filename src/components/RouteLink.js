@@ -2,17 +2,16 @@ import React from 'react';
 import { Label } from 'rebass';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import withLocation from '../utils/withLocation';
 
-const LinkAnimated = styled.a`
+const LinkAnimated = styled.span`
   text-decoration: none;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 5px;
   color: inherit;
-  border-bottom: ${props =>
-    props.selected &&
-    `${props.borderWidth} solid ${props.theme.colors.primaryLight}`};
+  border-bottom: ${props => `${props.borderWidth} solid transparent`};
+  border-bottom-color: ${props =>
+    props.selected && props.theme.colors.primaryLight};
   transition: 0.4s;
   scroll-behavior: smooth;
 
@@ -36,26 +35,23 @@ const LinkAnimated = styled.a`
   }
 `;
 
-const RouteLink = ({ label, to, location }) => {
-  const href = `#${to}`;
-  return (
-    <Label
-      ml={[2, 3]}
-      color="background"
-      fontSize={[2, 3]}
-      css={{ cursor: 'pointer' }}
-    >
-      <LinkAnimated href={href} selected={location === href} borderWidth="4px">
-        {label || to}
-      </LinkAnimated>
-    </Label>
-  );
-};
+const RouteLink = ({ onClick, selected, children }) => (
+  <Label
+    ml={[2, 3]}
+    color="background"
+    fontSize={[2, 3]}
+    css={{ cursor: 'pointer' }}
+  >
+    <LinkAnimated onClick={onClick} selected={selected} borderWidth="4px">
+      {children}
+    </LinkAnimated>
+  </Label>
+);
 
 RouteLink.propTypes = {
-  label: PropTypes.string,
-  to: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
+  onClick: PropTypes.func,
+  selected: PropTypes.bool,
+  children: PropTypes.node,
 };
 
-export default withLocation(RouteLink);
+export default RouteLink;

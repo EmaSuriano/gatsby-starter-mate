@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { SectionLink } from 'react-scroll-section';
 
 const MouseContainer = styled.svg`
   max-width: 2.5rem;
@@ -7,11 +8,12 @@ const MouseContainer = styled.svg`
   height: auto;
 `;
 
-const ScrollLink = styled.a`
+const ScrollLink = styled.span`
   position: absolute;
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+  cursor: pointer;
 
   @media only screen and (max-width: 700px) {
     display: none;
@@ -50,14 +52,18 @@ const Scroll = styled.circle`
 `;
 
 const MouseIcon = () => (
-  <ScrollLink href="#about">
-    <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
-      <g fill="none">
-        <Mouse width="70" height="118" x="1.5" y="1.5" rx="36" />
-        <Scroll cx="36.5" cy="31.5" r="4.5" />
-      </g>
-    </MouseContainer>
-  </ScrollLink>
+  <SectionLink section="about">
+    {({ onClick }) => (
+      <ScrollLink onClick={onClick}>
+        <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
+          <g fill="none">
+            <Mouse width="70" height="118" x="1.5" y="1.5" rx="36" />
+            <Scroll cx="36.5" cy="31.5" r="4.5" />
+          </g>
+        </MouseContainer>
+      </ScrollLink>
+    )}
+  </SectionLink>
 );
 
 export default MouseIcon;
