@@ -60,7 +60,7 @@
     "react-tippy": "^1.2.2",
     "react-typist": "^2.0.4",
     "react-typist-loop": "^0.0.5",
-    "rebass": "^2.3.4",
+    "rebass": "^3.0.0",
     "styled-components": "^4.0.2",
     "toml": "^2.3.3",
     "yargs-parser": "^11.0.0"
