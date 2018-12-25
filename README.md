@@ -12,7 +12,7 @@
 
 The target audience are developers 💻 and tech writers ✍️.
 
-### [Demo Website](https://github.com/EmaSuriano/gatsby-starter-mate)
+### [Demo Website](https://gatsby-starter-mate.netlify.com/)
 
 ## Why? 🤔
 
