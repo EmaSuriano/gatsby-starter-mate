@@ -20,15 +20,10 @@ const SectionContainer = styled.div`
 
 const DefaultBackground = () => <div />;
 
-const Container = ({
-  id,
-  children,
-  Background = DefaultBackground,
-  css = {},
-}) => (
+const Container = ({ id, children, Background = DefaultBackground }) => (
   <Section id={id} style={{ position: 'relative' }}>
     <Background />
-    <SectionContainer style={css}>{children}</SectionContainer>
+    <SectionContainer>{children}</SectionContainer>
   </Section>
 );
 

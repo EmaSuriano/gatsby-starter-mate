@@ -6,6 +6,7 @@
   "scripts": {
     "build": "cleandir ./.cache && gatsby build",
     "develop": "cleandir ./.cache && gatsby develop",
+    "start": "npm run develop",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js"
   },

@@ -31,7 +31,7 @@ const NewCard = styled(CardRebass)`
 
 export const Card = ({ children, ...props }) => (
   <Box>
-    <NewCard {...props} boxShadow={0}>
+    <NewCard {...props} bg="white" boxShadow={0} borderRadius={8}>
       {children}
     </NewCard>
   </Box>

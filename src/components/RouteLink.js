@@ -1,5 +1,5 @@
 import React from 'react';
-import { Label } from 'rebass';
+import { Box } from 'rebass';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
@@ -36,16 +36,16 @@ const LinkAnimated = styled.span`
 `;
 
 const RouteLink = ({ onClick, selected, children }) => (
-  <Label
+  <Box
     ml={[2, 3]}
     color="background"
     fontSize={[2, 3]}
-    css={{ cursor: 'pointer' }}
+    style={{ cursor: 'pointer' }}
   >
     <LinkAnimated onClick={onClick} selected={selected} borderWidth="4px">
       {children}
     </LinkAnimated>
-  </Label>
+  </Box>
 );
 
 RouteLink.propTypes = {

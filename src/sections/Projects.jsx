@@ -1,5 +1,5 @@
 import React from 'react';
-import { Subhead, Image, Text, Flex, Label } from 'rebass';
+import { Subhead, Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
@@ -42,7 +42,7 @@ const Background = () => (
   </div>
 );
 
-const Title = styled(Subhead)`
+const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -107,32 +107,33 @@ const Project = ({
   logo,
 }) => (
   <Card p={0}>
-    <Flex css={{ height: '200px' }}>
+    <Flex style={{ height: '200px' }}>
       <TextContainer>
         <span>
           <Title my={2} pb={1}>
             {name}
           </Title>
         </span>
-        <Text width="100%" css={{ overflow: 'auto' }}>
+        <Text width="100%" style={{ overflow: 'auto' }}>
           {description}
         </Text>
       </TextContainer>
+
       <ImageContainer>
         <ProjectImage src={logo.image.src} alt={logo.title} />
-        <ImageSubtitle bg="primaryLight" color="white" top="13px" top-s="-37px">
+        <ImageSubtitle bg="primaryLight" color="white" top="9px" top-s="-40px">
           {type}
         </ImageSubtitle>
         <ImageSubtitle
           bg="backgroundDark"
           invert="true"
-          top-s="-200px"
-          top="-227px"
+          top-s="-204px"
+          top="-192px"
         >
           {publishedDate}
         </ImageSubtitle>
         <SocialLinksContainer>
-          <Label mx={1} fontSize={5}>
+          <Box mx={1} fontSize={5}>
             <SocialLink
               color="primary"
               hoverColor="primaryLight"
@@ -140,8 +141,8 @@ const Project = ({
               fontAwesomeIcon="github"
               url={repositoryUrl}
             />
-          </Label>
-          <Label mx={1} fontSize={5}>
+          </Box>
+          <Box mx={1} fontSize={5}>
             <SocialLink
               color="primary"
               hoverColor="primaryLight"
@@ -151,7 +152,7 @@ const Project = ({
               fontAwesomeIcon="globe"
               url={projectUrl}
             />
-          </Label>
+          </Box>
         </SocialLinksContainer>
       </ImageContainer>
     </Flex>
@@ -160,7 +161,7 @@ const Project = ({
 
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" label="notebook" />
+    <Section.Header name="Projects" icon="💻" Box="notebook" />
     <StaticQuery
       query={graphql`
         query ProjectsQuery {

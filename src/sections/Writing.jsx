@@ -53,7 +53,7 @@ const Post = ({ title, text, image, url, date, time }) => {
   return (
     <Card
       onClick={() => window.open(url, '_blank')}
-      css={{ cursor: 'pointer' }}
+      style={{ cursor: 'pointer' }}
       p={0}
     >
       <EllipsisHeading m={3} p={1}>
