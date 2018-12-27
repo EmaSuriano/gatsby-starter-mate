@@ -1,7 +1,7 @@
 import React from 'react';
-import { Subhead, Image, Text, Flex, Box } from 'rebass';
+import { Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
@@ -42,6 +42,8 @@ const Background = () => (
   </div>
 );
 
+const cardHeight = '200px';
+
 const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
@@ -72,29 +74,24 @@ const ImageContainer = styled.div`
 
 const ProjectImage = styled(Image)`
   padding: 10px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   height: 100px !important;
   width: 100px;
 
   @media (min-width: 400px) {
     width: 200px;
     padding: 40px;
-    height: 200px !important;
+    height: ${cardHeight} !important;
     margin-top: 0px;
   }
 `;
 
-const SocialLinksContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
+const ProjectTag = styled.div`
   position: relative;
-  float: right;
-  padding: 2px;
-  top: -220px;
-
-  @media (min-width: 400px) {
-    top: -237px;
-  }
+  top: calc(
+    -${cardHeight} - 4px
+  ); /*don't know why I have to add 4px here ... */
+  height: ${cardHeight};
 `;
 
 const Project = ({
@@ -107,7 +104,7 @@ const Project = ({
   logo,
 }) => (
   <Card p={0}>
-    <Flex style={{ height: '200px' }}>
+    <Flex style={{ height: cardHeight }}>
       <TextContainer>
         <span>
           <Title my={2} pb={1}>
@@ -121,39 +118,40 @@ const Project = ({
 
       <ImageContainer>
         <ProjectImage src={logo.image.src} alt={logo.title} />
-        <ImageSubtitle bg="primaryLight" color="white" top="9px" top-s="-40px">
-          {type}
-        </ImageSubtitle>
-        <ImageSubtitle
-          bg="backgroundDark"
-          invert="true"
-          top-s="-204px"
-          top="-192px"
-        >
-          {publishedDate}
-        </ImageSubtitle>
-        <SocialLinksContainer>
-          <Box mx={1} fontSize={5}>
-            <SocialLink
-              color="primary"
-              hoverColor="primaryLight"
-              name="Check repository"
-              fontAwesomeIcon="github"
-              url={repositoryUrl}
-            />
-          </Box>
-          <Box mx={1} fontSize={5}>
-            <SocialLink
-              color="primary"
-              hoverColor="primaryLight"
-              fontSize={5}
-              mx={1}
-              name="See project"
-              fontAwesomeIcon="globe"
-              url={projectUrl}
-            />
-          </Box>
-        </SocialLinksContainer>
+        <ProjectTag>
+          <Flex
+            style={{
+              float: 'right',
+            }}
+          >
+            <Box mx={1} fontSize={5}>
+              <SocialLink
+                color="primary"
+                hoverColor="primaryLight"
+                name="Check repository"
+                fontAwesomeIcon="github"
+                url={repositoryUrl}
+              />
+            </Box>
+            <Box mx={1} fontSize={5}>
+              <SocialLink
+                color="primary"
+                hoverColor="primaryLight"
+                fontSize={5}
+                mx={1}
+                name="See project"
+                fontAwesomeIcon="globe"
+                url={projectUrl}
+              />
+            </Box>
+          </Flex>
+          <ImageSubtitle bg="primaryLight" color="white" y="bottom" x="right">
+            {type}
+          </ImageSubtitle>
+          <ImageSubtitle bg="backgroundDark" y="top" x="left" invert>
+            {publishedDate}
+          </ImageSubtitle>
+        </ProjectTag>
       </ImageContainer>
     </Flex>
   </Card>

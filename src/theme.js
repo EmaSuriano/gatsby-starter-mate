@@ -13,4 +13,7 @@ const colors = {
 
 module.exports = {
   colors,
+  breakpoint: {
+    sm: '@media (min-width: 400px)',
+  },
 };
