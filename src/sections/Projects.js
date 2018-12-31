@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { path } from 'ramda';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
@@ -46,6 +47,8 @@ const Background = () => (
 
 const CARD_HEIGHT = '200px';
 
+const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
+
 const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
@@ -61,7 +64,7 @@ const TextContainer = styled.div`
   width: 100%;
   width: calc(100% - ${CARD_HEIGHT});
 
-  ${path(['theme', 'breakpoint', 'sm'])} {
+  ${MEDIA_QUERY_SMALL} {
     width: calc(100% - (${CARD_HEIGHT} / 2));
   }
 `;
@@ -70,7 +73,7 @@ const ImageContainer = styled.div`
   margin: auto;
   width: ${CARD_HEIGHT};
 
-  ${path(['theme', 'breakpoint', 'sm'])} {
+  ${MEDIA_QUERY_SMALL} {
     width: calc(${CARD_HEIGHT} / 2);
   }
 `;
@@ -81,8 +84,7 @@ const ProjectImage = styled(Image)`
   padding: 40px;
   margin-top: 0px;
 
-  ${path(['theme', 'breakpoint', 'sm'])} {
-    /* height: 100px !important; */
+  ${MEDIA_QUERY_SMALL} {
     height: calc(${CARD_HEIGHT} / 2);
     width: calc(${CARD_HEIGHT} / 2);
     margin-top: calc(${CARD_HEIGHT} / 4);
@@ -97,7 +99,7 @@ const ProjectTag = styled.div`
     -${CARD_HEIGHT} - 4px
   ); /*don't know why I have to add 4px here ... */
 
-  ${path(['theme', 'breakpoint', 'sm'])} {
+  ${MEDIA_QUERY_SMALL} {
     top: calc(-${CARD_HEIGHT} - 4px + (${CARD_HEIGHT} / 4));
   }
 `;
@@ -134,8 +136,6 @@ const Project = ({
           >
             <Box mx={1} fontSize={5}>
               <SocialLink
-                color="primary"
-                hoverColor="primaryLight"
                 name="Check repository"
                 fontAwesomeIcon="github"
                 url={repositoryUrl}
@@ -143,10 +143,6 @@ const Project = ({
             </Box>
             <Box mx={1} fontSize={5}>
               <SocialLink
-                color="primary"
-                hoverColor="primaryLight"
-                fontSize={5}
-                mx={1}
                 name="See project"
                 fontAwesomeIcon="globe"
                 url={projectUrl}
@@ -156,7 +152,7 @@ const Project = ({
           <ImageSubtitle bg="primaryLight" color="white" y="bottom" x="right">
             {type}
           </ImageSubtitle>
-          <Hide xs>
+          <Hide query={MEDIA_QUERY_SMALL}>
             <ImageSubtitle bg="backgroundDark" invert>
               {publishedDate}
             </ImageSubtitle>
@@ -166,6 +162,20 @@ const Project = ({
     </Flex>
   </Card>
 );
+
+Project.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  projectUrl: PropTypes.string.isRequired,
+  repositoryUrl: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  publishedDate: PropTypes.string.isRequired,
+  logo: PropTypes.shape({
+    image: PropTypes.shape({
+      src: PropTypes.string,
+    }),
+  }).isRequired,
+};
 
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Heading, Text } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
@@ -48,20 +49,26 @@ const EllipsisHeading = styled(Heading)`
   border-bottom: ${props => props.theme.colors.primary} 5px solid;
 `;
 
-const Post = ({ title, text, image, url, date, time }) => {
-  const timestamp = `${date} - ${Math.ceil(time)} min`;
-  return (
-    <Card onClick={() => window.open(url, '_blank')} pb={4}>
-      <EllipsisHeading m={3} p={1}>
-        {title}
-      </EllipsisHeading>
-      {image && <CoverImage src={image} height="200px" alt={title} />}
-      <Text m={3}>{text}</Text>
-      <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom">
-        {timestamp}
-      </ImageSubtitle>
-    </Card>
-  );
+const Post = ({ title, text, image, url, date, time }) => (
+  <Card onClick={() => window.open(url, '_blank')} pb={4}>
+    <EllipsisHeading m={3} p={1}>
+      {title}
+    </EllipsisHeading>
+    {image && <CoverImage src={image} height="200px" alt={title} />}
+    <Text m={3}>{text}</Text>
+    <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom">
+      {`${date} - ${Math.ceil(time)} min`}
+    </ImageSubtitle>
+  </Card>
+);
+
+Post.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
+  time: PropTypes.number.isRequired,
 };
 
 const parsePost = postFromGraphql => {

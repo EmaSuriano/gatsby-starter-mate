@@ -25,7 +25,7 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 ## Features 🛠
 
 - [Gatsby v2](https://www.gatsbyjs.org/)
-- [Rebass](https://rebassjs.org/): styled component system
+- [Rebass 3.0 🎉](https://rebassjs.org/): styled component system
 - [React Reveal](https://www.react-reveal.com/)
 - Dynamic content from [Contentful](https://contentful.com)
 - Offline support

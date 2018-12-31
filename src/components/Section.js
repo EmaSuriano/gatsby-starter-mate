@@ -1,9 +1,10 @@
-import * as React from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
+import LinkAnimated from './LinkAnimated';
 
 const SectionContainer = styled.div`
   min-height: 100vh;
@@ -30,45 +31,13 @@ const Container = ({ id, children, Background = DefaultBackground }) => (
 Container.propTypes = {
   id: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  // eslint-disable-next-line
-  css: PropTypes.object,
   Background: PropTypes.func,
 };
-
-const LinkAnimated = styled.span`
-  text-decoration: none;
-  position: relative;
-  margin-bottom: 0;
-  padding-bottom: 5px;
-  color: inherit;
-  border-bottom: ${props =>
-    `${props.borderWidth} dashed ${props.theme.colors.primaryLight}`};
-  transition: 0.4s;
-
-  &:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    width: 0;
-    bottom: -${props => props.borderWidth};
-    background: ${props => props.theme.colors.secondaryLight};
-    height: ${props => props.borderWidth};
-    transition-property: width;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-  }
-
-  &:hover:after {
-    left: 0;
-    right: auto;
-    width: 100%;
-  }
-`;
 
 const Header = ({ name, icon = '', label = '' }) => (
   <Slide left>
     <Heading color="secondaryDark" mb={4}>
-      <LinkAnimated borderWidth="5px">
+      <LinkAnimated selected>
         {name}
         {icon && (
           <span role="img" aria-label={label} style={{ marginLeft: '10px' }}>
