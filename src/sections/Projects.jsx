@@ -2,12 +2,14 @@ import React from 'react';
 import { Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled, { css } from 'styled-components';
+import { path } from 'ramda';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import SocialLink from '../components/SocialLink';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
+import Hide from '../components/Hide';
 
 const Background = () => (
   <div>
@@ -42,56 +44,62 @@ const Background = () => (
   </div>
 );
 
-const cardHeight = '200px';
+const CARD_HEIGHT = '200px';
 
 const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${props => props.theme.colors.primary} 5px solid;
+  border-bottom: ${path(['theme', 'colors', 'primary'])} 5px solid;
 `;
 
 const TextContainer = styled.div`
   display: flex;
-  width: calc(100% - 100px);
   flex-direction: column;
   padding: 10px;
+  width: 100%;
+  width: calc(100% - ${CARD_HEIGHT});
 
-  @media (min-width: 400px) {
-    width: calc(100% - 200px);
+  ${path(['theme', 'breakpoint', 'sm'])} {
+    width: calc(100% - (${CARD_HEIGHT} / 2));
   }
 `;
 
 const ImageContainer = styled.div`
-  width: 100px;
   margin: auto;
+  width: ${CARD_HEIGHT};
 
-  @media (min-width: 400px) {
-    width: 200px;
+  ${path(['theme', 'breakpoint', 'sm'])} {
+    width: calc(${CARD_HEIGHT} / 2);
   }
 `;
 
 const ProjectImage = styled(Image)`
-  padding: 10px;
-  /* margin-top: 50px; */
-  height: 100px !important;
-  width: 100px;
+  width: ${CARD_HEIGHT};
+  height: ${CARD_HEIGHT};
+  padding: 40px;
+  margin-top: 0px;
 
-  @media (min-width: 400px) {
-    width: 200px;
-    padding: 40px;
-    height: ${cardHeight} !important;
-    margin-top: 0px;
+  ${path(['theme', 'breakpoint', 'sm'])} {
+    /* height: 100px !important; */
+    height: calc(${CARD_HEIGHT} / 2);
+    width: calc(${CARD_HEIGHT} / 2);
+    margin-top: calc(${CARD_HEIGHT} / 4);
+    padding: 10px;
   }
 `;
 
 const ProjectTag = styled.div`
   position: relative;
+  height: ${CARD_HEIGHT};
   top: calc(
-    -${cardHeight} - 4px
+    -${CARD_HEIGHT} - 4px
   ); /*don't know why I have to add 4px here ... */
-  height: ${cardHeight};
+
+  ${path(['theme', 'breakpoint', 'sm'])} {
+    top: calc(-${CARD_HEIGHT} - 4px + (${CARD_HEIGHT} / 4));
+  }
 `;
 
 const Project = ({
@@ -104,14 +112,14 @@ const Project = ({
   logo,
 }) => (
   <Card p={0}>
-    <Flex style={{ height: cardHeight }}>
+    <Flex style={{ height: CARD_HEIGHT }}>
       <TextContainer>
         <span>
           <Title my={2} pb={1}>
             {name}
           </Title>
         </span>
-        <Text width="100%" style={{ overflow: 'auto' }}>
+        <Text width={[1]} style={{ overflow: 'auto' }}>
           {description}
         </Text>
       </TextContainer>
@@ -148,9 +156,11 @@ const Project = ({
           <ImageSubtitle bg="primaryLight" color="white" y="bottom" x="right">
             {type}
           </ImageSubtitle>
-          <ImageSubtitle bg="backgroundDark" y="top" x="left" invert>
-            {publishedDate}
-          </ImageSubtitle>
+          <Hide xs>
+            <ImageSubtitle bg="backgroundDark" invert>
+              {publishedDate}
+            </ImageSubtitle>
+          </Hide>
         </ProjectTag>
       </ImageContainer>
     </Flex>

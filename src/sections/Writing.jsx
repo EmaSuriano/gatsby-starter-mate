@@ -51,17 +51,13 @@ const EllipsisHeading = styled(Heading)`
 const Post = ({ title, text, image, url, date, time }) => {
   const timestamp = `${date} - ${Math.ceil(time)} min`;
   return (
-    <Card
-      onClick={() => window.open(url, '_blank')}
-      style={{ cursor: 'pointer' }}
-      p={0}
-    >
+    <Card onClick={() => window.open(url, '_blank')} pb={4}>
       <EllipsisHeading m={3} p={1}>
         {title}
       </EllipsisHeading>
       {image && <CoverImage src={image} height="200px" alt={title} />}
       <Text m={3}>{text}</Text>
-      <ImageSubtitle bg="primaryLight" color="white">
+      <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom">
         {timestamp}
       </ImageSubtitle>
     </Card>

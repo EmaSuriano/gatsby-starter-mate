@@ -49,6 +49,7 @@
     "gatsby-transformer-remark": "^2.1.3",
     "inquirer": "^6.2.0",
     "prop-types": "^15.6.2",
+    "ramda": "^0.26.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-fontawesome": "^1.6.1",
