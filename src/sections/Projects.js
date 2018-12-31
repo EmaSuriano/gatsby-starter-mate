@@ -1,13 +1,16 @@
 import React from 'react';
-import { Subhead, Image, Text, Flex, Label } from 'rebass';
+import PropTypes from 'prop-types';
+import { Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import { path } from 'ramda';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import SocialLink from '../components/SocialLink';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
+import Hide from '../components/Hide';
 
 const Background = () => (
   <div>
@@ -42,58 +45,62 @@ const Background = () => (
   </div>
 );
 
-const Title = styled(Subhead)`
+const CARD_HEIGHT = '200px';
+
+const MEDIA_QUERY_SMALL = '@media (max-width: 400px)';
+
+const Title = styled(Text)`
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${props => props.theme.colors.primary} 5px solid;
+  border-bottom: ${path(['theme', 'colors', 'primary'])} 5px solid;
 `;
 
 const TextContainer = styled.div`
   display: flex;
-  width: calc(100% - 100px);
   flex-direction: column;
   padding: 10px;
+  width: 100%;
+  width: calc(100% - ${CARD_HEIGHT});
 
-  @media (min-width: 400px) {
-    width: calc(100% - 200px);
+  ${MEDIA_QUERY_SMALL} {
+    width: calc(100% - (${CARD_HEIGHT} / 2));
   }
 `;
 
 const ImageContainer = styled.div`
-  width: 100px;
   margin: auto;
+  width: ${CARD_HEIGHT};
 
-  @media (min-width: 400px) {
-    width: 200px;
+  ${MEDIA_QUERY_SMALL} {
+    width: calc(${CARD_HEIGHT} / 2);
   }
 `;
 
 const ProjectImage = styled(Image)`
-  padding: 10px;
-  margin-top: 50px;
-  height: 100px !important;
-  width: 100px;
+  width: ${CARD_HEIGHT};
+  height: ${CARD_HEIGHT};
+  padding: 40px;
+  margin-top: 0px;
 
-  @media (min-width: 400px) {
-    width: 200px;
-    padding: 40px;
-    height: 200px !important;
-    margin-top: 0px;
+  ${MEDIA_QUERY_SMALL} {
+    height: calc(${CARD_HEIGHT} / 2);
+    width: calc(${CARD_HEIGHT} / 2);
+    margin-top: calc(${CARD_HEIGHT} / 4);
+    padding: 10px;
   }
 `;
 
-const SocialLinksContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
+const ProjectTag = styled.div`
   position: relative;
-  float: right;
-  padding: 2px;
-  top: -220px;
+  height: ${CARD_HEIGHT};
+  top: calc(
+    -${CARD_HEIGHT} - 4px
+  ); /*don't know why I have to add 4px here ... */
 
-  @media (min-width: 400px) {
-    top: -237px;
+  ${MEDIA_QUERY_SMALL} {
+    top: calc(-${CARD_HEIGHT} - 4px + (${CARD_HEIGHT} / 4));
   }
 `;
 
@@ -107,60 +114,72 @@ const Project = ({
   logo,
 }) => (
   <Card p={0}>
-    <Flex css={{ height: '200px' }}>
+    <Flex style={{ height: CARD_HEIGHT }}>
       <TextContainer>
         <span>
           <Title my={2} pb={1}>
             {name}
           </Title>
         </span>
-        <Text width="100%" css={{ overflow: 'auto' }}>
+        <Text width={[1]} style={{ overflow: 'auto' }}>
           {description}
         </Text>
       </TextContainer>
+
       <ImageContainer>
         <ProjectImage src={logo.image.src} alt={logo.title} />
-        <ImageSubtitle bg="primaryLight" color="white" top="13px" top-s="-37px">
-          {type}
-        </ImageSubtitle>
-        <ImageSubtitle
-          bg="backgroundDark"
-          invert="true"
-          top-s="-200px"
-          top="-227px"
-        >
-          {publishedDate}
-        </ImageSubtitle>
-        <SocialLinksContainer>
-          <Label mx={1} fontSize={5}>
-            <SocialLink
-              color="primary"
-              hoverColor="primaryLight"
-              name="Check repository"
-              fontAwesomeIcon="github"
-              url={repositoryUrl}
-            />
-          </Label>
-          <Label mx={1} fontSize={5}>
-            <SocialLink
-              color="primary"
-              hoverColor="primaryLight"
-              fontSize={5}
-              mx={1}
-              name="See project"
-              fontAwesomeIcon="globe"
-              url={projectUrl}
-            />
-          </Label>
-        </SocialLinksContainer>
+        <ProjectTag>
+          <Flex
+            style={{
+              float: 'right',
+            }}
+          >
+            <Box mx={1} fontSize={5}>
+              <SocialLink
+                name="Check repository"
+                fontAwesomeIcon="github"
+                url={repositoryUrl}
+              />
+            </Box>
+            <Box mx={1} fontSize={5}>
+              <SocialLink
+                name="See project"
+                fontAwesomeIcon="globe"
+                url={projectUrl}
+              />
+            </Box>
+          </Flex>
+          <ImageSubtitle bg="primaryLight" color="white" y="bottom" x="right">
+            {type}
+          </ImageSubtitle>
+          <Hide query={MEDIA_QUERY_SMALL}>
+            <ImageSubtitle bg="backgroundDark" invert>
+              {publishedDate}
+            </ImageSubtitle>
+          </Hide>
+        </ProjectTag>
       </ImageContainer>
     </Flex>
   </Card>
 );
 
+Project.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  projectUrl: PropTypes.string.isRequired,
+  repositoryUrl: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  publishedDate: PropTypes.string.isRequired,
+  logo: PropTypes.shape({
+    image: PropTypes.shape({
+      src: PropTypes.string,
+    }),
+  }).isRequired,
+};
+
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" label="notebook" />
+    <Section.Header name="Projects" icon="💻" Box="notebook" />
     <StaticQuery
       query={graphql`
         query ProjectsQuery {
