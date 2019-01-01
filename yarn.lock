@@ -1274,7 +1274,6 @@ alphanum-sort@^1.0.0:
 ambi@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/ambi/-/ambi-5.0.0.tgz#7392e8f845d0f4dec37c3ecb2ab4a6b4c68b86c9"
-  integrity sha512-NYJzHMsZU7clGY2lH11U+2PEllFDW66qnUukXYbyF8ZJ0B0CXVNfKHUvkUp+gsaNPBW8FqEFX5l64LTlUvI2pw==
   dependencies:
     editions "^2.1.0"
     typechecker "^4.3.0"
@@ -3612,7 +3611,6 @@ cwebp-bin@^4.0.0:
 cxs@^6.2.0:
   version "6.2.0"
   resolved "https://registry.yarnpkg.com/cxs/-/cxs-6.2.0.tgz#f11ca3bdaef154b93bdadca5df70f2cb3e37ca24"
-  integrity sha512-RGatb1BUwVMBzV8DRo9Kapc55bdGfAxMcukVk+ZzE3Ts8xaTve0GVz730kBDxjhEBU2LK+RPuAcjZb00Q3O24w==
 
 cyclist@~0.2.2:
   version "0.2.2"
@@ -4229,7 +4227,6 @@ editions@^2.0.2:
 editions@^2.1.0, editions@^2.1.2, editions@^2.1.3:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/editions/-/editions-2.1.3.tgz#727ccf3ec2c7b12dcc652c71000f16c4824d6f7d"
-  integrity sha512-xDZyVm0A4nLgMNWVVLJvcwMjI80ShiH/27RyLiCnW1L273TcJIA25C4pwJ33AWV01OX6UriP35Xu+lH4S7HWQw==
   dependencies:
     errlop "^1.1.1"
     semver "^5.6.0"
@@ -4338,7 +4335,6 @@ entities@^1.1.1, entities@~1.1.1:
 envfile@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/envfile/-/envfile-3.0.0.tgz#7724a599d025b9af34757cc4ab0092f5d3fa2b53"
-  integrity sha512-LdL/WLZutuZedarG3Knu4v4RC7kZpC+dSdv9tVj0B8q11K0T0pLczRYxhmyVpApRRXWQnz5Fldrtnu/RzbCHPA==
   dependencies:
     ambi "^5.0.0"
     eachr "^3.1.0"
@@ -4362,7 +4358,6 @@ errlop@^1.0.3:
 errlop@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/errlop/-/errlop-1.1.1.tgz#d9ae4c76c3e64956c5d79e6e035d6343bfd62250"
-  integrity sha512-WX7QjiPHhsny7/PQvrhS5VMizXXKoKCS3udaBp8gjlARdbn+XmK300eKBAAN0hGyRaTCtRpOaxK+xFVPUJ3zkw==
   dependencies:
     editions "^2.1.2"
 
@@ -10070,7 +10065,6 @@ react-error-overlay@^3.0.0:
 react-fast-compare@2.0.4:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
-  integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
 react-fontawesome@^1.6.1:
   version "1.6.1"
@@ -10133,7 +10127,6 @@ react-markdown@^4.0.3:
 react-motion@^0.5.2:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-motion/-/react-motion-0.5.2.tgz#0dd3a69e411316567927917c6626551ba0607316"
-  integrity sha512-9q3YAvHoUiWlP3cK0v+w1N5Z23HXMj4IF4YuvjvWegWqNPfLXsOBE/V7UvQGpXxHFKRQQcNcVQE31g9SB/6qgQ==
   dependencies:
     performance-now "^0.2.0"
     prop-types "^15.5.8"
@@ -10160,10 +10153,9 @@ react-side-effect@^1.1.0:
     exenv "^1.2.1"
     shallowequal "^1.0.1"
 
-react-text-loop@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-text-loop/-/react-text-loop-2.0.0.tgz#4e576aa6748563412c3804343da84b707132bfe8"
-  integrity sha512-19Rw7gkNi5pZxprmZ+BDUI14ve+St63Jb3nJ138CskCD1G46wAgChA9Jd9ww+wF+noAobSrWDgJ8oOHtCfkJOA==
+react-text-loop@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-text-loop/-/react-text-loop-2.0.1.tgz#7dc17109aa751e64d7782b7d68ccb319ccfcdd30"
   dependencies:
     cxs "^6.2.0"
     prop-types "^15.6.2"
