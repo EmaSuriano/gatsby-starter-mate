@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Heading, Flex, Box } from 'rebass';
+import { Heading, Flex, Box, Text } from 'rebass';
 import TextLoop from 'react-text-loop';
 import { SectionLink } from 'react-scroll-section';
 import Section from '../components/Section';
@@ -75,14 +75,14 @@ const LandingPage = () => (
               as="h2"
               color="primary"
               fontSize={[4, 5, 6]}
-              mb={[2, 4]}
+              mb={[3, 5]}
               textAlign="center"
             >
               <TextLoop>
                 {roles.map(text => (
-                  <p style={{ width: 400 }} key={text}>
+                  <Text width={[400, 500]} key={text}>
                     {text}
-                  </p>
+                  </Text>
                 ))}
               </TextLoop>
             </Heading>
