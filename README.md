@@ -120,7 +120,7 @@ After this step we can finally run the project and see the result in http://loca
 yarn start
 ```
 
-## Screenshot and design 🖼
+## Screenshot and Design 🖼
 
 As the starter is a SPA it only has two routes:
 - `/`: main page with the sections of `Home`, `About me`, `Projects` and `Writing`.
