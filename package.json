@@ -34,7 +34,7 @@
     "contentful": "^7.0.3",
     "contentful-import": "^7.4.0",
     "dotenv": "^6.0.0",
-    "envfile": "^2.3.0",
+    "envfile": "^3.0.0",
     "gatsby": "^2.0.7",
     "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-google-analytics": "^2.0.6",
