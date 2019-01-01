@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Heading, Flex, Label } from 'rebass';
+import { Heading, Flex, Box } from 'rebass';
 import TextLoop from 'react-text-loop';
+import { SectionLink } from 'react-scroll-section';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import MouseIcon from '../components/MouseIcon';
@@ -62,7 +63,7 @@ const LandingPage = () => (
           <Fragment>
             <Heading
               textAlign="center"
-              is="h1"
+              as="h1"
               color="primary"
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}
@@ -71,7 +72,7 @@ const LandingPage = () => (
             </Heading>
 
             <Heading
-              is="h2"
+              as="h2"
               color="primary"
               fontSize={[4, 5, 6]}
               mb={[2, 4]}
@@ -85,18 +86,17 @@ const LandingPage = () => (
                 ))}
               </TextLoop>
             </Heading>
+
             <Flex alignItems="center" justifyContent="center" flexWrap="wrap">
               {socialLinks.map(({ id, ...rest }) => (
-                <Label mx={3} fontSize={[5, 6, 6]} key={id}>
-                  <SocialLink
-                    color="primary"
-                    hoverColor="primaryLight"
-                    {...rest}
-                  />
-                </Label>
+                <Box mx={3} fontSize={[5, 6, 6]} key={id}>
+                  <SocialLink {...rest} />
+                </Box>
               ))}
             </Flex>
-            <MouseIcon />
+            <SectionLink section="about">
+              {({ onClick }) => <MouseIcon onClick={onClick} />}
+            </SectionLink>
           </Fragment>
         );
       }}

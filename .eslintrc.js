@@ -5,4 +5,8 @@ module.exports = {
     'react/require-default-props': 'off',
   },
   parser: 'babel-eslint',
+  env: {
+    browser: true,
+    node: true,
+  },
 };

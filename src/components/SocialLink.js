@@ -1,22 +1,23 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import { Link } from 'rebass';
+import { path } from 'ramda';
 import { Tooltip } from 'react-tippy';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
-  color: ${props => props.theme.colors[props.color]};
+  color: ${path(['theme', 'colors', 'primary'])};
 
   &:hover {
-    color: ${props => props.theme.colors[props.hover]};
+    color: ${path(['theme', 'colors', 'primaryLight'])};
   }
 `;
 
-const SocialLink = ({ fontAwesomeIcon, name, url, color, hoverColor }) => (
+const SocialLink = ({ fontAwesomeIcon, name, url }) => (
   <Tooltip title={name} position="bottom" trigger="mouseenter">
-    <IconLink href={url} target="_blank" color={color} hover={hoverColor}>
+    <IconLink href={url} target="_blank">
       <FontAwesome name={fontAwesomeIcon} />
     </IconLink>
   </Tooltip>
@@ -26,8 +27,6 @@ SocialLink.propTypes = {
   fontAwesomeIcon: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-  hoverColor: PropTypes.string.isRequired,
 };
 
 export default SocialLink;

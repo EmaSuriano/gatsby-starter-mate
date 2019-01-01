@@ -77,7 +77,7 @@ const About = () => (
 
             <Box
               width={[1, 1, 2 / 6]}
-              css={{ maxWidth: '300px', margin: 'auto' }}
+              style={{ maxWidth: '300px', margin: 'auto' }}
             >
               <Fade right>
                 <ProfilePicture

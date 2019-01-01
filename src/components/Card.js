@@ -1,6 +1,5 @@
-import React from 'react';
 import styled from 'styled-components';
-import { Box, Card as CardRebass } from 'rebass';
+import { Card as CardRebass } from 'rebass';
 
 export const CardContainer = styled.div`
   display: grid;
@@ -17,24 +16,22 @@ export const CardContainer = styled.div`
   }
 `;
 
-const NewCard = styled(CardRebass)`
+export const Card = styled(CardRebass).attrs({
+  bg: 'white',
+  boxShadow: 0,
+  borderRadius: 8,
+})`
   position: relative;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.25s;
   top: 0;
+  height: 100%;
+  cursor: ${props => (props.onClick ? 'pointer' : 'default')};
 
   &:hover {
     top: -10px;
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   }
 `;
-
-export const Card = ({ children, ...props }) => (
-  <Box>
-    <NewCard {...props} boxShadow={0}>
-      {children}
-    </NewCard>
-  </Box>
-);
 
 export default Card;

@@ -31,8 +31,8 @@ const Background = () => (
 
 const NotFoundPage = () => (
   <Layout>
-    <Section.Container id="404" Background={Background} css={{ padding: 0 }}>
-      <Box w={[320, 400, 600]} m="auto">
+    <Section.Container id="404" Background={Background}>
+      <Box width={[320, 400, 600]} m="auto">
         <Heading color="primaryDark" fontSize={['9rem', '13rem', '16rem']}>
           404
         </Heading>
