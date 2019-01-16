@@ -9,42 +9,46 @@ const client = contentful.createClient({
   accessToken: ACCESS_TOKEN,
 });
 
-module.exports = client.getEntries().then(entries => {
-  const aboutEntry = entries.items.find(
-    entry => entry.sys.contentType.sys.id === 'about',
-  );
+const getAboutContentType = entry => entry.sys.contentType.sys.id === 'about';
 
-  const about = aboutEntry.fields;
+module.exports = client.getEntries().then(entries => {
+  const aboutEntry = entries.items.find(getAboutContentType);
+
+  const plugins = [
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: manifestConfig,
+    },
+    'gatsby-plugin-styled-components',
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: ['cabin', 'Open Sans'],
+      },
+    },
+    {
+      resolve: 'gatsby-source-contentful',
+      options: {
+        spaceId: SPACE_ID,
+        accessToken: ACCESS_TOKEN,
+      },
+    },
+    'gatsby-transformer-remark',
+    'gatsby-plugin-offline',
+  ];
+
+  // const { mediumUser } = aboutEntry.fields;
+  // if (mediumUser) {
+  plugins.push({
+    resolve: 'gatsby-source-medium',
+    options: {
+      username: aboutEntry.fields.mediumUser || '@medium',
+    },
+  });
+  // }
 
   return {
-    plugins: [
-      'gatsby-plugin-react-helmet',
-      {
-        resolve: 'gatsby-plugin-manifest',
-        options: manifestConfig,
-      },
-      'gatsby-plugin-styled-components',
-      {
-        resolve: `gatsby-plugin-google-fonts`,
-        options: {
-          fonts: [`cabin`, `Open Sans`],
-        },
-      },
-      {
-        resolve: `gatsby-source-contentful`,
-        options: {
-          spaceId: SPACE_ID,
-          accessToken: ACCESS_TOKEN,
-        },
-      },
-      {
-        resolve: `gatsby-source-medium`,
-        options: {
-          username: about.mediumUser,
-        },
-      },
-      'gatsby-transformer-remark',
-      'gatsby-plugin-offline',
-    ],
+    plugins,
   };
 });

@@ -99,47 +99,54 @@ const parsePost = postFromGraphql => {
 const edgeToArray = data => data.edges.map(edge => edge.node);
 
 const Writing = () => (
-  <Section.Container id="writing" Background={Background}>
-    <Section.Header name="Writing" icon="✍️" label="writing" />
-    <StaticQuery
-      query={graphql`
-        query MediumPostQuery {
-          allMediumPost(limit: 6, sort: { fields: createdAt, order: DESC }) {
-            edges {
-              node {
-                id
-                uniqueSlug
-                title
-                createdAt(formatString: "MMM YYYY")
-                virtuals {
-                  subtitle
-                  readingTime
-                  previewImage {
-                    imageId
-                  }
+  <StaticQuery
+    query={graphql`
+      query MediumPostQuery {
+        isMediumUserDefine: __type(
+          name: "contentfulAboutMediumUserQueryString_2"
+        ) {
+          name
+        }
+        allMediumPost(limit: 6, sort: { fields: createdAt, order: DESC }) {
+          edges {
+            node {
+              id
+              uniqueSlug
+              title
+              createdAt(formatString: "MMM YYYY")
+              virtuals {
+                subtitle
+                readingTime
+                previewImage {
+                  imageId
                 }
-                author {
-                  username
-                }
+              }
+              author {
+                username
               }
             }
           }
         }
-      `}
-      render={({ allMediumPost }) => {
-        const posts = edgeToArray(allMediumPost).map(parsePost);
-        return (
-          <CardContainer minWidth="300px">
-            {posts.map(p => (
-              <Fade bottom>
-                <Post key={p.id} {...p} />
-              </Fade>
-            ))}
-          </CardContainer>
-        );
-      }}
-    />
-  </Section.Container>
+      }
+    `}
+    render={({ allMediumPost, isMediumUserDefine }) => {
+      const posts = edgeToArray(allMediumPost).map(parsePost);
+      return (
+        isMediumUserDefine && (
+          <Section.Container id="writing" Background={Background}>
+            <Section.Header name="Writing" icon="✍️" label="writing" />
+            <CardContainer minWidth="300px">
+              {posts.map(p => (
+                <Fade bottom>
+                  <Post key={p.id} {...p} />
+                </Fade>
+              ))}
+            </CardContainer>
+          </Section.Container>
+        )
+      );
+    }}
+  />
 );
 
 export default Writing;
