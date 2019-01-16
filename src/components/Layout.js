@@ -8,11 +8,19 @@ import theme from '../theme';
 import Helmet from './Helmet';
 
 const GlobalStyle = createGlobalStyle`
-  * { box-sizing: border-box; }
+*,
+*::after,
+*::before { 
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
 body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; 
   margin: 0;
   font-family: Cabin;
+  overflow-x: hidden;
 }
 `;
 
