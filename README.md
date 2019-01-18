@@ -164,8 +164,11 @@ $ git remote add mate https://github.com/EmaSuriano/gatsby-starter-mate
 # Get changes from master branch of gatsby-starter-mate
 $ git pull mate master --allow-unrelated-histories
 
-# Remove changes in unnecesary folder/files
+# Reset changes in unnecesary folder/files
 $ git reset media/ bin/ README.md manifest-config.js
+
+# Remove files affected by the reset 
+$ git checkout .
 
 # In this step you migth need to fix a lot of conflicts, you can do fix manually or use just accept all the changes from mate
 $ git checkout --theirs .
