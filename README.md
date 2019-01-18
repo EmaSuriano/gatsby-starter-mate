@@ -153,6 +153,32 @@ All the text of this starter live inside Contentful, more spefically inside the 
 
 Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
+## Update your Starter 💡
+
+In case you cloned this repository before and you want all the latest changes of it, you can execute the following command to update the code in your repository with the one in this repository:
+
+```bash
+# Add repository remote entry
+$ git remote add mate https://github.com/EmaSuriano/gatsby-starter-mate
+
+# Get changes from master branch of gatsby-starter-mate
+$ git pull mate master --allow-unrelated-histories
+
+# Remove changes in unnecesary folder/files
+$ git reset media/ bin/ README.md manifest-config.js
+
+# In this step you migth need to fix a lot of conflicts, you can do fix manually or use just accept all the changes from mate
+$ git checkout --theirs .
+
+# WATCH OUT that some configuration can be overwritten in this last step, like package.json, colors, etc. I highly recommend to do an overall look up at the end of fixing the conflicts.
+
+# Install in case there is any new dependency added to the starter
+$ yarn
+
+# Build the project to see if everything is working as expected
+$ yarn build
+```
+
 ## Configuration 👷‍♂️
 
 Mate starter is a SPA (Single Page Application), so basically you have only two pages:
