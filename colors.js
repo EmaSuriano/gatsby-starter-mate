@@ -1,4 +1,4 @@
-const colors = {
+module.exports = {
   background: '#FFFFFF',
   backgroundDark: '#f0e6f6',
 
@@ -9,8 +9,4 @@ const colors = {
   secondary: '#ff4081',
   secondaryLight: '#ff79b0',
   secondaryDark: '#c60055',
-};
-
-module.exports = {
-  colors,
 };

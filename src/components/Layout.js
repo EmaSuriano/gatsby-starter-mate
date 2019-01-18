@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import 'react-tippy/dist/tippy.css';
 import config from 'react-reveal/globals';
-import theme from '../theme';
+import colors from '../../colors';
 import Helmet from './Helmet';
 
 const GlobalStyle = createGlobalStyle`
@@ -29,7 +29,7 @@ config({ ssrFadeout: true });
 const Layout = ({ children }) => (
   <Fragment>
     <GlobalStyle />
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={{ colors }}>
       <ScrollingProvider>
         <Helmet />
         {children}
