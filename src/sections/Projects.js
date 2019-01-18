@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { path } from 'ramda';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
@@ -54,7 +53,7 @@ const Title = styled(Text)`
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${path(['theme', 'colors', 'primary'])} 5px solid;
+  border-bottom: ${props => props.theme.colors.primary} 5px solid;
 `;
 
 const TextContainer = styled.div`

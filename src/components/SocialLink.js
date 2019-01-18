@@ -1,17 +1,16 @@
 import React from 'react';
 import FontAwesome from 'react-fontawesome';
 import { Link } from 'rebass';
-import { path } from 'ramda';
 import { Tooltip } from 'react-tippy';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
-  color: ${path(['theme', 'colors', 'primary'])};
+  color: ${props => props.theme.colors.primary};
 
   &:hover {
-    color: ${path(['theme', 'colors', 'primaryLight'])};
+    color: ${props => props.theme.colors.primaryLight};
   }
 `;
 
