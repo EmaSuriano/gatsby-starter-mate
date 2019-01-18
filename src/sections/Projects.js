@@ -95,11 +95,11 @@ const ProjectTag = styled.div`
   position: relative;
   height: ${CARD_HEIGHT};
   top: calc(
-    -${CARD_HEIGHT} - 4px
-  ); /*don't know why I have to add 4px here ... */
+    -${CARD_HEIGHT} - 3.5px
+  ); /*don't know why I have to add 3.5px here ... */
 
   ${MEDIA_QUERY_SMALL} {
-    top: calc(-${CARD_HEIGHT} - 4px + (${CARD_HEIGHT} / 4));
+    top: calc(-${CARD_HEIGHT} - 3.5px + (${CARD_HEIGHT} / 4));
   }
 `;
 
@@ -148,13 +148,17 @@ const Project = ({
               />
             </Box>
           </Flex>
-          <ImageSubtitle bg="primaryLight" color="white" y="bottom" x="right">
+          <ImageSubtitle
+            bg="primaryLight"
+            color="white"
+            y="bottom"
+            x="right"
+            round
+          >
             {type}
           </ImageSubtitle>
           <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark" invert>
-              {publishedDate}
-            </ImageSubtitle>
+            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
           </Hide>
         </ProjectTag>
       </ImageContainer>
