@@ -9,12 +9,10 @@ const client = contentful.createClient({
   accessToken: ACCESS_TOKEN,
 });
 
-module.exports = client.getEntries().then(entries => {
-  const aboutEntry = entries.items.find(
-    entry => entry.sys.contentType.sys.id === 'about',
-  );
+const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 
-  const about = aboutEntry.fields;
+module.exports = client.getEntries().then(entries => {
+  const { mediumUser } = entries.items.find(getAboutEntry).fields;
 
   return {
     plugins: [
@@ -40,7 +38,7 @@ module.exports = client.getEntries().then(entries => {
       {
         resolve: `gatsby-source-medium`,
         options: {
-          username: about.mediumUser,
+          username: mediumUser,
         },
       },
       'gatsby-transformer-remark',

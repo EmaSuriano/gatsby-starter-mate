@@ -123,6 +123,7 @@ yarn start
 ## Screenshot and Design 🖼
 
 As the starter is a SPA it only has two routes:
+
 - `/`: main page with the sections of `Home`, `About me`, `Projects` and `Writing`.
 - `/404`: error page for unexpected route.
 
@@ -176,11 +177,11 @@ All the components inside `Layout` are `Section` components. A section can have 
 
 ## Contributing 💪
 
-I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](emasuriano.com).
+I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](emasuriano.com). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
 
-Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
+I'm totally open for pull requests with bug fixes, changes in Documentation, or new features to the starter 🙌
 
-I'm totally for new PRs with bug fixes, change in Documentation, and new features to the starter 🙌
+Plase check the [Contribution guidelines](CONTRIBUTING.md) before opening yours 🙏
 
 ## License 📝
 
