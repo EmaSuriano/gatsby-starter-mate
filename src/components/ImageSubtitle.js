@@ -44,11 +44,13 @@ const ImageSubtitle = styled(Box)`
 ImageSubtitle.propTypes = {
   x: PropTypes.oneOf(['left', 'right']),
   y: PropTypes.oneOf(['top', 'bottom']),
+  round: PropTypes.bool,
 };
 
 ImageSubtitle.defaultProps = {
   x: 'left',
   y: 'top',
+  round: false,
 };
 
 export default ImageSubtitle;
