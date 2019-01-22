@@ -1,6 +1,6 @@
 {
   "name": "gatsby-starter-mate",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Gatsby v2 starter to create a top notch portfolio!",
   "main": "index.js",
   "scripts": {
