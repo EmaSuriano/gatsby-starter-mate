@@ -12,7 +12,7 @@ const client = contentful.createClient({
 const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 
 module.exports = client.getEntries().then(entries => {
-  const { mediumUser } = entries.items.find(getAboutEntry).fields;
+  const { mediumUser = '@medium' } = entries.items.find(getAboutEntry).fields;
 
   return {
     plugins: [
@@ -23,20 +23,20 @@ module.exports = client.getEntries().then(entries => {
       },
       'gatsby-plugin-styled-components',
       {
-        resolve: `gatsby-plugin-google-fonts`,
+        resolve: 'gatsby-plugin-google-fonts',
         options: {
-          fonts: [`cabin`, `Open Sans`],
+          fonts: ['cabin', 'Open Sans'],
         },
       },
       {
-        resolve: `gatsby-source-contentful`,
+        resolve: 'gatsby-source-contentful',
         options: {
           spaceId: SPACE_ID,
           accessToken: ACCESS_TOKEN,
         },
       },
       {
-        resolve: `gatsby-source-medium`,
+        resolve: 'gatsby-source-medium',
         options: {
           username: mediumUser,
         },
