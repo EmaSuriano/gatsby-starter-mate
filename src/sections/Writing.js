@@ -56,7 +56,7 @@ const Post = ({ title, text, image, url, date, time }) => (
     </EllipsisHeading>
     {image && <CoverImage src={image} height="200px" alt={title} />}
     <Text m={3}>{text}</Text>
-    <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom">
+    <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom" round>
       {`${date} - ${Math.ceil(time)} min`}
     </ImageSubtitle>
   </Card>

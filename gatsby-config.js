@@ -9,12 +9,10 @@ const client = contentful.createClient({
   accessToken: ACCESS_TOKEN,
 });
 
-module.exports = client.getEntries().then(entries => {
-  const aboutEntry = entries.items.find(
-    entry => entry.sys.contentType.sys.id === 'about',
-  );
+const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 
-  const { mediumUser = '@medium' } = aboutEntry.fields;
+module.exports = client.getEntries().then(entries => {
+  const { mediumUser = '@medium' } = entries.items.find(getAboutEntry).fields;
 
   return {
     plugins: [

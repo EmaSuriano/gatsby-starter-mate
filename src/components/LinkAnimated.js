@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { path } from 'ramda';
 
 const LinkAnimated = styled.span`
   text-decoration: none;
@@ -19,7 +18,7 @@ const LinkAnimated = styled.span`
     right: 0;
     width: 0;
     bottom: -5px;
-    background: ${path(['theme', 'colors', 'secondaryLight'])};
+    background: ${props => props.theme.colors.secondaryLight};
     height: 5px;
     transition-property: width;
     transition-duration: 0.3s;

@@ -123,6 +123,7 @@ yarn start
 ## Screenshot and Design 🖼
 
 As the starter is a SPA it only has two routes:
+
 - `/`: main page with the sections of `Home`, `About me`, `Projects` and `Writing`.
 - `/404`: error page for unexpected route.
 
@@ -152,6 +153,35 @@ All the text of this starter live inside Contentful, more spefically inside the 
 
 Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
+## Update your Starter 💡
+
+In case you cloned this repository before and you want all the latest changes of it, you can execute the following command to update the code in your repository with the one in this repository:
+
+```bash
+# Add repository remote entry
+$ git remote add mate https://github.com/EmaSuriano/gatsby-starter-mate
+
+# Get changes from master branch of gatsby-starter-mate
+$ git pull mate master --allow-unrelated-histories
+
+# Reset changes in unnecesary folder/files
+$ git reset media/ bin/ README.md manifest-config.js
+
+# Remove files affected by the reset 
+$ git checkout .
+
+# In this step you migth need to fix a lot of conflicts, you can do fix manually or use just accept all the changes from mate
+$ git checkout --theirs .
+
+# WATCH OUT that some configuration can be overwritten in this last step, like package.json, colors, etc. I highly recommend to do an overall look up at the end of fixing the conflicts.
+
+# Install in case there is any new dependency added to the starter
+$ yarn
+
+# Build the project to see if everything is working as expected
+$ yarn build
+```
+
 ## Configuration 👷‍♂️
 
 Mate starter is a SPA (Single Page Application), so basically you have only two pages:
@@ -176,11 +206,11 @@ All the components inside `Layout` are `Section` components. A section can have 
 
 ## Contributing 💪
 
-I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](emasuriano.com).
+I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](emasuriano.com). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
 
-Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
+I'm totally open for pull requests with bug fixes, changes in Documentation, or new features to the starter 🙌
 
-I'm totally for new PRs with bug fixes, change in Documentation, and new features to the starter 🙌
+Plase check the [Contribution guidelines](CONTRIBUTING.md) before opening yours 🙏
 
 ## License 📝
 

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Image, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { path } from 'ramda';
 import Fade from 'react-reveal/Fade';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
@@ -54,7 +53,7 @@ const Title = styled(Text)`
   font-weight: 600;
   text-transform: uppercase;
   display: table;
-  border-bottom: ${path(['theme', 'colors', 'primary'])} 5px solid;
+  border-bottom: ${props => props.theme.colors.primary} 5px solid;
 `;
 
 const TextContainer = styled.div`
@@ -96,11 +95,11 @@ const ProjectTag = styled.div`
   position: relative;
   height: ${CARD_HEIGHT};
   top: calc(
-    -${CARD_HEIGHT} - 4px
-  ); /*don't know why I have to add 4px here ... */
+    -${CARD_HEIGHT} - 3.5px
+  ); /*don't know why I have to add 3.5px here ... */
 
   ${MEDIA_QUERY_SMALL} {
-    top: calc(-${CARD_HEIGHT} - 4px + (${CARD_HEIGHT} / 4));
+    top: calc(-${CARD_HEIGHT} - 3.5px + (${CARD_HEIGHT} / 4));
   }
 `;
 
@@ -149,13 +148,17 @@ const Project = ({
               />
             </Box>
           </Flex>
-          <ImageSubtitle bg="primaryLight" color="white" y="bottom" x="right">
+          <ImageSubtitle
+            bg="primaryLight"
+            color="white"
+            y="bottom"
+            x="right"
+            round
+          >
             {type}
           </ImageSubtitle>
           <Hide query={MEDIA_QUERY_SMALL}>
-            <ImageSubtitle bg="backgroundDark" invert>
-              {publishedDate}
-            </ImageSubtitle>
+            <ImageSubtitle bg="backgroundDark">{publishedDate}</ImageSubtitle>
           </Hide>
         </ProjectTag>
       </ImageContainer>
