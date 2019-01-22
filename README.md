@@ -39,6 +39,7 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - Developer tools:
   - eslint
   - prettier
+- Google Analytics
 
 ## How to start ▶️
 
@@ -153,6 +154,10 @@ All the text of this starter live inside Contentful, more spefically inside the 
 
 Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
+## Tracking with Google Analytics - Optional 📈
+
+This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics wil be turn on automatically 😄
+
 ## Update your Starter 💡
 
 In case you cloned this repository before and you want all the latest changes of it, you can execute the following command to update the code in your repository with the one in this repository:
@@ -167,7 +172,7 @@ $ git pull mate master --allow-unrelated-histories
 # Reset changes in unnecesary folder/files
 $ git reset media/ bin/ README.md manifest-config.js
 
-# Remove files affected by the reset 
+# Remove files affected by the reset
 $ git checkout .
 
 # In this step you migth need to fix a lot of conflicts, you can do fix manually or use just accept all the changes from mate
