@@ -45,7 +45,7 @@
     "inquirer": "^6.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.4",
-    "react-dom": "^16.7.0",
+    "react-dom": "^16.8.4",
     "react-fontawesome": "^1.6.1",
     "react-headroom": "^2.2.4",
     "react-helmet": "^5.2.0",
