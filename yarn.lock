@@ -2963,6 +2963,14 @@ contentful-sdk-core@^6.0.1, contentful-sdk-core@^6.0.2:
     lodash "^4.17.10"
     qs "^6.5.2"
 
+contentful-sdk-core@^6.2.1:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-6.3.0.tgz#f648ccd11eb50ec47ba4ab580b3a14217bccc293"
+  integrity sha512-PbZn4OZO/iBk4OjEHir6pX6p4c/q3lwQ3M9pLeibaoiwT8fd3JRfeL4tL0L8M2d9mS8y3g2FRDWmBAI2+0Xlcg==
+  dependencies:
+    lodash "^4.17.10"
+    qs "^6.5.2"
+
 contentful@^6.1.0:
   version "6.1.3"
   resolved "https://registry.yarnpkg.com/contentful/-/contentful-6.1.3.tgz#272f59e070807321ed6985882803bf804af65d6b"
@@ -2973,15 +2981,16 @@ contentful@^6.1.0:
     json-stringify-safe "^5.0.1"
     lodash "^4.17.5"
 
-contentful@^7.0.3:
-  version "7.0.5"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.0.5.tgz#b41d65b2ca79c559ab2551ab8fac6a3e78c2b931"
+contentful@^7.4.1:
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.4.1.tgz#06325e0b222237aa7aa93f9f0b81a331a5eefc1b"
+  integrity sha512-cPf0xyx4NNwp+TwYoNMD3lf6wRZOcJAoJmal6RZbmK4bnoqeZ3GZg7RcRy4Vlgah8KenWn8AKQ7cXeXbRoSbIg==
   dependencies:
     "@contentful/axios" "^0.18.0"
     contentful-resolve-response "^1.1.4"
-    contentful-sdk-core "^6.0.2"
+    contentful-sdk-core "^6.2.1"
     json-stringify-safe "^5.0.1"
-    lodash "^4.17.5"
+    lodash "^4.17.11"
 
 convert-hrtime@^2.0.0:
   version "2.0.0"
