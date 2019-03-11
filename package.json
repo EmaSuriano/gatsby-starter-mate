@@ -39,7 +39,7 @@
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.9",
     "gatsby-plugin-styled-components": "^3.0.7",
-    "gatsby-source-contentful": "^2.0.1",
+    "gatsby-source-contentful": "^2.0.37",
     "gatsby-source-medium": "^2.0.0",
     "gatsby-transformer-remark": "^2.1.3",
     "inquirer": "^6.2.0",
