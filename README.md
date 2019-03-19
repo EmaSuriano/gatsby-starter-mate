@@ -154,11 +154,33 @@ All the text of this starter live inside Contentful, more spefically inside the 
 
 Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
-## Tracking with Google Analytics - Optional 📈
+## Configuration (Optional) 👷‍♂️
+
+Mate starter is a SPA (Single Page Application), so basically you have only two pages:
+
+- Main.js (portfolio itself)
+- 404.js (nice 404 error page that match the style)
+
+The structure for the main page is the following:
+
+```javascript
+<Layout>
+  <Landing />
+  <About />
+  <Projects />
+  <Writing />
+</Layout>
+```
+
+`Layout` is the core of the application, it manages the theme for the application, the navigation between sections, also it defines the `header`.
+
+All the components inside `Layout` are `Section` components. A section can have a link inside the `Header` or not, in order to add you need to wrapped the exported `Section` with `withNavigation` HOC and it will be automatically registered (Context magic ✨).
+
+## Tracking with Google Analytics (Optional) 📈
 
 This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics wil be turn on automatically 😄
 
-## Update your Starter 💡
+## Update your Starter (Optional) 💡
 
 In case you cloned this repository before and you want all the latest changes of it, you can execute the following command to update the code in your repository with the one in this repository:
 
@@ -187,27 +209,15 @@ $ yarn
 $ yarn build
 ```
 
-## Configuration 👷‍♂️
+## Deployment Automation (Optional) ⚙️
 
-Mate starter is a SPA (Single Page Application), so basically you have only two pages:
+Everytime you made a change in your Contentful data or you add a new post in Medium you need to trigger a manual deployment, which can be an annoying task. Therefore I found a nice way to make this process automatic and it is by using a tool called Zapier.
 
-- Main.js (portfolio itself)
-- 404.js (nice 404 error page that match the style)
+This tool will be watching for changes in Contentful and Medium and then trigger a new deploy in Netlify (or the service you are using). In summary, you don't need to care anymore about deploying your application and can focus on writting content or developing features!
 
-The structure for the main page is the following:
+In case you want to know more I wrote an article in Medium that explains the whole process especially for this starter 🙌 [Click here to read it.](https://medium.com/@emasuriano/make-any-static-site-dynamic-without-coding-9dde5673b1a)
 
-```javascript
-<Layout>
-  <Landing />
-  <About />
-  <Projects />
-  <Writing />
-</Layout>
-```
-
-`Layout` is the core of the application, it manages the theme for the application, the navigation between sections, also it defines the `header`.
-
-All the components inside `Layout` are `Section` components. A section can have a link inside the `Header` or not, in order to add you need to wrapped the exported `Section` with `withNavigation` HOC and it will be automatically registered (Context magic ✨).
+**UPDATE:** Contentful added a feature to link it with Netlify as a built in option, but in case you are using another provider I recommend going with Zapier!
 
 ## Contributing 💪
 
