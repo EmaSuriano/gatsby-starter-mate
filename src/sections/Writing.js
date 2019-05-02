@@ -102,10 +102,10 @@ const Writing = () => (
   <StaticQuery
     query={graphql`
       query MediumPostQuery {
-        isMediumUserDefine: __type(
-          name: "contentfulAboutMediumUserQueryString_2"
-        ) {
-          name
+        site {
+          siteMetadata {
+            isMediumUserDefined
+          }
         }
         allMediumPost(limit: 6, sort: { fields: createdAt, order: DESC }) {
           edges {
@@ -129,10 +129,11 @@ const Writing = () => (
         }
       }
     `}
-    render={({ allMediumPost, isMediumUserDefine }) => {
+    render={({ allMediumPost, site }) => {
       const posts = edgeToArray(allMediumPost).map(parsePost);
+      const { isMediumUserDefined } = site.siteMetadata;
       return (
-        isMediumUserDefine && (
+        isMediumUserDefined && (
           <Section.Container id="writing" Background={Background}>
             <Section.Header name="Writing" icon="✍️" label="writing" />
             <CardContainer minWidth="300px">
