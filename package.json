@@ -41,8 +41,8 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-contentful": "^2.0.52",
     "gatsby-source-medium": "^2.0.7",
-    "gatsby-transformer-remark": "^2.3.10",
     "gatsby-source-youtube-v2": "^1.0.1",
+    "gatsby-transformer-remark": "^2.3.10",
     "inquirer": "^6.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
@@ -56,7 +56,8 @@
     "react-text-loop": "^2.0.1",
     "react-tippy": "^1.2.2",
     "rebass": "^3.0.0",
-    "styled-components": "^4.0.2"
+    "styled-components": "^4.0.2",
+    "text-ellipsis": "^1.0.3"
   },
   "devDependencies": {
     "chalk": "^2.4.1",
