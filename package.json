@@ -41,6 +41,7 @@
     "gatsby-plugin-styled-components": "^3.0.0",
     "gatsby-source-contentful": "^2.0.1",
     "gatsby-source-medium": "^2.0.0",
+    "gatsby-source-youtube-v2": "^1.0.1",
     "gatsby-transformer-remark": "^2.1.3",
     "inquirer": "^6.2.0",
     "prop-types": "^15.6.2",
