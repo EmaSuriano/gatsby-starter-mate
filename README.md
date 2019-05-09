@@ -142,6 +142,7 @@ As the starter is a SPA it only has two routes:
 | About me |  ![About me](media/about.png)   |
 | Projects | ![Projects](media/projects.png) |
 | Writing  |  ![Writing](media/writing.png)  |
+| YouTube  |  ![Youtube](media/youtube.png)  |
 | /404     |      ![404](media/404.png)      |
 
 ## Building your site 📦
@@ -183,6 +184,12 @@ The structure for the main page is the following:
 `Layout` is the core of the application, it manages the theme for the application, the navigation between sections, also it defines the `header`.
 
 All the components inside `Layout` are `Section` components. A section can have a link inside the `Header` or not, in order to add you need to wrapped the exported `Section` with `withNavigation` HOC and it will be automatically registered (Context magic ✨).
+
+### Youtube sync (Optional) 📹
+
+In order to enable the YouTube section you need to first generate a valid Youtube API from the Google Console API. You can follow [this tutorial](https://developers.google.com/youtube/v3/getting-started) to generate it. Once you have it you need to create a new entry inside your `.env` file with the name of `YOUTUBE_ID`.
+
+Then you need to set the field of `Youtube User` in the `About` content inside Contentful. You can find this value inside the URL of your channel: `https://www.youtube.com/channel/YOUTUBE_USER`. Copy and paste inside that field and then publish your content, re-run the starter and you should see be able to see the section 🤞
 
 ## Tracking with Google Analytics (Optional) 📈
 

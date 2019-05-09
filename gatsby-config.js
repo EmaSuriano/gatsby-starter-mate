@@ -37,7 +37,7 @@ const plugins = [
 
 module.exports = client.getEntries().then(entries => {
   const { mediumUser, youtubeUser } = entries.items.find(getAboutEntry).fields;
-  console.log(youtubeUser);
+  console.log(mediumUser);
   plugins.push({
     resolve: 'gatsby-source-medium',
     options: {
@@ -48,7 +48,7 @@ module.exports = client.getEntries().then(entries => {
   plugins.push({
     resolve: 'gatsby-source-youtube-v2',
     options: {
-      channelId: ['UCK8sQmJBp8GCxrOtXWBpyEA' || '@youtube'],
+      channelId: [youtubeUser || '@youtube'],
       apiKey: YOUTUBE_ID,
     },
   });
