@@ -45,7 +45,11 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 
 As this process needs more steps compared to other starters, I decided to made a tutorial video of how to set up your own instance of Mate. You can follow the video or jump directly to the written documentation.
 
-[![Watch the tutorial](https://media.giphy.com/media/LQp2DrNPPUPybUwVx9/giphy.gif)](https://www.youtube.com/watch?v=YviWsypJF9c)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=YviWsypJF9c">
+   <img src="https://media.giphy.com/media/LQp2DrNPPUPybUwVx9/giphy.gif" alt="Watch the tutorial"/>
+  </a>
+</p>
 
 If you never used Gatsby before, I highly recommend you to [Set up your development environment](https://www.gatsbyjs.org/tutorial/part-zero/)!
 
