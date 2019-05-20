@@ -1,4 +1,4 @@
-![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
+![Gatsby Starter Mate Logo](./media/gatsby-starter-mate-logo.png)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/EmaSuriano/gatsby-starter-mate.svg)](https://greenkeeper.io/)
 [![Travis badge](https://api.travis-ci.org/EmaSuriano/gatsby-starter-mate.svg)](https://travis-ci.org/EmaSuriano/gatsby-starter-mate)
