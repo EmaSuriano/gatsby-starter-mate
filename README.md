@@ -56,7 +56,7 @@ If you never used Gatsby before, I highly recommend you to [Set up your developm
 To copy and install this starter run this command:
 
 ```bash
-$ gatsby new mate-portofolio https://github.com/EmaSuriano/gatsby-starter-mate
+$ gatsby new mate-portfolio https://github.com/EmaSuriano/gatsby-starter-mate
 ```
 
 At this point you have the repository download with all the dependencies installed, but if you try to start by running `yarn develop` you are going to received this message in the console:
