@@ -21,12 +21,16 @@ const SectionContainer = styled.div`
 
 const DefaultBackground = () => <div />;
 
-const Container = ({ id, children, Background = DefaultBackground }) => (
-  <Section id={id} style={{ position: 'relative' }}>
-    <Background />
-    <SectionContainer>{children}</SectionContainer>
-  </Section>
-);
+const Container = ({ id, children, Background = DefaultBackground }) => {
+  if (id === 'writing') return false;
+
+  return (
+    <Section id={id} style={{ position: 'relative' }}>
+      <Background />
+      <SectionContainer>{children}</SectionContainer>
+    </Section>
+  );
+};
 
 Container.propTypes = {
   id: PropTypes.string.isRequired,

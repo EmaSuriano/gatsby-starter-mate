@@ -185,7 +185,7 @@ The structure for the main page is the following:
 
 All the components inside `Layout` are `Section` components. A section can have a link inside the `Header` or not, in order to add you need to wrapped the exported `Section` with `withNavigation` HOC and it will be automatically registered (Context magic ✨).
 
-### Youtube sync (Optional) 📹
+### Youtube Integration (Optional) 📹
 
 In order to enable the YouTube section you need to first generate a valid Youtube API from the Google Console API. You can follow [this tutorial](https://developers.google.com/youtube/v3/getting-started) to generate it. Once you have it you need to create a new entry inside your `.env` file with the name of `YOUTUBE_ID`.
 

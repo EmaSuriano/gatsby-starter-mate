@@ -35,23 +35,40 @@ const plugins = [
   'gatsby-plugin-offline',
 ];
 
-module.exports = client.getEntries().then(entries => {
-  const { mediumUser, youtubeUser } = entries.items.find(getAboutEntry).fields;
-  console.log(mediumUser);
-  plugins.push({
-    resolve: 'gatsby-source-medium',
-    options: {
-      username: mediumUser || '@medium',
-    },
-  });
+const sectionsVisibility = {
+  about: true,
+  projects: true,
+  writing: true,
+  youtube: true,
+};
 
-  plugins.push({
-    resolve: 'gatsby-source-youtube-v2',
-    options: {
-      channelId: [youtubeUser || '@youtube'],
-      apiKey: YOUTUBE_ID,
-    },
-  });
+module.exports = client.getEntries().then(entries => {
+  const { youtubeUser } = entries.items.find(getAboutEntry).fields;
+  const mediumUser = '';
+  console.log(mediumUser);
+
+  if (mediumUser) {
+    plugins.push({
+      resolve: 'gatsby-source-medium',
+      options: {
+        username: mediumUser || '@medium',
+      },
+    });
+  } else {
+    sectionsVisibility.writing = false;
+  }
+
+  if (youtubeUser) {
+    plugins.push({
+      resolve: 'gatsby-source-youtube-v2',
+      options: {
+        channelId: [youtubeUser || '@youtube'],
+        apiKey: YOUTUBE_ID,
+      },
+    });
+  } else {
+    sectionsVisibility.youtube = false;
+  }
 
   if (ANALYTICS_ID) {
     plugins.push({
@@ -66,6 +83,7 @@ module.exports = client.getEntries().then(entries => {
     siteMetadata: {
       isMediumUserDefined: !!mediumUser,
       isYoutubeUserDefined: !!youtubeUser,
+      sectionsVisibility,
     },
     plugins,
   };
