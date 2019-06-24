@@ -39,6 +39,8 @@ const Background = () => (
   </div>
 );
 
+const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
+
 const LandingPage = () => (
   <Section.Container id="home" Background={Background}>
     <StaticQuery
@@ -77,6 +79,7 @@ const LandingPage = () => (
               fontSize={[4, 5, 6]}
               mb={[3, 5]}
               textAlign="center"
+              style={centerHorizontally}
             >
               <TextLoop>
                 {roles.map(text => (
