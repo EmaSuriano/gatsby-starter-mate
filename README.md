@@ -229,7 +229,7 @@ In case you want to know more I wrote an article in Medium that explains the who
 
 ## Contributing 💪
 
-I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](emasuriano.com). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
+I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](https://emasuriano.com/). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
 
 I'm totally open for pull requests with bug fixes, changes in Documentation, or new features to the starter 🙌
 
