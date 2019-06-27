@@ -143,8 +143,7 @@ const Writing = () => (
             isMediumUserDefined
           }
         }
-        allMediumPost(limit: 7, sort: { fields: createdAt, order: DESC }) {
-          totalCount
+        allMediumPost(limit: 6, sort: { fields: createdAt, order: DESC }) {
           edges {
             node {
               id
@@ -169,9 +168,8 @@ const Writing = () => (
     `}
     render={({ allMediumPost, site, author }) => {
       const posts = edgeToArray(allMediumPost).map(parsePost(author));
-      const { totalCount } = allMediumPost;
-      const { isMediumUserDefined } = site.siteMetadata;
-      const diffAmountArticles = totalCount - posts.length;
+
+      const diffAmountArticles = allMediumPost.totalCount - posts.length;
       if (diffAmountArticles > 0) {
         posts.push({
           ...author,
@@ -179,6 +177,9 @@ const Writing = () => (
           Component: MorePosts,
         });
       }
+
+      const { isMediumUserDefined } = site.siteMetadata;
+
       return (
         isMediumUserDefined && (
           <Section.Container id="writing" Background={Background}>
