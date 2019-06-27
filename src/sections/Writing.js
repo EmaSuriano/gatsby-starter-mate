@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Heading, Text } from 'rebass';
+import { Heading, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
+import FontAwesome from 'react-fontawesome';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
 import ImageSubtitle from '../components/ImageSubtitle';
+
+const MEDIUM_CDN = 'https://cdn-images-1.medium.com/max/400';
+const MEDIUM_URL = 'https://medium.com';
 
 const Background = () => (
   <div>
@@ -71,20 +75,12 @@ Post.propTypes = {
   time: PropTypes.number.isRequired,
 };
 
-const parsePost = postFromGraphql => {
-  const MEDIUM_CDN = 'https://cdn-images-1.medium.com/max/400';
-  const MEDIUM_URL = 'https://medium.com';
-  const {
-    id,
-    uniqueSlug,
-    createdAt,
-    title,
-    virtuals,
-    author,
-  } = postFromGraphql;
+const parsePost = author => postFromGraphql => {
+  const { id, uniqueSlug, createdAt, title, virtuals } = postFromGraphql;
   const image =
     virtuals.previewImage.imageId &&
     `${MEDIUM_CDN}/${virtuals.previewImage.imageId}`;
+
   return {
     id,
     title,
@@ -93,7 +89,47 @@ const parsePost = postFromGraphql => {
     text: virtuals.subtitle,
     image,
     url: `${MEDIUM_URL}/${author.username}/${uniqueSlug}`,
+    Component: Post,
   };
+};
+
+const MorePosts = ({ username, name, number }) => (
+  <Card
+    onClick={() => window.open(`${MEDIUM_URL}/${username}/`, '_blank')}
+    p={4}
+  >
+    <Flex
+      flexDirection="column"
+      justifyContent="space-between"
+      style={{ height: '100%' }}
+    >
+      <Box>
+        <EllipsisHeading fontSize={5} my={2}>
+          Hooray! &nbsp;
+          <span role="img" aria-label="party">
+            🎉
+          </span>
+        </EllipsisHeading>
+        <Heading>
+          It seems that
+          <Text color="secondary" my={2}>
+            {name}
+          </Text>
+          {`has published ${number} more posts!`}
+        </Heading>
+      </Box>
+      <Heading color="primary" mt={5} textAlign="right">
+        Go to Medium &nbsp;
+        <FontAwesome name="arrow-right" />
+      </Heading>
+    </Flex>
+  </Card>
+);
+
+MorePosts.propTypes = {
+  username: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  number: PropTypes.number,
 };
 
 const edgeToArray = data => data.edges.map(edge => edge.node);
@@ -122,29 +158,35 @@ const Writing = () => (
                   imageId
                 }
               }
-              author {
-                username
-              }
             }
           }
         }
+        author: mediumUser {
+          username
+          name
+        }
       }
     `}
-    render={({ allMediumPost, site }) => {
-      const posts = edgeToArray(allMediumPost).map(parsePost);
+    render={({ allMediumPost, site, author }) => {
+      const posts = edgeToArray(allMediumPost).map(parsePost(author));
       const { totalCount } = allMediumPost;
       const { isMediumUserDefined } = site.siteMetadata;
-      if (totalCount > posts.length) {
-        console.log('there are more posts bro!');
+      const diffAmountArticles = totalCount - posts.length;
+      if (diffAmountArticles > 0) {
+        posts.push({
+          ...author,
+          number: diffAmountArticles,
+          Component: MorePosts,
+        });
       }
       return (
         isMediumUserDefined && (
           <Section.Container id="writing" Background={Background}>
             <Section.Header name="Writing" icon="✍️" label="writing" />
             <CardContainer minWidth="300px">
-              {posts.map(p => (
-                <Fade bottom key={p.id}>
-                  <Post {...p} />
+              {posts.map(({ Component, ...rest }) => (
+                <Fade bottom key={rest.id}>
+                  <Component {...rest} />
                 </Fade>
               ))}
             </CardContainer>
