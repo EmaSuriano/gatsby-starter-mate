@@ -110,11 +110,9 @@ const MorePosts = ({ username, name, number }) => (
             🎉
           </span>
         </EllipsisHeading>
-        <Heading>
+        <Heading lineHeight={1.5}>
           It seems that
-          <Text color="secondary" my={2}>
-            {name}
-          </Text>
+          <Text color="secondary">{name}</Text>
           {`has published ${number} more posts!`}
         </Heading>
       </Box>
@@ -143,7 +141,8 @@ const Writing = () => (
             isMediumUserDefined
           }
         }
-        allMediumPost(limit: 6, sort: { fields: createdAt, order: DESC }) {
+        allMediumPost(limit: 7, sort: { fields: createdAt, order: DESC }) {
+          totalCount
           edges {
             node {
               id
