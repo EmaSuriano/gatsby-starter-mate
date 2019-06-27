@@ -107,7 +107,8 @@ const Writing = () => (
             isMediumUserDefined
           }
         }
-        allMediumPost(limit: 6, sort: { fields: createdAt, order: DESC }) {
+        allMediumPost(limit: 7, sort: { fields: createdAt, order: DESC }) {
+          totalCount
           edges {
             node {
               id
@@ -131,15 +132,19 @@ const Writing = () => (
     `}
     render={({ allMediumPost, site }) => {
       const posts = edgeToArray(allMediumPost).map(parsePost);
+      const { totalCount } = allMediumPost;
       const { isMediumUserDefined } = site.siteMetadata;
+      if (totalCount > posts.length) {
+        console.log('there are more posts bro!');
+      }
       return (
         isMediumUserDefined && (
           <Section.Container id="writing" Background={Background}>
             <Section.Header name="Writing" icon="✍️" label="writing" />
             <CardContainer minWidth="300px">
               {posts.map(p => (
-                <Fade bottom>
-                  <Post key={p.id} {...p} />
+                <Fade bottom key={p.id}>
+                  <Post {...p} />
                 </Fade>
               ))}
             </CardContainer>

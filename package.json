@@ -4,8 +4,8 @@
   "description": "Gatsby v2 starter to create a top notch portfolio!",
   "main": "index.js",
   "scripts": {
-    "build": "cleandir ./.cache && gatsby build",
-    "develop": "cleandir ./.cache && gatsby develop",
+    "build": "gatsby clean && gatsby build",
+    "develop": "gatsby clean && gatsby develop",
     "start": "npm run develop",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js"
@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
-    "clean-dir": "^1.0.3",
     "contentful": "^7.0.3",
     "dotenv": "^7.0.0",
     "envfile": "^3.0.0",
