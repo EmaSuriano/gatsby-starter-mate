@@ -30,10 +30,10 @@ const Helmet = ({ theme = {} }) => (
     `}
     render={data => {
       const { name, description, profile } = data.contentfulAbout;
-      const title = `${name} Portofolio`;
+      const title = `${name} Portfolio`;
 
       return (
-        <ReactHelmet>
+        <ReactHelmet htmlAttributes={{ lang: 'en' }}>
           <meta charSet="utf-8" />
           <title>{title}</title>
           <meta name="description" content={description} />
@@ -56,7 +56,10 @@ const Helmet = ({ theme = {} }) => (
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={description} />
           <meta name="twitter:image" content={`https:${profile.bigIcon.src}`} />
-          <meta name="twitter:image:src" content={`https:${profile.bigIcon.src}`} />
+          <meta
+            name="twitter:image:src"
+            content={`https:${profile.bigIcon.src}`}
+          />
 
           <link
             rel="apple-touch-icon"
