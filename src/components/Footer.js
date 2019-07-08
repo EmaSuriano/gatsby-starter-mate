@@ -1,81 +1,78 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Text, Flex, Box } from 'rebass';
+import { StaticQuery, graphql } from 'gatsby';
+import { Text, Box, Link, Flex } from 'rebass';
 import Fade from 'react-reveal/Fade';
-import PropTypes from 'prop-types';
-import ContentfulLogo from './Logo/Contenful.svg';
-import GatsbyLogo from './Logo/Gatsby.svg';
+import SocialLink from './SocialLink';
 
 const FooterContainer = styled.footer`
-  padding: 1em;
-  background: ${props => props.theme.colors.primaryDark};
-  color: ${props => props.theme.colors.background};
+  min-width: 320px;
+  max-width: 1366px;
   display: flex;
   flex: 0 1 auto;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
+  margin: auto;
 `;
 
-const RenponsiveLogo = styled.img`
-  width: 100px;
-  height: 25px;
+const TextFooter = styled(Text)`
+  color: ${props => props.theme.colors.background};
 
-  @media (min-width: 400px) {
-    width: 150px;
-    height: 35px;
+  & a {
+    color: ${props => props.theme.colors.background};
   }
 `;
 
-const Logo = ({ url, logo, alt = '' }) => (
-  <Box>
-    <a href={url} rel="noopener noreferrer" target="_blank">
-      <RenponsiveLogo src={logo} alt={alt} />
-    </a>
-  </Box>
-);
-
-Logo.propTypes = {
-  url: PropTypes.string.isRequired,
-  logo: PropTypes.string.isRequired,
-  alt: PropTypes.string,
-};
-
 const Footer = () => (
-  <FooterContainer>
-    <Fade bottom>
-      <span>
-        <Text
-          mb={2}
-          pb={1}
-          style={{
-            textTransform: 'uppercase',
-            borderBottom: 'white 3px solid',
-            display: 'table',
-          }}
-        >
-          Powered By
-        </Text>
-      </span>
-      <Flex justifyContent="center" alignItems="center">
-        <Logo
-          url="https://www.contentful.com/"
-          logo={ContentfulLogo}
-          alt="Powered by Contentful"
-        />
-        <Text m={2} fontSize={4}>
-          <span role="img" aria-label="heart">
-            ❤️
-          </span>
-        </Text>
-        <Logo
-          url="https://www.gatsbyjs.org/"
-          logo={GatsbyLogo}
-          alt="Gatsby Logo"
-        />
-      </Flex>
-    </Fade>
-  </FooterContainer>
+  <StaticQuery
+    query={graphql`
+      query FooterQuery {
+        contentfulAbout {
+          name
+          roles
+          socialLinks {
+            id
+            url
+            name
+            fontAwesomeIcon
+          }
+        }
+      }
+    `}
+    render={data => {
+      const { name, socialLinks } = data.contentfulAbout;
+
+      return (
+        <Box p={4} backgroundColor="primaryDark">
+          <FooterContainer>
+            <Fade left>
+              <TextFooter>
+                <span>{`${name} Portfolio - Powered by `}</span>
+                <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
+                <span> and </span>
+                <Link href="https://www.contentful.com/" mr={1}>
+                  Contentful
+                </Link>
+                <span role="img" aria-label="heart">
+                  ❤️
+                </span>
+              </TextFooter>
+            </Fade>
+            <Flex>
+              <Fade right>
+                {socialLinks.map(({ id, ...rest }) => (
+                  <Box mx={2} fontSize={4}>
+                    <SocialLink {...rest} alt />
+                  </Box>
+                ))}
+              </Fade>
+            </Flex>
+          </FooterContainer>
+        </Box>
+      );
+    }}
+  />
 );
 
 export default Footer;
