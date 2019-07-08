@@ -37,8 +37,8 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - Medium integration
 - Social sharing (Twitter, Facebook, Google, LinkedIn)
 - Developer tools:
-  - eslint
-  - prettier
+  - `eslint`
+  - `prettier`
 - Google Analytics
 
 ## How to start ▶️
@@ -87,7 +87,7 @@ If everything went smooth you should see something like this in your terminal:
 
 ```text
 Writing config file...
-Config file /Users/my-user/Git/test/mate-portofolio/.env written
+Config file /Users/my-user/Git/test/mate-portfolio/.env written
 ┌──────────────────────────────────────────────────┐
 │ The following entities are going to be imported: │
 ├─────────────────────────────────┬────────────────┤
@@ -152,11 +152,11 @@ As we are dealing with environment variables, the `.env` file is excluded from `
 SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy yarn build
 ```
 
-The result will be stored inside the `public` folder, so you can upload to your webhost. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
+The result will be stored inside the `public` folder, so you can upload to your web host. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
 
 ## Adding your information 📝
 
-All the text of this starter live inside Contentful, more spefically inside the Content of `About`. In order to change it, just go to `Content` section and change the entity of About with the information you want.
+All the text of this starter live inside Contentful, specifically inside the Content of `About`. In order to change it, just go to `Content` section and change the entity of About with the information you want.
 
 ![Contentful About change](./media/contentful-about-change.png)
 
@@ -166,8 +166,8 @@ Regarding the projects and social links the process is the same! Contentful is r
 
 Mate starter is a SPA (Single Page Application), so basically you have only two pages:
 
-- Main.js (portfolio itself)
-- 404.js (nice 404 error page that match the style)
+- `Main.js`: portfolio itself
+- `404.js`: 404 error page with the same style
 
 The structure for the main page is the following:
 
@@ -186,7 +186,7 @@ All the components inside `Layout` are `Section` components. A section can have 
 
 ## Tracking with Google Analytics (Optional) 📈
 
-This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics wil be turn on automatically 😄
+This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics will be turn on automatically 😄
 
 ## Update your Starter (Optional) 💡
 
@@ -199,13 +199,13 @@ $ git remote add mate https://github.com/EmaSuriano/gatsby-starter-mate
 # Get changes from master branch of gatsby-starter-mate
 $ git pull mate master --allow-unrelated-histories
 
-# Reset changes in unnecesary folder/files
+# Reset changes in unnecessary folder/files
 $ git reset media/ bin/ README.md manifest-config.js
 
 # Remove files affected by the reset
 $ git checkout .
 
-# In this step you migth need to fix a lot of conflicts, you can do fix manually or use just accept all the changes from mate
+# In this step you might need to fix a lot of conflicts, you can do fix manually or use just accept all the changes from mate
 $ git checkout --theirs .
 
 # WATCH OUT that some configuration can be overwritten in this last step, like package.json, colors, etc. I highly recommend to do an overall look up at the end of fixing the conflicts.
@@ -219,9 +219,9 @@ $ yarn build
 
 ## Deployment Automation (Optional) ⚙️
 
-Everytime you made a change in your Contentful data or you add a new post in Medium you need to trigger a manual deployment, which can be an annoying task. Therefore I found a nice way to make this process automatic and it is by using a tool called Zapier.
+Every time you made a change in your Contentful data or you add a new post in Medium you need to trigger a manual deployment, which can be an annoying task. Therefore I found a nice way to make this process automatic and it is by using a tool called Zapier.
 
-This tool will be watching for changes in Contentful and Medium and then trigger a new deploy in Netlify (or the service you are using). In summary, you don't need to care anymore about deploying your application and can focus on writting content or developing features!
+This tool will be watching for changes in Contentful and Medium and then trigger a new deploy in Netlify (or the service you are using). In summary, you don't need to care anymore about deploying your application and can focus on writing content or developing features!
 
 In case you want to know more I wrote an article in Medium that explains the whole process especially for this starter 🙌 [Click here to read it.](https://medium.com/@emasuriano/make-any-static-site-dynamic-without-coding-9dde5673b1a)
 
@@ -233,7 +233,7 @@ I came with the idea of creating the starter after the positive feedback I recei
 
 I'm totally open for pull requests with bug fixes, changes in Documentation, or new features to the starter 🙌
 
-Plase check the [Contribution guidelines](CONTRIBUTING.md) before opening yours 🙏
+Please check the [Contribution guidelines](CONTRIBUTING.md) before opening yours 🙏
 
 ## License 📝
 
