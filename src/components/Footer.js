@@ -44,7 +44,7 @@ const Footer = () => (
       const { name, socialLinks } = data.contentfulAbout;
 
       return (
-        <Box p={4} backgroundColor="primaryDark">
+        <Box p={3} backgroundColor="primaryDark">
           <FooterContainer>
             <Fade left>
               <TextFooter>
