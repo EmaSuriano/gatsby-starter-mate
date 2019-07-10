@@ -9069,9 +9069,10 @@ react-text-loop@^2.0.1:
     react-fast-compare "2.0.4"
     react-motion "^0.5.2"
 
-react-tippy@^1.2.2:
+react-tippy@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/react-tippy/-/react-tippy-1.2.3.tgz#8aef183ec4986ca7c5c556465013d95196fecfd8"
+  integrity sha512-cEmhw29DbVP33n9ayo0nLzibuSz6o0A77cZtzno7zGsfOH8tUEGai/8a7TXRIKHPYDooW8iJkJBIPDnxmEu00g==
   dependencies:
     popper.js "^1.11.1"
 

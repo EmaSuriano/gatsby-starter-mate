@@ -79,12 +79,16 @@ const Helmet = ({ theme = {} }) => (
             href={`https:${profile.favicon16.src}`}
           />
 
-          <link
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-            rel="stylesheet"
-            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-            crossOrigin="anonymous"
-          />
+          <script type="text/javascript">
+            {`(function() {
+                var css = document.createElement('link');
+                css.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+                css.crossOrigin = 'anonymous';
+                css.rel = 'stylesheet';
+                css.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(css);
+              })();`}
+          </script>
         </ReactHelmet>
       );
     }}

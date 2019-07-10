@@ -17,7 +17,13 @@ const IconLink = styled(Link)`
 
 const SocialLink = ({ fontAwesomeIcon, name, url, alt }) => (
   <Tooltip title={name} position="bottom" trigger="mouseenter">
-    <IconLink href={url} target="_blank" alt={alt}>
+    <IconLink
+      href={url}
+      target="_blank"
+      alt={alt}
+      rel="noreferrer"
+      aria-label={name}
+    >
       <FontAwesome name={fontAwesomeIcon} />
     </IconLink>
   </Tooltip>

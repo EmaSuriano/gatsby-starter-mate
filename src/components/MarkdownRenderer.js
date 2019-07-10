@@ -58,7 +58,7 @@ const MarkdownLink = ({ href, children }) => {
       {({ onClick }) => <StyledLink onClick={onClick}>{children}</StyledLink>}
     </SectionLink>
   ) : (
-    <StyledLink href={href} target="_blank">
+    <StyledLink href={href} target="_blank" rel="noreferrer">
       {children}
     </StyledLink>
   );

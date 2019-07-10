@@ -60,7 +60,7 @@ const Post = ({ title, text, image, url, date, time }) => (
     </EllipsisHeading>
     {image && <CoverImage src={image} height="200px" alt={title} />}
     <Text m={3}>{text}</Text>
-    <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom" round>
+    <ImageSubtitle bg="primary" color="white" x="right" y="bottom" round>
       {`${date} - ${Math.ceil(time)} min`}
     </ImageSubtitle>
   </Card>
@@ -118,7 +118,7 @@ const MorePosts = ({ username, name, number }) => (
       </Box>
       <Heading color="primary" mt={5} textAlign="right">
         Go to Medium &nbsp;
-        <FontAwesome name="arrow-right" />
+        <FontAwesome name="arrow-right" ariaLabel="Go to Medium" />
       </Heading>
     </Flex>
   </Card>

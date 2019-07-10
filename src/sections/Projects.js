@@ -148,13 +148,7 @@ const Project = ({
               />
             </Box>
           </Flex>
-          <ImageSubtitle
-            bg="primaryLight"
-            color="white"
-            y="bottom"
-            x="right"
-            round
-          >
+          <ImageSubtitle bg="primary" color="white" y="bottom" x="right" round>
             {type}
           </ImageSubtitle>
           <Hide query={MEDIA_QUERY_SMALL}>
@@ -183,7 +177,7 @@ Project.propTypes = {
 
 const Projects = () => (
   <Section.Container id="projects" Background={Background}>
-    <Section.Header name="Projects" icon="💻" Box="notebook" />
+    <Section.Header name="Projects" icon="💻" label="notebook" />
     <StaticQuery
       query={graphql`
         query ProjectsQuery {
