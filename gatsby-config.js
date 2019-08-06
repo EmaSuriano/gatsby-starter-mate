@@ -19,12 +19,6 @@ const plugins = [
   },
   'gatsby-plugin-styled-components',
   {
-    resolve: 'gatsby-plugin-google-fonts',
-    options: {
-      fonts: ['cabin', 'Open Sans'],
-    },
-  },
-  {
     resolve: 'gatsby-source-contentful',
     options: {
       spaceId: SPACE_ID,
@@ -41,7 +35,7 @@ module.exports = client.getEntries().then(entries => {
   plugins.push({
     resolve: 'gatsby-source-medium',
     options: {
-      username: mediumUser || '@medium',
+      username: '@emasuriano' || mediumUser || '@medium',
     },
   });
 

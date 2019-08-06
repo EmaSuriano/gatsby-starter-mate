@@ -47,7 +47,7 @@ const Footer = () => (
         <Box p={3} backgroundColor="primaryDark">
           <FooterContainer>
             <Fade left>
-              <TextFooter>
+              <TextFooter fontSize={[2, 3]}>
                 <span>{`${name} Portfolio - Powered by `}</span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
                 <span> and </span>
@@ -62,7 +62,7 @@ const Footer = () => (
             <Flex>
               <Fade right>
                 {socialLinks.map(({ id, ...rest }) => (
-                  <Box mx={2} fontSize={4}>
+                  <Box mx={[2, 3]} fontSize={[4, 5]}>
                     <SocialLink {...rest} alt />
                   </Box>
                 ))}

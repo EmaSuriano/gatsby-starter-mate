@@ -8,21 +8,21 @@ import colors from '../../colors';
 import Helmet from './Helmet';
 
 const GlobalStyle = createGlobalStyle`
-*,
-*::after,
-*::before { 
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-  }
+ @import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 
-body {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; 
-  margin: 0;
-  font-family: Cabin, sans-serif;
-  font-display: fallback;
-  overflow-x: hidden;
-}
+  *,
+  *::after,
+  *::before { 
+    box-sizing: inherit;
+    }
+
+  body {
+    box-sizing: border-box; 
+    margin: 0;
+    font-family: Cabin, sans-serif;
+    font-display: fallback;
+    overflow-x: hidden;
+  }
 `;
 
 config({ ssrFadeout: true });

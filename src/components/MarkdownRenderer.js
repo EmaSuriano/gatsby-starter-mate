@@ -7,7 +7,6 @@ const StyledLink = styled.a`
   display: inline-block;
   transition: color 250ms, text-shadow 250ms;
   color: black;
-  text-decoration: none;
   cursor: pointer;
   position: relative;
 

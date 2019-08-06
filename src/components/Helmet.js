@@ -40,18 +40,15 @@ const Helmet = ({ theme = {} }) => (
           <link rel="shortcut icon" href={`https:${profile.favicon32.src}`} />
           <meta name="theme-color" content={theme.background} />
           <meta name="image" content={`https:${profile.favicon32.src}`} />
-
           <meta itemProp="name" content={title} />
           <meta itemProp="description" content={description} />
           <meta itemProp="image" content={`https:${profile.favicon32.src}`} />
-
           <meta name="og:title" content={title} />
           <meta name="og:description" content={description} />
           <meta name="og:image" content={`https:${profile.bigIcon.src}`} />
           <meta name="og:site_name" content={title} />
           <meta name="og:locale" content="en_US" />
           <meta name="og:type" content="website" />
-
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content={title} />
           <meta name="twitter:description" content={description} />
@@ -60,7 +57,6 @@ const Helmet = ({ theme = {} }) => (
             name="twitter:image:src"
             content={`https:${profile.bigIcon.src}`}
           />
-
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -78,17 +74,7 @@ const Helmet = ({ theme = {} }) => (
             sizes="16x16"
             href={`https:${profile.favicon16.src}`}
           />
-
-          <script type="text/javascript">
-            {`(function() {
-                var css = document.createElement('link');
-                css.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-                css.crossOrigin = 'anonymous';
-                css.rel = 'stylesheet';
-                css.type = 'text/css';
-                document.getElementsByTagName('head')[0].appendChild(css);
-              })();`}
-          </script>
+          <link rel="stylesheet" href="./font-awesome-custom/style.css" />
         </ReactHelmet>
       );
     }}
