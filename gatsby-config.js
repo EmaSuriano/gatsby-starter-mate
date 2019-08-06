@@ -13,6 +13,7 @@ const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 
 const plugins = [
   'gatsby-plugin-react-helmet',
+  'gatsby-plugin-preload-link-crossorigin',
   {
     resolve: 'gatsby-plugin-manifest',
     options: manifestConfig,
