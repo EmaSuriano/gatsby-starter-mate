@@ -118,10 +118,7 @@ const MorePosts = ({ username, name, number }) => (
       </Box>
       <Heading color="primary" mt={5} textAlign="right">
         Go to Medium &nbsp;
-        <FontAwesomeIcon
-          icon={['fas', 'arrow-right']}
-          aria-label="Go to Medium"
-        />
+        <FontAwesomeIcon name="arrow-right" aria-label="Go to Medium" />
       </Heading>
     </Flex>
   </Card>

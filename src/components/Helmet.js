@@ -74,6 +74,8 @@ const Helmet = ({ theme = {} }) => (
             sizes="16x16"
             href={`https:${profile.favicon16.src}`}
           />
+
+          <script src="https://use.fontawesome.com/fd58d214b9.js" />
         </ReactHelmet>
       );
     }}

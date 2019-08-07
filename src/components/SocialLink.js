@@ -1,10 +1,9 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'rebass';
 import { Tooltip } from 'react-tippy';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { findIconDefinition } from '@fortawesome/fontawesome-svg-core';
+import FontAwesomeIcon from 'react-fontawesome';
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
@@ -17,19 +16,6 @@ const IconLink = styled(Link)`
   }
 `;
 
-const getFontAwesomeIcon = fontAwesomeIcon => {
-  const fasIcon = findIconDefinition({
-    prefix: 'fas',
-    iconName: fontAwesomeIcon,
-  });
-  const fabIcon = findIconDefinition({
-    prefix: 'fab',
-    iconName: fontAwesomeIcon,
-  });
-
-  return fasIcon || fabIcon;
-};
-
 const SocialLink = ({ fontAwesomeIcon, name, url, color }) => (
   <Tooltip title={name} position="bottom" trigger="mouseenter">
     <IconLink
@@ -39,7 +25,7 @@ const SocialLink = ({ fontAwesomeIcon, name, url, color }) => (
       rel="noreferrer"
       aria-label={name}
     >
-      <FontAwesomeIcon icon={getFontAwesomeIcon(fontAwesomeIcon)} />
+      <FontAwesomeIcon name={fontAwesomeIcon} />
     </IconLink>
   </Tooltip>
 );
@@ -48,6 +34,7 @@ SocialLink.propTypes = {
   fontAwesomeIcon: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
+  color: PropTypes.string,
 };
 
 export default SocialLink;
