@@ -4,12 +4,15 @@ import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import 'react-tippy/dist/tippy.css';
 import config from 'react-reveal/globals';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
 import colors from '../../colors';
 import Helmet from './Helmet';
 
-const GlobalStyle = createGlobalStyle`
- @import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+library.add(fab, fas);
 
+const GlobalStyle = createGlobalStyle`
   *,
   *::after,
   *::before { 
@@ -19,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box; 
     margin: 0;
-    font-family: Cabin, sans-serif;
+    font-family: Cabin, 'Open Sans', sans-serif;
     font-display: fallback;
     overflow-x: hidden;
   }

@@ -62,8 +62,8 @@ const Footer = () => (
             <Flex>
               <Fade right>
                 {socialLinks.map(({ id, ...rest }) => (
-                  <Box mx={[2, 3]} fontSize={[4, 5]}>
-                    <SocialLink {...rest} alt />
+                  <Box mx={[2, 3]} fontSize={[4, 5]} key={id}>
+                    <SocialLink {...rest} color="background" />
                   </Box>
                 ))}
               </Fade>

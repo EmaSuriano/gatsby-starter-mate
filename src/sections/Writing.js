@@ -4,7 +4,7 @@ import { Heading, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
-import FontAwesome from 'react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
@@ -118,7 +118,10 @@ const MorePosts = ({ username, name, number }) => (
       </Box>
       <Heading color="primary" mt={5} textAlign="right">
         Go to Medium &nbsp;
-        <FontAwesome name="arrow-right" ariaLabel="Go to Medium" />
+        <FontAwesomeIcon
+          icon={['fas', 'arrow-right']}
+          aria-label="Go to Medium"
+        />
       </Heading>
     </Flex>
   </Card>
@@ -172,6 +175,7 @@ const Writing = () => (
       if (diffAmountArticles > 0) {
         posts.push({
           ...author,
+          id: 'more-field',
           number: diffAmountArticles,
           Component: MorePosts,
         });
@@ -186,7 +190,7 @@ const Writing = () => (
             <CardContainer minWidth="300px">
               {posts.map(({ Component, ...rest }) => (
                 <Fade bottom key={rest.id}>
-                  <Component {...rest} />
+                  <Component {...rest} key={rest.id} />
                 </Fade>
               ))}
             </CardContainer>

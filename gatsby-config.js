@@ -13,7 +13,14 @@ const getAboutEntry = entry => entry.sys.contentType.sys.id === 'about';
 
 const plugins = [
   'gatsby-plugin-react-helmet',
-  'gatsby-plugin-preload-link-crossorigin',
+  {
+    resolve: 'gatsby-plugin-web-font-loader',
+    options: {
+      google: {
+        families: ['Cabin', 'Open Sans'],
+      },
+    },
+  },
   {
     resolve: 'gatsby-plugin-manifest',
     options: manifestConfig,
@@ -36,7 +43,7 @@ module.exports = client.getEntries().then(entries => {
   plugins.push({
     resolve: 'gatsby-source-medium',
     options: {
-      username: mediumUser || '@medium',
+      username: '@emasuriano', // mediumUser || '@medium',
     },
   });
 

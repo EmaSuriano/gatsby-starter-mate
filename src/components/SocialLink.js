@@ -1,14 +1,15 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'rebass';
 import { Tooltip } from 'react-tippy';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { findIconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
   color: ${props =>
-    props.alt ? props.theme.colors.background : props.theme.colors.primary};
+    props.theme.colors[props.color] || props.theme.colors.primary};
   text-decoration: none;
 
   &:hover {
@@ -16,16 +17,29 @@ const IconLink = styled(Link)`
   }
 `;
 
-const SocialLink = ({ fontAwesomeIcon, name, url, alt }) => (
+const getFontAwesomeIcon = fontAwesomeIcon => {
+  const fasIcon = findIconDefinition({
+    prefix: 'fas',
+    iconName: fontAwesomeIcon,
+  });
+  const fabIcon = findIconDefinition({
+    prefix: 'fab',
+    iconName: fontAwesomeIcon,
+  });
+
+  return fasIcon || fabIcon;
+};
+
+const SocialLink = ({ fontAwesomeIcon, name, url, color }) => (
   <Tooltip title={name} position="bottom" trigger="mouseenter">
     <IconLink
       href={url}
       target="_blank"
-      alt={alt}
+      color={color}
       rel="noreferrer"
       aria-label={name}
     >
-      <FontAwesome name={fontAwesomeIcon} />
+      <FontAwesomeIcon icon={getFontAwesomeIcon(fontAwesomeIcon)} />
     </IconLink>
   </Tooltip>
 );
@@ -34,7 +48,6 @@ SocialLink.propTypes = {
   fontAwesomeIcon: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  alt: PropTypes.bool,
 };
 
 export default SocialLink;

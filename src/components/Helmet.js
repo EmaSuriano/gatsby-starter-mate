@@ -74,11 +74,6 @@ const Helmet = ({ theme = {} }) => (
             sizes="16x16"
             href={`https:${profile.favicon16.src}`}
           />
-          <link
-            rel="stylesheet"
-            href="./font-awesome-custom/style.css"
-            crossOrigin
-          />
         </ReactHelmet>
       );
     }}
