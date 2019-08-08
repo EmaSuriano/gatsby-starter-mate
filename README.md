@@ -41,6 +41,10 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
   - `prettier`
 - Google Analytics
 
+### Lighthouse Score 💯
+
+![Lighthouse Score](media/lighthouse-score.png)
+
 ## How to start ▶️
 
 As this process needs more steps compared to other starters, I decided to made a tutorial video of how to set up your own instance of Mate. You can follow the video or jump directly to the written documentation.
