@@ -65,7 +65,7 @@ const LandingPage = () => (
           <Fragment>
             <Heading
               textAlign="center"
-              as="h1"
+              as="h2"
               color="primary"
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}
@@ -82,11 +82,13 @@ const LandingPage = () => (
               style={centerHorizontally}
             >
               <TextLoop interval={5000}>
-                {roles.sort(() => Math.random() - 0.5).map(text => (
-                  <Text width={[300, 500]} key={text}>
-                    {text}
-                  </Text>
-                ))}
+                {roles
+                  .sort(() => Math.random() - 0.5)
+                  .map(text => (
+                    <Text width={[300, 500]} key={text}>
+                      {text}
+                    </Text>
+                  ))}
               </TextLoop>
             </Heading>
 

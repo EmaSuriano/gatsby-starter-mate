@@ -4,7 +4,7 @@ import { Heading, Text, Flex, Box } from 'rebass';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
-import FontAwesome from 'react-fontawesome';
+import FontAwesomeIcon from 'react-fontawesome';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import Triangle from '../components/Triangle';
@@ -60,7 +60,7 @@ const Post = ({ title, text, image, url, date, time }) => (
     </EllipsisHeading>
     {image && <CoverImage src={image} height="200px" alt={title} />}
     <Text m={3}>{text}</Text>
-    <ImageSubtitle bg="primaryLight" color="white" x="right" y="bottom" round>
+    <ImageSubtitle bg="primary" color="white" x="right" y="bottom" round>
       {`${date} - ${Math.ceil(time)} min`}
     </ImageSubtitle>
   </Card>
@@ -118,7 +118,7 @@ const MorePosts = ({ username, name, number }) => (
       </Box>
       <Heading color="primary" mt={5} textAlign="right">
         Go to Medium &nbsp;
-        <FontAwesome name="arrow-right" />
+        <FontAwesomeIcon name="arrow-right" aria-label="Go to Medium" />
       </Heading>
     </Flex>
   </Card>
@@ -172,6 +172,7 @@ const Writing = () => (
       if (diffAmountArticles > 0) {
         posts.push({
           ...author,
+          id: 'more-field',
           number: diffAmountArticles,
           Component: MorePosts,
         });
@@ -186,7 +187,7 @@ const Writing = () => (
             <CardContainer minWidth="300px">
               {posts.map(({ Component, ...rest }) => (
                 <Fade bottom key={rest.id}>
-                  <Component {...rest} />
+                  <Component {...rest} key={rest.id} />
                 </Fade>
               ))}
             </CardContainer>
