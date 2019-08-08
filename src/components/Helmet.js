@@ -33,7 +33,7 @@ const Helmet = ({ theme = {} }) => (
       const title = `${name} Portfolio`;
 
       return (
-        <ReactHelmet htmlAttributes={{ lang: 'en' }} body>
+        <ReactHelmet htmlAttributes={{ lang: 'en' }}>
           <meta charSet="utf-8" />
           <title>{title}</title>
           <meta name="description" content={description} />
