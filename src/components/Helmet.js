@@ -33,7 +33,7 @@ const Helmet = ({ theme = {} }) => (
       const title = `${name} Portfolio`;
 
       return (
-        <ReactHelmet htmlAttributes={{ lang: 'en' }}>
+        <ReactHelmet htmlAttributes={{ lang: 'en' }} body>
           <meta charSet="utf-8" />
           <title>{title}</title>
           <meta name="description" content={description} />
@@ -74,8 +74,6 @@ const Helmet = ({ theme = {} }) => (
             sizes="16x16"
             href={`https:${profile.favicon16.src}`}
           />
-
-          <script src="https://use.fontawesome.com/fd58d214b9.js" />
         </ReactHelmet>
       );
     }}
