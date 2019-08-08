@@ -1,4 +1,4 @@
-![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
+# Gatsby Starter: Mate
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/EmaSuriano/gatsby-starter-mate.svg)](https://greenkeeper.io/)
 [![Travis badge](https://api.travis-ci.org/EmaSuriano/gatsby-starter-mate.svg)](https://travis-ci.org/EmaSuriano/gatsby-starter-mate)
@@ -6,7 +6,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c8fc076b30bd493f0cfc/maintainability)](https://codeclimate.com/github/EmaSuriano/gatsby-starter-mate/maintainability)
 
-# Gatsby Starter: Mate
+![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
 
 > A portfolio starter for Gatsby integrated with Contentful CMS.
 
