@@ -143,7 +143,7 @@ const Project = ({
             <Box mx={1} fontSize={5}>
               <SocialLink
                 name="See project"
-                fontAwesomeIcon="globe-americas"
+                fontAwesomeIcon="globe"
                 url={projectUrl}
               />
             </Box>
