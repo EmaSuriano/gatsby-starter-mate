@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'rebass';
-import { Tooltip } from 'react-tippy';
+import Tippy from '@tippy.js/react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from 'react-fontawesome';
@@ -17,7 +17,7 @@ const IconLink = styled(Link)`
 `;
 
 const SocialLink = ({ fontAwesomeIcon, name, url, color }) => (
-  <Tooltip title={name} position="bottom" trigger="mouseenter">
+  <Tippy content={name} placement="bottom" trigger="mouseenter">
     <IconLink
       href={url}
       target="_blank"
@@ -27,7 +27,7 @@ const SocialLink = ({ fontAwesomeIcon, name, url, color }) => (
     >
       <FontAwesomeIcon name={fontAwesomeIcon} />
     </IconLink>
-  </Tooltip>
+  </Tippy>
 );
 
 SocialLink.propTypes = {
