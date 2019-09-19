@@ -9,7 +9,7 @@ notifications:
   email: false
 
 node_js:
-  - 8
+  - '10'
 
 install:
   - yarn
@@ -17,6 +17,7 @@ install:
 script:
   - yarn build
   - yarn lint
+  - yarn test:e2e:ci
 
 branches:
   only:
