@@ -65,7 +65,7 @@ const LandingPage = () => (
           <Fragment>
             <Heading
               textAlign="center"
-              as="h2"
+              as="h1"
               color="primary"
               fontSize={[5, 6, 8]}
               mb={[3, 4, 5]}

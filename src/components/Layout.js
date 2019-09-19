@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <Fragment>
+    <main>
       <GlobalStyle />
       <ThemeProvider theme={{ colors }}>
         <ScrollingProvider>
@@ -48,7 +48,7 @@ const Layout = ({ children }) => {
           {children}
         </ScrollingProvider>
       </ThemeProvider>
-    </Fragment>
+    </main>
   );
 };
 

@@ -5,7 +5,7 @@ import { Text, Box, Link, Flex } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import SocialLink from './SocialLink';
 
-const FooterContainer = styled.footer`
+const FooterContainer = styled.div`
   min-width: 320px;
   max-width: 1366px;
   display: flex;
