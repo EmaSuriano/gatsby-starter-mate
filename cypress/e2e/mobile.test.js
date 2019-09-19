@@ -1,23 +1,23 @@
 /* eslint-disable cypress/no-unnecessary-waiting */
-describe('Mobile viewport', () => {
+describe('Mobile', () => {
   beforeEach(() => {
     cy.visit('/');
     cy.viewport('iphone-6');
   });
 
-  xit('Home', () => {
+  it('Home', () => {
     cy.get('section#home').toMatchImageSnapshot();
   });
 
-  xit('About', () => {
-    cy.get('section#about');
-    cy.wait(2000);
+  it('About', () => {
+    // cy.get('section#about');
+    // cy.wait(3000);
     cy.get('section#about').toMatchImageSnapshot();
   });
 
-  it('Projects', () => {
-    cy.get('section#projects');
-    cy.wait(2000);
+  it.only('Projects', () => {
+    // cy.get('section#projects');
+    // cy.wait(3000);
     cy.get('section#projects').toMatchImageSnapshot();
   });
 });
