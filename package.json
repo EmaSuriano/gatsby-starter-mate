@@ -12,7 +12,7 @@
     "setup": "node ./bin/setup.js",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
-    "test:e2e:ci": "start-server-and-test serve http://localhost:9000 cy:run"
+    "test:e2e:ci": "start-server-and-test develop http://localhost:8000 cy:run"
   },
   "repository": {
     "type": "git",
@@ -32,10 +32,8 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
-    "@testing-library/cypress": "^5.0.0",
     "@tippy.js/react": "^2.2.3",
     "contentful": "^7.0.3",
-    "cypress-plugin-snapshots": "^1.2.9",
     "dotenv": "^7.0.0",
     "envfile": "^3.0.0",
     "gatsby": "^2.3.27",
@@ -65,6 +63,8 @@
   },
   "devDependencies": {
     "axe-core": "^3.3.2",
+    "@testing-library/cypress": "^5.0.0",
+    "cypress-plugin-snapshots": "^1.2.9",
     "chalk": "^2.4.1",
     "contentful-import": "^7.4.0",
     "cypress": "^3.4.1",
