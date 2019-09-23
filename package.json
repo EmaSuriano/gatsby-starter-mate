@@ -10,8 +10,8 @@
     "serve": "npm run build && gatsby serve -p 9000",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:open": "percy exec -- cypress open",
+    "cy:run": "percy exec -- cypress run",
     "test:e2e:ci": "DETERMINISTIC=true start-server-and-test serve http://localhost:9000 cy:run"
   },
   "repository": {
