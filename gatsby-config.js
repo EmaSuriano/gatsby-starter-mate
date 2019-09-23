@@ -2,7 +2,7 @@ const contentful = require('contentful');
 const manifestConfig = require('./manifest-config');
 require('dotenv').config();
 
-const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID } = process.env;
+const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID, DETERMINISTIC } = process.env;
 
 const client = contentful.createClient({
   space: SPACE_ID,
@@ -59,6 +59,7 @@ module.exports = client.getEntries().then(entries => {
   return {
     siteMetadata: {
       isMediumUserDefined: !!mediumUser,
+      deterministicBehaviour: !!DETERMINISTIC,
     },
     plugins,
   };
