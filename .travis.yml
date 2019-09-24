@@ -1,25 +1,23 @@
 language: node_js
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
-
-notifications:
-  email: false
-
 node_js:
   - '10'
 
+addons:
+  apt:
+    packages:
+      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
+      - libgconf-2-4
+
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
+
 install:
-  - yarn
+  - npm ci
 
 script:
-  - yarn build
-  - yarn lint
-  - yarn test:e2e:ci
-
-branches:
-  only:
-    - master
-    - '/^greenkeeper/.*$/'
+  - npm run lint
+  - npm run build
+  - npm run cypress:run
