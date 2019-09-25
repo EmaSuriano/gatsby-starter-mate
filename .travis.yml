@@ -10,14 +10,14 @@ addons:
       - libgconf-2-4
 
 cache:
+  yarn: true
   directories:
-    - ~/.npm
-    - ~/.cache
+    - node_modules
 
 install:
-  - npm ci
+  - yarn install
 
 script:
-  - npm run lint
-  - npm run build
-  - npm run cypress:run
+  - yarn lint
+  - yarn build
+  - yarn cypress:run
