@@ -7,7 +7,7 @@
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby clean && gatsby develop",
     "start": "npm run develop",
-    "serve": "gatsby serve -p 9000",
+    "serve": "npm run build && gatsby serve -p 9000",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
     "e2e:open": "cypress open",
