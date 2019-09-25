@@ -12,7 +12,7 @@ addons:
 cache:
   yarn: true
   directories:
-    - node_modules
+    - ~/.cache
 
 install:
   - yarn install
@@ -20,4 +20,5 @@ install:
 script:
   - yarn lint
   - yarn build
-  - yarn cy:ci
+  - yarn serve &
+  - yarn cy:run

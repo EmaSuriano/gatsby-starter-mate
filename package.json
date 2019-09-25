@@ -7,11 +7,11 @@
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby clean && gatsby develop",
     "start": "npm run develop",
-    "serve": "npm run build && gatsby serve -p 9000",
+    "serve": "gatsby serve -p 9000",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
     "cy:open": "percy exec -- cypress open",
-    "cy:run": "percy exec -- cypress run",
+    "cy:run": "percy exec -- cypress run --record",
     "cy:ci": "DETERMINISTIC=true start-server-and-test serve http://localhost:9000 cy:run"
   },
   "repository": {
