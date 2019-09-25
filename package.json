@@ -11,7 +11,7 @@
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
     "e2e:open": "cypress open",
-    "e2e:ci": "DETERMINISTIC=true start-server-and-test serve http://localhost:9000 'cypress run'"
+    "e2e:ci": "DETERMINISTIC=true start-server-and-test serve http://localhost:9000 'percy exec -- cypress run'"
   },
   "repository": {
     "type": "git",
