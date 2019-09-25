@@ -1,24 +1,23 @@
 language: node_js
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
-
-notifications:
-  email: false
-
 node_js:
-  - 8
+  - '10'
+
+addons:
+  apt:
+    packages:
+      # cypress dep
+      - libgconf-2-4
+
+cache:
+  directories:
+    - ~/.npm
+    - ~/.cache
 
 install:
-  - yarn
+  - npm ci
 
 script:
-  - yarn build
-  - yarn lint
-
-branches:
-  only:
-    - master
-    - '/^greenkeeper/.*$/'
+  - npm run lint
+  - npm run build
+  - npm run e2e:ci

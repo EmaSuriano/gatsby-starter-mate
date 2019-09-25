@@ -5,7 +5,7 @@ import { Text, Box, Link, Flex } from 'rebass';
 import Fade from 'react-reveal/Fade';
 import SocialLink from './SocialLink';
 
-const FooterContainer = styled.footer`
+const FooterContainer = styled.div`
   min-width: 320px;
   max-width: 1366px;
   display: flex;
@@ -44,7 +44,7 @@ const Footer = () => (
       const { name, socialLinks } = data.contentfulAbout;
 
       return (
-        <Box p={3} backgroundColor="primaryDark">
+        <Box p={3} backgroundColor="primaryDark" as="footer">
           <FooterContainer>
             <Fade left>
               <TextFooter fontSize={[2, 3]}>

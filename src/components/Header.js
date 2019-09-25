@@ -64,9 +64,8 @@ const Header = () => (
                 key={name}
                 onClick={value.onClick}
                 selected={value.selected}
-              >
-                {name}
-              </RouteLink>
+                name={name}
+              />
             ));
 
             return (

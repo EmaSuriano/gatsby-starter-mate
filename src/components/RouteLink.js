@@ -3,10 +3,10 @@ import { Box } from 'rebass';
 import PropTypes from 'prop-types';
 import LinkAnimated from './LinkAnimated';
 
-const RouteLink = ({ onClick, selected, children }) => (
+const RouteLink = ({ onClick, selected, name }) => (
   <Box ml={[2, 3]} color="background" fontSize={[2, 3]}>
     <LinkAnimated onClick={onClick} selected={selected}>
-      {children}
+      {name}
     </LinkAnimated>
   </Box>
 );
@@ -14,7 +14,7 @@ const RouteLink = ({ onClick, selected, children }) => (
 RouteLink.propTypes = {
   onClick: PropTypes.func,
   selected: PropTypes.bool,
-  children: PropTypes.node,
+  name: PropTypes.string,
 };
 
 export default RouteLink;

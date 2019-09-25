@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier'],
+  extends: ['airbnb', 'prettier', 'plugin:cypress/recommended'],
   rules: {
     'react/jsx-filename-extension': 'off',
     'react/require-default-props': 'off',
@@ -8,5 +8,6 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    jest: true,
   },
 };

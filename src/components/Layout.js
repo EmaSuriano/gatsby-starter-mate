@@ -1,8 +1,7 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
-import 'react-tippy/dist/tippy.css';
 import config from 'react-reveal/globals';
 import colors from '../../colors';
 import Helmet from './Helmet';
@@ -40,7 +39,7 @@ const Layout = ({ children }) => {
   }, []);
 
   return (
-    <Fragment>
+    <main>
       <GlobalStyle />
       <ThemeProvider theme={{ colors }}>
         <ScrollingProvider>
@@ -48,7 +47,7 @@ const Layout = ({ children }) => {
           {children}
         </ScrollingProvider>
       </ThemeProvider>
-    </Fragment>
+    </main>
   );
 };
 

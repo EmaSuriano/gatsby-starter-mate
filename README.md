@@ -1,18 +1,17 @@
 # Gatsby Starter: Mate
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/EmaSuriano/gatsby-starter-mate.svg)](https://greenkeeper.io/)
 [![Travis badge](https://api.travis-ci.org/EmaSuriano/gatsby-starter-mate.svg)](https://travis-ci.org/EmaSuriano/gatsby-starter-mate)
 [![eslint](https://img.shields.io/badge/eslint-enabled-green.svg)](https://eslint.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Maintainability](https://api.codeclimate.com/v1/badges/c8fc076b30bd493f0cfc/maintainability)](https://codeclimate.com/github/EmaSuriano/gatsby-starter-mate/maintainability)
+[![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/Ema-suriano/gatsby-starter-mate)
 
 ![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
 
-> A portfolio starter for Gatsby integrated with Contentful CMS.
+> An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
 
-The target audience are developers 💻 and tech writers ✍️.
+The target audience are Developers 💻 and Tech Writers ✍️.
 
-### [Demo Website](https://gatsby-starter-mate.netlify.com/)
+## [Check the Demo ✨](https://gatsby-starter-mate.netlify.com/)
 
 ## Why? 🤔
 
@@ -39,7 +38,10 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - Developer tools:
   - `eslint`
   - `prettier`
-- Google Analytics
+- Google Analytics integration
+- End to End with Cypress:
+  - A11y testing with [Axe](https://www.deque.com/axe/)
+  - Visual Testing with [Percy](https://percy.io/)
 
 ### Lighthouse Score 💯
 
@@ -63,7 +65,7 @@ To copy and install this starter run this command:
 $ gatsby new mate-portfolio https://github.com/EmaSuriano/gatsby-starter-mate
 ```
 
-At this point you have the repository download with all the dependencies installed, but if you try to start by running `yarn develop` you are going to received this message in the console:
+At this point you have the repository download with all the dependencies installed, but if you try to start by running `npm run develop` you are going to received this message in the console:
 
 ```bash
   TypeError: Expected parameter accessToken
@@ -74,7 +76,7 @@ This is because you didn't specify from which `Contentful` space the portfolio w
 After the space is created, run the following command:
 
 ```bash
-yarn setup
+npm run setup
 ```
 
 This CLI will request 3 values:
@@ -130,7 +132,7 @@ Finished importing all data
 After this step we can finally run the project and see the result in http://localhost:8000/ 😃
 
 ```bash
-yarn start
+npm start
 ```
 
 ## Screenshot and Design 🖼
@@ -153,7 +155,7 @@ As the starter is a SPA it only has two routes:
 As we are dealing with environment variables, the `.env` file is excluded from `.gitignore` file. Therefore, in order to deploy the website you have to send `SPACE_ID` and `ACCESS_TOKEN` with the `build` command.
 
 ```bash
-SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy yarn build
+SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy npm run build
 ```
 
 The result will be stored inside the `public` folder, so you can upload to your web host. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
@@ -164,7 +166,23 @@ All the text of this starter live inside Contentful, specifically inside the Con
 
 ![Contentful About change](./media/contentful-about-change.png)
 
-Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
+Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `npm run setup` 😄
+
+## End to End Testing with Cypress 🧪
+
+The starter comes with a built in End to End Setup using Cypress. As there are no complex logic flow, there are only two tests in place:
+
+1. Accessibility check: using the [cypress-axe](https://www.npmjs.com/package/cypress-axe) plugin you can easily check a lot of a11y rules at once powered by [Axe](https://www.deque.com/axe/)!
+2. Visual testing: using [percy-cypress](https://github.com/percy/percy-cypress) plugin you can take screenshot with different resolutions and easily the difference inside their platform. [Here](https://percy.io/Ema-suriano/gatsby-starter-mate) you can check the Percy dashboard for this project.
+
+### Setting Visual Testing for your project (Optional) 📸
+
+By default, the visual testing will fail due to Percy needs a Token in order to know with which project of your account is related. The steps to set up your own visual testing workflow is:
+
+- Create a project in [Percy](https://percy.io/).
+- Go to "Project settings" -> "Project token" and copy the whole line saying "PERCY_TOKEN=<YOUR_TOKEN>".
+- Open the `.env` file located in the root of the project and add the token to your credentials.
+- Try running `npm run e2e:ci` and you should be able to see a new build inside your Project Dashboard in Percy.
 
 ## Configuration (Optional) 👷‍♂️
 
@@ -215,10 +233,10 @@ $ git checkout --theirs .
 # WATCH OUT that some configuration can be overwritten in this last step, like package.json, colors, etc. I highly recommend to do an overall look up at the end of fixing the conflicts.
 
 # Install in case there is any new dependency added to the starter
-$ yarn
+$ npm install
 
 # Build the project to see if everything is working as expected
-$ yarn build
+$ nmp run build
 ```
 
 ## Deployment Automation (Optional) ⚙️

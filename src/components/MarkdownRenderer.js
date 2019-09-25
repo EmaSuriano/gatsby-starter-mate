@@ -9,11 +9,12 @@ const StyledLink = styled.a`
   color: black;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
 
   &:after {
     position: absolute;
     z-index: -1;
-    bottom: -1px;
+    bottom: 1px;
     left: 50%;
     transform: translateX(-50%);
     content: '';
