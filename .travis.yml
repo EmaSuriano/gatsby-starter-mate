@@ -20,4 +20,4 @@ install:
 script:
   - yarn lint
   - yarn build
-  - yarn cypress:run
+  - yarn cy:ci

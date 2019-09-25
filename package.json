@@ -12,7 +12,7 @@
     "setup": "node ./bin/setup.js",
     "cy:open": "percy exec -- cypress open",
     "cy:run": "percy exec -- cypress run",
-    "test:e2e:ci": "DETERMINISTIC=true start-server-and-test serve http://localhost:9000 cy:run"
+    "cy:ci": "DETERMINISTIC=true start-server-and-test serve http://localhost:9000 cy:run"
   },
   "repository": {
     "type": "git",
