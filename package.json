@@ -4,7 +4,7 @@
   "description": "Gatsby v2 starter to create a top notch portfolio!",
   "main": "index.js",
   "scripts": {
-    "fix-medium-plugin": "sed -i '' 's/\\/latest//g' ./node_modules/gatsby-source-medium/gatsby-node.js",
+    "fix-medium-plugin": "sed -i' ' 's/\\/latest//g' ./node_modules/gatsby-source-medium/gatsby-node.js",
     "prepare": "npm run fix-medium-plugin && gatsby clean",
     "build": "npm run prepare && gatsby build",
     "develop": "npm run prepare && gatsby develop",
