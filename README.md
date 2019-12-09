@@ -67,6 +67,8 @@ To copy and install this starter run this command:
 $ gatsby new mate-portfolio https://github.com/EmaSuriano/gatsby-starter-mate
 ```
 
+**⚠️ Warning ⚠️:** Please make sure that your `gatbsy-cli` is using `npm` as the package manager, otherwise you might end up installing different versions of packages that don't match with the `package-lock.json`.
+
 At this point you have the repository download with all the dependencies installed, but if you try to start by running `npm run develop` you are going to received this message in the console:
 
 ```bash
