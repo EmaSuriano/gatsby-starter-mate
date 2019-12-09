@@ -44,7 +44,6 @@
     "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-contentful": "^2.0.52",
-    "gatsby-source-medium": "^2.1.12",
     "gatsby-transformer-remark": "^2.3.10",
     "inquirer": "^6.2.0",
     "prop-types": "^15.6.2",
