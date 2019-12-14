@@ -57,7 +57,7 @@
     "react-scroll-section": "^1.3.0",
     "react-text-loop": "^2.0.1",
     "rebass": "^3.0.0",
-    "styled-components": "^4.0.2"
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@percy/cypress": "^2.1.1",
