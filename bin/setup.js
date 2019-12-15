@@ -65,7 +65,7 @@ inquirer
   .then(() => {
     console.log(
       `All set! You can now run ${chalk.yellow(
-        'npm run develop',
+        'yarn start',
       )} to see it in action.`,
     );
   })
