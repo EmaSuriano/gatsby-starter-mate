@@ -15,9 +15,9 @@ cache:
     - ~/.cache
 
 install:
-  - npm ci
+  - yarn
 
 script:
-  - npm run lint
-  - npm run build
-  - npm run e2e:ci
+  - yarn lint
+  - yarn build
+  - yarn e2e:ci

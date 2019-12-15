@@ -69,7 +69,7 @@ $ gatsby new mate-portfolio https://github.com/EmaSuriano/gatsby-starter-mate
 
 **⚠️ Warning ⚠️:** Please make sure that your `gatbsy-cli` is using `npm` as the package manager, otherwise you might end up installing different versions of packages that don't match with the `package-lock.json`.
 
-At this point you have the repository download with all the dependencies installed, but if you try to start by running `npm run develop` you are going to received this message in the console:
+At this point you have the repository download with all the dependencies installed, but if you try to start by running `yarn develop` you are going to received this message in the console:
 
 ```bash
   TypeError: Expected parameter accessToken
@@ -80,7 +80,7 @@ This is because you didn't specify from which `Contentful` space the portfolio w
 After the space is created, run the following command:
 
 ```bash
-npm run setup
+yarn setup
 ```
 
 This CLI will request 3 values:
@@ -136,7 +136,7 @@ Finished importing all data
 After this step we can finally run the project and see the result in http://localhost:8000/ 😃
 
 ```bash
-npm start
+$ yarn start
 ```
 
 ## Screenshot and Design 🖼
@@ -159,7 +159,7 @@ As the starter is a SPA it only has two routes:
 As we are dealing with environment variables, the `.env` file is excluded from `.gitignore` file. Therefore, in order to deploy the website you have to send `SPACE_ID` and `ACCESS_TOKEN` with the `build` command.
 
 ```bash
-SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy npm run build
+SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy yarn build
 ```
 
 The result will be stored inside the `public` folder, so you can upload to your web host. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
@@ -170,7 +170,7 @@ All the text of this starter live inside Contentful, specifically inside the Con
 
 ![Contentful About change](./media/contentful-about-change.png)
 
-Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `npm run setup` 😄
+Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
 ## End to End Testing with Cypress 🧪
 
@@ -186,7 +186,7 @@ By default, the visual testing will fail due to Percy needs a Token in order to 
 - Create a project in [Percy](https://percy.io/).
 - Go to "Project settings" -> "Project token" and copy the whole line saying "PERCY_TOKEN=<YOUR_TOKEN>".
 - Open the `.env` file located in the root of the project and add the token to your credentials.
-- Try running `npm run e2e:ci` and you should be able to see a new build inside your Project Dashboard in Percy.
+- Try running `yarn e2e:ci` and you should be able to see a new build inside your Project Dashboard in Percy.
 
 ## Configuration (Optional) 👷‍♂️
 
@@ -237,10 +237,10 @@ $ git checkout --theirs .
 # WATCH OUT that some configuration can be overwritten in this last step, like package.json, colors, etc. I highly recommend to do an overall look up at the end of fixing the conflicts.
 
 # Install in case there is any new dependency added to the starter
-$ npm install
+$ yarn
 
 # Build the project to see if everything is working as expected
-$ nmp run build
+$ yarn build
 ```
 
 ## Deployment Automation (Optional) ⚙️

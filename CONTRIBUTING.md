@@ -35,7 +35,7 @@ Example: `feat/new-top-bar` or `fix/broken-project-link`
 3. Install dependencies
 
 ```
-  $ npm install
+  $ yarn
 ```
 
 4. Commit your changes and push your branch to GitHub::
