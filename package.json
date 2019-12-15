@@ -63,7 +63,7 @@
     "@percy/cypress": "^2.1.1",
     "@testing-library/cypress": "^5.0.0",
     "axe-core": "^3.3.2",
-    "chalk": "^2.4.1",
+    "chalk": "^3.0.0",
     "contentful-import": "^7.4.0",
     "cypress": "^3.4.1",
     "cypress-axe": "^0.5.1",
