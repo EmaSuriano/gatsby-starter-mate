@@ -4,7 +4,7 @@ import Tippy from '@tippy.js/react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from 'react-fontawesome';
-import 'tippy.js/dist/tippy.css';
+import 'tippy.js/dist/tippy.css'; // eslint-disable-line
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
