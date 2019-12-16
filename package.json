@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
-    "@tippy.js/react": "^2.2.3",
+    "@tippy.js/react": "^3.1.1",
     "contentful": "^7.0.3",
     "dotenv": "^8.2.0",
     "envfile": "^4.5.0",
