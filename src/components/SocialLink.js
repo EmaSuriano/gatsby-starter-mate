@@ -4,6 +4,7 @@ import Tippy from '@tippy.js/react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import FontAwesomeIcon from 'react-fontawesome';
+import 'tippy.js/dist/tippy.css';
 
 const IconLink = styled(Link)`
   transition: color 0.5s;
@@ -17,7 +18,7 @@ const IconLink = styled(Link)`
 `;
 
 const SocialLink = ({ fontAwesomeIcon, name, url, color }) => (
-  <Tippy content={name} placement="bottom" trigger="mouseenter">
+  <Tippy content={name} placement="bottom" trigger="mouseenter" arrow={false}>
     <IconLink
       href={url}
       target="_blank"
