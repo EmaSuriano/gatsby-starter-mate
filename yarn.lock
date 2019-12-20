@@ -3906,15 +3906,14 @@ contentful@^6.1.3:
     json-stringify-safe "^5.0.1"
     lodash "^4.17.5"
 
-contentful@^7.11.1:
-  version "7.11.1"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.11.1.tgz#3047f22186983951dfdf6d07d4a967b851413fec"
-  integrity sha512-9BYUke9FlYkXhJbSZDeTMlG01brFKU9VHeJ/mAuHBsBJTWBCepuvdQqUFn0jR5CsZ1ZlRnv7vxr4a7EbiJr6ig==
+contentful@^7.11.2:
+  version "7.11.2"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.11.2.tgz#700a5d39a0b13e5590111c647aac21845d00b597"
+  integrity sha512-hdSeJhPnP3DPsNwFjKywAdAFmzUAwJ6TeuoQ2gGHYY2Jvvph1e/qBWhlxC00UDanIotuT4O/HtvqFwsaIZ4bKw==
   dependencies:
     axios "^0.19.0"
     contentful-resolve-response "^1.1.4"
     contentful-sdk-core "^6.4.0"
-    json-stringify-safe "^5.0.1"
     lodash "^4.17.11"
 
 convert-hrtime@^2.0.0:
