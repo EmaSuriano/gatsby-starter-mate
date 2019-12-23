@@ -37,7 +37,7 @@
     "envfile": "^4.5.0",
     "gatsby": "2.15.22",
     "gatsby-plugin-google-analytics": "^2.0.18",
-    "gatsby-plugin-manifest": "^2.0.29",
+    "gatsby-plugin-manifest": "^2.2.34",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-preload-link-crossorigin": "^1.0.2",
     "gatsby-plugin-react-helmet": "^3.0.12",
