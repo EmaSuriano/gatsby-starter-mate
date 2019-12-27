@@ -65,7 +65,7 @@
     "axe-core": "^3.4.1",
     "chalk": "^3.0.0",
     "contentful-import": "^7.4.0",
-    "cypress": "^3.4.1",
+    "cypress": "^3.8.1",
     "cypress-axe": "^0.5.1",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
