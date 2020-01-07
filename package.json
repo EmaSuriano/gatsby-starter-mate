@@ -45,7 +45,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-contentful": "2.1.73",
     "gatsby-transformer-remark": "^2.6.45",
-    "inquirer": "^7.0.2",
+    "inquirer": "^7.0.3",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
