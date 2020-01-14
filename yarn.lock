@@ -3905,10 +3905,10 @@ contentful@^6.1.3:
     json-stringify-safe "^5.0.1"
     lodash "^4.17.5"
 
-contentful@^7.13.0:
-  version "7.13.0"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.13.0.tgz#fb1a6c5a5257de87963ab21bc0813726ad5b91f3"
-  integrity sha512-Gj78sxLO19g62+VpXjkheOBZPJl5dXiuq0Mvn021t18YcaeHinYLl854kTWmHMwetLOoeUxU0cmDFI93ByNnpQ==
+contentful@^7.13.1:
+  version "7.13.1"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.13.1.tgz#eb88f0507ba466ed40ffadee03c77fe3fb633347"
+  integrity sha512-wXKyKYGquLQ/PvFQFDyyrA1C19YxO5HgI5vgeQBEO/IoKNVv0dJp41x6WWXwEVf5Q3/8EfVVmhAMT0OeAJJLcQ==
   dependencies:
     axios "^0.19.1"
     contentful-resolve-response "^1.1.4"
