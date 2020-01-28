@@ -43,7 +43,7 @@
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-styled-components": "^3.1.18",
     "gatsby-plugin-web-font-loader": "^1.0.4",
-    "gatsby-source-contentful": "2.1.79",
+    "gatsby-source-contentful": "2.1.82",
     "gatsby-transformer-remark": "^2.6.48",
     "inquirer": "^7.0.4",
     "prop-types": "^15.6.2",

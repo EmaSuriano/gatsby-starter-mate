@@ -6553,10 +6553,10 @@ gatsby-plugin-react-helmet@^3.1.21:
   dependencies:
     "@babel/runtime" "^7.7.6"
 
-gatsby-plugin-sharp@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.4.0.tgz#9df4c2646a34fb7ea4ff5428f6662ef3c0a80cde"
-  integrity sha512-PmifXRuy0R16uoWPIMvjHgoPdkG30uUS9r+XYAp+WW4Q7oWy1q0R2tia3rcdwvGeOsxX98W95jy8QTqhQ3BDFQ==
+gatsby-plugin-sharp@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.4.3.tgz#b5c72a8e5eeeaedd13f49e6056ab6275a93882fc"
+  integrity sha512-d7nxPHbswrpCccUf0HtzWf9dvAqmcVXLQllqgvfeoQ/nOetFwFAqT14aQaVXV+nOcbzGQIMEA/ShTNnrpF8Hag==
   dependencies:
     "@babel/runtime" "^7.7.6"
     async "^2.6.3"
@@ -6602,10 +6602,10 @@ gatsby-react-router-scroll@^2.1.9:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
-gatsby-source-contentful@2.1.79:
-  version "2.1.79"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.1.79.tgz#5a3ed75a68e440e659c26c1e5ae22fa8a73ba1e8"
-  integrity sha512-rvJn2Zo2cdqmvtoZ0yKCnldh6VyL4r6Mc7QXLuxY9DVQ26KckblcREyuhFbgj8kGN82l8g8EjgQfMXBCdGyGPA==
+gatsby-source-contentful@2.1.82:
+  version "2.1.82"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.1.82.tgz#3a44a49ab2166014daa097e31cfd7033dc250c78"
+  integrity sha512-nAQ4e2n/3bnMgd1c5EnWMqVvvQ/R+L4pDwkTCbM6jWXIVSGnSZndH+JjivNfvNAuHRPRht8BNNeetlznTaDstg==
   dependencies:
     "@babel/runtime" "^7.7.6"
     "@hapi/joi" "^15.1.1"
@@ -6617,7 +6617,7 @@ gatsby-source-contentful@2.1.79:
     deep-map "^1.5.0"
     fs-extra "^8.1.0"
     gatsby-core-utils "^1.0.26"
-    gatsby-plugin-sharp "^2.4.0"
+    gatsby-plugin-sharp "^2.4.3"
     gatsby-source-filesystem "^2.1.46"
     is-online "^8.2.1"
     json-stringify-safe "^5.0.1"
