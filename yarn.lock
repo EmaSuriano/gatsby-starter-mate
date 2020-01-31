@@ -1503,10 +1503,10 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
-"@testing-library/cypress@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-5.0.2.tgz#68746fc9db11dabcc4bf883e25b64316f637be71"
-  integrity sha512-AmvBLE+isA/vpdBTXpJ5tu+UYMDgqNW015RVa0nBPJHrv5UXNlmDZyu8tpkxGTFhcf+iFSA2pHuK1jUCQ8PnXQ==
+"@testing-library/cypress@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/cypress/-/cypress-5.1.2.tgz#1dbaafc1d98fac75c3b09da31ee3e09fd332b2e1"
+  integrity sha512-2TnzwDsYK3J67kawS+ik5MfyLsLyN7p9Ya/7wxjNAioXQGT0+Cy6mjVWqHsmueT9RECdjZCqKanhdhORG02+PQ==
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@testing-library/dom" "^6.0.0"
