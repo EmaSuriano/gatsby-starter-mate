@@ -11,7 +11,8 @@
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
     "e2e:open": "cypress open",
-    "e2e:ci": "DETERMINISTIC=true start-server-and-test serve http://localhost:9000 'percy exec -- cypress run'"
+    "e2e:ci": "DETERMINISTIC=true start-server-and-test serve 9000 visual-test",
+    "visual-test": "percy exec -t 350 -- cypress run"
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "gatsby-plugin-styled-components": "^3.1.18",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-contentful": "2.1.79",
+    "gatsby-source-medium": "^2.1.20",
     "gatsby-transformer-remark": "^2.6.48",
     "inquirer": "^7.0.4",
     "prop-types": "^15.6.2",
