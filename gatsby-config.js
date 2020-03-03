@@ -41,7 +41,7 @@ module.exports = client.getEntries().then(entries => {
   const { mediumUser } = entries.items.find(getAboutEntry).fields;
 
   plugins.push({
-    resolve: 'gatsby-source-medium-fix',
+    resolve: 'gatsby-source-medium',
     options: {
       username: mediumUser || '@medium',
     },
