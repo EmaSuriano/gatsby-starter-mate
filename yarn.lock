@@ -1355,10 +1355,10 @@
     which "^2.0.1"
     winston "^3.0.0"
 
-"@percy/cypress@^2.1.1":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-2.2.0.tgz#aa70ee78fd562b88bd9ca970b50311b40083e547"
-  integrity sha512-38OaI2HzD3HcMyzHSH9dDS7s8kh9BAeL597x7kF7RDFBmUZh1P/0Lr7s0soAy4hWf/NVkOYqrA511yd7n1dGNA==
+"@percy/cypress@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@percy/cypress/-/cypress-2.3.0.tgz#7dea7f6285dbdca1097803be3faa8a9d69e0b263"
+  integrity sha512-srnIDvRJlIkNm5iCwy4k8kHgG9nKLBgy/i9GZoFKy74vhG13+iZmwrOBku4Z9CVWXN8sWWBn4ITnOpZPYEySsA==
   dependencies:
     "@percy/agent" "~0"
     axios "^0.19.0"
