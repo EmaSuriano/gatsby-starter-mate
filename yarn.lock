@@ -3889,15 +3889,15 @@ contentful-batch-libs@^9.0.1:
     lodash "^4.0.1"
     moment "^2.18.1"
 
-contentful-import@^7.4.0:
-  version "7.6.2"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.6.2.tgz#fb474a380264ff1bd8af7afebf3c0904f9988f7e"
-  integrity sha512-0hYjffwkr783RoPP+uIAmJHDM+CUIjYxLTFT4pZMoEyPfrZnNg7O+r5MvGbF8cLQpzYOvgLc4/MPPnH3dz8ABg==
+contentful-import@^7.7.0:
+  version "7.7.0"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.7.0.tgz#a2ee426102e5c92fb7e391a265e8844aa7365f2d"
+  integrity sha512-zQmDBTDH2esgwTNFJ6H2qRa5AUd4yyDs29GRdP8nuJkx9/isSjTel3ddW3a8PRAj49xO+5CudlxE9aUiLd1ZLQ==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.5.1"
     contentful-batch-libs "^9.0.1"
-    contentful-management "^5.11.0"
+    contentful-management "^5.12.1"
     echo-cli "^1.0.8"
     joi "^13.4.0"
     listr "^0.14.1"
@@ -3907,10 +3907,10 @@ contentful-import@^7.4.0:
     moment "^2.22.2"
     yargs "^12.0.1"
 
-contentful-management@^5.11.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-5.12.0.tgz#b40570adcd6791032b9ff3a18bb5a3cdabf2d0cd"
-  integrity sha512-uB19lrSK9q6V8plU8M7PBfZ96rny/Q7mh9pU1H8xmVFSRv7h/cGHZ3qV19HNtq6PWTGVq6i93jsO0RQmKbrHog==
+contentful-management@^5.12.1:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-5.13.0.tgz#bc230665e62a19214736667ba90da5371a8c8b4e"
+  integrity sha512-BSKIc4kcg5HBmYKesWkbx4WjoThPcxEIUViCW6nZOwo0qh6fj7CQIMKVmm/T+hoMsZlSWhRW/eDOdUuf5B9s0Q==
   dependencies:
     axios "^0.19.0"
     contentful-sdk-core "^6.4.0"
