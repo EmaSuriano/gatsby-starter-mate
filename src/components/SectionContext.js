@@ -1,35 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const noop = () => false;
-
-const { Provider, Consumer } = React.createContext({
+const SectionContext = React.createContext({
   sections: [],
-  addSection: noop,
+  addSection: () => false,
 });
 
-export class SectionProvider extends React.Component {
-  state = {
-    sections: [],
+export const SectionProvider = ({ children }) => {
+  const [sections, setSections] = useState([]);
+  const contextValue = {
+    sections,
+    addSection: section => setSections([...sections, section]),
   };
 
-  addSection = section =>
-    this.setState(state => ({ sections: [...state.sections, section] }));
-
-  render() {
-    const { sections } = this.state;
-    const { children } = this.props;
-    const value = {
-      sections,
-      addSection: this.addSection,
-    };
-
-    return <Provider value={value}>{children}</Provider>;
-  }
-}
+  return (
+    <SectionContext.Provider value={contextValue}>
+      {children}
+    </SectionContext.Provider>
+  );
+};
 
 SectionProvider.propTypes = {
   children: PropTypes.node,
 };
 
-export const SectionConsumer = Consumer;
+export const SectionConsumer = SectionContext.Consumer;
