@@ -49,7 +49,7 @@
     "gatsby-transformer-remark": "^2.7.0",
     "inquirer": "^7.0.4",
     "prop-types": "^15.6.2",
-    "react": "^16.7.0",
+    "react": "^16.13.1",
     "react-dom": "^16.7.0",
     "react-fontawesome": "^1.6.1",
     "react-headroom": "^3.0.0",
