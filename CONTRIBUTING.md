@@ -48,4 +48,4 @@ Example: `feat/new-top-bar` or `fix/broken-project-link`
 
 5. Submit a pull request through the GitHub website.
 
-After the pull request is submitted TravisCI is going to run all the automated tasks that ensure a minimium code quality. **This is a mandatory requirement in order to merge your pul request.**
+After the pull request is submitted TravisCI is going to run all the automated tasks that ensure a minimium code quality. **This is a mandatory requirement in order to merge your pull request.**
