@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - '10'
+  - node
 
 addons:
   apt:
@@ -9,13 +9,10 @@ addons:
       # cypress dep
       - libgconf-2-4
 
-cache:
-  directories:
-    - ~/.npm
-    - ~/.cache
+cache: yarn
 
 install:
-  - yarn
+  - yarn --frozen-lockfile
 
 script:
   - yarn lint
