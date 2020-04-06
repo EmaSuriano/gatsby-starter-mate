@@ -3,23 +3,25 @@
 describe('Visual Testing', () => {
   const SCREENS = [375, 768, 1280];
 
-  it('Main Page', async () => {
-    await cy.visit('/');
+  it('Main Page', () => {
+    cy.visit('/');
 
-    await cy.get('#home').scrollIntoView();
-    await cy.get('#about').scrollIntoView();
-    await cy.get('#projects').scrollIntoView();
-    await cy.get('#writing').scrollIntoView();
-    await cy.get('footer').scrollIntoView();
+    cy.get('#home').scrollIntoView({ duration: 500 });
+    cy.get('#about').scrollIntoView({ duration: 500 });
+    cy.get('#projects').scrollIntoView({ duration: 500 });
+    cy.get('#writing').scrollIntoView({ duration: 500 });
+    cy.get('footer').scrollIntoView({ duration: 500 });
 
-    await cy.percySnapshot('Main Page Responsive', {
+    cy.wait(1000);
+
+    cy.percySnapshot('Main Page Responsive', {
       widths: SCREENS,
     });
   });
 
-  it('404 Page', async () => {
-    await cy.visit('/404');
-    await cy.wait(1000);
-    await cy.percySnapshot('404 Page Responsive', { widths: SCREENS });
+  it('404 Page', () => {
+    cy.visit('/404');
+    cy.wait(1000);
+    cy.percySnapshot('404 Page Responsive', { widths: SCREENS });
   });
 });

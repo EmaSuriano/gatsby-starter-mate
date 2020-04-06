@@ -10,8 +10,8 @@
     "serve": "yarn build && gatsby serve -p 9000",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
-    "test": "percy exec -t 350 -- cypress run",
-    "test:open": "percy exec -t 350 -- cypress open",
+    "test": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress run",
+    "test:open": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress open",
     "test:ci": "DETERMINISTIC=true start-server-and-test serve 9000"
   },
   "repository": {
