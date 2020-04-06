@@ -17,4 +17,4 @@ install:
 script:
   - yarn lint
   - yarn build
-  - yarn e2e:ci
+  - yarn test:ci
