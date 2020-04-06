@@ -6,14 +6,20 @@ import Fade from 'react-reveal/Fade';
 import SocialLink from './SocialLink';
 
 const FooterContainer = styled.div`
-  min-width: 320px;
   max-width: 1366px;
   display: flex;
-  flex: 0 1 auto;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: auto;
+
+  @media (max-width: 400px) {
+    flex-direction: column-reverse;
+
+    & > * {
+      margin-bottom: 10px;
+    }
+  }
 `;
 
 const TextFooter = styled(Text)`
@@ -21,6 +27,11 @@ const TextFooter = styled(Text)`
 
   & a {
     color: ${(props) => props.theme.colors.background};
+    transition: color ease 0.5s;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.primaryLight};
+    }
   }
 `;
 
@@ -44,7 +55,7 @@ const Footer = () => (
       const { name, socialLinks } = data.contentfulAbout;
 
       return (
-        <Box p={3} backgroundColor="primaryDark" as="footer">
+        <Box p={[2, 3]} backgroundColor="primaryDark" as="footer">
           <FooterContainer>
             <Fade left>
               <TextFooter fontSize={[2, 3]}>

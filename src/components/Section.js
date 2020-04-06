@@ -17,6 +17,10 @@ const SectionContainer = styled.div`
   justify-content: center;
   padding: 5em 1em;
   scroll-behavior: smooth;
+
+  @media (max-width: 400px) {
+    padding: 2em 1em;
+  }
 `;
 
 const DefaultBackground = () => <div />;
