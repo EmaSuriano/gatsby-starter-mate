@@ -2120,12 +2120,12 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
-ambi@^6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/ambi/-/ambi-6.4.0.tgz#3eb9cd70888503d06d4bd10f35cf0bfb42334e96"
-  integrity sha512-eMoOhqmD9FNSRdKG2LyEReBEeEGMOYM+2oNmLO0IOXjrPTRfxCGnsQiC/yIbnFNRPOyti54uFYA8NFW2PWfu/Q==
+ambi@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/ambi/-/ambi-7.0.0.tgz#c4494c8f1928fc0553db3ac18bdda15d5a58af7e"
+  integrity sha512-rbjgtVCNRHoI6MMcGJOTwt0YE3wEMtO1Mj13VZnvt2Rhg+NfoFr098vIRR0pqgNG0re0MlhY+RyTQyn5JmGOvA==
   dependencies:
-    typechecker "^6.2.0"
+    typechecker "^6.3.0"
 
 ansi-align@^3.0.0:
   version "3.0.0"
@@ -3389,6 +3389,14 @@ chalk@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-3.0.0.tgz#3f73c2bf526591f574cc492c51e2456349f844e4"
   integrity sha512-4D3B6Wf41KOYRFdszmDqMCGq5VV/uMAB273JILmO+3jAlh8X4qDtdtgCR3fxtbLEMzSx22QdhnDcJvu2u1fVwg==
+  dependencies:
+    ansi-styles "^4.1.0"
+    supports-color "^7.1.0"
+
+chalk@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.0.0.tgz#6e98081ed2d17faab615eb52ac66ec1fe6209e72"
+  integrity sha512-N9oWFcegS0sFr9oh1oz2d7Npos6vNoWW9HvtCg5N1KRFpUhaAhvTv5Y58g880fZaEYSNm3qDz8SU1UrGvp+n7A==
   dependencies:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
@@ -5266,14 +5274,14 @@ env-variable@0.0.x:
   resolved "https://registry.yarnpkg.com/env-variable/-/env-variable-0.0.6.tgz#74ab20b3786c545b62b4a4813ab8cf22726c9808"
   integrity sha512-bHz59NlBbtS0NhftmR8+ExBEekE7br0e01jw+kk0NDro7TtZzBYZ5ScGPs3OmwnpyfHTHOtr1Y6uedCdrIldtg==
 
-envfile@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/envfile/-/envfile-4.5.0.tgz#3ca690377714bee899cbcdf6503c01f37868b99b"
-  integrity sha512-y/RIRDYqbb4ng1PtH/VIsnUceo3vBgmOxhJvsh7rwnXokcQMyEV1R9e+so2SekbZise3OqmGFUuXpOL6yZgJ/w==
+envfile@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/envfile/-/envfile-5.0.0.tgz#8741c8c254209f50a47be6244d9b34d099781aac"
+  integrity sha512-3DYd+6s4mvNMAZrvXeH4csSEJyYdRAVTIDgi7h3CJmcDrWP0n/LDxLa9E+z44sPOcgB/4rpbzDncgT1Znn7uxA==
   dependencies:
-    ambi "^6.4.0"
+    ambi "^7.0.0"
     eachr "^4.5.0"
-    typechecker "^6.2.0"
+    typechecker "^6.3.0"
 
 envinfo@^7.5.0:
   version "7.5.0"
@@ -6498,7 +6506,7 @@ gatsby-cli@^2.7.50:
     ink "^2.7.1"
     ink-spinner "^3.0.1"
 
-gatsby-core-utils@^1.0.10, gatsby-core-utils@^1.0.34, gatsby-core-utils@^1.1.0, gatsby-core-utils@^1.1.1:
+gatsby-core-utils@^1.0.10, gatsby-core-utils@^1.0.34, gatsby-core-utils@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-1.1.1.tgz#3ebe4c6fe277ef8d91e1b708bd65ef4f7dc0928b"
   integrity sha512-EboPcBx37YQVUKN9JH753S54nDxjRmOefbR0i08KTmaVgQ1lZnDXJr8JfrImmMqupZlOkPQX1mWlXfp+r1jGhA==
@@ -6718,14 +6726,14 @@ gatsby-telemetry@^1.1.25, gatsby-telemetry@^1.1.56:
     stack-utils "1.0.2"
     uuid "3.4.0"
 
-gatsby-transformer-remark@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.7.0.tgz#6f0f4ca26abc927bfda4807aa0d468b2e8b919b0"
-  integrity sha512-OyJ5j2uXb4wPyodFEH3aY7m0bgQ4CiMiW1wKRpLSqsm7odxbhEBCxsTcVAwqJ7z57gGTpL9UdIXH/I0F0TJR8g==
+gatsby-transformer-remark@^2.7.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-2.7.1.tgz#986871c3ca9a1b7d1c609e8f378a68d808827770"
+  integrity sha512-9geE8itjePDvaa0uWmyRgi2emPt9ut420YyjaNJ1/4eZw9Yj8zAuCdancw7j1buhL0UAxgQ2YseO6+MWTHEoMw==
   dependencies:
     "@babel/runtime" "^7.8.7"
     bluebird "^3.7.2"
-    gatsby-core-utils "^1.1.0"
+    gatsby-core-utils "^1.1.1"
     gray-matter "^4.0.2"
     hast-util-raw "^4.0.0"
     hast-util-to-html "^4.0.1"
@@ -14201,7 +14209,7 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.0.0.tgz#5f16ff6ef2eb44f260494dae271033b29c09a9c3"
   integrity sha512-KBt58xCHry4Cejnc2ISQAF7QY+ORngsWfxezO68+12hKV6lQY8P/psIkcbjeHWn7MqcgciWJyCCevFMJdIXpow==
 
-typechecker@^6.2.0:
+typechecker@^6.2.0, typechecker@^6.3.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/typechecker/-/typechecker-6.3.0.tgz#c8ee2fee30e1d1156d3063efb9d115c859c3cf5b"
   integrity sha512-XZmZISfAzrzGHaC2nAwXyh/O1srpTIw/sFS5K0wGRIoWgc+bpGXJLkpI5VoZg9+2SwV6tFIS3WCb3l0bNitLag==
