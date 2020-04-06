@@ -3,6 +3,7 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import config from 'react-reveal/globals';
+import preset from '@rebass/preset';
 import colors from '../../colors';
 import Helmet from './Helmet';
 
@@ -17,20 +18,28 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box; 
     margin: 0;
     font-family: Cabin, 'Open Sans', sans-serif;
-    font-display: swap;
-    font-display: fallback;
     overflow-x: hidden;
   }
 `;
 
 config({ ssrFadeout: true });
 
-const loadScript = src => {
+const loadScript = (src) => {
   const tag = document.createElement('script');
   tag.src = src;
   tag.defer = true;
 
   document.getElementsByTagName('body')[0].appendChild(tag);
+};
+
+const theme = {
+  ...preset,
+  colors,
+  fonts: {
+    body: 'Cabin, Open Sans, sans-serif',
+    heading: 'inherit',
+    monospace: 'monospace',
+  },
 };
 
 const Layout = ({ children }) => {
@@ -41,7 +50,7 @@ const Layout = ({ children }) => {
   return (
     <main>
       <GlobalStyle />
-      <ThemeProvider theme={{ colors }}>
+      <ThemeProvider theme={theme}>
         <ScrollingProvider>
           <Helmet />
           {children}

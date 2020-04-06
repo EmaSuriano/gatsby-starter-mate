@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Heading, Text, Flex, Box } from 'rebass';
+import { Heading, Text, Flex, Box } from 'rebass/styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
@@ -55,11 +55,13 @@ const EllipsisHeading = styled(Heading)`
 
 const Post = ({ title, text, image, url, date, time }) => (
   <Card onClick={() => window.open(url, '_blank')} pb={4}>
-    <EllipsisHeading m={3} p={1}>
+    <EllipsisHeading m={3} p={1} color="text">
       {title}
     </EllipsisHeading>
     {image && <CoverImage src={image} height="200px" alt={title} />}
-    <Text m={3}>{text}</Text>
+    <Text m={3} color="text">
+      {text}
+    </Text>
     <ImageSubtitle bg="primary" color="white" x="right" y="bottom" round>
       {`${date} - ${Math.ceil(time)} min`}
     </ImageSubtitle>

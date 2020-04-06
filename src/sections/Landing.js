@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
-import { Heading, Flex, Box, Text } from 'rebass';
+import { Heading, Flex, Box, Text } from 'rebass/styled-components';
 import TextLoop from 'react-text-loop';
 import { SectionLink } from 'react-scroll-section';
 import Section from '../components/Section';
@@ -90,7 +90,7 @@ const LandingPage = () => (
               <TextLoop interval={5000}>
                 {roles
                   .sort(() => deterministicBehaviour || Math.random() - 0.5)
-                  .map(text => (
+                  .map((text) => (
                     <Text width={[300, 500]} key={text}>
                       {text}
                     </Text>

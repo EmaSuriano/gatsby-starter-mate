@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section } from 'react-scroll-section';
-import { Heading } from 'rebass';
+import { Heading } from 'rebass/styled-components';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
 import LinkAnimated from './LinkAnimated';

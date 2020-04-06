@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const StyledLink = styled.a`
   display: inline-block;
   transition: color 250ms, text-shadow 250ms;
-  color: black;
+  color: ${(props) => props.theme.colors.text};
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -20,7 +20,7 @@ const StyledLink = styled.a`
     content: '';
     width: 100%;
     height: 3px;
-    background-color: ${props => props.theme.colors.primaryLight};
+    background-color: ${(props) => props.theme.colors.primaryLight};
     transition: all 250ms;
   }
 
@@ -36,7 +36,7 @@ const StyledLink = styled.a`
 
 const MarkdownParagraph = styled.p`
   line-height: 2em;
-
+  color: ${(props) => props.theme.colors.text};
   &:first-child {
     margin-top: 0em;
   }
@@ -44,11 +44,13 @@ const MarkdownParagraph = styled.p`
 
 const MarkdownList = styled.ul`
   margin: 0;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 const MarkdownListItem = styled.li`
   margin: 1em 0;
   line-height: 2em;
+  color: ${(props) => props.theme.colors.text};
 `;
 
 const MarkdownLink = ({ href, children }) => {
@@ -70,8 +72,8 @@ MarkdownLink.propTypes = {
 };
 
 export default {
-  paragraph: props => <MarkdownParagraph {...props} />,
-  list: props => <MarkdownList {...props} />,
-  listItem: props => <MarkdownListItem {...props} />,
+  paragraph: MarkdownParagraph,
+  list: MarkdownList,
+  listItem: MarkdownListItem,
   link: MarkdownLink,
 };

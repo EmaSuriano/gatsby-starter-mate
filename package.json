@@ -32,9 +32,11 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
+    "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
     "contentful": "^7.14.2",
     "dotenv": "^8.2.0",
+    "emotion-theming": "^10.0.27",
     "envfile": "^5.0.0",
     "gatsby": "2.15.22",
     "gatsby-plugin-google-analytics": "^2.2.2",
