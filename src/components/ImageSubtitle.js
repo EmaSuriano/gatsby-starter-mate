@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Box } from 'rebass';
+import { Box } from 'rebass/styled-components';
 import PropTypes from 'prop-types';
 
 const BORDER_SPACING = '20px';
@@ -27,16 +27,16 @@ const ImageSubtitle = styled(Box)`
   font-weight: 600;
   text-transform: uppercase;
 
-  ${props => props.x}: 0;
-  ${props => props.y}: 0;
+  ${(props) => props.x}: 0;
+  ${(props) => props.y}: 0;
   
-  ${props =>
+  ${(props) =>
     props.x === 'left'
       ? `padding-right: ${BORDER_SPACING};`
       : `padding-left: ${BORDER_SPACING};`}
-  clip-path: ${props => BORDER_PATH_MAP[`${props.y}-${props.x}`]};
+  clip-path: ${(props) => BORDER_PATH_MAP[`${props.y}-${props.x}`]};
   
-  ${props =>
+  ${(props) =>
     props.round &&
     `border-radius: ${BORDER_RADIUS_MAP[`${props.y}-${props.x}`]};`}
 `;

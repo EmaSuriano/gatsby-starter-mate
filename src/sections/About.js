@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Image, Flex } from 'rebass';
+import { Box, Image, Flex } from 'rebass/styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
@@ -62,7 +62,7 @@ const About = () => (
           }
         }
       `}
-      render={data => {
+      render={(data) => {
         const { aboutMe, profile } = data.contentfulAbout;
         return (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">

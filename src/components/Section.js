@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section } from 'react-scroll-section';
-import { Heading } from 'rebass';
+import { Heading } from 'rebass/styled-components';
 import PropTypes from 'prop-types';
 import Slide from 'react-reveal/Slide';
 import LinkAnimated from './LinkAnimated';
@@ -17,6 +17,10 @@ const SectionContainer = styled.div`
   justify-content: center;
   padding: 5em 1em;
   scroll-behavior: smooth;
+
+  @media (max-width: 400px) {
+    padding: 2em 1em;
+  }
 `;
 
 const DefaultBackground = () => <div />;
