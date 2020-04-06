@@ -35,7 +35,7 @@
     "@tippy.js/react": "^3.1.1",
     "contentful": "^7.14.2",
     "dotenv": "^8.2.0",
-    "envfile": "^4.5.0",
+    "envfile": "^5.0.0",
     "gatsby": "2.15.22",
     "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-manifest": "^2.3.3",
