@@ -1,12 +1,15 @@
 describe('Visual Testing', () => {
   const SCREENS = [375, 768, 1280];
+
   it('Main Page', () => {
-    const SCROLL_DURATION = 1500;
     cy.visit('/');
 
-    cy.scrollTo('bottom', { duration: SCROLL_DURATION });
+    cy.get('#home').scrollIntoView();
+    cy.get('#about').scrollIntoView();
+    cy.get('#projects').scrollIntoView();
+    cy.get('#writing').scrollIntoView();
 
-    cy.wait(SCROLL_DURATION).percySnapshot('Main Page Responsive', {
+    cy.percySnapshot('Main Page Responsive', {
       widths: SCREENS,
     });
   });
