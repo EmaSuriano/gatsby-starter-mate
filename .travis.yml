@@ -10,14 +10,16 @@ addons:
       - libgconf-2-4
 
 cache:
+  yarn: true
   directories:
     - ~/.npm
     - ~/.cache
+    - node_modules
 
 install:
-  - yarn
+  - yarn --frozen-lockfile
 
 script:
   - yarn lint
   - yarn build
-  - yarn e2e:ci
+  - yarn test:ci

@@ -10,9 +10,9 @@
     "serve": "yarn build && gatsby serve -p 9000",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
-    "e2e:open": "cypress open",
-    "e2e:ci": "DETERMINISTIC=true start-server-and-test serve 9000 visual-test",
-    "visual-test": "percy exec -t 350 -- cypress run"
+    "test": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress run",
+    "test:open": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress open",
+    "test:ci": "DETERMINISTIC=true start-server-and-test serve 9000"
   },
   "repository": {
     "type": "git",
@@ -68,7 +68,7 @@
     "axe-core": "^3.5.3",
     "chalk": "^4.0.0",
     "contentful-import": "^7.7.3",
-    "cypress": "^3.8.3",
+    "cypress": "^4.3.0",
     "cypress-axe": "^0.8.1",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
