@@ -9,7 +9,12 @@ addons:
       # cypress dep
       - libgconf-2-4
 
-cache: yarn
+cache:
+  yarn: true
+  directories:
+    - ~/.npm
+    - ~/.cache
+    - node_modules
 
 install:
   - yarn --frozen-lockfile
