@@ -19,6 +19,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: Cabin, 'Open Sans', sans-serif;
     overflow-x: hidden;
+    width: 100vw;
   }
 `;
 
