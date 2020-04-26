@@ -34,7 +34,7 @@
   "dependencies": {
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
-    "contentful": "^7.14.2",
+    "contentful": "^7.14.3",
     "dotenv": "^8.2.0",
     "emotion-theming": "^10.0.27",
     "envfile": "^5.0.0",
