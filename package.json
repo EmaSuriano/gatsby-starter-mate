@@ -55,7 +55,7 @@
     "react-dom": "^16.13.1",
     "react-fontawesome": "^1.6.1",
     "react-headroom": "^3.0.0",
-    "react-helmet": "^5.2.0",
+    "react-helmet": "^6.0.0",
     "react-markdown": "^4.3.1",
     "react-reveal": "^1.2.2",
     "react-scroll-section": "^2.0.0",
