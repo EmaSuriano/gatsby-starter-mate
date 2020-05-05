@@ -54,18 +54,25 @@ const EllipsisHeading = styled(Heading)`
 `;
 
 const Post = ({ title, text, image, url, date, time }) => (
-  <Card onClick={() => window.open(url, '_blank')} pb={4}>
-    <EllipsisHeading m={3} p={1} color="text">
-      {title}
-    </EllipsisHeading>
-    {image && <CoverImage src={image} height="200px" alt={title} />}
-    <Text m={3} color="text">
-      {text}
-    </Text>
-    <ImageSubtitle bg="primary" color="white" x="right" y="bottom" round>
-      {`${date} - ${Math.ceil(time)} min`}
-    </ImageSubtitle>
-  </Card>
+  <a
+    href={url}
+    target="__blank"
+    title={title}
+    style={{ textDecoration: 'none' }}
+  >
+    <Card pb={4}>
+      <EllipsisHeading m={3} p={1} color="text">
+        {title}
+      </EllipsisHeading>
+      {image && <CoverImage src={image} height="200px" alt={title} />}
+      <Text m={3} color="text">
+        {text}
+      </Text>
+      <ImageSubtitle bg="primary" color="white" x="right" y="bottom" round>
+        {`${date} - ${Math.ceil(time)} min`}
+      </ImageSubtitle>
+    </Card>
+  </a>
 );
 
 Post.propTypes = {
