@@ -6,11 +6,11 @@ const LinkAnimated = styled.span`
   margin-bottom: 0;
   padding-bottom: 5px;
   color: inherit;
-  ${props =>
+  ${(props) =>
     props.selected &&
     `border-bottom:  5px solid ${props.theme.colors.primaryLight}`};
   transition: 0.4s;
-  cursor: ${props => (props.onClick ? 'pointer' : 'default')};
+  cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
 
   &:after {
     content: '';
@@ -18,13 +18,14 @@ const LinkAnimated = styled.span`
     right: 0;
     width: 0;
     bottom: -5px;
-    background: ${props => props.theme.colors.secondaryLight};
+    background: ${(props) => props.theme.colors.secondaryLight};
     height: 5px;
     transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
   }
 
+  &:focus:after,
   &:hover:after {
     left: 0;
     right: auto;

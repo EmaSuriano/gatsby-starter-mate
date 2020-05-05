@@ -5,7 +5,7 @@ import LinkAnimated from './LinkAnimated';
 
 const RouteLink = ({ onClick, selected, name }) => (
   <Box ml={[2, 3]} color="background" fontSize={[2, 3]}>
-    <LinkAnimated onClick={onClick} selected={selected}>
+    <LinkAnimated onClick={onClick} selected={selected} tabIndex={0}>
       {name}
     </LinkAnimated>
   </Box>
