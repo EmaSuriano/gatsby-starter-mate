@@ -2249,12 +2249,12 @@ alphanum-sort@^1.0.0:
   resolved "https://registry.yarnpkg.com/alphanum-sort/-/alphanum-sort-1.0.2.tgz#97a1119649b211ad33691d9f9f486a8ec9fbe0a3"
   integrity sha1-l6ERlkmyEa0zaR2fn0hqjsn74KM=
 
-ambi@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/ambi/-/ambi-7.0.0.tgz#c4494c8f1928fc0553db3ac18bdda15d5a58af7e"
-  integrity sha512-rbjgtVCNRHoI6MMcGJOTwt0YE3wEMtO1Mj13VZnvt2Rhg+NfoFr098vIRR0pqgNG0re0MlhY+RyTQyn5JmGOvA==
+ambi@^7.1.0:
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/ambi/-/ambi-7.1.0.tgz#a76da61d9de4dc93115b0b1d04c4714343020973"
+  integrity sha512-OvWiv3gEy2ZNpHdDwoyJe7isWP2v9vZqFWEb2dzotHd8HMPTa5mIk6MLFjvVusbI7mhTBw++4xWipNhJAehW7Q==
   dependencies:
-    typechecker "^6.3.0"
+    typechecker "^6.4.0"
 
 ansi-align@^3.0.0:
   version "3.0.0"
@@ -5456,14 +5456,14 @@ env-variable@0.0.x:
   resolved "https://registry.yarnpkg.com/env-variable/-/env-variable-0.0.6.tgz#74ab20b3786c545b62b4a4813ab8cf22726c9808"
   integrity sha512-bHz59NlBbtS0NhftmR8+ExBEekE7br0e01jw+kk0NDro7TtZzBYZ5ScGPs3OmwnpyfHTHOtr1Y6uedCdrIldtg==
 
-envfile@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/envfile/-/envfile-5.0.0.tgz#8741c8c254209f50a47be6244d9b34d099781aac"
-  integrity sha512-3DYd+6s4mvNMAZrvXeH4csSEJyYdRAVTIDgi7h3CJmcDrWP0n/LDxLa9E+z44sPOcgB/4rpbzDncgT1Znn7uxA==
+envfile@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/envfile/-/envfile-5.1.0.tgz#2d4261214421dc5bdf3d989627a2cddd0ce84633"
+  integrity sha512-6YsSCeyOMxCQp8YJPzK+xAn1V6jmNG7iejJNCAkcLN7AXtMFW9g5bz828o1k5RFA2M5hLlaX5E8VUlXSIyFKjQ==
   dependencies:
-    ambi "^7.0.0"
+    ambi "^7.1.0"
     eachr "^4.5.0"
-    typechecker "^6.3.0"
+    typechecker "^6.4.0"
 
 envinfo@^7.5.0:
   version "7.5.0"
@@ -14391,10 +14391,10 @@ type@^2.0.0:
   resolved "https://registry.yarnpkg.com/type/-/type-2.0.0.tgz#5f16ff6ef2eb44f260494dae271033b29c09a9c3"
   integrity sha512-KBt58xCHry4Cejnc2ISQAF7QY+ORngsWfxezO68+12hKV6lQY8P/psIkcbjeHWn7MqcgciWJyCCevFMJdIXpow==
 
-typechecker@^6.2.0, typechecker@^6.3.0:
-  version "6.3.0"
-  resolved "https://registry.yarnpkg.com/typechecker/-/typechecker-6.3.0.tgz#c8ee2fee30e1d1156d3063efb9d115c859c3cf5b"
-  integrity sha512-XZmZISfAzrzGHaC2nAwXyh/O1srpTIw/sFS5K0wGRIoWgc+bpGXJLkpI5VoZg9+2SwV6tFIS3WCb3l0bNitLag==
+typechecker@^6.2.0, typechecker@^6.4.0:
+  version "6.4.0"
+  resolved "https://registry.yarnpkg.com/typechecker/-/typechecker-6.4.0.tgz#c087dc744c5a0f17524d58a17eb31a9660ab7324"
+  integrity sha512-EbOu+9szY13mhl0EsvLXnR+pTCa3gTHQQPLdce72ujcC9fRHXlVFBNXtHeRhgzLxLlKUh4zA9C0tezLDgshf+A==
 
 typedarray-to-buffer@^3.1.5:
   version "3.1.5"
