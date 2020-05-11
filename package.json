@@ -78,7 +78,7 @@
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.18.0",
     "husky": "^4.2.5",
-    "lint-staged": "^10.1.7",
+    "lint-staged": "^10.2.2",
     "prettier": "^2.0.5",
     "start-server-and-test": "^1.11.0"
   },
