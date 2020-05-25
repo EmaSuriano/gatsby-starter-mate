@@ -67,7 +67,7 @@
     "@percy/cypress": "^2.1.1",
     "axe-core": "^3.5.3",
     "chalk": "^4.0.0",
-    "contentful-import": "^7.7.16",
+    "contentful-import": "^7.7.18",
     "cypress": "^4.5.0",
     "cypress-axe": "^0.8.1",
     "eslint": "^5.6.0",
