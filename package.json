@@ -35,21 +35,16 @@
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
     "contentful": "^7.14.3",
-    "dotenv": "^8.2.0",
-    "emotion-theming": "^10.0.27",
-    "envfile": "^5.2.0",
     "gatsby": "2.15.22",
     "gatsby-plugin-google-analytics": "^2.3.2",
     "gatsby-plugin-manifest": "^2.4.3",
     "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-preload-link-crossorigin": "^1.0.2",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-styled-components": "^3.3.2",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-contentful": "2.3.12",
     "gatsby-source-medium": "^2.3.2",
     "gatsby-transformer-remark": "^2.8.13",
-    "inquirer": "^7.0.4",
     "prop-types": "^15.6.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -65,7 +60,10 @@
   },
   "devDependencies": {
     "@percy/cypress": "^2.1.1",
+    "dotenv": "^8.2.0",
     "axe-core": "^3.5.3",
+    "envfile": "^5.2.0",
+    "inquirer": "^7.0.4",
     "chalk": "^4.0.0",
     "contentful-import": "^7.7.18",
     "cypress": "^4.5.0",
@@ -77,19 +75,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.20.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.6",
     "prettier": "^2.0.5",
     "start-server-and-test": "^1.11.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write"
-    ]
   }
 }
