@@ -35,7 +35,7 @@ const NotFoundPage = () => (
       <Box width={[320, 400, 600]} m="auto">
         <Heading
           color="primaryDark"
-          fontSize={['9rem', '13rem', '16rem']}
+          fontSize={['8rem', '12rem', '14rem']}
           as="h1"
         >
           404

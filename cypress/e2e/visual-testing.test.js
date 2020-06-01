@@ -10,9 +10,9 @@ describe('Visual Testing', () => {
     cy.get('#about').scrollIntoView({ duration: 500 });
     cy.get('#projects').scrollIntoView({ duration: 500 });
     cy.get('#writing').scrollIntoView({ duration: 500 });
-    cy.get('footer').scrollIntoView({ duration: 500 });
+    cy.get('#footer').scrollIntoView({ duration: 500 });
 
-    cy.wait(1000);
+    cy.waitForAnimations();
 
     cy.percySnapshot('Main Page Responsive', {
       widths: SCREENS,
@@ -21,7 +21,9 @@ describe('Visual Testing', () => {
 
   it('404 Page', () => {
     cy.visit('/404');
-    cy.wait(1000);
+
+    cy.waitForAnimations();
+
     cy.percySnapshot('404 Page Responsive', { widths: SCREENS });
   });
 });

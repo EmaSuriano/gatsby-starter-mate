@@ -12,7 +12,7 @@
     "setup": "node ./bin/setup.js",
     "test": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress run",
     "test:open": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress open",
-    "test:ci": "DETERMINISTIC=true start-server-and-test serve 9000"
+    "test:ci": "DETERMINISTIC=true start-server-and-test 8000"
   },
   "repository": {
     "type": "git",
@@ -32,24 +32,20 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.10.2",
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
     "contentful": "^7.14.3",
-    "dotenv": "^8.2.0",
-    "emotion-theming": "^10.0.27",
-    "envfile": "^5.2.0",
     "gatsby": "2.15.22",
     "gatsby-plugin-google-analytics": "^2.3.2",
     "gatsby-plugin-manifest": "^2.4.3",
-    "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-preload-link-crossorigin": "^1.0.2",
+    "gatsby-plugin-offline": "^3.2.7",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-styled-components": "^3.3.2",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-contentful": "2.3.12",
     "gatsby-source-medium": "^2.3.2",
     "gatsby-transformer-remark": "^2.8.13",
-    "inquirer": "^7.0.4",
     "prop-types": "^15.6.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -61,35 +57,26 @@
     "react-scroll-section": "^2.0.0",
     "react-text-loop": "^2.0.1",
     "rebass": "^4.0.7",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@percy/cypress": "^2.1.1",
-    "axe-core": "^3.5.3",
+    "axe-core": "^3.5.4",
     "chalk": "^4.0.0",
     "contentful-import": "^7.7.18",
-    "cypress": "^4.5.0",
+    "cypress": "^4.7.0",
     "cypress-axe": "^0.8.1",
+    "dotenv": "^8.2.0",
+    "envfile": "^5.2.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-cypress": "^2.8.1",
+    "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-react": "^7.20.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.2.6",
+    "inquirer": "^7.0.4",
     "prettier": "^2.0.5",
     "start-server-and-test": "^1.11.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write"
-    ]
   }
 }
