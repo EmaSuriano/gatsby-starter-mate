@@ -6,6 +6,7 @@ import config from 'react-reveal/globals';
 import preset from '@rebass/preset';
 import colors from '../../colors';
 import Helmet from './Helmet';
+import Footer from './Footer';
 
 const GlobalStyle = createGlobalStyle`
   *,
