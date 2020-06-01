@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@percy/cypress": "^2.1.1",
-    "axe-core": "^3.5.3",
+    "axe-core": "^3.5.4",
     "chalk": "^4.0.0",
     "contentful-import": "^7.7.18",
     "cypress": "^4.5.0",
