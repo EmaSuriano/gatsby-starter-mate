@@ -17,6 +17,5 @@ install:
 
 script:
   - yarn lint
-  - rm -rf .cache
   - yarn build
   - yarn test:ci
