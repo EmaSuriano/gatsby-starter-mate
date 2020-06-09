@@ -243,16 +243,6 @@ $ yarn
 $ yarn build
 ```
 
-## Deployment Automation (Optional) ⚙️
-
-Every time you made a change in your Contentful data or you add a new post in Medium you need to trigger a manual deployment, which can be an annoying task. Therefore I found a nice way to make this process automatic and it is by using a tool called Zapier.
-
-This tool will be watching for changes in Contentful and Medium and then trigger a new deploy in Netlify (or the service you are using). In summary, you don't need to care anymore about deploying your application and can focus on writing content or developing features!
-
-In case you want to know more I wrote an article in Medium that explains the whole process especially for this starter 🙌 [Click here to read it.](https://medium.com/@emasuriano/make-any-static-site-dynamic-without-coding-9dde5673b1a)
-
-**UPDATE:** Contentful added a feature to link it with Netlify as a built in option, but in case you are using another provider I recommend going with Zapier!
-
 ## Contributing 💪
 
 I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](https://emasuriano.com/). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
