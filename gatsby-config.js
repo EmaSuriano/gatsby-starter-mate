@@ -8,14 +8,6 @@ const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID, DETERMINISTIC } = process.env;
 const plugins = [
   'gatsby-plugin-react-helmet',
   {
-    resolve: 'gatsby-plugin-web-font-loader',
-    options: {
-      google: {
-        families: ['Cabin', 'Open Sans'],
-      },
-    },
-  },
-  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       name: `${about.name} Portfolio`,
