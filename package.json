@@ -1,12 +1,12 @@
 {
   "name": "gatsby-starter-mate",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "Gatsby v2 starter to create a top notch portfolio!",
   "main": "index.js",
   "scripts": {
-    "prepare": "node scripts/get-about",
-    "build": "yarn prepare && gatsby build",
-    "develop": "yarn prepare && gatsby develop",
+    "pre-build": "node scripts/get-about",
+    "build": "yarn pre-build && gatsby build",
+    "develop": "yarn pre-build && gatsby develop",
     "start": "yarn develop",
     "serve": "yarn build && gatsby serve -p 9000",
     "lint": "eslint ./src",
@@ -54,7 +54,7 @@
     "react-helmet": "^6.0.0",
     "react-markdown": "^4.3.1",
     "react-reveal": "^1.2.2",
-    "react-scroll-section": "^2.0.0",
+    "react-scroll-section": "^2.0.1",
     "react-text-loop": "^2.0.1",
     "rebass": "^4.0.7",
     "styled-components": "^5.1.1"
