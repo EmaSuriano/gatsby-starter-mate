@@ -8,6 +8,7 @@
     "build": "yarn prepare && gatsby build",
     "develop": "yarn prepare && gatsby develop",
     "start": "yarn develop",
+    "clean": "gatsby clean",
     "serve": "yarn build && gatsby serve -p 9000",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
@@ -34,6 +35,7 @@
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
     "@babel/preset-env": "^7.10.2",
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
     "contentful": "^7.14.3",
