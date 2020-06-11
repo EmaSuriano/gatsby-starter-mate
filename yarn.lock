@@ -13662,10 +13662,10 @@ react-reveal@^1.2.2:
   dependencies:
     prop-types "^15.5.10"
 
-react-scroll-section@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-2.0.0.tgz#46138df0b8e6f634589fb86e8eef71b57bac318b"
-  integrity sha512-rr2mlItRg0dyVHnFeA5emwfAx5J0ij3iKuMdeqOx1VXJswRR6H7Fp8FVD4bC0piDwekwJpPEGHY304H4RFKZ6Q==
+react-scroll-section@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-2.0.1.tgz#040db9e479c6a355bae9936daebfe213d81fb715"
+  integrity sha512-Du8yhVe+t+cbRWmakZoFNETgUBrvsp/vu8mTXcYdBBa/xDiFfo56OmCWTlHy+n8T0cFAuiNXWsq//1EKiVlOOA==
   dependencies:
     debounce "^1.2.0"
     prop-types "^15.6.2"

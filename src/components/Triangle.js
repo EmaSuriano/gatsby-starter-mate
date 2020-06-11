@@ -6,15 +6,15 @@ const Triangle = styled.div`
   height: 0;
   z-index: -2;
 
-  ${props => {
+  ${(props) => {
     const color = props.theme.colors[props.color] || props.color;
     const border = `${props.height[0]} solid ${color};`;
     return props.invertY
       ? `border-bottom: ${border}; bottom: 0;`
       : `border-top: ${border};`;
   }}
-  /* prettier stop */
-  ${props => {
+
+  ${(props) => {
     const border = `${props.width[0]} solid transparent;`;
     return props.invertX
       ? `border-left: ${border}; right: 0;`
@@ -23,14 +23,14 @@ const Triangle = styled.div`
 
 
   @media only screen and (min-width: 768px) {
-    ${props => {
+    ${(props) => {
       const height = props.height[1];
       return props.invertY
         ? `border-bottom-width: ${height};`
         : `border-top-width: ${height};`;
     }}
-    /* prettier stop */
-    ${props => {
+
+    ${(props) => {
       const width = props.width[1];
       return props.invertX
         ? `border-left-width: ${width};`
