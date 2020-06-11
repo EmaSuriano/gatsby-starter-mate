@@ -154,6 +154,32 @@ As the starter is a SPA it only has two routes:
 | Writing  |  ![Writing](media/writing.png)  |
 | /404     |      ![404](media/404.png)      |
 
+## Theming 🎨
+
+This starters come with a hand-made color palette made by myself, but I highly encourage you to go and customize the colors to match your preference! The colors can be found inside [`colors.js`](./colors.js), which are going to be loaded by `ThemeProvider` of `styled-components` and apply across all the components inside the application.
+
+```javascript
+// colors.js
+module.exports = {
+  background: '#FFFFFF',
+  backgroundDark: '#f0e6f6',
+
+  text: '#333333',
+
+  primary: '#7c37ad',
+  primaryLight: '#ae66df',
+  primaryDark: '#4b007d',
+
+  secondary: '#ff4081',
+  secondaryLight: '#ff79b0',
+  secondaryDark: '#c60055',
+};
+```
+
+Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
+
+![Theming](./media/theming.png)
+
 ## Building your site 📦
 
 As we are dealing with environment variables, the `.env` file is excluded from `.gitignore` file. Therefore, in order to deploy the website you have to send `SPACE_ID` and `ACCESS_TOKEN` with the `build` command.

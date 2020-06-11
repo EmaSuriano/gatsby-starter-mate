@@ -20,6 +20,8 @@ const GlobalStyle = createGlobalStyle`
     font-family: Cabin, 'Open Sans', sans-serif;
     overflow-x: hidden;
     width: 100vw;
+    background: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
   }
 `;
 
@@ -50,8 +52,8 @@ const Layout = ({ children }) => {
 
   return (
     <main>
-      <GlobalStyle />
       <ThemeProvider theme={theme}>
+        <GlobalStyle />
         <ScrollingProvider>
           <Helmet />
           {children}

@@ -36,7 +36,6 @@ const StyledLink = styled.a`
 
 const MarkdownParagraph = styled.p`
   line-height: 2em;
-  color: ${(props) => props.theme.colors.text};
   &:first-child {
     margin-top: 0em;
   }
@@ -44,13 +43,11 @@ const MarkdownParagraph = styled.p`
 
 const MarkdownList = styled.ul`
   margin: 0;
-  color: ${(props) => props.theme.colors.text};
 `;
 
 const MarkdownListItem = styled.li`
   margin: 1em 0;
   line-height: 2em;
-  color: ${(props) => props.theme.colors.text};
 `;
 
 const MarkdownLink = ({ href, children }) => {
