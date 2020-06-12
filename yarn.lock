@@ -6256,11 +6256,6 @@ env-variable@0.0.x:
   resolved "https://registry.yarnpkg.com/env-variable/-/env-variable-0.0.6.tgz#74ab20b3786c545b62b4a4813ab8cf22726c9808"
   integrity sha512-bHz59NlBbtS0NhftmR8+ExBEekE7br0e01jw+kk0NDro7TtZzBYZ5ScGPs3OmwnpyfHTHOtr1Y6uedCdrIldtg==
 
-envfile@^6.2.0:
-  version "6.2.0"
-  resolved "https://registry.yarnpkg.com/envfile/-/envfile-6.2.0.tgz#d4830fc6bf551cbdf86c2652e491c70927cfe9e5"
-  integrity sha512-uBtjfjCuBa3HNHsMV3NB17/sZMNMLmdSWHczoGnvB9bAJanoZXjyKoWqEv30qN98Bk0F/sR3pFwOSjcxwnI6+w==
-
 envinfo@^7.5.1:
   version "7.5.1"
   resolved "https://registry.yarnpkg.com/envinfo/-/envinfo-7.5.1.tgz#93c26897225a00457c75e734d354ea9106a72236"
