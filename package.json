@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
-    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-env": "^7.10.3",
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
