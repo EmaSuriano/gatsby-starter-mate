@@ -4506,15 +4506,15 @@ contentful-batch-libs@^9.0.1:
     lodash "^4.0.1"
     moment "^2.18.1"
 
-contentful-import@^7.8.7:
-  version "7.8.7"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.8.7.tgz#8e73ed3f7695495cd37424e0ccc0afc1b5ba4b63"
-  integrity sha512-Q+PCTZ/3OQgrld+c95l6X6v1jL07wxWu+rRPRYib3HyOUkM78MLTIJ7SsvwfBMoqaPiEi2xfCuFtXNzdbKUx4A==
+contentful-import@^7.9.1:
+  version "7.9.1"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.9.1.tgz#81ba1346518524c0bec6e6cd6d2a0bfb7fff1a95"
+  integrity sha512-JlbjCA3oDqOU52x1Shvo6lg6JTjiqcLHETcLzkIcmVg6F67rYW2vk2xJicVBpexSE/LJcU9yDuvKuF5gcQ2ahg==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.5.1"
     contentful-batch-libs "^9.0.1"
-    contentful-management "^5.12.1"
+    contentful-management "^6.0.2"
     echo-cli "^1.0.8"
     joi "^13.4.0"
     listr "^0.14.1"
@@ -4524,14 +4524,15 @@ contentful-import@^7.8.7:
     moment "^2.22.2"
     yargs "^12.0.1"
 
-contentful-management@^5.12.1:
-  version "5.26.3"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-5.26.3.tgz#d2e9d4ac2b9a784923908697da784e89ff403b16"
-  integrity sha512-2vASoZmdWQLf8zRdh1T8YVqZdjh7URcS3FhwhL1Np7/6QjrCF1Icowcoov7wRE/AuD3IWzEIQginX5i+hx9bNA==
+contentful-management@^6.0.2:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-6.0.3.tgz#36b888630c5cd0803996d31074988f5f53a08307"
+  integrity sha512-wlz7ou0jPGayJnNGM9Q6hJgw+cFFOcHWTSq8oTBak1bNPrd+W7ZZMrV/jp6XC7gn3ZJjIx7VNZcJNH+K/mtUkQ==
   dependencies:
     axios "^0.19.0"
     contentful-sdk-core "^6.4.0"
     lodash "^4.17.11"
+    type-fest "0.15.1"
 
 contentful-resolve-response@^1.1.4:
   version "1.1.4"
@@ -15170,6 +15171,11 @@ type-check@~0.3.2:
   integrity sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=
   dependencies:
     prelude-ls "~1.1.2"
+
+type-fest@0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/type-fest/-/type-fest-0.15.1.tgz#d2c4e73d3e4a53cf1a906396dd460a1c5178ca00"
+  integrity sha512-n+UXrN8i5ioo7kqT/nF8xsEzLaqFra7k32SEsSPwvXVGyAcRgV/FUQN/sgfptJTR1oRmmq7z4IXMFSM7im7C9A==
 
 type-fest@^0.11.0:
   version "0.11.0"
