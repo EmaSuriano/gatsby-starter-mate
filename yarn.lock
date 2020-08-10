@@ -7213,14 +7213,14 @@ gatsby-plugin-manifest@^2.4.22:
     semver "^5.7.1"
     sharp "^0.25.1"
 
-gatsby-plugin-offline@^3.2.21:
-  version "3.2.21"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.21.tgz#c308c7eb571b98effbb134a706c7af49711fc637"
-  integrity sha512-MvkWmieiXIlm70xawJgIQFUnGlMUWhrRk6jGoVCiiZ8xrViiluZONttCm/tiDdiZTFOwvOPN7RQj/zB+50grMg==
+gatsby-plugin-offline@^3.2.22:
+  version "3.2.22"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.2.22.tgz#28824402e31a9a1697d971fcd96ef323c3afe1b0"
+  integrity sha512-kaydtoYpsSzFaj7pYnI4rOSsAIZz2yZocpIeg+or6f63EKRMaR4eABXuIeOou6unmFvQ1azJcaVi09Zbi0kGBg==
   dependencies:
     "@babel/runtime" "^7.10.3"
     cheerio "^1.0.0-rc.3"
-    gatsby-core-utils "^1.3.14"
+    gatsby-core-utils "^1.3.15"
     glob "^7.1.6"
     idb-keyval "^3.2.0"
     lodash "^4.17.15"
