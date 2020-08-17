@@ -7539,10 +7539,10 @@ gatsby-plugin-react-helmet@^3.3.10:
   dependencies:
     "@babel/runtime" "^7.10.3"
 
-gatsby-plugin-sharp@^2.6.25:
-  version "2.6.25"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.25.tgz#0456238eff6fbb2f40d0056886fb2dc424ae6624"
-  integrity sha512-FbEGPwYnVr4ZRC5XPLGEyrUZqaKoztBveSXqzHW4P1YNIKXxVdJV/1YbcfWrR2v5xlTu8ZQUZOIbsl9bIwhLIg==
+gatsby-plugin-sharp@^2.6.27:
+  version "2.6.27"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.27.tgz#cfc66b5c465eabce0388f6b60fd942fc0198e495"
+  integrity sha512-uWvzxLFAXRF4n8BIa37cIYKvc+gcTJ8CmZFYlhb5daEOd545Z0Elq/mQdOAWKL14cA7AGkEdtnsodXde2gBafA==
   dependencies:
     "@babel/runtime" "^7.10.3"
     async "^2.6.3"
@@ -7558,7 +7558,7 @@ gatsby-plugin-sharp@^2.6.25:
     potrace "^2.1.8"
     probe-image-size "^4.1.1"
     progress "^2.0.3"
-    semver "^5.7.1"
+    semver "^7.3.2"
     sharp "^0.25.1"
     svgo "1.3.2"
     uuid "^3.4.0"
@@ -7679,10 +7679,10 @@ gatsby-recipes@^0.2.16:
     yoga-layout-prebuilt "^1.9.6"
     yup "^0.27.0"
 
-gatsby-source-contentful@^2.3.35:
-  version "2.3.35"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.3.35.tgz#711f94ae3aabcff1e35ec0133305d82f6e41ae08"
-  integrity sha512-CWTV7fw21jL/trwMuDZKss/n+zdvmzEJrEiZ7Prh3PSjnxAjE6d0bpBrQWZE+B0fUEFUikJy2MwvdCuygqi04Q==
+gatsby-source-contentful@^2.3.37:
+  version "2.3.37"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.3.37.tgz#a14268d45a26ebf1c2d5fc4362100e8e5e9a0c3e"
+  integrity sha512-9wCYooWbZYrTPdFL1Wab9SIhbTnhxhBuPHJYnIux/N5GDrRulXgldgkbzxF0PcVAGvxCUzg9KZhbx4Kbyz7dkg==
   dependencies:
     "@babel/runtime" "^7.10.3"
     "@contentful/rich-text-types" "^13.4.0"
@@ -7695,7 +7695,7 @@ gatsby-source-contentful@^2.3.35:
     deep-map "^1.5.0"
     fs-extra "^8.1.0"
     gatsby-core-utils "^1.3.15"
-    gatsby-plugin-sharp "^2.6.25"
+    gatsby-plugin-sharp "^2.6.27"
     gatsby-source-filesystem "^2.3.24"
     is-online "^8.4.0"
     json-stringify-safe "^5.0.1"
