@@ -45,7 +45,7 @@
     "gatsby-plugin-offline": "^3.2.23",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-styled-components": "^3.3.10",
-    "gatsby-source-contentful": "^2.3.35",
+    "gatsby-source-contentful": "^2.3.37",
     "gatsby-source-medium": "^2.3.10",
     "gatsby-transformer-remark": "^2.8.28",
     "prop-types": "^15.6.2",
