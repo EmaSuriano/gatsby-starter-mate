@@ -63,7 +63,7 @@
   },
   "devDependencies": {
     "@percy/cypress": "^2.1.1",
-    "axe-core": "^4.0.1",
+    "axe-core": "^4.0.2",
     "babel-eslint": "^10.1.0",
     "chalk": "^4.1.0",
     "contentful-import": "^7.9.6",
