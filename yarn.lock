@@ -7582,20 +7582,20 @@ gatsby-plugin-react-helmet@^3.3.10:
   dependencies:
     "@babel/runtime" "^7.10.3"
 
-gatsby-plugin-sharp@^2.6.31:
-  version "2.6.31"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.31.tgz#4e324a694f7fc9cb4053c096552a1276c9996897"
-  integrity sha512-TUGFlkgGwtxcBP1UQG+QNd8ipeclefMmpEC8k3/3z4r15aV7d83/CrgByFjWLalY8esHF9DiZIyR7/kYoQ8/PQ==
+gatsby-plugin-sharp@^2.6.35:
+  version "2.6.35"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.6.35.tgz#d37e08f453784e39d7b1c2a759b801fdd4e633c4"
+  integrity sha512-5y2ut8TGg5iIfDMnVm/WRy37vjSlHzMdJVugvB4lp4NH69FIq75JpaivshtjQYEi3cc5UonXOQWZJ6aSsM54pQ==
   dependencies:
     "@babel/runtime" "^7.10.3"
     async "^3.2.0"
     bluebird "^3.7.2"
     fs-extra "^9.0.1"
-    gatsby-core-utils "^1.3.18"
+    gatsby-core-utils "^1.3.19"
     got "^10.7.0"
     imagemin "^7.0.1"
     imagemin-mozjpeg "^9.0.0"
-    imagemin-pngquant "^9.0.0"
+    imagemin-pngquant "^9.0.1"
     lodash "^4.17.19"
     mini-svg-data-uri "^1.2.3"
     potrace "^2.1.8"
@@ -7604,7 +7604,7 @@ gatsby-plugin-sharp@^2.6.31:
     semver "^7.3.2"
     sharp "^0.25.4"
     svgo "1.3.2"
-    uuid "^8.3.0"
+    uuid "3.4.0"
 
 gatsby-plugin-styled-components@^3.3.10:
   version "3.3.10"
@@ -7722,10 +7722,10 @@ gatsby-recipes@^0.2.22:
     yoga-layout-prebuilt "^1.9.6"
     yup "^0.27.0"
 
-gatsby-source-contentful@^2.3.41:
-  version "2.3.41"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.3.41.tgz#a3f6fd4aa87f59057eab20c6874baa306cf424d5"
-  integrity sha512-qwImmdi72+9PjKBAvHk4Fl2aWPUDDDI7HL2EaliZQquqAjnwyA0lqlST/DBTg3wwdS0rvV+XZKRPpzsfwcXtww==
+gatsby-source-contentful@^2.3.45:
+  version "2.3.45"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.3.45.tgz#a33e304b4654c6b132f4023610cd0b594a2af07c"
+  integrity sha512-A8ZOyk36ZCb7Z3RMYpqjvbRIYDJ7ffrYsoCRVvmacR1e8Hk4DA4qXrVmKAjxLBNQU6d+CWAjH85FcuCEZI/N6A==
   dependencies:
     "@babel/runtime" "^7.10.3"
     "@contentful/rich-text-types" "^13.4.0"
@@ -7737,18 +7737,18 @@ gatsby-source-contentful@^2.3.41:
     contentful "^7.14.6"
     deep-map "^1.5.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.18"
-    gatsby-plugin-sharp "^2.6.31"
-    gatsby-source-filesystem "^2.3.27"
+    gatsby-core-utils "^1.3.19"
+    gatsby-plugin-sharp "^2.6.35"
+    gatsby-source-filesystem "^2.3.29"
     is-online "^8.4.0"
     json-stringify-safe "^5.0.1"
-    lodash "^4.17.15"
+    lodash "^4.17.20"
     qs "^6.9.4"
 
-gatsby-source-filesystem@^2.3.27:
-  version "2.3.27"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.27.tgz#e575b992d877a5ddc1fe6177567ab5c268374ca7"
-  integrity sha512-lNWRVDkaC2g6mSPTGuE9bsXawS0GkkwV/X8l8ZJnqbcMBl8p+h3zYoKXQ2u00pmQRqjwp4lvlaTarLRxD0tGDQ==
+gatsby-source-filesystem@^2.3.29:
+  version "2.3.29"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.29.tgz#5eaf1434593f38523655145323e426f21c30687a"
+  integrity sha512-PWHtkj+inhfPm8aMVhtxS1PAW+r4Kk5M1LDP5l0OO2HBaHiiSi0DulgmYJ3usYpctFqOQ92im/EQLRJbOaaQsA==
   dependencies:
     "@babel/runtime" "^7.10.3"
     better-queue "^3.8.10"
@@ -7756,7 +7756,7 @@ gatsby-source-filesystem@^2.3.27:
     chokidar "^3.4.2"
     file-type "^12.4.2"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.3.18"
+    gatsby-core-utils "^1.3.19"
     got "^9.6.0"
     md5-file "^3.2.3"
     mime "^2.4.6"
@@ -9042,10 +9042,10 @@ imagemin-mozjpeg@^9.0.0:
     is-jpg "^2.0.0"
     mozjpeg "^7.0.0"
 
-imagemin-pngquant@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/imagemin-pngquant/-/imagemin-pngquant-9.0.0.tgz#f22ba4276cde1799fb15dd475e33984f8607e871"
-  integrity sha512-9cqnTEaJwAHWUi+8EMTB3NUouWToCWxtL+QnoYr8bfVwuKilHvRVWKsa9lt+0c3aWaGxCAkHs++j8qINvSqomA==
+imagemin-pngquant@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/imagemin-pngquant/-/imagemin-pngquant-9.0.1.tgz#ecf22f522bdb734a503ecc21bdd7bc3d0230edcc"
+  integrity sha512-PYyo9G/xwddf+Qqlqe3onz5ZH7p6vHYVVkiuuczUjxZmfekyY77RXaOA/AR6FnVoeQxGa/pDtEK5xUKOcVo+sA==
   dependencies:
     execa "^4.0.0"
     is-png "^2.0.0"
@@ -16356,11 +16356,6 @@ uuid@3.4.0, uuid@^3.0.0, uuid@^3.0.1, uuid@^3.3.2, uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
-
-uuid@^8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/uuid/-/uuid-8.3.0.tgz#ab738085ca22dc9a8c92725e459b1d507df5d6ea"
-  integrity sha512-fX6Z5o4m6XsXBdli9g7DtWgAx+osMsRRZFKma1mIUsLCz6vRvv+pz5VNbyu9UEDzpMWulZfvpgb/cmDXVulYFQ==
 
 v8-compile-cache@^1.1.2:
   version "1.1.2"
