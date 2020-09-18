@@ -4,10 +4,12 @@
   "description": "Gatsby v2 starter to create a top notch portfolio!",
   "main": "index.js",
   "scripts": {
-    "pre-build": "node scripts/get-about",
-    "build": "yarn pre-build && gatsby build",
-    "develop": "yarn pre-build && gatsby develop",
-    "start": "yarn develop",
+    "prestart": "ts-node --files src/scripts/get-about",
+    "prebuild": "ts-node --files src/scripts/get-about",
+    "check-types": "tsc -p . --noEmit",
+    "build": "gatsby build",
+    "develop": "yarn start",
+    "start": "gatsby develop",
     "clean": "gatsby clean",
     "serve": "yarn build && gatsby serve -p 9000",
     "lint": "eslint ./src",
@@ -45,6 +47,7 @@
     "gatsby-plugin-offline": "^3.2.27",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-plugin-typescript": "^2.4.20",
     "gatsby-source-contentful": "^2.3.45",
     "gatsby-source-medium": "^2.3.10",
     "gatsby-transformer-remark": "^2.8.34",
@@ -63,6 +66,7 @@
   },
   "devDependencies": {
     "@percy/cypress": "^2.1.1",
+    "@types/rebass": "^4.0.6",
     "axe-core": "^4.0.2",
     "babel-eslint": "^10.1.0",
     "chalk": "^4.1.0",
@@ -79,6 +83,8 @@
     "eslint-plugin-react": "^7.20.6",
     "inquirer": "^7.3.3",
     "prettier": "^2.1.1",
-    "start-server-and-test": "^1.11.3"
+    "start-server-and-test": "^1.11.3",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
   }
 }

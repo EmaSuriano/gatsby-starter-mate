@@ -4,8 +4,27 @@ import Layout from '../components/Layout';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 
+const NotFoundPage = () => (
+  <Layout>
+    <Section.Container id="404" Background={Background}>
+      <Box width={[320, 400, 600]} m="auto">
+        <Heading
+          color="primaryDark"
+          fontSize={['8rem', '12rem', '14rem']}
+          as="h1"
+        >
+          404
+        </Heading>
+        <Heading color="secondary" fontSize={['4rem', '5rem', '6rem']} as="h2">
+          There isn&apos;t anything here
+        </Heading>
+      </Box>
+    </Section.Container>
+  </Layout>
+);
+
 const Background = () => (
-  <div>
+  <>
     <Triangle
       color="backgroundDark"
       height={['35vh', '80vh']}
@@ -26,26 +45,7 @@ const Background = () => (
       invertX
       invertY
     />
-  </div>
-);
-
-const NotFoundPage = () => (
-  <Layout>
-    <Section.Container id="404" Background={Background}>
-      <Box width={[320, 400, 600]} m="auto">
-        <Heading
-          color="primaryDark"
-          fontSize={['8rem', '12rem', '14rem']}
-          as="h1"
-        >
-          404
-        </Heading>
-        <Heading color="secondary" fontSize={['4rem', '5rem', '6rem']} as="h2">
-          There isn&apos;t anything here
-        </Heading>
-      </Box>
-    </Section.Container>
-  </Layout>
+  </>
 );
 
 export default NotFoundPage;

@@ -7,6 +7,7 @@ const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID, DETERMINISTIC } = process.env;
 
 const plugins = [
   'gatsby-plugin-react-helmet',
+  'gatsby-plugin-typescript',
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
