@@ -79,6 +79,6 @@
     "eslint-plugin-react": "^7.20.6",
     "inquirer": "^7.3.3",
     "prettier": "^2.1.2",
-    "start-server-and-test": "^1.11.3"
+    "start-server-and-test": "^1.11.4"
   }
 }
