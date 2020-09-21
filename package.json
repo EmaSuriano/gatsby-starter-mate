@@ -46,7 +46,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-source-contentful": "^2.3.46",
-    "gatsby-source-medium": "^2.3.10",
+    "gatsby-source-medium": "^2.3.11",
     "gatsby-transformer-remark": "^2.8.35",
     "prop-types": "^15.6.2",
     "react": "^16.13.1",
