@@ -5355,11 +5355,6 @@ date-fns@^2.0.1, date-fns@^2.14.0, date-fns@^2.8.1:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.15.0.tgz#424de6b3778e4e69d3ff27046ec136af58ae5d5f"
   integrity sha512-ZCPzAMJZn3rNUvvQIMlXhDr4A+Ar07eLeGsGREoWU19a3Pqf5oYa+ccd+B3F6XVtQY6HANMFdOQ8A+ipFnvJdQ==
 
-debounce@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/debounce/-/debounce-1.2.0.tgz#44a540abc0ea9943018dc0eaa95cce87f65cd131"
-  integrity sha512-mYtLl1xfZLi1m4RtQYlZgJUNQjl4ZxVnHzIR8nLLgi4q1YT8o/WM+MK/f8yfcc9s5Ir5zRaPZyZU6xs1Syoocg==
-
 debug@2, debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -13389,13 +13384,12 @@ react-reveal@^1.2.2:
   dependencies:
     prop-types "^15.5.10"
 
-react-scroll-section@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-2.1.0.tgz#eccab09ead381d1e52551397efadfc83216c1644"
-  integrity sha512-Fj3rOEWtI6FdDGSJPmSgg5dEQdtVYHBk1mwikrMAoBySF2XfQ4RsvNFTAYZnph3U2kLqL4HMB1d1RTJGfZmU2w==
+react-scroll-section@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-3.0.0.tgz#f0505192c60896d9b531fb788b7c75048efe0a02"
+  integrity sha512-0pEr5vK++9va14laa5VgPlujWcLiqo5KkirTNHPoWRrLwMM83fyeo3cos2EbPxlrQIL1GMmF7vPnISTtctpYPw==
   dependencies:
-    debounce "^1.2.0"
-    prop-types "^15.6.2"
+    smoothscroll-polyfill "^0.4.4"
 
 react-side-effect@^2.1.0:
   version "2.1.0"
@@ -14526,6 +14520,11 @@ slugify@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.4.4.tgz#2f032ffa52b1e1ca2a27737c1ce47baae3d0883a"
   integrity sha512-N2+9NJ8JzfRMh6PQLrBeDEnVDQZSytE/W4BTC4fNNPmO90Uu58uNwSlIJSs+lmPgWsaAF79WLhVPe5tuy7spjw==
+
+smoothscroll-polyfill@^0.4.4:
+  version "0.4.4"
+  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
+  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
