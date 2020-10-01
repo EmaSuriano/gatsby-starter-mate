@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Image, Text, Flex, Box } from 'rebass/styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
 import SocialLink from '../components/SocialLink';
@@ -203,7 +203,7 @@ const Projects = () => (
       render={({ contentfulAbout }) => (
         <CardContainer minWidth="350px">
           {contentfulAbout.projects.map((p, i) => (
-            <Fade bottom delay={i * 200} key={p.id}>
+            <Fade direction="bottom" delay={i * 200} key={p.id}>
               <Project {...p} />
             </Fade>
           ))}

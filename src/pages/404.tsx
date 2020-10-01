@@ -8,11 +8,7 @@ const NotFoundPage = () => (
   <Layout>
     <Section.Container id="404" Background={Background}>
       <Box width={[320, 400, 600]} m="auto">
-        <Heading
-          color="primaryDark"
-          fontSize={['8rem', '12rem', '14rem']}
-          as="h1"
-        >
+        <Heading color="text" fontSize={['8rem', '12rem', '14rem']} as="h1">
           404
         </Heading>
         <Heading color="secondary" fontSize={['4rem', '5rem', '6rem']} as="h2">
@@ -26,7 +22,7 @@ const NotFoundPage = () => (
 const Background = () => (
   <>
     <Triangle
-      color="backgroundDark"
+      color="muted"
       height={['35vh', '80vh']}
       width={['95vw', '60vw']}
     />
@@ -35,15 +31,14 @@ const Background = () => (
       color="primary"
       height={['25vh', '35vh']}
       width={['75vw', '60vw']}
-      invertX
+      position="bottom-right"
     />
 
     <Triangle
-      color="secondaryLight"
+      color="secondary"
       height={['10vh', '20vh']}
       width={['50vw', '50vw']}
-      invertX
-      invertY
+      position="top-right"
     />
   </>
 );

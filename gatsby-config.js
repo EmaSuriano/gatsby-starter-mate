@@ -1,4 +1,3 @@
-const colors = require('./colors');
 const about = require('./about.json');
 
 require('dotenv').config();
@@ -8,19 +7,19 @@ const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID, DETERMINISTIC } = process.env;
 const plugins = [
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-typescript',
+  'gatsby-plugin-styled-components',
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
       name: `${about.name} Portfolio`,
-      short_name: `${about.name} Portfolio`,
+      short_name: about.name,
       start_url: '/',
-      background_color: colors.background,
-      theme_color: colors.primary,
+      background_color: about.colors.background,
+      theme_color: about.colors.primary,
       display: 'minimal-ui',
       icon: 'media/icon.png',
     },
   },
-  'gatsby-plugin-styled-components',
   {
     resolve: 'gatsby-source-contentful',
     options: {
@@ -29,7 +28,6 @@ const plugins = [
     },
   },
   'gatsby-transformer-remark',
-  'gatsby-plugin-offline',
   {
     resolve: 'gatsby-source-medium',
     options: {

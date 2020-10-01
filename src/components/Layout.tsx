@@ -1,11 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { ReactNode } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
-import config from 'react-reveal/globals';
-import preset from '@rebass/preset';
-import colors from '../../colors';
 import Helmet from './Helmet';
+import { loadScript } from '../utils/script';
+import theme from '../theme';
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -25,43 +24,23 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-config({ ssrFadeout: true });
+loadScript('https://use.fontawesome.com/fd58d214b9.js');
 
-const loadScript = (src) => {
-  const tag = document.createElement('script');
-  tag.src = src;
-  tag.defer = true;
-
-  document.getElementsByTagName('body')[0].appendChild(tag);
+type Props = {
+  children: ReactNode;
 };
 
-const theme = {
-  ...preset,
-  colors,
-  fonts: {
-    body: 'Cabin, Open Sans, sans-serif',
-    heading: 'inherit',
-    monospace: 'monospace',
-  },
-};
-
-const Layout = ({ children }) => {
-  useEffect(() => {
-    loadScript('https://use.fontawesome.com/fd58d214b9.js');
-  }, []);
-
-  return (
-    <main>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <ScrollingProvider>
-          <Helmet />
-          {children}
-        </ScrollingProvider>
-      </ThemeProvider>
-    </main>
-  );
-};
+const Layout = ({ children }: Props) => (
+  <main>
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <ScrollingProvider>
+        <Helmet />
+        {children}
+      </ScrollingProvider>
+    </ThemeProvider>
+  </main>
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import { Text, Box, Link, Flex } from 'rebass/styled-components';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import SocialLink from './SocialLink';
 
 const FooterContainer = styled.div`
@@ -57,7 +57,7 @@ const Footer = () => (
       return (
         <Box p={[2, 3]} backgroundColor="primaryDark" id="footer">
           <FooterContainer>
-            <Fade left>
+            <Fade direction="left">
               <TextFooter fontSize={[2, 3]}>
                 <span>{`${name} Portfolio - Powered by `}</span>
                 <Link href="https://www.gatsbyjs.org/">Gatsby</Link>
@@ -75,7 +75,7 @@ const Footer = () => (
               </TextFooter>
             </Fade>
             <Flex>
-              <Fade right>
+              <Fade direction="right">
                 {socialLinks.map(({ id, ...rest }) => (
                   <Box mx={[2, 3]} fontSize={[4, 5]} key={id}>
                     <SocialLink {...rest} color="background" />

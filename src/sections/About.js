@@ -3,7 +3,7 @@ import { Box, Image, Flex } from 'rebass/styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import markdownRenderer from '../components/MarkdownRenderer';
@@ -67,7 +67,7 @@ const About = () => (
         return (
           <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
             <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
-              <Fade bottom>
+              <Fade direction="bottom">
                 <ReactMarkdown
                   source={aboutMe.childMarkdownRemark.rawMarkdownBody}
                   renderers={markdownRenderer}
@@ -79,7 +79,7 @@ const About = () => (
               width={[1, 1, 2 / 6]}
               style={{ maxWidth: '300px', margin: 'auto' }}
             >
-              <Fade right>
+              <Fade direction="right">
                 <ProfilePicture
                   src={profile.image.src}
                   alt={profile.title}

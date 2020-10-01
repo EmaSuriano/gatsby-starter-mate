@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
-const LinkAnimated = styled.span`
+type Props = {
+  selected: boolean;
+};
+
+const LinkAnimated = styled.span<Props>`
   text-decoration: none;
   position: relative;
   margin-bottom: 0;
   padding-bottom: 5px;
   color: inherit;
-  ${(props) =>
-    props.selected &&
-    `border-bottom:  5px solid ${props.theme.colors.primaryLight}`};
+  ${({ selected, theme }) =>
+    selected && `border-bottom:  5px solid ${theme.colors.primary}`};
   transition: 0.4s;
   cursor: ${(props) => (props.onClick ? 'pointer' : 'default')};
 
@@ -18,7 +21,7 @@ const LinkAnimated = styled.span`
     right: 0;
     width: 0;
     bottom: -5px;
-    background: ${(props) => props.theme.colors.secondaryLight};
+    background: ${({ theme }) => theme.colors.secondary};
     height: 5px;
     transition-property: width;
     transition-duration: 0.3s;

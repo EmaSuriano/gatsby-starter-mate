@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Heading, Text, Flex, Box } from 'rebass/styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import FontAwesomeIcon from 'react-fontawesome';
 import Section from '../components/Section';
 import { CardContainer, Card } from '../components/Card';
@@ -195,7 +195,7 @@ const Writing = () => (
             <Section.Header name="Writing" icon="✍️" label="writing" />
             <CardContainer minWidth="300px">
               {posts.map(({ Component, ...rest }) => (
-                <Fade bottom key={rest.id}>
+                <Fade direction="bottom" key={rest.id}>
                   <Component {...rest} key={rest.id} />
                 </Fade>
               ))}
