@@ -28,7 +28,7 @@ const SocialLink = ({ icon, name, url, invert }: Props) => (
 );
 
 const IconLink = styled(Link)<{ invert?: boolean }>`
-  transition: color 0.5s;
+  transition: color 0.4s;
   color: ${({ theme, invert }) =>
     invert ? theme.colors.background : theme.colors.primary};
   text-decoration: none;

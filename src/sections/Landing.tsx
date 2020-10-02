@@ -4,7 +4,7 @@ import TextLoop from 'react-text-loop';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
 import { useScrollSection } from 'react-scroll-section';
-import MouseIcon from '../components/MouseIcon';
+import MouseIcon from '../components/ScrollIcon';
 import Triangle from '../components/Triangle';
 import { useSiteQuery } from '../queries/useSiteQuery';
 

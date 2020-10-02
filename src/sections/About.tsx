@@ -10,6 +10,7 @@ import { useAboutMeQuery } from '../queries/useAboutMeQuery';
 
 const About = () => {
   const { aboutMe, profile } = useAboutMeQuery();
+
   return (
     <Section.Container id="about" Background={Background}>
       <Section.Header name="About me" icon="🙋‍♂️" label="person" />
@@ -43,7 +44,7 @@ const About = () => {
 
 const ProfilePicture = styled(Image)`
   border-radius: 50%;
-  transition: all 0.25s ease-out;
+  transition: all 0.4s ease-out;
 
   &:hover {
     border-radius: 20%;

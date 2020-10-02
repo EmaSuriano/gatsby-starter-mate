@@ -1,11 +1,12 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
+import { lighten } from 'polished';
 
 type Props = {
   onClick: () => void;
 };
 
-const MouseIcon = ({ onClick }: Props) => (
+const ScrollIcon = ({ onClick }: Props) => (
   <ScrollLink onClick={onClick}>
     <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
       <g fill="none">
@@ -32,6 +33,16 @@ const ScrollLink = styled.span`
   @media only screen and (max-width: 700px) {
     display: none;
   }
+
+  &:hover {
+    & rect {
+      stroke: ${({ theme }) => lighten(0.2, theme.colors.primary)};
+    }
+
+    & circle {
+      fill: ${({ theme }) => lighten(0.2, theme.colors.primary)};
+    }
+  }
 `;
 
 const ScrollAnimation = keyframes`
@@ -50,12 +61,14 @@ const ScrollAnimation = keyframes`
   }
 `;
 
-const Mouse = styled.rect.attrs(({ theme }) => ({
-  stroke: theme.colors.primary,
-  strokeWidth: '3',
-}))``;
+const Mouse = styled.rect`
+  transition: stroke 0.4s;
+  stroke: ${({ theme }) => theme.colors.primary};
+  stroke-width: 3;
+`;
 
 const Scroll = styled.circle`
+  transition: fill 0.4s;
   animation-name: ${ScrollAnimation};
   animation-duration: 1.5s;
   animation-timing-function: cubic-bezier(0.65, -0.55, 0.25, 1.5);
@@ -65,4 +78,4 @@ const Scroll = styled.circle`
   fill: ${({ theme }) => theme.colors.primary};
 `;
 
-export default MouseIcon;
+export default ScrollIcon;
