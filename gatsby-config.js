@@ -49,6 +49,6 @@ module.exports = {
   plugins,
   siteMetadata: {
     isMediumUserDefined: !!about.mediumUser,
-    deterministicBehaviour: !!DETERMINISTIC,
+    deterministic: !!DETERMINISTIC,
   },
 };

@@ -27,6 +27,14 @@ const colors: Colors = {
 const theme: Theme = {
   ...(preset as Theme),
   colors,
+  buttons: {
+    empty: {
+      p: 0,
+      border: 0,
+      m: 0,
+      background: 'transparent',
+    },
+  },
   fonts: {
     body: 'Cabin, Open Sans, sans-serif',
     heading: 'inherit',

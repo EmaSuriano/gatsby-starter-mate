@@ -1,12 +1,11 @@
-import React from 'react';
-import { SectionLink } from 'react-scroll-section';
+import React, { ReactNode } from 'react';
+import { useScrollSection } from 'react-scroll-section';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const StyledLink = styled.a`
   display: inline-block;
   transition: color 250ms, text-shadow 250ms;
-  color: ${(props) => props.theme.colors.text};
+  color: ${({ theme }) => theme.colors.text};
   cursor: pointer;
   position: relative;
   text-decoration: none;
@@ -20,7 +19,7 @@ const StyledLink = styled.a`
     content: '';
     width: 100%;
     height: 3px;
-    background-color: ${(props) => props.theme.colors.primaryLight};
+    background-color: ${({ theme }) => theme.colors.primary};
     transition: all 250ms;
   }
 
@@ -50,22 +49,29 @@ const MarkdownListItem = styled.li`
   line-height: 2em;
 `;
 
-const MarkdownLink = ({ href, children }) => {
+type LinkProps = {
+  href: string;
+  children: ReactNode;
+};
+
+const MarkdownLink = ({ href, children }: LinkProps) => {
   const isInnerLink = href.startsWith('#');
-  return isInnerLink ? (
-    <SectionLink section={href.substring(1, href.length)}>
-      {({ onClick }) => <StyledLink onClick={onClick}>{children}</StyledLink>}
-    </SectionLink>
-  ) : (
+  if (isInnerLink)
+    return (
+      <InnerLink href={href.substring(1, href.length)}>{children}</InnerLink>
+    );
+
+  return (
     <StyledLink href={href} target="_blank" rel="noreferrer">
       {children}
     </StyledLink>
   );
 };
 
-MarkdownLink.propTypes = {
-  href: PropTypes.string.isRequired,
-  children: PropTypes.node,
+const InnerLink = ({ href, children }: LinkProps) => {
+  const { onClick } = useScrollSection(href);
+
+  return <StyledLink onClick={onClick}>{children}</StyledLink>;
 };
 
 export default {

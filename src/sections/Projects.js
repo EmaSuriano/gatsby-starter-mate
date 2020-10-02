@@ -12,7 +12,7 @@ import ImageSubtitle from '../components/ImageSubtitle';
 import Hide from '../components/Hide';
 
 const Background = () => (
-  <div>
+  <>
     <Triangle
       color="secondaryLight"
       height={['80vh', '80vh']}
@@ -41,7 +41,7 @@ const Background = () => (
       width={['100vw', '100vw']}
       invertY
     />
-  </div>
+  </>
 );
 
 const CARD_HEIGHT = '200px';

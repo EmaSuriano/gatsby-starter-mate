@@ -14,7 +14,7 @@ const MEDIUM_CDN = 'https://cdn-images-1.medium.com/max/400';
 const MEDIUM_URL = 'https://medium.com';
 
 const Background = () => (
-  <div>
+  <>
     <Triangle
       color="backgroundDark"
       height={['15vh', '10vh']}
@@ -36,7 +36,7 @@ const Background = () => (
       invertX
       invertY
     />
-  </div>
+  </>
 );
 
 const CoverImage = styled.img`

@@ -10,6 +10,8 @@ declare module '@rebass/preset' {
     radii: Radii;
     shadows: Shadows;
     text: Text;
+    variants: any;
+    buttons: any;
   }
 
   interface Colors {
@@ -57,4 +59,9 @@ declare module '@rebass/preset' {
     display: Display;
     caps: Caps;
   }
+}
+
+declare module '*.svg' {
+  const content: any;
+  export default content;
 }

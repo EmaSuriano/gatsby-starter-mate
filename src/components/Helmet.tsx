@@ -1,8 +1,7 @@
-import { useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet as ReactHelmet } from 'react-helmet';
 import { DefaultTheme, withTheme } from 'styled-components';
-import useHelmetQuery from '../queries/useHelmetQuery';
+import { useHelmetQuery } from '../queries/useHelmetQuery';
 
 type Props = {
   theme: DefaultTheme;
@@ -11,6 +10,8 @@ type Props = {
 const Helmet = ({ theme }: Props) => {
   const { name, description, profile } = useHelmetQuery();
   const title = `${name} Portfolio`;
+
+  console.log(`https:${profile.bigIcon.src}`);
 
   return (
     <ReactHelmet htmlAttributes={{ lang: 'en' }}>

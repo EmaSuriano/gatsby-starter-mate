@@ -17,7 +17,7 @@ type QueryResponse = {
   };
 };
 
-const useHelmetQuery = () => {
+export const useHelmetQuery = () => {
   const { contentfulAbout } = useStaticQuery<QueryResponse>(graphql`
     query HelmetQuery {
       contentfulAbout {
@@ -43,5 +43,3 @@ const useHelmetQuery = () => {
 
   return contentfulAbout;
 };
-
-export default useHelmetQuery;
