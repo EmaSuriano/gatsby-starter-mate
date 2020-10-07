@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Card as CardRebass } from 'rebass';
+import { Card as CardRebass } from 'rebass/styled-components';
 
 type CardContainerProps = {
   minWidth: string;

@@ -1,5 +1,7 @@
+import { lighten } from 'polished';
 import React, { ReactNode } from 'react';
 import { useScrollSection } from 'react-scroll-section';
+import { Text } from 'rebass';
 import styled from 'styled-components';
 
 const StyledLink = styled.a`
@@ -13,13 +15,13 @@ const StyledLink = styled.a`
   &:after {
     position: absolute;
     z-index: -1;
-    bottom: 1px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     content: '';
     width: 100%;
     height: 3px;
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: ${({ theme }) => theme.colors.secondary};
     transition: all 250ms;
   }
 
@@ -33,11 +35,10 @@ const StyledLink = styled.a`
   }
 `;
 
-const MarkdownParagraph = styled.p`
-  line-height: 2em;
-  &:first-child {
-    margin-top: 0em;
-  }
+const MarkdownParagraph = styled(Text)`
+  font-size: large;
+  line-height: 1.5em;
+  padding-bottom: 1em;
 `;
 
 const MarkdownList = styled.ul`
@@ -45,8 +46,9 @@ const MarkdownList = styled.ul`
 `;
 
 const MarkdownListItem = styled.li`
-  margin: 1em 0;
-  line-height: 2em;
+  font-size: large;
+  margin-bottom: 1em;
+  line-height: 1.5em;
 `;
 
 type LinkProps = {

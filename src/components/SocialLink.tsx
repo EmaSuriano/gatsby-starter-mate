@@ -32,7 +32,7 @@ const IconLink = styled(Link)<{ invert?: boolean }>`
   text-decoration: none;
 
   &:hover {
-    color: ${({ theme }) => lighten(0.2, theme.colors.primary)};
+    color: ${({ theme }) => lighten(0.3, theme.colors.primary)};
   }
 `;
 

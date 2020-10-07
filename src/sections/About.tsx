@@ -16,7 +16,7 @@ const About = () => {
       <Section.Header name="About me" icon="🙋‍♂️" label="person" />
       <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
         <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
-          <Fade direction="down">
+          <Fade direction="down" triggerOnce>
             <ReactMarkdown source={markdown} renderers={markdownRenderer} />
           </Fade>
         </Box>
@@ -25,7 +25,7 @@ const About = () => {
           width={[1, 1, 2 / 6]}
           style={{ maxWidth: '300px', margin: 'auto' }}
         >
-          <Fade direction="right">
+          <Fade direction="right" triggerOnce>
             <ProfilePicture mt={[4, 4, 0]} ml={[0, 0, 1]} {...profile} />
           </Fade>
         </Box>

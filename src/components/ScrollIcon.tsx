@@ -36,11 +36,11 @@ const ScrollLink = styled.span`
 
   &:hover {
     & rect {
-      stroke: ${({ theme }) => lighten(0.2, theme.colors.primary)};
+      stroke: ${({ theme }) => lighten(0.3, theme.colors.primary)};
     }
 
     & circle {
-      fill: ${({ theme }) => lighten(0.2, theme.colors.primary)};
+      fill: ${({ theme }) => lighten(0.3, theme.colors.primary)};
     }
   }
 `;

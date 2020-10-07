@@ -1,8 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
-
-type Favicon = {
-  src: string;
-};
+import { Favicon } from '../types';
 
 type QueryResponse = {
   contentfulAbout: {

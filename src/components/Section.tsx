@@ -36,7 +36,7 @@ type HeaderProps = {
 };
 
 const Header = ({ name, icon, label }: HeaderProps) => (
-  <Slide direction="left">
+  <Slide direction="left" triggerOnce>
     <Heading color="secondaryDark" mb={4}>
       <Link selected>
         {name}

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Headroom from 'react-headroom';
 import { Box, Button, Flex, Image } from 'rebass/styled-components';
 import styled from 'styled-components';
@@ -42,7 +42,13 @@ const HomeLink = () => {
   return (
     <Button onClick={onClick} variant="empty">
       <Flex justifyContent="center">
-        <Image src={profile.bigIcon.src} width="80px" alt="Portfolio Logo" />
+        <Image
+          src={profile.bigIcon.src}
+          width="80px"
+          alt="Portfolio Logo"
+          p={2}
+          css={{ borderRadius: '20px' }}
+        />
       </Flex>
     </Button>
   );

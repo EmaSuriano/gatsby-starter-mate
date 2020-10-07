@@ -4,6 +4,11 @@ require('dotenv').config();
 
 const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID, DETERMINISTIC } = process.env;
 
+// TODO: move to Theme configuration
+const config = {
+  writingLimit: 3,
+};
+
 const plugins = [
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-typescript',
@@ -31,7 +36,7 @@ const plugins = [
   {
     resolve: 'gatsby-source-medium',
     options: {
-      username: about.mediumUser || '@medium',
+      username: '@emasuriano' || about.mediumUser || '@medium',
     },
   },
 ];
@@ -50,5 +55,6 @@ module.exports = {
   siteMetadata: {
     isMediumUserDefined: !!about.mediumUser,
     deterministic: !!DETERMINISTIC,
+    ...config,
   },
 };

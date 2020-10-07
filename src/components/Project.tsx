@@ -2,7 +2,7 @@ import React from 'react';
 import SocialLink from '../components/SocialLink';
 import ImageLabel from './ImageLabel';
 import Hide from '../components/Hide';
-import { Box, Flex, Image, Text } from 'rebass';
+import { Box, Flex, Image, Text } from 'rebass/styled-components';
 import styled from 'styled-components';
 import { Project as ProjectType } from '../types';
 import { Card } from './Card';
