@@ -1,32 +1,38 @@
-import preset, { Colors, Theme } from '@rebass/preset';
+import preset, { Theme } from '@rebass/preset';
 import 'styled-components';
 
 declare module 'styled-components' {
   export interface DefaultTheme extends Theme {}
 }
 
-const colors: Colors = {
-  background: '#FFFFFF',
-  muted: '#f0e6f6',
-  gray: '#ddd',
-  text: '#333333',
-
-  primary: '#7c37ad',
-  secondary: '#ff4081',
-  highlight: '#ff79b0',
-
-  // primary: '#7c37ad',
-  // primaryLight: '#ae66df',
-  // primaryDark: '#4b007d',
-
-  // secondary: '#ff4081',
-  // secondaryLight: '#ff79b0',
-  // secondaryDark: '#c60055',
-};
+const BASE_THEME = preset as Theme;
 
 const theme: Theme = {
-  ...(preset as Theme),
-  colors,
+  ...BASE_THEME,
+  colors: {
+    background: '#FFFFFF',
+    muted: '#f0e6f6',
+    gray: '#ddd',
+    text: '#333333',
+
+    primary: '#7c37ad',
+    secondary: '#ff4081',
+    highlight: '#ff79b0',
+
+    // primary: '#7c37ad',
+    // primaryLight: '#ae66df',
+    // primaryDark: '#4b007d',
+
+    // secondary: '#ff4081',
+    // secondaryLight: '#ff79b0',
+    // secondaryDark: '#c60055',
+  },
+  queries: {
+    xs: '@media screen and (max-width: 40em)',
+    sm: '@media screen and (min-width: 40em) and (max-width: 52em)',
+    md: '@media screen and (min-width: 52em) and (max-width: 64em)',
+    lg: '@media screen and (min-width: 64em)',
+  },
   buttons: {
     empty: {
       p: 0,

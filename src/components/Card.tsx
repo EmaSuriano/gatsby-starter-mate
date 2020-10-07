@@ -1,13 +1,17 @@
 import styled from 'styled-components';
-import { Card as CardRebass } from 'rebass/styled-components';
+import { Card as CardRebass } from 'rebass';
 
-export const CardContainer = styled.div`
+type CardContainerProps = {
+  minWidth: string;
+};
+
+export const CardContainer = styled.div<CardContainerProps>`
   display: grid;
   grid-gap: 30px;
 
   grid-template-columns: repeat(
     auto-fill,
-    minmax(${(props) => props.minWidth}, 1fr)
+    minmax(${({ minWidth }) => minWidth}, 1fr)
   );
   justify-items: center;
 
@@ -16,6 +20,7 @@ export const CardContainer = styled.div`
   }
 `;
 
+// @ts-ignore
 export const Card = styled(CardRebass).attrs({
   bg: 'white',
   boxShadow: 0,
@@ -32,5 +37,3 @@ export const Card = styled(CardRebass).attrs({
     box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
   }
 `;
-
-export default Card;

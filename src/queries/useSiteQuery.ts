@@ -1,11 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
-
-type SocialLink = {
-  id: string;
-  url: string;
-  name: string;
-  fontAwesomeIcon: string;
-};
+import { SocialLink } from '../types';
 
 export type QueryResponse = {
   contentfulAbout: {
@@ -27,10 +21,9 @@ export const useSiteQuery = () => {
         name
         roles
         socialLinks {
-          id
           url
           name
-          fontAwesomeIcon
+          icon: fontAwesomeIcon
         }
       }
       site {

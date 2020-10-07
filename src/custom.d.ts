@@ -10,6 +10,7 @@ declare module '@rebass/preset' {
     radii: Radii;
     shadows: Shadows;
     text: Text;
+    queries: Queries;
     variants: any;
     buttons: any;
   }
@@ -58,6 +59,13 @@ declare module '@rebass/preset' {
     heading: HeadingOrRoot;
     display: Display;
     caps: Caps;
+  }
+
+  interface Queries {
+    xs: string;
+    sm: string;
+    md: string;
+    lg: string;
   }
 }
 

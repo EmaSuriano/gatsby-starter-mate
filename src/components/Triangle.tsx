@@ -3,11 +3,9 @@ import styled from 'styled-components';
 
 type ResponsiveProp<T> = T[];
 
-type Position = 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
-
 type Props = {
   color: keyof Colors;
-  position?: Position;
+  position?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
   width: ResponsiveProp<string>;
   height: ResponsiveProp<string>;
 };
@@ -18,33 +16,31 @@ const Triangle = styled.div<Props>`
   height: 0;
   z-index: -2;
 
-  ${({ theme, color, height, position = 'top-left' }) => {
-    const border = `${height[0]} solid ${theme.colors[color]};`;
-    return position.includes('bottom')
-      ? `border-bottom: ${border}; bottom: 0;`
-      : `border-top: ${border};`;
-  }}
+  ${({ theme, color, height, width, position = 'top-left' }) => {
+    const [y, x] = position.split('-');
 
-  ${({ width, position = 'top-left' }) => {
-    const border = `${width[0]} solid transparent;`;
-    return position.includes('right')
-      ? `border-left: ${border}; right: 0;`
-      : `border-right: ${border};`;
-  }}
+    return `
+      border-${y}: ${height[0]} solid ${theme.colors[color]};
+      ${y}: 0;
 
+      border-${invertX(x)}: ${width[0]} solid transparent;
+      ${x}: 0;
+      
+    `;
+  }}
 
   @media only screen and (min-width: 768px) {
-    ${({ height, position = 'top-left' }) =>
-      position.includes('bottom')
-        ? `border-bottom-width: ${height[1]};`
-        : `border-top-width: ${height[1]};`}
+    ${({ height, width, position = 'top-left' }) => {
+      const [y, x] = position.split('-');
 
-    ${({ width, position = 'top-left' }) => {
-      return position.includes('right')
-        ? `border-left-width: ${width[1]};`
-        : `border-right-width: ${width[1]};`;
-    }};
+      return `
+        border-${y}-width: ${height[1]};
+        border-${invertX(x)}-width: ${width[1]};
+      `;
+    }}
   }
 `;
+
+const invertX = (x: string) => (x === 'right' ? 'left' : 'right');
 
 export default Triangle;

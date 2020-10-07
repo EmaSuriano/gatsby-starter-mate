@@ -5,11 +5,9 @@ import styled from 'styled-components';
 import FontAwesomeIcon from 'react-fontawesome';
 import { lighten } from 'polished';
 import 'tippy.js/dist/tippy.css'; // eslint-disable-line
+import { SocialLink as SocialLinkType } from '../types';
 
-type Props = {
-  icon: string;
-  name: string;
-  url: string;
+type Props = SocialLinkType & {
   invert?: boolean;
 };
 

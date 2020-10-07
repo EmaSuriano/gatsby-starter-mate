@@ -46,7 +46,7 @@ const Footer = () => (
             id
             url
             name
-            fontAwesomeIcon
+            icon: fontAwesomeIcon
           }
         }
       }
@@ -76,9 +76,9 @@ const Footer = () => (
             </Fade>
             <Flex>
               <Fade direction="right">
-                {socialLinks.map(({ id, ...rest }) => (
-                  <Box mx={[2, 3]} fontSize={[4, 5]} key={id}>
-                    <SocialLink {...rest} color="background" />
+                {socialLinks.map((sl) => (
+                  <Box mx={[2, 3]} fontSize={[4, 5]} key={sl.name}>
+                    <SocialLink {...sl} />
                   </Box>
                 ))}
               </Fade>

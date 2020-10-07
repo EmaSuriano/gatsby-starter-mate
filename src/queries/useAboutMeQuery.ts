@@ -1,4 +1,5 @@
 import { graphql, useStaticQuery } from 'gatsby';
+import { AboutMe } from '../types';
 
 export type QueryResponse = {
   contentfulAbout: {
@@ -16,8 +17,10 @@ export type QueryResponse = {
   };
 };
 
-export const useAboutMeQuery = () => {
-  const { contentfulAbout } = useStaticQuery<QueryResponse>(graphql`
+export const useAboutMeQuery = (): AboutMe => {
+  const {
+    contentfulAbout: { aboutMe, profile },
+  } = useStaticQuery<QueryResponse>(graphql`
     query AboutMeQuery {
       contentfulAbout {
         aboutMe {
@@ -35,5 +38,11 @@ export const useAboutMeQuery = () => {
     }
   `);
 
-  return contentfulAbout;
+  return {
+    markdown: aboutMe.childMarkdownRemark.rawMarkdownBody,
+    profile: {
+      alt: profile.title,
+      src: profile.image.src,
+    },
+  };
 };

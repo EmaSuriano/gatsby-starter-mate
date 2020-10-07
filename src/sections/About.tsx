@@ -9,7 +9,7 @@ import markdownRenderer from '../components/MarkdownRenderer';
 import { useAboutMeQuery } from '../queries/useAboutMeQuery';
 
 const About = () => {
-  const { aboutMe, profile } = useAboutMeQuery();
+  const { markdown, profile } = useAboutMeQuery();
 
   return (
     <Section.Container id="about" Background={Background}>
@@ -17,10 +17,7 @@ const About = () => {
       <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
         <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]}>
           <Fade direction="down">
-            <ReactMarkdown
-              source={aboutMe.childMarkdownRemark.rawMarkdownBody}
-              renderers={markdownRenderer}
-            />
+            <ReactMarkdown source={markdown} renderers={markdownRenderer} />
           </Fade>
         </Box>
 
@@ -29,12 +26,7 @@ const About = () => {
           style={{ maxWidth: '300px', margin: 'auto' }}
         >
           <Fade direction="right">
-            <ProfilePicture
-              src={profile.image.src}
-              alt={profile.title}
-              mt={[4, 4, 0]}
-              ml={[0, 0, 1]}
-            />
+            <ProfilePicture mt={[4, 4, 0]} ml={[0, 0, 1]} {...profile} />
           </Fade>
         </Box>
       </Flex>
