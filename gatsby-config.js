@@ -36,7 +36,7 @@ const plugins = [
   {
     resolve: 'gatsby-source-medium',
     options: {
-      username: '@emasuriano' || about.mediumUser || '@medium',
+      username: about.mediumUser || '@medium',
     },
   },
 ];
