@@ -19,14 +19,6 @@ const theme: Theme = {
     primary: '#7c37ad',
     secondary: '#ff4081',
     highlight: '#ff79b0',
-
-    // primary: '#7c37ad',
-    // primaryLight: '#ae66df',
-    // primaryDark: '#4b007d',
-
-    // secondary: '#ff4081',
-    // secondaryLight: '#ff79b0',
-    // secondaryDark: '#c60055',
   },
   queries: {
     xs: '@media screen and (max-width: 40em)',

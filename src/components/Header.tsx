@@ -24,7 +24,7 @@ const Header = () => {
             .filter(({ id }) => id !== 'home')
             .map(({ id, onClick, selected }) => (
               <Box key={id} ml={[2, 3]} color="background" fontSize={[2, 3]}>
-                <Link onClick={onClick} selected={selected} tabIndex={0}>
+                <Link href={onClick} selected={selected} tabIndex={0}>
                   {capitalize(id)}
                 </Link>
               </Box>

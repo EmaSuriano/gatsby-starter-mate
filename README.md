@@ -146,17 +146,17 @@ As the starter is a SPA it only has two routes:
 - `/`: main page with the sections of `Home`, `About me`, `Projects` and `Writing`.
 - `/404`: error page for unexpected route.
 
-| Section  |           Screenshot            |
-| -------- | :-----------------------------: |
-| Home     |     ![Home](media/home.png)     |
-| About me |  ![About me](media/about.png)   |
-| Projects | ![Projects](media/projects.png) |
-| Writing  |  ![Writing](media/writing.png)  |
-| /404     |      ![404](media/404.png)      |
+| Section  |                             Screenshot                             |
+| -------- | :----------------------------------------------------------------: |
+| Home     |   ![Home](cypress/screenshots/photographer.test.js/Landing.png)    |
+| About me |  ![About me](cypress/screenshots/photographer.test.js/About.png)   |
+| Projects | ![Projects](cypress/screenshots/photographer.test.js/Projects.png) |
+| Writing  |  ![Writing](cypress/screenshots/photographer.test.js/Writing.png)  |
+| 404      |      ![404](cypress/screenshots/photographer.test.js/404.png)      |
 
 ## Theming 🎨
 
-This starters come with a hand-made color palette made by myself, but I highly encourage you to go and customize the colors to match your preference! The colors can be found inside [`colors.js`](./colors.js), which are going to be loaded by `ThemeProvider` of `styled-components` and apply across all the components inside the application.
+This starters come with a hand-made color palette made by myself, but I highly encourage you to go and customize the colors to match your preference! The colors can be found inside [`theme.ts`](./src/theme.ts), which are going to be loaded by `ThemeProvider` of `styled-components` and apply across all the components inside the application.
 
 ```javascript
 // colors.js
