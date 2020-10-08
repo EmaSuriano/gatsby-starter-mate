@@ -3,8 +3,11 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import Helmet from './Helmet';
-import { loadScript } from '../utils/script';
 import theme from '../theme';
+import { loadIcons } from '../utils/icon-loader';
+import 'tippy.js/dist/tippy.css'; // eslint-disable-line
+
+loadIcons();
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -23,8 +26,6 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.colors.text};
   }
 `;
-
-loadScript('https://use.fontawesome.com/fd58d214b9.js');
 
 type Props = {
   children: ReactNode;

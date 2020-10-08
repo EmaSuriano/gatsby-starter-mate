@@ -20,7 +20,6 @@ export const CardContainer = styled.div<CardContainerProps>`
   }
 `;
 
-// @ts-ignore
 export const Card = styled(CardRebass).attrs({
   bg: 'white',
   boxShadow: 0,

@@ -1,4 +1,3 @@
-import { lighten } from 'polished';
 import React, { ReactNode } from 'react';
 import { useScrollSection } from 'react-scroll-section';
 import { Text } from 'rebass';

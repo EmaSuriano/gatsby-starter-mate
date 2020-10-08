@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Box, Flex, Heading, Text } from 'rebass/styled-components';
 import styled from 'styled-components';
-import FontAwesomeIcon from 'react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { MediumAuthor, MediumPost as MediumPostType } from '../types';
 import { MEDIUM_URL } from '../utils/constants';
 import { Card } from './Card';
@@ -54,7 +54,7 @@ export const MorePosts = ({ author, number }: MorePostsProps) => (
       </Box>
       <Heading color="primary" mt={5} textAlign="right">
         Go to Medium &nbsp;
-        <FontAwesomeIcon name="arrow-right" aria-label="Go to Medium" />
+        <FontAwesomeIcon icon="arrow-right" title="Go to Medium" />
       </Heading>
     </Flex>
   </PostContainer>

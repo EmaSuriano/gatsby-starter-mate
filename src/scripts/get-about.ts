@@ -18,7 +18,7 @@ const client = createClient({
   accessToken: ACCESS_TOKEN,
 });
 
-type EntryType = {};
+type EntryType = Record<string, string>;
 
 const getAboutEntry = (entry: Entry<EntryType>) =>
   entry.sys.contentType.sys.id === 'about';

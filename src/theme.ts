@@ -2,6 +2,7 @@ import preset, { Theme } from '@rebass/preset';
 import 'styled-components';
 
 declare module 'styled-components' {
+  // eslint-disable-next-line
   export interface DefaultTheme extends Theme {}
 }
 

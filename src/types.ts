@@ -1,3 +1,5 @@
+import { IconName } from '@fortawesome/fontawesome-svg-core';
+
 export type Image = {
   src: string;
   alt: string;
@@ -25,7 +27,7 @@ export type AboutMe = {
 export type SocialLink = {
   url: string;
   name: string;
-  icon: string;
+  icon: IconName;
 };
 
 export type MediumPost = {

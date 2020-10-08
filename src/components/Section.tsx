@@ -1,4 +1,4 @@
-import React, { ReactChild, ReactComponentElement, ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass/styled-components';
