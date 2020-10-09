@@ -8,8 +8,6 @@ addons:
     packages:
       - libgconf-2-4 # cypress dep
 
-cache: yarn
-
 script:
   - yarn lint
   - yarn build
