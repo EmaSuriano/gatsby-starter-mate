@@ -6,18 +6,9 @@ node_js:
 addons:
   apt:
     packages:
-      # cypress dep
-      - libgconf-2-4
+      - libgconf-2-4 # cypress dep
 
-cache:
-  yarn: true
-  directories:
-    - ~/.npm
-    - ~/.cache
-    - node_modules
-
-install:
-  - yarn --frozen-lockfile
+cache: yarn
 
 script:
   - yarn lint
