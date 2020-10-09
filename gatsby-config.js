@@ -4,15 +4,11 @@ require('dotenv').config();
 
 const { ACCESS_TOKEN, SPACE_ID, ANALYTICS_ID, DETERMINISTIC } = process.env;
 
-// TODO: move to Theme configuration
-const config = {
-  writingLimit: 3,
-};
-
 const plugins = [
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-typescript',
   'gatsby-plugin-styled-components',
+  'gatsby-transformer-remark',
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
@@ -25,6 +21,7 @@ const plugins = [
       icon: 'media/icon.png',
     },
   },
+  'gatsby-plugin-offline',
   {
     resolve: 'gatsby-source-contentful',
     options: {
@@ -32,7 +29,6 @@ const plugins = [
       accessToken: ACCESS_TOKEN,
     },
   },
-  'gatsby-transformer-remark',
   {
     resolve: 'gatsby-source-medium',
     options: {
@@ -55,6 +51,5 @@ module.exports = {
   siteMetadata: {
     isMediumUserDefined: !!about.mediumUser,
     deterministic: !!DETERMINISTIC,
-    ...config,
   },
 };

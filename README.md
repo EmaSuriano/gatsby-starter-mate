@@ -30,8 +30,8 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - [Gatsby](https://www.gatsbyjs.org/)
 - [Rebass](https://rebassjs.org/): styled component system
 - [React Awesome Reveal](https://github.com/dennismorello/react-awesome-reveal)
-- Dynamic content from [Contentful](https://contentful.com)
-- Offline support
+- Typescript
+- CMS Integration with [Contentful](https://contentful.com)
 - PWA ready
 - SEO
 - Responsive design
