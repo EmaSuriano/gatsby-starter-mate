@@ -10,7 +10,7 @@
     "build": "gatsby build",
     "prestart": "yarn get-about",
     "start": "gatsby develop",
-    "clean": "gatsby clean",
+    "clean": "rm -rf node_modules && gatsby clean",
     "serve": "yarn build && gatsby serve -p 9000",
     "lint": "eslint ./src",
     "setup": "node ./bin/setup.js",
