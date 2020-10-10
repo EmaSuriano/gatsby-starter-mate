@@ -85,7 +85,7 @@
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react": "^7.21.4",
     "inquirer": "^7.3.3",
     "polished": "^3.6.7",
     "prettier": "^2.1.2",
