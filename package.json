@@ -87,7 +87,7 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.21.4",
     "inquirer": "^7.3.3",
-    "polished": "^3.6.7",
+    "polished": "^4.0.2",
     "prettier": "^2.1.2",
     "start-server-and-test": "^1.11.4",
     "ts-node": "^9.0.0",
