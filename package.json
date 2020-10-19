@@ -53,7 +53,7 @@
     "gatsby-plugin-typescript": "^2.4.20",
     "gatsby-source-contentful": "^2.3.51",
     "gatsby-source-medium": "^2.3.11",
-    "gatsby-transformer-remark": "^2.8.35",
+    "gatsby-transformer-remark": "^2.8.42",
     "prop-types": "^15.6.2",
     "react": "^16.13.1",
     "react-awesome-reveal": "^3.3.1",
