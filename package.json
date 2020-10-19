@@ -43,7 +43,7 @@
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
-    "contentful": "^7.14.3",
+    "contentful": "^7.14.8",
     "gatsby": "^2.24.57",
     "gatsby-plugin-google-analytics": "^2.3.14",
     "gatsby-plugin-manifest": "^2.4.34",
