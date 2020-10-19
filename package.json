@@ -55,7 +55,7 @@
     "gatsby-source-medium": "^2.3.11",
     "gatsby-transformer-remark": "^2.8.42",
     "prop-types": "^15.6.2",
-    "react": "^16.13.1",
+    "react": "^16.14.0",
     "react-awesome-reveal": "^3.3.1",
     "react-dom": "^16.13.1",
     "react-headroom": "^3.0.0",
