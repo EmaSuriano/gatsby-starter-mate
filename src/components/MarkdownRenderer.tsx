@@ -34,9 +34,18 @@ const StyledLink = styled.a`
   }
 `;
 
-const MarkdownParagraph = styled(Text)`
+const Root = styled.div`
   font-size: large;
-  line-height: 1.5em;
+  padding-bottom: 1em;
+  line-height: 2em;
+
+  @media (max-width: 600px) {
+    line-height: 1.5em;
+    font-size: medium;
+  }
+`;
+
+const MarkdownParagraph = styled(Text)`
   padding-bottom: 1em;
 `;
 
@@ -45,9 +54,7 @@ const MarkdownList = styled.ul`
 `;
 
 const MarkdownListItem = styled.li`
-  font-size: large;
   margin-bottom: 1em;
-  line-height: 1.5em;
 `;
 
 type LinkProps = {
@@ -76,6 +83,7 @@ const InnerLink = ({ href, children }: LinkProps) => {
 };
 
 export default {
+  root: Root,
   paragraph: MarkdownParagraph,
   list: MarkdownList,
   listItem: MarkdownListItem,
