@@ -12,7 +12,7 @@ const Link = styled.a<Props>`
   margin-bottom: 0;
   padding-bottom: 5px;
   color: inherit;
-  font-weight: bold;
+  font-weight: 600;
   ${({ selected, theme }) =>
     selected && `border-bottom:  5px solid ${theme.colors.primary}`};
   transition: 0.4s;
