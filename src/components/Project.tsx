@@ -35,14 +35,15 @@ const Project = ({
         <ProjectImage {...logo} />
         <ProjectTag>
           <Flex
+            m={1}
             style={{
               float: 'right',
             }}
           >
-            <Box mx={1} fontSize={5}>
+            <Box mx={1} fontSize={4}>
               <SocialLink name="Repository" icon="github" url={repository} />
             </Box>
-            <Box mx={1} fontSize={5}>
+            <Box mx={1} fontSize={4}>
               <SocialLink name="Homepage" icon="globe" url={homepage} />
             </Box>
           </Flex>

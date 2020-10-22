@@ -11,7 +11,7 @@ type PostProps = MediumPostType;
 
 export const Post = ({ title, text, cover, url, date, time }: PostProps) => (
   <PostContainer url={url} title={title}>
-    <EllipsisHeading m={3} p={1} color="text">
+    <EllipsisHeading m={3} color="text">
       {title}
     </EllipsisHeading>
     {cover && <CoverImage src={cover} height="200px" alt={title} />}
@@ -73,7 +73,9 @@ const PostContainer = ({ url, title, children }: PostContainerProps) => (
     title={title}
     style={{ textDecoration: 'none' }}
   >
-    <Card pb={4}>{children}</Card>
+    <Card p={0} pb={4}>
+      {children}
+    </Card>
   </a>
 );
 
@@ -88,5 +90,4 @@ const EllipsisHeading = styled(Heading)`
   display: -webkit-inline-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  border-bottom: ${({ theme }) => theme.colors.primary} 5px solid;
 `;
