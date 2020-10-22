@@ -146,13 +146,13 @@ As the starter is a SPA it only has two routes:
 - `/`: main page with the sections of `Home`, `About me`, `Projects` and `Writing`.
 - `/404`: error page for unexpected route.
 
-| Section  |                             Screenshot                             |
-| -------- | :----------------------------------------------------------------: |
-| Home     |   ![Home](cypress/screenshots/photographer.test.js/Landing.png)    |
-| About me |  ![About me](cypress/screenshots/photographer.test.js/About.png)   |
-| Projects | ![Projects](cypress/screenshots/photographer.test.js/Projects.png) |
-| Writing  |  ![Writing](cypress/screenshots/photographer.test.js/Writing.png)  |
-| 404      |      ![404](cypress/screenshots/photographer.test.js/404.png)      |
+| Section  |                            Screenshot                            |
+| -------- | :--------------------------------------------------------------: |
+| Home     |   ![Home](media/screenshots/photographer.test.js/Landing.png)    |
+| About me |  ![About me](media/screenshots/photographer.test.js/About.png)   |
+| Projects | ![Projects](media/screenshots/photographer.test.js/Projects.png) |
+| Writing  |  ![Writing](media/screenshots/photographer.test.js/Writing.png)  |
+| 404      |      ![404](media/screenshots/photographer.test.js/404.png)      |
 
 ## Theming 🎨
 

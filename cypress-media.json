@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:8000/",
+  "integrationFolder": "media/e2e",
+  "screenshotsFolder": "media/screenshots",
+  "pluginsFile": "media/plugins/index.js",
+  "video": false
+}

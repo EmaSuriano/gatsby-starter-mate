@@ -1,0 +1,22 @@
+name: Manual workflow
+
+on:
+  push:
+    branches: master
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Manual deploy
+        uses: actions/setup-node@v1
+      - run: yarn install --frozen-lockfile
+      - run: yarn update-media:ci
+        env:
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          SPACE_ID: ${{secrets.SPACE_ID}}
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update Screenshots

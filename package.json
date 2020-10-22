@@ -16,7 +16,9 @@
     "setup": "node ./bin/setup.js",
     "test": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress run",
     "test:open": "percy exec -t 350 -h cdn-images-1.medium.com -- cypress open",
-    "test:ci": "DETERMINISTIC=true start-server-and-test 8000"
+    "test:ci": "DETERMINISTIC=true start-server-and-test 8000",
+    "update-media": "cypress run -C ./cypress-media.json",
+    "update-media:ci": "DETERMINISTIC=true start-server-and-test 8000 update-media"
   },
   "repository": {
     "type": "git",
