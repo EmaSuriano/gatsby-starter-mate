@@ -1,5 +1,5 @@
 describe('Photographer', () => {
-  beforeAll(() => {
+  before(() => {
     cy.visit('/');
     cy.wait(3000); // fix to load fonts ...
   });
