@@ -44,6 +44,7 @@ const HomeLink = () => {
       <Flex justifyContent="center">
         <Image
           src={profile.bigIcon.src}
+          height="80px"
           width="80px"
           alt="Portfolio Logo"
           p={2}
