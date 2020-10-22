@@ -8,6 +8,11 @@ addons:
     packages:
       - libgconf-2-4 # cypress dep
 
+cache: yarn
+
+install:
+  - yarn install --frozen-lockfile
+
 script:
   - yarn lint
   - yarn build
