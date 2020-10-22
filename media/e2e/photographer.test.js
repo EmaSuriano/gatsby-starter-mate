@@ -1,4 +1,9 @@
 describe('Photographer', () => {
+  beforeAll(() => {
+    cy.visit('/');
+    cy.wait(3000); // fix to load fonts ...
+  });
+
   beforeEach(() => {
     cy.viewport('macbook-15');
   });
