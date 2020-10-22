@@ -12,6 +12,7 @@ cache: yarn
 
 install:
   - yarn install --frozen-lockfile
+  - yarn cypress install
 
 script:
   - yarn lint
