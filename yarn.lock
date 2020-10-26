@@ -12597,10 +12597,10 @@ react-remove-scroll@^2.3.0:
     use-callback-ref "^1.2.3"
     use-sidecar "^1.0.1"
 
-react-scroll-section@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-3.0.1.tgz#bd753234547b3775d260f95e50bf0f43013425e3"
-  integrity sha512-4Kw3pZknzdoFshuMuJyvm3Xhfo/hgSF2KOKZgVQAV8bjyrIYMO3zzjaBlvQupNgGPt+Hmadn4Our+y9w3m8JCg==
+react-scroll-section@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-scroll-section/-/react-scroll-section-3.0.2.tgz#28e9697f4e2f91348a121151bd9c5e4df089d301"
+  integrity sha512-ktOGETDiFK4YLTwauxGELWzmuGcD7J/ePv9D39Se+4Fs0pT4r/dip65vGPae18MOqY7MwyMKVjJFMx1n6kR6Bg==
   dependencies:
     smoothscroll-polyfill "^0.4.4"
 
