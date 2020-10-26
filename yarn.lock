@@ -4584,7 +4584,7 @@ contentful-sdk-core@^6.4.0, contentful-sdk-core@^6.4.5:
     lodash "^4.17.10"
     qs "^6.5.2"
 
-contentful@^7.14.3, contentful@^7.14.7:
+contentful@^7.14.3, contentful@^7.14.8:
   version "7.14.8"
   resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.14.8.tgz#cdda293323501c4d576b24dbcd247e2eda1148ef"
   integrity sha512-q0Y/1rNOxF13W3KLe+WxaT3+oDdxCbKiuHF+l0TlQXcVcFeLUhXXJn72noefsH8aWXMF6/rkDQ+Fl6szIMF5qw==
@@ -7161,7 +7161,7 @@ gatsby-plugin-typescript@^2.4.22, gatsby-plugin-typescript@^2.4.24:
     "@babel/runtime" "^7.11.2"
     babel-plugin-remove-graphql-queries "^2.9.20"
 
-gatsby-plugin-utils@^0.2.34, gatsby-plugin-utils@^0.2.39:
+gatsby-plugin-utils@^0.2.39:
   version "0.2.39"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-0.2.39.tgz#aa0c5e9469977b476884d53fe97b28fd771f2a78"
   integrity sha512-Ar6m9hjWodd4+AwHQZYBe08XGmYS1t5nghZdyKGaBcdMZRP3GGmoeyU7LH/bdkvJFf0dyoY1Me0oJV4ZNT6Abg==
@@ -7265,34 +7265,34 @@ gatsby-recipes@^0.2.33:
     yoga-layout-prebuilt "^1.9.6"
     yup "^0.27.0"
 
-gatsby-source-contentful@^2.3.55:
-  version "2.3.55"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-2.3.55.tgz#a9b038c85e72b46000b03b9713aa506e6c6b690e"
-  integrity sha512-Vyxs8SXXRdqbkrvLZZbJeQipngIzA2yFwkFU+QsbrQksCJDuWai46kLgL7BO3GecscSRLhYUDxK8YnR9tmEuDA==
+gatsby-source-contentful@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-3.0.4.tgz#3716f677fc4e1183b7eed70b87725f85a91b5c33"
+  integrity sha512-cvIO+zylz4Lo0b8pyz00KOBTnQ0kCe6jqH2/ahtQNSj/ug5FA5wV7X14+lw73IFjM+kynY5srI+CalpZexm0/g==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@contentful/rich-text-types" "^14.1.1"
     "@hapi/joi" "^15.1.1"
-    axios "^0.20.0"
+    axios "^0.21.0"
     base64-img "^1.0.4"
     bluebird "^3.7.2"
     chalk "^4.1.0"
-    contentful "^7.14.7"
+    contentful "^7.14.8"
     fs-extra "^9.0.1"
     gatsby-core-utils "^1.3.23"
-    gatsby-plugin-utils "^0.2.34"
-    gatsby-source-filesystem "^2.3.35"
-    is-online "^8.5.0"
+    gatsby-plugin-utils "^0.2.39"
+    gatsby-source-filesystem "^2.3.36"
+    is-online "^8.5.1"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.20"
     node-fetch "^2.6.1"
     progress "^2.0.3"
     qs "^6.9.4"
 
-gatsby-source-filesystem@^2.3.35:
-  version "2.3.35"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.35.tgz#a64815f1c0bc1614519ec2dd1eef49629de6c2e5"
-  integrity sha512-OHa7eDW9m/R8uIkAHpOZda517uT0yLPfLhZwEj3vqWgHRKg6bSghvKRDMQGmiD39EPur/Pl7JsotbFxGBRFRTQ==
+gatsby-source-filesystem@^2.3.36:
+  version "2.3.36"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.3.36.tgz#a083fa74229cee3c7a250e9ec21104a30a87a6f9"
+  integrity sha512-fa3/xwWiSRRtYaE5OFIb0/MLCvewXDCEMcGqQs+TlBorxfCzcbHtCVF4klqPiInOTzsUqxqfQJSVaT6LvFnTpg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     better-queue "^3.8.10"
@@ -9055,7 +9055,7 @@ is-observable@^1.1.0:
   dependencies:
     symbol-observable "^1.1.0"
 
-is-online@^8.5.0:
+is-online@^8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/is-online/-/is-online-8.5.1.tgz#bcc6970c6a3fad552a41738c0f0d0737b0ce6e63"
   integrity sha512-RKyTQx/rJqw2QOXHwy7TmXdlkpe0Hhj7GBsr6TQJaj4ebNOfameZCMspU5vYbwBBzJ2brWArdSvNVox6T6oCTQ==
