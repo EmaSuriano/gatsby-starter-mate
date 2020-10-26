@@ -3154,6 +3154,13 @@ axios@^0.20.0:
   dependencies:
     follow-redirects "^1.10.0"
 
+axios@^0.21.0:
+  version "0.21.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
+  integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
+  dependencies:
+    follow-redirects "^1.10.0"
+
 axobject-query@^2.1.2:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.2.0.tgz#943d47e10c0b704aa42275e20edf3722648989be"
@@ -7337,13 +7344,13 @@ gatsby-source-filesystem@^2.3.35:
     valid-url "^1.0.9"
     xstate "^4.13.0"
 
-gatsby-source-medium@^2.3.11:
-  version "2.3.13"
-  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-2.3.13.tgz#d1e0d80e626c203a1e9be7aca0f111dfe2914400"
-  integrity sha512-BdPR4YQosJcSuoVLDIMsCV3GZPFFFr+oQnsJLR64l6yAM4k1U870e+BG7cA+yD5/slx3MLuq2bvTwlHuKknKRg==
+gatsby-source-medium@^2.3.14:
+  version "2.3.14"
+  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-2.3.14.tgz#6060cba403dcd6889d164cdd9d2bd80bbd13a9ea"
+  integrity sha512-BdqRONyMctRlQQgPfh64KMC72uf7cACazyVrGWpblVRT5rl2fqkYwPHS5B0PpnIpb5FDTIA824jKxAFpIVZqkQ==
   dependencies:
     "@babel/runtime" "^7.11.2"
-    axios "^0.20.0"
+    axios "^0.21.0"
 
 gatsby-telemetry@^1.3.38:
   version "1.3.38"
