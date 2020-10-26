@@ -46,7 +46,7 @@
     "@rebass/preset": "^4.0.5",
     "@tippy.js/react": "^3.1.1",
     "contentful": "^7.14.3",
-    "gatsby": "^2.24.82",
+    "gatsby": "^2.24.86",
     "gatsby-plugin-google-analytics": "^2.3.19",
     "gatsby-plugin-manifest": "^2.4.35",
     "gatsby-plugin-offline": "^3.2.37",
