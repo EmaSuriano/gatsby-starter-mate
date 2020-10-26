@@ -49,7 +49,7 @@
     "gatsby": "^2.24.82",
     "gatsby-plugin-google-analytics": "^2.3.14",
     "gatsby-plugin-manifest": "^2.4.35",
-    "gatsby-plugin-offline": "^3.2.33",
+    "gatsby-plugin-offline": "^3.2.37",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-plugin-typescript": "^2.4.22",
