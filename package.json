@@ -58,7 +58,7 @@
     "gatsby-transformer-remark": "^2.8.47",
     "prop-types": "^15.6.2",
     "react": "^16.14.0",
-    "react-awesome-reveal": "^3.3.1",
+    "react-awesome-reveal": "^3.3.2",
     "react-dom": "^16.14.0",
     "react-headroom": "^3.0.0",
     "react-helmet": "^6.1.0",
