@@ -52,7 +52,7 @@
     "gatsby-plugin-offline": "^3.3.2",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-styled-components": "^3.3.10",
-    "gatsby-plugin-typescript": "^2.5.0",
+    "gatsby-plugin-typescript": "^2.6.0",
     "gatsby-source-contentful": "^3.1.3",
     "gatsby-source-medium": "^2.4.0",
     "gatsby-transformer-remark": "^2.9.2",
