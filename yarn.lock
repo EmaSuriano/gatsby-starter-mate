@@ -1010,10 +1010,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.12.1"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.1.tgz#b4116a6b6711d010b2dad3b7b6e43bf1b9954740"
-  integrity sha512-J5AIf3vPj3UwXaAzb5j1xM4WAQDX3EMgemF8rjCP3SoW09LfRKAXQKt6CoVYl230P6iWdRcBbnLDDdnqWxZSCA==
+"@babel/runtime@^7.10.0", "@babel/runtime@^7.10.2", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+  version "7.12.5"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
+  integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6914,12 +6914,12 @@ gatsby-source-filesystem@^2.4.2:
     valid-url "^1.0.9"
     xstate "^4.13.0"
 
-gatsby-source-medium@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-2.4.0.tgz#6733ba4941afc4f779dc8c8c56480c4169601b10"
-  integrity sha512-Nd9HVG7+XaVQvlmBe2weCPz5cJ31+ITkFQlhzMLuJRtFPYTiPu/4bdHTgJFZ9cZ44pUulpbD1PbaaFgCR/T6kw==
+gatsby-source-medium@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-2.5.0.tgz#d44907ddee1207fcf22c03cdcfa6c056f9b9aea9"
+  integrity sha512-FMUPqJILcacT9p/abMuUtRh1i/NduDL0Cy+SI5ypSCbAm0Kbj22uQ4dOGT+PIBgvlHkRYA1BWMcP3afvkeF1/Q==
   dependencies:
-    "@babel/runtime" "^7.11.2"
+    "@babel/runtime" "^7.12.5"
     axios "^0.21.0"
 
 gatsby-telemetry@^1.4.1:
