@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { ScrollingProvider } from 'react-scroll-section';
 import Helmet from './Helmet';
 import theme from '../theme';
 import { loadIcons } from '../utils/icon-loader';
@@ -15,7 +14,12 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
     }
 
+    html { 
+      scroll-behavior: smooth;
+    }
+
   body {
+    
     box-sizing: border-box; 
     margin: 0;
     font-family: Cabin, 'Open Sans', sans-serif;
@@ -34,10 +38,8 @@ const Layout = ({ children }: Props) => (
   <main>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <ScrollingProvider>
-        <Helmet />
-        {children}
-      </ScrollingProvider>
+      <Helmet />
+      {children}
     </ThemeProvider>
   </main>
 );

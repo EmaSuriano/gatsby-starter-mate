@@ -5,13 +5,14 @@ import { CardContainer } from '../components/Card';
 import Triangle from '../components/Triangle';
 import { useMediumQuery } from '../queries/useMediumQuery';
 import { Post } from '../components/Post';
+import { SECTION } from '../utils/constants';
 
 const Writing = () => {
   const { posts } = useMediumQuery();
 
   return (
-    <Section.Container id="writing" Background={Background}>
-      <Section.Header name="Writing" icon="✍️" label="writing" />
+    <Section.Container id={SECTION.writing} Background={Background}>
+      <Section.Header name={SECTION.writing} icon="✍️" label="writing" />
       <CardContainer minWidth="300px">
         <Fade direction="down" triggerOnce cascade damping={0.5}>
           {posts.map((p) => (

@@ -5,13 +5,14 @@ import { CardContainer } from '../components/Card';
 import Triangle from '../components/Triangle';
 import Project from '../components/Project';
 import { useProjectsQuery } from '../queries/useProjectsQuery';
+import { SECTION } from '../utils/constants';
 
 const Projects = () => {
   const projects = useProjectsQuery();
 
   return (
-    <Section.Container id="projects" Background={Background}>
-      <Section.Header name="Projects" icon="💻" label="notebook" />
+    <Section.Container id={SECTION.projects} Background={Background}>
+      <Section.Header name={SECTION.projects} icon="💻" label="notebook" />
 
       <CardContainer minWidth="350px">
         <Fade direction="down" cascade damping={0.5} triggerOnce>

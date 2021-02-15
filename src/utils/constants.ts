@@ -4,3 +4,10 @@ export const MEDIUM_URL = 'https://medium.com';
 export const GATSBY_URL = 'https://www.gatsbyjs.org/';
 export const CONTENTFUL_URL = 'https://www.contentful.com/';
 export const NETLIFY_URL = 'https://www.netlify.com/';
+
+export enum SECTION {
+  home = 'Home',
+  about = 'About me',
+  projects = 'Projects',
+  writing = 'Writing',
+}

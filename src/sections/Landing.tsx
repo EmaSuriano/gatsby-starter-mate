@@ -3,19 +3,19 @@ import { Heading, Flex, Box, Text } from 'rebass/styled-components';
 import TextLoop from 'react-text-loop';
 import Section from '../components/Section';
 import SocialLink from '../components/SocialLink';
-import { useScrollSection } from 'react-scroll-section';
-import MouseIcon from '../components/ScrollIcon';
+import ScrollIcon from '../components/ScrollIcon';
 import Triangle from '../components/Triangle';
 import { useSiteQuery } from '../queries/useSiteQuery';
+import { SECTION } from '../utils/constants';
+import { getSectionHref } from '../utils/helpers';
 
 const centerHorizontally = { marginRight: 'auto', marginLeft: 'auto' };
 
 const LandingPage = () => {
   const { name, roles, socialLinks, deterministic } = useSiteQuery();
-  const aboutSection = useScrollSection('about');
 
   return (
-    <Section.Container id="home" Background={Background}>
+    <Section.Container id={SECTION.home} Background={Background}>
       <Heading
         textAlign="center"
         as="h1"
@@ -53,7 +53,7 @@ const LandingPage = () => {
         ))}
       </Flex>
 
-      <MouseIcon onClick={aboutSection.onClick} />
+      <ScrollIcon href={`#${getSectionHref(SECTION.about)}`} />
     </Section.Container>
   );
 };

@@ -3,11 +3,11 @@ import styled, { keyframes } from 'styled-components';
 import { lighten } from 'polished';
 
 type Props = {
-  onClick: () => void;
+  href: string;
 };
 
-const ScrollIcon = ({ onClick }: Props) => (
-  <ScrollLink onClick={onClick}>
+const ScrollIcon = ({ href }: Props) => (
+  <ScrollLink href={href}>
     <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
       <g fill="none">
         <Mouse width="70" height="118" x="1.5" y="1.5" rx="36" />
@@ -23,7 +23,7 @@ const MouseContainer = styled.svg`
   height: auto;
 `;
 
-const ScrollLink = styled.span`
+const ScrollLink = styled.a`
   position: absolute;
   bottom: 1rem;
   left: 50%;

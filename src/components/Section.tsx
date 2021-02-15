@@ -1,12 +1,13 @@
 import React, { ReactNode } from 'react';
 import styled from 'styled-components';
-import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass/styled-components';
 import { Slide } from 'react-awesome-reveal';
 import Link from './Link';
+import { SECTION } from '../utils/constants';
+import { getSectionHref } from '../utils/helpers';
 
 type ContainerProps = {
-  id: string;
+  id: SECTION;
   children: ReactNode;
   Background?: () => JSX.Element;
 };
@@ -16,10 +17,10 @@ const Container = ({
   children,
   Background = DefaultBackground,
 }: ContainerProps) => (
-  <Section id={id} style={{ position: 'relative' }}>
+  <div id={getSectionHref(id)} style={{ position: 'relative' }}>
     <Background />
     <SectionContainer>{children}</SectionContainer>
-  </Section>
+  </div>
 );
 
 type HeaderProps = {

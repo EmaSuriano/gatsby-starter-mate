@@ -1,14 +1,15 @@
 import React from 'react';
 import Headroom from 'react-headroom';
-import { Box, Button, Flex, Image } from 'rebass/styled-components';
+import { Box, Link as RebassLink, Flex, Image } from 'rebass/styled-components';
 import styled from 'styled-components';
-import { useScrollSection, useScrollSections } from 'react-scroll-section';
 import Link from './Link';
 import { capitalize } from '../utils/string';
 import { useHelmetQuery } from '../queries/useHelmetQuery';
+import { SECTION } from '../utils/constants';
+import { getSectionHref } from '../utils/helpers';
 
 const Header = () => {
-  const sections = useScrollSections();
+  const { profile } = useHelmetQuery();
 
   return (
     <StyledHeadroom>
@@ -18,13 +19,24 @@ const Header = () => {
         alignItems="center"
         px={3}
       >
-        <HomeLink />
+        <RebassLink href={`#${getSectionHref(SECTION.home)}`} variant="empty">
+          <Flex justifyContent="center">
+            <Image
+              src={profile.bigIcon.src}
+              height={['60px', '80px']}
+              width={['60px', '80px']}
+              alt="Portfolio Logo"
+              p={2}
+              css={{ borderRadius: '20px', cursor: 'pointer' }}
+            />
+          </Flex>
+        </RebassLink>
         <Flex mr={[0, 3, 5]}>
-          {sections
-            .filter(({ id }) => id !== 'home')
-            .map(({ id, onClick, selected }) => (
+          {Object.keys(SECTION)
+            .filter((id) => id !== 'home')
+            .map((id) => (
               <Box key={id} ml={[2, 3]} color="background" fontSize={[2, 3]}>
-                <Link onClick={onClick} selected={selected} tabIndex={0}>
+                <Link href={`#${id}`} tabIndex={0}>
                   {capitalize(id)}
                 </Link>
               </Box>
@@ -32,26 +44,6 @@ const Header = () => {
         </Flex>
       </Flex>
     </StyledHeadroom>
-  );
-};
-
-const HomeLink = () => {
-  const { profile } = useHelmetQuery();
-  const { onClick } = useScrollSection('home');
-
-  return (
-    <Button onClick={onClick} variant="empty">
-      <Flex justifyContent="center">
-        <Image
-          src={profile.bigIcon.src}
-          height={['60px', '80px']}
-          width={['60px', '80px']}
-          alt="Portfolio Logo"
-          p={2}
-          css={{ borderRadius: '20px', cursor: 'pointer' }}
-        />
-      </Flex>
-    </Button>
   );
 };
 
