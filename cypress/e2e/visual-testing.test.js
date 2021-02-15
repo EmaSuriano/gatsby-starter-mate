@@ -1,5 +1,3 @@
-/* eslint-disable cypress/no-unnecessary-waiting */
-
 describe('Visual Testing', () => {
   const SCREENS = [375, 768, 1280];
 

@@ -1,6 +1,5 @@
 import React, { ReactNode } from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import PropTypes from 'prop-types';
 import { ScrollingProvider } from 'react-scroll-section';
 import Helmet from './Helmet';
 import theme from '../theme';
@@ -42,9 +41,5 @@ const Layout = ({ children }: Props) => (
     </ThemeProvider>
   </main>
 );
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

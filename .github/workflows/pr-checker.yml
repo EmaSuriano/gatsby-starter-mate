@@ -1,0 +1,39 @@
+name: Pr Checker
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Manual deploy
+        uses: actions/setup-node@v1
+      - run: yarn install --frozen-lockfile
+
+  build:
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
+      - run: yarn build
+        env:
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          SPACE_ID: ${{secrets.SPACE_ID}}
+
+  lint:
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
+      - run: yarn lint
+
+  test:
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
+      - run: yarn test:ci
+        env:
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          SPACE_ID: ${{secrets.SPACE_ID}}

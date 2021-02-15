@@ -2,7 +2,6 @@ import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 import { Section } from 'react-scroll-section';
 import { Heading } from 'rebass/styled-components';
-import PropTypes from 'prop-types';
 import { Slide } from 'react-awesome-reveal';
 import Link from './Link';
 
@@ -22,12 +21,6 @@ const Container = ({
     <SectionContainer>{children}</SectionContainer>
   </Section>
 );
-
-Container.propTypes = {
-  id: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-  Background: PropTypes.func,
-};
 
 type HeaderProps = {
   name: string;
