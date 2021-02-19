@@ -7,7 +7,7 @@ import { SECTION } from '../utils/constants';
 import { getSectionHref } from '../utils/helpers';
 
 type ContainerProps = {
-  id: SECTION;
+  id?: SECTION;
   children: ReactNode;
   Background?: () => JSX.Element;
 };
@@ -17,7 +17,7 @@ const Container = ({
   children,
   Background = DefaultBackground,
 }: ContainerProps) => (
-  <div id={getSectionHref(id)} style={{ position: 'relative' }}>
+  <div id={id && getSectionHref(id)} style={{ position: 'relative' }}>
     <Background />
     <SectionContainer>{children}</SectionContainer>
   </div>
