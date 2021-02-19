@@ -26,7 +26,7 @@ describe('Accessibility checks', () => {
     cy.checkA11y(null, null, terminalLog);
   });
 
-  it('Main Page', () => {
+  it('404', () => {
     cy.visit('/404');
     cy.waitForAnimations();
     cy.injectAxe();

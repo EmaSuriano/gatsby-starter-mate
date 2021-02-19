@@ -7,7 +7,7 @@ type Props = {
 };
 
 const ScrollIcon = ({ href }: Props) => (
-  <ScrollLink href={href}>
+  <ScrollLink href={href} aria-label="Scroll to content">
     <MouseContainer xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130">
       <g fill="none">
         <Mouse width="70" height="118" x="1.5" y="1.5" rx="36" />
