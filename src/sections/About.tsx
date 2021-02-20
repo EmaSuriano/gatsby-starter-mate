@@ -7,13 +7,14 @@ import Section from '../components/Section';
 import Triangle from '../components/Triangle';
 import markdownRenderer from '../components/MarkdownRenderer';
 import { useAboutMeQuery } from '../queries/useAboutMeQuery';
+import { SECTION } from '../utils/constants';
 
 const About = () => {
   const { markdown, profile } = useAboutMeQuery();
 
   return (
-    <Section.Container id="about" Background={Background}>
-      <Section.Header name="About me" icon="🙋‍♂️" label="person" />
+    <Section.Container id={SECTION.about} Background={Background}>
+      <Section.Header name={SECTION.about} icon="🙋‍♂️" label="person" />
       <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
         <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]} mt={2}>
           <Fade direction="down" triggerOnce>

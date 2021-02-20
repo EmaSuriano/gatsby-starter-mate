@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import { useScrollSection } from 'react-scroll-section';
 import { Text } from 'rebass';
 import styled from 'styled-components';
 
@@ -64,24 +63,15 @@ type LinkProps = {
 
 const MarkdownLink = ({ href, children }: LinkProps) => {
   const isInnerLink = href.startsWith('#');
-  if (isInnerLink)
-    return (
-      <InnerLink href={href.substring(1, href.length)}>{children}</InnerLink>
-    );
 
-  return (
+  return isInnerLink ? (
+    <StyledLink href={href}>{children}</StyledLink>
+  ) : (
     <StyledLink href={href} target="_blank" rel="noreferrer">
       {children}
     </StyledLink>
   );
 };
-
-const InnerLink = ({ href, children }: LinkProps) => {
-  const { onClick } = useScrollSection(href);
-
-  return <StyledLink onClick={onClick}>{children}</StyledLink>;
-};
-
 export default {
   root: Root,
   paragraph: MarkdownParagraph,
