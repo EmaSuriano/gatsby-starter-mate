@@ -79,7 +79,7 @@
     "chalk": "^4.1.0",
     "contentful-import": "^7.9.22",
     "cypress": "^6.5.0",
-    "cypress-axe": "^0.12.1",
+    "cypress-axe": "^0.12.2",
     "dotenv": "^8.2.0",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
