@@ -35,6 +35,6 @@ describe('Photographer', () => {
   it('404 Page', () => {
     cy.visit('/404');
 
-    cy.get('#404').screenshot('404');
+    cy.screenshot('404');
   });
 });
