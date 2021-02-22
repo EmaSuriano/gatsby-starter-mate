@@ -1,6 +1,6 @@
 # Gatsby Starter: Mate
 
-[![Build Status](https://travis-ci.com/EmaSuriano/gatsby-starter-mate.svg?branch=master)](https://travis-ci.com/EmaSuriano/gatsby-starter-mate)
+[![Build](https://github.com/EmaSuriano/gatsby-starter-mate/actions/workflows/build.yml/badge.svg)](https://github.com/EmaSuriano/gatsby-starter-mate/actions/workflows/build.yml)
 [![eslint](https://img.shields.io/badge/eslint-enabled-green.svg)](https://eslint.org/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 ![Dependencies status](https://david-dm.org/EmaSuriano/gatsby-starter-mate.svg)

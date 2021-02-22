@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-screenshots:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Read .nvmrc
+        id: node_version
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ steps.node_version.outputs.NODE_VERSION }}
+
+      - run: yarn install --frozen-lockfile
+
+      - run: yarn build
+        env:
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          SPACE_ID: ${{secrets.SPACE_ID}}
