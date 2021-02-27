@@ -11,7 +11,7 @@
 
 > An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
 
-The target audience are Developers 💻 and Tech Writers ✍️.
+The target audience are Developers 💻  and Tech Writers ✍️.
 
 ### [Check the Demo ✨](https://gatsby-starter-mate.netlify.com/)
 
