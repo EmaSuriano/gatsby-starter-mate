@@ -6,6 +6,7 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
+    "serve": "gatsby serve",
     "setup": "node ./bin/setup.js"
   },
   "repository": {
