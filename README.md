@@ -39,17 +39,7 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - [Netlify](https://www.netlify.com) Deployment Friendly
 - Medium integration
 - Social sharing (Twitter, Facebook, Google, LinkedIn)
-- Developer tools:
-  - `eslint`
-  - `prettier`
 - Google Analytics integration
-- End to End with Cypress:
-  - A11y testing with [Axe](https://www.deque.com/axe/)
-  - Visual Testing with [Percy](https://percy.io/)
-
-### Lighthouse Score 💯
-
-![Lighthouse Score](media/lighthouse-score.png)
 
 ## How to start ▶️
 
@@ -154,32 +144,6 @@ As the starter is a SPA it only has two routes:
 | Writing  |  ![Writing](media/screenshots/Writing.png)  |
 | 404      |      ![404](media/screenshots/404.png)      |
 
-## Theming 🎨
-
-This starters come with a hand-made color palette made by myself, but I highly encourage you to go and customize the colors to match your preference! The colors can be found inside [`theme.ts`](./src/theme.ts), which are going to be loaded by `ThemeProvider` of `styled-components` and apply across all the components inside the application.
-
-```javascript
-// colors.js
-module.exports = {
-  background: '#FFFFFF',
-  backgroundDark: '#f0e6f6',
-
-  text: '#333333',
-
-  primary: '#7c37ad',
-  primaryLight: '#ae66df',
-  primaryDark: '#4b007d',
-
-  secondary: '#ff4081',
-  secondaryLight: '#ff79b0',
-  secondaryDark: '#c60055',
-};
-```
-
-Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
-
-![Theming](./media/theming.png)
-
 ## Building your site 📦
 
 As we are dealing with environment variables, the `.env` file is excluded from `.gitignore` file. Therefore, in order to deploy the website you have to send `SPACE_ID` and `ACCESS_TOKEN` with the `build` command.
@@ -198,85 +162,56 @@ All the text of this starter live inside Contentful, specifically inside the Con
 
 Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
-## End to End Testing with Cypress 🧪
+## Theming 🎨
 
-The starter comes with a built in End to End Setup using Cypress. As there are no complex logic flow, there are only two tests in place:
+Thanks to the Theme Shadowing, changing the colors of your portfolio is quite easy! You have to create a new file located at `src/gatsby-theme-mate/colors.json`.
 
-1. Accessibility check: using the [cypress-axe](https://www.npmjs.com/package/cypress-axe) plugin you can easily check a lot of a11y rules at once powered by [Axe](https://www.deque.com/axe/)!
-2. Visual testing: using [percy-cypress](https://github.com/percy/percy-cypress) plugin you can take screenshot with different resolutions and easily the difference inside their platform. [Here](https://percy.io/Ema-suriano/gatsby-starter-mate) you can check the Percy dashboard for this project.
-
-### Setting Visual Testing for your project (Optional) 📸
-
-By default, the visual testing will fail due to Percy needs a Token in order to know with which project of your account is related. The steps to set up your own visual testing workflow is:
-
-- Create a project in [Percy](https://percy.io/).
-- Go to "Project settings" -> "Project token" and copy the whole line saying "PERCY_TOKEN=<YOUR_TOKEN>".
-- Open the `.env` file located in the root of the project and add the token to your credentials.
-- Try running `yarn e2e:ci` and you should be able to see a new build inside your Project Dashboard in Percy.
-
-## Configuration (Optional) 👷‍♂️
-
-Mate starter is a SPA (Single Page Application), so basically you have only two pages:
-
-- `Main.js`: portfolio itself
-- `404.js`: 404 error page with the same style
-
-The structure for the main page is the following:
-
-```javascript
-<Layout>
-  <Landing />
-  <About />
-  <Projects />
-  <Writing />
-</Layout>
+```json
+{
+  "text": "#333333",
+  "background": "#FFFFFF",
+  "muted": "#f0e6f6",
+  "primary": "#7c37ad",
+  "secondary": "#ff4081"
+}
 ```
 
-`Layout` is the core of the application, it manages the theme for the application, the navigation between sections, also it defines the `header`.
+![Original Schema](./media/theme-original.png)
 
-All the components inside `Layout` are `Section` components. A section can have a link inside the `Header` or not, in order to add you need to wrapped the exported `Section` with `withNavigation` HOC and it will be automatically registered (Context magic ✨).
+### Teal Theme
+
+```json
+{
+  "text": "#40514e",
+  "background": "#FFFFFF",
+  "muted": "#e4f9f5",
+  "primary": "#11999e",
+  "secondary": "#30e3ca"
+}
+```
+
+![Teal Theme](./media/theme-teal.png)
+
+### Dark Blue Theme
+
+```json
+{
+  "text": "#e3e3e3",
+  "background": "#1b262c",
+  "muted": "#0f4c75",
+  "primary": "#bbe1fa",
+  "secondary": "#3282b8"
+}
+```
+
+![Dark Theme](./media/theme-dark-blue.png)
+
+Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
 
 ## Tracking with Google Analytics (Optional) 📈
 
 This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics will be turn on automatically 😄
 
-## Update your Starter (Optional) 💡
+## Contributing
 
-In case you cloned this repository before and you want all the latest changes of it, you can execute the following command to update the code in your repository with the one in this repository:
-
-```bash
-# Add repository remote entry
-$ git remote add mate https://github.com/EmaSuriano/gatsby-starter-mate
-
-# Get changes from master branch of gatsby-starter-mate
-$ git pull mate master --allow-unrelated-histories
-
-# Reset changes in unnecessary folder/files
-$ git reset media/ bin/ README.md manifest-config.js
-
-# Remove files affected by the reset
-$ git checkout .
-
-# In this step you might need to fix a lot of conflicts, you can do fix manually or use just accept all the changes from mate
-$ git checkout --theirs .
-
-# WATCH OUT that some configuration can be overwritten in this last step, like package.json, colors, etc. I highly recommend to do an overall look up at the end of fixing the conflicts.
-
-# Install in case there is any new dependency added to the starter
-$ yarn
-
-# Build the project to see if everything is working as expected
-$ yarn build
-```
-
-## Contributing 💪
-
-I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](https://emasuriano.com/). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
-
-I'm totally open for pull requests with bug fixes, changes in Documentation, or new features to the starter 🙌
-
-Please check the [Contribution guidelines](CONTRIBUTING.md) before opening yours 🙏
-
-## License 📝
-
-MIT.
+In case you want to add your contribution into this project, please refer to the [Gatsby Theme repository](https://github.com/EmaSuriano/gatsby-theme-mate) so then everybody using this starter will be able to get the changes.
