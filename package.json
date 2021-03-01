@@ -2,7 +2,6 @@
   "name": "gatsby-starter-mate",
   "version": "0.0.0",
   "description": "An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS",
-  "main": "index.js",
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
@@ -21,7 +20,6 @@
     "portfolio"
   ],
   "author": "Ema Suriano",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/EmaSuriano/gatsby-starter-mate/issues"
   },

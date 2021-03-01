@@ -144,26 +144,6 @@ As the starter is a SPA it only has two routes:
 | Writing  |  ![Writing](media/screenshots/Writing.png)  |
 | 404      |      ![404](media/screenshots/404.png)      |
 
-## Theming 🎨
-
-Thanks to the Theme Shadowing, changing the colors of your portfolio is quite easy! You have to create a new file located at `src/gatsby-theme-mate/colors.json`, following this color structure:
-
-```json
-// src/gatsby-theme-mate/colors.json
-{
-  "text": "#333333",
-  "background": "#FFFFFF",
-  "muted": "#f0e6f6",
-  "primary": "#7c37ad",
-  "secondary": "#ff4081",
-  "highlight": "#ff79b0"
-}
-```
-
-Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
-
-![Theming](./media/theming.png)
-
 ## Building your site 📦
 
 As we are dealing with environment variables, the `.env` file is excluded from `.gitignore` file. Therefore, in order to deploy the website you have to send `SPACE_ID` and `ACCESS_TOKEN` with the `build` command.
@@ -182,25 +162,56 @@ All the text of this starter live inside Contentful, specifically inside the Con
 
 Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
-## End to End Testing with Cypress 🧪
+## Theming 🎨
 
-The starter comes with a built in End to End Setup using Cypress. As there are no complex logic flow, there are only two tests in place:
+Thanks to the Theme Shadowing, changing the colors of your portfolio is quite easy! You have to create a new file located at `src/gatsby-theme-mate/colors.json`.
 
-1. Accessibility check: using the [cypress-axe](https://www.npmjs.com/package/cypress-axe) plugin you can easily check a lot of a11y rules at once powered by [Axe](https://www.deque.com/axe/)!
-2. Visual testing: using [percy-cypress](https://github.com/percy/percy-cypress) plugin you can take screenshot with different resolutions and easily the difference inside their platform. [Here](https://percy.io/Ema-suriano/gatsby-starter-mate) you can check the Percy dashboard for this project.
+```json
+{
+  "text": "#333333",
+  "background": "#FFFFFF",
+  "muted": "#f0e6f6",
+  "primary": "#7c37ad",
+  "secondary": "#ff4081"
+}
+```
+
+![Original Schema](./media/theme-original.png)
+
+### Teal Theme
+
+```json
+{
+  "text": "#40514e",
+  "background": "#FFFFFF",
+  "muted": "#e4f9f5",
+  "primary": "#11999e",
+  "secondary": "#30e3ca"
+}
+```
+
+![Teal Theme](./media/theme-teal.png)
+
+### Dark Blue Theme
+
+```json
+{
+  "text": "#e3e3e3",
+  "background": "#1b262c",
+  "muted": "#0f4c75",
+  "primary": "#bbe1fa",
+  "secondary": "#3282b8"
+}
+```
+
+![Dark Theme](./media/theme-dark-blue.png)
+
+Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
 
 ## Tracking with Google Analytics (Optional) 📈
 
 This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics will be turn on automatically 😄
 
-## Contributing 💪
+## Contributing
 
-I came with the idea of creating the starter after the positive feedback I received when I deployed [my website](https://emasuriano.com/). Therefore this starter is not perfect! I tried my best to remove all the personal information, also improve the code to make it easier to understand.
-
-I'm totally open for pull requests with bug fixes, changes in Documentation, or new features to the starter 🙌
-
-Please check the [Contribution guidelines](CONTRIBUTING.md) before opening yours 🙏
-
-## License 📝
-
-MIT.
+In case you want to add your contribution into this project, please refer to the [Gatsby Theme repository](https://github.com/EmaSuriano/gatsby-theme-mate) so then everybody using this starter will be able to get the changes.
