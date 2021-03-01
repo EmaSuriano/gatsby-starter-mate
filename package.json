@@ -69,7 +69,7 @@
     "@percy/cypress": "^2.1.1",
     "@types/react-headroom": "^2.2.1",
     "@types/react-helmet": "^6.1.0",
-    "@types/rebass": "^4.0.7",
+    "@types/rebass": "^4.0.8",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.6.0",
     "axe-core": "^4.1.2",
