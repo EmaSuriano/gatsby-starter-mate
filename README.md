@@ -208,7 +208,7 @@ Thanks to the Theme Shadowing, changing the colors of your portfolio is quite ea
 
 Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
 
-## Customizing Icons (Optional)
+## Customizing Icons (Optional) ⭐️
 
 This project is using the icons from [Font Awesome](https://fontawesome.com/), with the implementation made by [fortawesome](https://fortawesome.com/). A good practice when dealing with icons is to load **only** the ones that the project is going to use.
 
@@ -219,7 +219,6 @@ import {
   faMedium,
   faTwitter,
   faGithub,
-  faFacebook,
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faGlobe,
@@ -230,13 +229,14 @@ import {
 export const ICONS = [
   faMedium,
   faTwitter,
-  faFacebook,
   faGithub,
   faGlobe,
   faEnvelope,
   faCoffee,
 ];
 ```
+
+Simply import the icons you want to use either `@fortawesome/free-brands-svg-icons` or `@fortawesome/free-solid-svg-icons` and export them inside the `ICONS` array. They get loaded as soon as the app starts.
 
 ## Tracking with Google Analytics (Optional) 📈
 
