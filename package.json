@@ -75,7 +75,7 @@
     "axe-core": "^4.1.2",
     "babel-eslint": "^10.1.0",
     "chalk": "^4.1.0",
-    "contentful-import": "^7.9.22",
+    "contentful-import": "^7.9.39",
     "cypress": "^6.5.0",
     "cypress-axe": "^0.12.2",
     "dotenv": "^8.2.0",
