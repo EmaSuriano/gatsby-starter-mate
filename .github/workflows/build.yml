@@ -43,9 +43,8 @@ jobs:
 
       - run: npx gatsby new mate-portfolio https://github.com/EmaSuriano/gatsby-starter-mate
 
-      - run: cd mate-portfolio
-
       - run: yarn build
+        working-directory: ./mate-portfolio
         env:
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
           SPACE_ID: ${{secrets.SPACE_ID}}
