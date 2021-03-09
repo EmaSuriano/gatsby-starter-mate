@@ -27,3 +27,25 @@ jobs:
         env:
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
           SPACE_ID: ${{secrets.SPACE_ID}}
+
+  starter-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Read .nvmrc
+        id: node_version
+        run: echo ::set-output name=NODE_VERSION::$(cat .nvmrc)
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ steps.node_version.outputs.NODE_VERSION }}
+
+      - run: npx gatsby new mate-portfolio https://github.com/EmaSuriano/gatsby-starter-mate
+
+      - run: cd mate-portfolio
+
+      - run: yarn build
+        env:
+          ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
+          SPACE_ID: ${{secrets.SPACE_ID}}
