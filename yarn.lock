@@ -3696,10 +3696,10 @@ contentful-batch-libs@^9.0.1:
     lodash "^4.0.1"
     moment "^2.18.1"
 
-contentful-import@^7.9.40:
-  version "7.9.40"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-7.9.40.tgz#e3c1abb18176285306a1e60dc2b9757b68dc3a66"
-  integrity sha512-I4a4uMZQabaX0CNtEM5KnpRtJbv8HD8LRcYgmq1brp1AGxwt6fwcSm5oJIBi3nOeZoUugvWiuY2zvjF4xrNhEQ==
+contentful-import@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.0.1.tgz#767e98654b657ae02522a6c6559df4c2f8437c78"
+  integrity sha512-qOp/dyFo/F4od9DLQ2lgXVW+ydBuGyeB9Izh/iPShPt0vQTtlLlFAm2/8RFQBDbR5qzqT+FBkDZzirCEN8dDcw==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
@@ -3712,6 +3712,7 @@ contentful-import@^7.9.40:
     listr-verbose-renderer "^0.4.1"
     lodash "^4.17.10"
     moment "^2.22.2"
+    p-queue "^6.6.2"
     yargs "^16.0.3"
 
 contentful-management@^7.3.1, contentful-management@^7.5.1:
@@ -5182,7 +5183,7 @@ event-source-polyfill@^1.0.15:
   resolved "https://registry.yarnpkg.com/event-source-polyfill/-/event-source-polyfill-1.0.22.tgz#cb381d6c4409097095da53e01852c1a8fbb6d7fc"
   integrity sha512-Fnk9E2p4rkZ3eJGBn2HDeZoBTpyjPxj8RX/whdr4Pm5622xYgYo1k48SUD649Xlo6nnoKRr2WwcUlneil/AZ8g==
 
-eventemitter3@^4.0.0:
+eventemitter3@^4.0.0, eventemitter3@^4.0.4:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
@@ -9591,6 +9592,14 @@ p-map@^3.0.0:
   dependencies:
     aggregate-error "^3.0.0"
 
+p-queue@^6.6.2:
+  version "6.6.2"
+  resolved "https://registry.yarnpkg.com/p-queue/-/p-queue-6.6.2.tgz#2068a9dcf8e67dd0ec3e7a2bcb76810faa85e426"
+  integrity sha512-RwFpb72c/BhQLEXIZ5K2e+AhgNVmIejGlTgiB9MzZ0e93GRvqZ7uSi0dvRF7/XIXDeNkra2fNHBxTyPDGySpjQ==
+  dependencies:
+    eventemitter3 "^4.0.4"
+    p-timeout "^3.2.0"
+
 p-retry@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/p-retry/-/p-retry-3.0.1.tgz#316b4c8893e2c8dc1cfa891f406c4b422bebf328"
@@ -9613,7 +9622,7 @@ p-timeout@^2.0.1:
   dependencies:
     p-finally "^1.0.0"
 
-p-timeout@^3.0.0:
+p-timeout@^3.0.0, p-timeout@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/p-timeout/-/p-timeout-3.2.0.tgz#c7e17abc971d2a7962ef83626b35d635acf23dfe"
   integrity sha512-rhIwUycgwwKcP9yTOOFK/AKsAopjjCakVqLHePO3CC6Mir1Z99xT+R63jZxAT5lFZLa2inS5h+ZS2GvR99/FBg==
