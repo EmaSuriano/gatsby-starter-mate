@@ -1,4 +1,4 @@
-# Gatsby Starter: Mate
+# Gatsby Starter: Mate 🧉
 
 [![Build](https://github.com/EmaSuriano/gatsby-starter-mate/actions/workflows/build.yml/badge.svg)](https://github.com/EmaSuriano/gatsby-starter-mate/actions/workflows/build.yml)
 [![eslint](https://img.shields.io/badge/eslint-enabled-green.svg)](https://eslint.org/)
@@ -41,7 +41,7 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 - Social sharing (Twitter, Facebook, Google, LinkedIn)
 - Google Analytics integration
 
-## How to start ▶️
+## How to start
 
 As this process needs more steps compared to other starters, I decided to made a tutorial video of how to set up your own instance of Mate. You can follow the video or jump directly to the written documentation.
 
@@ -129,7 +129,7 @@ After this step we can finally run the project and see the result in http://loca
 $ yarn start
 ```
 
-## Screenshot and Design 🖼
+## Screenshot and Design
 
 As the starter is a SPA it only has two routes:
 
@@ -144,7 +144,7 @@ As the starter is a SPA it only has two routes:
 | Writing  |  ![Writing](media/screenshots/Writing.png)  |
 | 404      |      ![404](media/screenshots/404.png)      |
 
-## Building your site 📦
+## Building your site
 
 As we are dealing with environment variables, the `.env` file is excluded from `.gitignore` file. Therefore, in order to deploy the website you have to send `SPACE_ID` and `ACCESS_TOKEN` with the `build` command.
 
@@ -154,22 +154,25 @@ SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy yarn build
 
 The result will be stored inside the `public` folder, so you can upload to your web host. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
 
-## Customization 👨‍💻
+## Customization
 
-When you first bootstrap the project, you will notify that it doesn't contain many files. This is because how the project is structured, for example where is the data coming from and how it is displayed to the user. The starter is based in 2 principles:
+When you first bootstrap the project, you will notice that it doesn't contain many files. This is because of how the project is structured, for example where is the data coming from and how it is displayed to the user. The starter is based on 2 principles:
 
-1. Data coming from an external source: Contentful. Therefore in case you want to change the content of the website, please refer to [Adding your information section](#adding-your-information-).
-2. Components and pages decoupled inside a Gatsby Theme: [gatsby-theme-mate](https://github.com/EmaSuriano/gatsby-theme-mate). The reason behind it is to provide an easy way to keep your starter up to date. In order to know more about Gatsby Theme, please refer to the [official documentation](https://www.gatsbyjs.com/docs/themes/). Some things you can customize of your
+1. Data coming from an external source: Contentful. Therefore in case you want to change the content of the website, please refer to [Adding your information section](#adding-your-information).
+2. Components and pages decoupled inside a Gatsby Theme: [gatsby-theme-mate](https://github.com/EmaSuriano/gatsby-theme-mate). The reason behind it is to provide an easy way to keep your starter up to date. To know more about Gatsby Theme, please refer to the [official documentation](https://www.gatsbyjs.com/docs/themes/). Most common customizations:
+   1. [Theming](#theming)
+   2. [Changing Icons](#changing-icons)
+   3. [Modifying the Sections](#modifying-the-sections)
 
-### Adding your information 📝
+### Adding your information
 
-All the information of this starter resides inside [Contentful](https://www.contentful.com/), inside the Content of `About`. In order to change it, just go to `Content` section and change the entity with the information you want.
+All the information of this starter resides inside [Contentful](https://www.contentful.com/), inside the Content of `About`. To change it, just go to the `Content` section and change the entity with the information you want.
 
 ![Contentful About change](./media/contentful-about-change.png)
 
-Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
+Regarding the projects and social links, the process is the same! Contentful is easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
-### Theming 🎨
+### Theming
 
 Thanks to the [Theme Shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/), changing the colors of your portfolio is quite easy! You have to create a new file located at `src/gatsby-theme-mate/colors.json`. Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
 
@@ -179,7 +182,7 @@ Thanks to the [Theme Shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and
 | Teal     | `{ "text": "#40514e", "background": "#FFFFFF", "muted": "#e4f9f5", "primary": "#11999e", "secondary": "#30e3ca" }` | ![Teal Theme](./media/theme-teal.png)          |
 | Dark     | `{ "text": "#e3e3e3", "background": "#1b262c", "muted": "#0f4c75", "primary": "#bbe1fa", "secondary": "#3282b8" }` | ![Dark Theme](./media/theme-dark-blue.png)     |
 
-### Customizing Icons ⭐️
+### Changing Icons
 
 This project is using the icons from [Font Awesome](https://fontawesome.com/), with the implementation made by [fortawesome](https://fortawesome.com/). A good practice when dealing with icons is to load **only** the ones that the project is going to use. Therefore not all the icons inside FA are loaded by default.
 
@@ -209,16 +212,16 @@ export const ICONS = [
 
 Simply import the icons you want to use either `@fortawesome/free-brands-svg-icons` or `@fortawesome/free-solid-svg-icons` and export them inside the `ICONS` array. They get loaded as soon as the app starts.
 
-### Modifying the Sections 📥
+### Modifying the Sections
 
 This starter by default provides 4 different sections:
 
-- Landing: your name, roles and social links.
+- Landing: your name, roles, and social links.
 - About: information about yourself plus the image on the side.
 - Projects: summary of the projects you worked on.
 - Writing: articles from Medium you wrote (this will be visible only if you specify a Medium user).
 
-In case you want to change the order, remove or even add new sections. You can do it by using the feature of [Theme Shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) and create a file inside `src/gatsby-theme-mate/templates/Home.js` and have total control on what you want to render. This will be an example of swapping between the About and Projects section.
+In case you want to change the order, remove or even add new sections. You can do it by using the feature of [Theme Shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) and create a file inside `src/gatsby-theme-mate/templates/Home.js` and have total control over what you want to render. This will be an example of swapping between the About and Projects section.
 
 ```jsx
 import React from 'react';
@@ -248,11 +251,11 @@ const Home = () => (
 export default Home;
 ```
 
-By following this approach it's possible to modify the code of any component of the project. But please be aware, that by using Theme Shadowing you are going to **always override** the content of this, so in case there will be an update of the same file inside `gatsby-theme-mate` you are not going to be use it.
+By following this approach it's possible to modify the code of any component of the project. But please be aware, that by using Theme Shadowing you are going to **always override** the content of this, so in case there will be an update of the same file inside `gatsby-theme-mate` you are not going to use it.
 
-My final recommendation with shadowing is to try to keep as minimum an possible to avoid having breaking changes between new releases of the theme.
+My final recommendation with shadowing is to try to keep as minimum as possible to avoid having breaking changes between new releases of the theme.
 
-## Tracking with Google Analytics (Optional) 📈
+## Tracking with Google Analytics (Optional)
 
 This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics will be turn on automatically 😄
 
