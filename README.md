@@ -154,65 +154,36 @@ SPACE_ID=xxxxx ACCESS_TOKEN=yyyyy yarn build
 
 The result will be stored inside the `public` folder, so you can upload to your web host. I highly suggest using this starter with Netlify when you can define which command will build the project and also send the environment variables inside the website configuration.
 
-## Adding your information 📝
+## Customization 👨‍💻
 
-All the text of this starter live inside Contentful, specifically inside the Content of `About`. In order to change it, just go to `Content` section and change the entity of About with the information you want.
+When you first bootstrap the project, you will notify that it doesn't contain many files. This is because how the project is structured, for example where is the data coming from and how it is displayed to the user. The starter is based in 2 principles:
+
+1. Data coming from an external source: Contentful. Therefore in case you want to change the content of the website, please refer to [Adding your information section](#adding-your-information-).
+2. Components and pages decoupled inside a Gatsby Theme: [gatsby-theme-mate](https://github.com/EmaSuriano/gatsby-theme-mate). The reason behind it is to provide an easy way to keep your starter up to date. In order to know more about Gatsby Theme, please refer to the [official documentation](https://www.gatsbyjs.com/docs/themes/). Some things you can customize of your
+
+### Adding your information 📝
+
+All the information of this starter resides inside [Contentful](https://www.contentful.com/), inside the Content of `About`. In order to change it, just go to `Content` section and change the entity with the information you want.
 
 ![Contentful About change](./media/contentful-about-change.png)
 
 Regarding the projects and social links the process is the same! Contentful is really easy to learn so don't be afraid of breaking everything, remember that you can restore to the start point by running `yarn setup` 😄
 
-## Theming 🎨
+### Theming 🎨
 
-Thanks to the Theme Shadowing, changing the colors of your portfolio is quite easy! You have to create a new file located at `src/gatsby-theme-mate/colors.json`.
+Thanks to the [Theme Shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/), changing the colors of your portfolio is quite easy! You have to create a new file located at `src/gatsby-theme-mate/colors.json`. Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
 
-```json
-{
-  "text": "#333333",
-  "background": "#FFFFFF",
-  "muted": "#f0e6f6",
-  "primary": "#7c37ad",
-  "secondary": "#ff4081"
-}
-```
+| Name     | Code                                                                                                               | Screenshot                                     |
+| -------- | ------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
+| Original | `{ "text": "#333333", "background": "#FFFFFF", "muted": "#f0e6f6", "primary": "#7c37ad", "secondary": "#ff4081" }` | ![Original Schema](./media/theme-original.png) |
+| Teal     | `{ "text": "#40514e", "background": "#FFFFFF", "muted": "#e4f9f5", "primary": "#11999e", "secondary": "#30e3ca" }` | ![Teal Theme](./media/theme-teal.png)          |
+| Dark     | `{ "text": "#e3e3e3", "background": "#1b262c", "muted": "#0f4c75", "primary": "#bbe1fa", "secondary": "#3282b8" }` | ![Dark Theme](./media/theme-dark-blue.png)     |
 
-![Original Schema](./media/theme-original.png)
+### Customizing Icons ⭐️
 
-### Teal Theme
+This project is using the icons from [Font Awesome](https://fontawesome.com/), with the implementation made by [fortawesome](https://fortawesome.com/). A good practice when dealing with icons is to load **only** the ones that the project is going to use. Therefore not all the icons inside FA are loaded by default.
 
-```json
-{
-  "text": "#40514e",
-  "background": "#FFFFFF",
-  "muted": "#e4f9f5",
-  "primary": "#11999e",
-  "secondary": "#30e3ca"
-}
-```
-
-![Teal Theme](./media/theme-teal.png)
-
-### Dark Blue Theme
-
-```json
-{
-  "text": "#e3e3e3",
-  "background": "#1b262c",
-  "muted": "#0f4c75",
-  "primary": "#bbe1fa",
-  "secondary": "#3282b8"
-}
-```
-
-![Dark Theme](./media/theme-dark-blue.png)
-
-Some examples I made by using palettes from [Color Hunt](https://colorhunt.co/):
-
-## Customizing Icons (Optional) ⭐️
-
-This project is using the icons from [Font Awesome](https://fontawesome.com/), with the implementation made by [fortawesome](https://fortawesome.com/). A good practice when dealing with icons is to load **only** the ones that the project is going to use.
-
-Therefore not all the icons inside FA are loaded by default. In case you want to extend the icons used in your portfolio, you can create a file located at `src/gatsby-theme-mate/icons.js` with your icons. By default this is the content of the file:
+To change the icons used in your portfolio, you have to make use of [Theme Shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) and create a file located at `src/gatsby-theme-mate/icons.js` with your icons. By default this is the content of the file:
 
 ```javascript
 import {
@@ -237,6 +208,49 @@ export const ICONS = [
 ```
 
 Simply import the icons you want to use either `@fortawesome/free-brands-svg-icons` or `@fortawesome/free-solid-svg-icons` and export them inside the `ICONS` array. They get loaded as soon as the app starts.
+
+### Modifying the Sections 📥
+
+This starter by default provides 4 different sections:
+
+- Landing: your name, roles and social links.
+- About: information about yourself plus the image on the side.
+- Projects: summary of the projects you worked on.
+- Writing: articles from Medium you wrote (this will be visible only if you specify a Medium user).
+
+In case you want to change the order, remove or even add new sections. You can do it by using the feature of [Theme Shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/) and create a file inside `src/gatsby-theme-mate/templates/Home.js` and have total control on what you want to render. This will be an example of swapping between the About and Projects section.
+
+```jsx
+import React from 'react';
+
+// Layout components
+import Layout from 'gatsby-theme-mate/src/components/Layout';
+import Header from 'gatsby-theme-mate/src/components/Header';
+import Footer from 'gatsby-theme-mate/src/components/Footer';
+
+// Sections that will fetch data for you
+import Landing from 'gatsby-theme-mate/src/sections/Landing';
+import About from 'gatsby-theme-mate/src/sections/About';
+import Projects from 'gatsby-theme-mate/src/sections/Projects';
+import Writing from 'gatsby-theme-mate/src/sections/Writing';
+
+const Home = () => (
+  <Layout>
+    <Header />
+    <Landing />
+    <Projects />
+    <About />
+    <Writing />
+    <Footer />
+  </Layout>
+);
+
+export default Home;
+```
+
+By following this approach it's possible to modify the code of any component of the project. But please be aware, that by using Theme Shadowing you are going to **always override** the content of this, so in case there will be an update of the same file inside `gatsby-theme-mate` you are not going to be use it.
+
+My final recommendation with shadowing is to try to keep as minimum an possible to avoid having breaking changes between new releases of the theme.
 
 ## Tracking with Google Analytics (Optional) 📈
 
