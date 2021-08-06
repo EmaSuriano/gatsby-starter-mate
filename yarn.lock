@@ -1469,31 +1469,31 @@
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.36.tgz#b44e52db3b6b20523e0c57ef8c42d315532cb903"
   integrity sha512-a/7BiSgobHAgBWeN7N0w+lAhInrGxksn13uK7231n2m8EDPE3BMCl9NZLTGrj9ZXfCmC6LM0QLqXidIizVQ6yg==
 
-"@fortawesome/fontawesome-svg-core@^1.2.35":
+"@fortawesome/fontawesome-svg-core@^1.2.36":
   version "1.2.36"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.36.tgz#4f2ea6f778298e0c47c6524ce2e7fd58eb6930e3"
   integrity sha512-YUcsLQKYb6DmaJjIHdDWpBIGCcyE/W+p/LMGvjQem55Mm2XWVAP5kWTMKWLv9lwpCVjpLxPyOMOyUocP1GxrtA==
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.36"
 
-"@fortawesome/free-brands-svg-icons@^5.15.3":
+"@fortawesome/free-brands-svg-icons@^5.15.4":
   version "5.15.4"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-5.15.4.tgz#ec8a44dd383bcdd58aa7d1c96f38251e6fec9733"
   integrity sha512-f1witbwycL9cTENJegcmcZRYyawAFbm8+c6IirLmwbbpqz46wyjbQYLuxOc7weXFXfB7QR8/Vd2u5R3q6JYD9g==
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.36"
 
-"@fortawesome/free-solid-svg-icons@^5.15.3":
+"@fortawesome/free-solid-svg-icons@^5.15.4":
   version "5.15.4"
   resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.15.4.tgz#2a68f3fc3ddda12e52645654142b9e4e8fbb6cc5"
   integrity sha512-JLmQfz6tdtwxoihXLg6lT78BorrFyCf59SAwBM6qV/0zXyVeDygJVb3fk+j5Qat+Yvcxp1buLTY5iDh1ZSAQ8w==
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.2.36"
 
-"@fortawesome/react-fontawesome@^0.1.12":
-  version "0.1.14"
-  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.14.tgz#bf28875c3935b69ce2dc620e1060b217a47f64ca"
-  integrity sha512-4wqNb0gRLVaBm/h+lGe8UfPPivcbuJ6ecI4hIgW0LjI7kzpYB9FkN0L9apbVzg+lsBdcTf0AlBtODjcSX5mmKA==
+"@fortawesome/react-fontawesome@^0.1.15":
+  version "0.1.15"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.15.tgz#1450b838f905981d721bf07e14e3b52c0e9a91ed"
+  integrity sha512-/HFHdcoLESxxMkqZAcZ6RXDJ69pVApwdwRos/B2kiMWxDSAX2dFK8Er2/+rG+RsrzWB/dsAyjefLmemgmfE18g==
   dependencies:
     prop-types "^15.7.2"
 
@@ -3295,7 +3295,7 @@ babel-plugin-remove-graphql-queries@^3.11.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-remove-graphql-queries/-/babel-plugin-remove-graphql-queries-3.11.0.tgz#b921e95f2d8fd49c57fe7fcac15546ab9b03f5b2"
   integrity sha512-YVXU3hC4BWHtkKoAVi2lzGCfx9PBCXa2IMk2MnXcpoRoGPN4hKMIGqnSrdRrBTjow8FdFQ/y5SYYmhDcAiYkoQ==
 
-"babel-plugin-styled-components@>= 1.12.0", babel-plugin-styled-components@^1.13.1:
+"babel-plugin-styled-components@>= 1.12.0", babel-plugin-styled-components@^1.13.2:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.13.2.tgz#ebe0e6deff51d7f93fceda1819e9b96aeb88278d"
   integrity sha512-Vb1R3d4g+MUfPQPVDMCGjm3cDocJEUTR7Xq7QS95JWWeksN1wdFRYpD2kulDgI3Huuaf1CZd+NK4KQmqUFh5dA==
@@ -6648,7 +6648,7 @@ gatsby-plugin-google-analytics@^3.11.0:
     minimatch "3.0.4"
     web-vitals "^1.1.2"
 
-gatsby-plugin-image@^1.8.0:
+gatsby-plugin-image@^1.11.0:
   version "1.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-1.11.0.tgz#c7d2ffa79c6476e1fdf305a183bc02e99f31ec12"
   integrity sha512-hlbGHpGTgHOp0QTWE9jF0IILRbzbbDPkjktCjXR43Pt24L7/Df4HqdFrJM7hB36O4d7j3vY1GSW1L5OUEPPkhw==
@@ -6666,7 +6666,7 @@ gatsby-plugin-image@^1.8.0:
     objectFitPolyfill "^2.3.0"
     prop-types "^15.7.2"
 
-gatsby-plugin-manifest@^3.8.0:
+gatsby-plugin-manifest@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-3.11.0.tgz#9dfc08f3573636edb7eba904291da9ca482524f4"
   integrity sha512-ZeM8OmolC9rcOVa76PdpSM0Q3vfUBzyztqW/30Ax9VGx0JiE+LeMnjsApCWWU9wXCiZUncc2UgDrJDad7dMbeQ==
@@ -6692,14 +6692,14 @@ gatsby-plugin-page-creator@^3.11.0:
     globby "^11.0.3"
     lodash "^4.17.21"
 
-gatsby-plugin-react-helmet@^4.8.0:
+gatsby-plugin-react-helmet@^4.11.0:
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-4.11.0.tgz#1c5354174572e232e04efd670778ccad7840d808"
   integrity sha512-FTEneTpt2IngYRVXrJXIHtQFnFt6THu7JH/9aAtq51hPVIglrDVBsDnPgRfALjNzJfKt0OyNmpoLEXOTFLpSGg==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-gatsby-plugin-sharp@^3.8.0:
+gatsby-plugin-sharp@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-3.11.0.tgz#59d7798dcc7412d1749d40eee399b9b1e787b83b"
   integrity sha512-r1c0Mgt32Mf1nhJ1XyIFBDpYbFZMTtkMgalUmkUn+gHVG+JOoFOpa1HR0Wk5/hIRpFMcEs9JInV1nfe/p9EteQ==
@@ -6726,14 +6726,14 @@ gatsby-plugin-sharp@^3.8.0:
     svgo "1.3.2"
     uuid "3.4.0"
 
-gatsby-plugin-styled-components@^4.8.0:
+gatsby-plugin-styled-components@^4.11.0:
   version "4.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-4.11.0.tgz#ec06ffe0b1a0f091ed574fef57c7f8115f99b752"
   integrity sha512-Y99KgpWfdigNWT1nTr/GQLqMsEFsmKcbJYf79ZgIMyRZgYS6LsB3p7hRVRwGpMNuKwiefJweFMtdeYt7l+wgVg==
   dependencies:
     "@babel/runtime" "^7.14.6"
 
-gatsby-plugin-typescript@^3.11.0, gatsby-plugin-typescript@^3.8.0:
+gatsby-plugin-typescript@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-typescript/-/gatsby-plugin-typescript-3.11.0.tgz#4c68d62a2813eefcece50f776e1996af4a5b6f5a"
   integrity sha512-23QHfwCgmSNPTDIZwf58LNd6/2z7iNGgYF67fhNhm5KKDq+4nwiEu6057zvzfiXQAKGRGUJb3DxvnpPE9xs7bQ==
@@ -6824,7 +6824,7 @@ gatsby-recipes@^0.22.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-contentful@^5.8.0:
+gatsby-source-contentful@^5.11.0:
   version "5.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-5.11.0.tgz#995603859501b1c128782ea8b81419cfac13f91f"
   integrity sha512-Wkyf5/DIls9cVxTxu00dwQ5gI4t/Zeq1QPaUEtmDq+xsgJpMeAsgAD48XTVulnboBjGOvdHWMnFZuY1v7+V5iA==
@@ -6869,7 +6869,7 @@ gatsby-source-filesystem@^3.11.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-medium@^3.8.0:
+gatsby-source-medium@^3.11.0:
   version "3.11.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-3.11.0.tgz#29de8deda7c82909f9bcec7d752ad68c63194589"
   integrity sha512-bOEjsNelB70tVzRgoX0juw22x48s+hXBcGSLXaw4kxBestAYycwDOUQ0HtA5KZ7+GW2V9AdyJDMy3eGMQOnmFw==
@@ -6897,36 +6897,36 @@ gatsby-telemetry@^2.11.0:
     node-fetch "^2.6.1"
     uuid "3.4.0"
 
-gatsby-theme-mate@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/gatsby-theme-mate/-/gatsby-theme-mate-1.3.1.tgz#17a3b88c775e1a280f389a36bf10476821c262a0"
-  integrity sha512-tSGZynJZIfDKa/MAmbYyT5++l8m11PgSH5vhNySHahJVBIj3L6X3WLFLrRus+Rn5vEsdKyPXPGP+VuJLNIKr3g==
+gatsby-theme-mate@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/gatsby-theme-mate/-/gatsby-theme-mate-1.4.0.tgz#c84799062971463a08812491bbac8b9a25ef31cb"
+  integrity sha512-rf+9VJK6AWxRVDHKW9tR6NU5zNH2hFvlos0mV0+eUIPSAb0+1wGQMpJ4tDT8Q8m1wKbPhsdJb4xr8DQYNUPDnQ==
   dependencies:
-    "@fortawesome/fontawesome-svg-core" "^1.2.35"
-    "@fortawesome/free-brands-svg-icons" "^5.15.3"
-    "@fortawesome/free-solid-svg-icons" "^5.15.3"
-    "@fortawesome/react-fontawesome" "^0.1.12"
+    "@fortawesome/fontawesome-svg-core" "^1.2.36"
+    "@fortawesome/free-brands-svg-icons" "^5.15.4"
+    "@fortawesome/free-solid-svg-icons" "^5.15.4"
+    "@fortawesome/react-fontawesome" "^0.1.15"
     "@rebass/preset" "^4.0.5"
     "@tippy.js/react" "^3.1.1"
-    babel-plugin-styled-components "^1.13.1"
-    gatsby-plugin-image "^1.8.0"
-    gatsby-plugin-manifest "^3.8.0"
-    gatsby-plugin-react-helmet "^4.8.0"
-    gatsby-plugin-sharp "^3.8.0"
-    gatsby-plugin-styled-components "^4.8.0"
-    gatsby-plugin-typescript "^3.8.0"
-    gatsby-source-contentful "^5.8.0"
-    gatsby-source-medium "^3.8.0"
-    gatsby-transformer-remark "^4.5.0"
+    babel-plugin-styled-components "^1.13.2"
+    gatsby-plugin-image "^1.11.0"
+    gatsby-plugin-manifest "^3.11.0"
+    gatsby-plugin-react-helmet "^4.11.0"
+    gatsby-plugin-sharp "^3.11.0"
+    gatsby-plugin-styled-components "^4.11.0"
+    gatsby-plugin-typescript "^3.11.0"
+    gatsby-source-contentful "^5.11.0"
+    gatsby-source-medium "^3.11.0"
+    gatsby-transformer-remark "^4.8.0"
     react-awesome-reveal "^3.8.1"
     react-headroom "^3.1.1"
     react-helmet "^6.1.0"
-    react-markdown "^6.0.2"
+    react-markdown "^6.0.3"
     react-text-loop "^2.3.0"
     rebass "^4.0.7"
     styled-components "^5.3.0"
 
-gatsby-transformer-remark@^4.5.0:
+gatsby-transformer-remark@^4.8.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-4.8.0.tgz#af9c6446add3d4b93e8050ec816c8b1316396fb3"
   integrity sha512-frnD8BWuiv6y4kliYaiZYXB7mbcG2ogJxckfZL4hlyYStU1nV6jNMOBPTLdLnD42l/G/c1uX9s8J5AzOF6Uw4w==
@@ -11862,7 +11862,7 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-markdown@^6.0.2:
+react-markdown@^6.0.3:
   version "6.0.3"
   resolved "https://registry.yarnpkg.com/react-markdown/-/react-markdown-6.0.3.tgz#625ec767fa321d91801129387e7d31ee0cb99254"
   integrity sha512-kQbpWiMoBHnj9myLlmZG9T1JdoT/OEyHK7hqM6CqFT14MAkgWiWBUYijLyBmxbntaN6dCDicPcUhWhci1QYodg==
