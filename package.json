@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "chalk": "^4.1.2",
-    "contentful-import": "^8.2.4",
+    "contentful-import": "^8.2.5",
     "inquirer": "^8.1.2"
   }
 }
