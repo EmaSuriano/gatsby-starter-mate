@@ -3,13 +3,11 @@
 [![Build](https://github.com/EmaSuriano/gatsby-starter-mate/actions/workflows/master.yml/badge.svg)](https://github.com/EmaSuriano/gatsby-starter-mate/actions/workflows/master.yml)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f532a32d-4fc1-441d-aa28-cdc5e2c2e79c/deploy-status)](https://app.netlify.com/sites/gatsby-starter-mate/deploys)
 
-![Gatsby Starter Mate logo](./media/gatsby-starter-mate-logo.png)
-
-> An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
+> Gatsby starter for [`gatsby-theme-mate`](https://github.com/EmaSuriano/gatsby-theme-mate). An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS.
 
 The target audience are Developers 💻 and Tech Writers ✍️.
 
-## [Check the Demo ✨](https://gatsby-starter-mate.netlify.com/)
+**[Check the Demo ✨](https://gatsby-starter-mate.netlify.com/)**
 
 <a href="https://www.buymeacoffee.com/emasuriano" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/purple_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
 
@@ -23,7 +21,7 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 
 ## Features 🛠
 
-- [Gatsby](https://www.gatsbyjs.org/)
+- [Gatsby 3](https://www.gatsbyjs.org/)
 - [Rebass](https://rebassjs.org/): styled component system
 - [React Awesome Reveal](https://github.com/dennismorello/react-awesome-reveal)
 - Typescript
