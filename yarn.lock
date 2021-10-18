@@ -4350,16 +4350,15 @@ contentful-batch-libs@^9.0.1:
     lodash "^4.0.1"
     moment "^2.18.1"
 
-contentful-import@^8.2.17:
-  version "8.2.17"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.2.17.tgz#c2bd8415605dd11c6a4394401967fab128294618"
-  integrity sha512-uVaK6wG29oPMYgtpH/wEpAwSFBHA2WdlX1jfkRXPZ+bn4N1sRgscla0opetgeTOnyj6h74nQoPAWHVMI2VQjVQ==
+contentful-import@^8.2.23:
+  version "8.2.23"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.2.23.tgz#52b346cdf4ded73ea589cac993e940d3971bbf4b"
+  integrity sha512-a8+mcHQdN4JRbM0YhZMV1oYrNM4D/N7pJYI/GfKHEdPyESNMyTdTk5kYKat1lAKwNYe++zw22Hox0qfqWQ1sqg==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
     contentful-batch-libs "^9.0.1"
     contentful-management "^7.3.1"
-    echo-cli "^1.0.8"
     joi "^13.4.0"
     listr "^0.14.1"
     listr-update-renderer "^0.5.0"
@@ -5291,14 +5290,6 @@ eastasianwidth@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/eastasianwidth/-/eastasianwidth-0.2.0.tgz#696ce2ec0aa0e6ea93a397ffcf24aa7840c827cb"
   integrity sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==
-
-echo-cli@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/echo-cli/-/echo-cli-1.0.8.tgz#70a45b87f96db08b4543c9895bf2ae82e6910988"
-  integrity sha1-cKRbh/ltsItFQ8mJW/KuguaRCYg=
-  dependencies:
-    meow "^3.7.0"
-    unescape-js "^1.0.3"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -9789,7 +9780,7 @@ memoizee@^0.4.15:
     next-tick "^1.1.0"
     timers-ext "^0.1.7"
 
-meow@^3.3.0, meow@^3.7.0:
+meow@^3.3.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
   integrity sha1-cstmi0JSKCkKu/qFaJJYcwioAfs=
@@ -13389,11 +13380,6 @@ string-width@^4.0.0, string-width@^4.1.0, string-width@^4.2.0:
     is-fullwidth-code-point "^3.0.0"
     strip-ansi "^6.0.0"
 
-string.fromcodepoint@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/string.fromcodepoint/-/string.fromcodepoint-0.2.1.tgz#8d978333c0bc92538f50f383e4888f3e5619d653"
-  integrity sha1-jZeDM8C8klOPUPOD5IiPPlYZ1lM=
-
 string.prototype.matchall@^4.0.5:
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/string.prototype.matchall/-/string.prototype.matchall-4.0.5.tgz#59370644e1db7e4c0c045277690cf7b01203c4da"
@@ -14167,13 +14153,6 @@ underscore.string@^3.3.5:
   dependencies:
     sprintf-js "^1.0.3"
     util-deprecate "^1.0.2"
-
-unescape-js@^1.0.3:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/unescape-js/-/unescape-js-1.1.4.tgz#4bc6389c499cb055a98364a0b3094e1c3d5da395"
-  integrity sha512-42SD8NOQEhdYntEiUQdYq/1V/YHwr1HLwlHuTJB5InVVdOSbgI6xu8jK5q65yIzuFCfczzyDF/7hbGzVbyCw0g==
-  dependencies:
-    string.fromcodepoint "^0.2.1"
 
 unherit@^1.0.4:
   version "1.1.3"
