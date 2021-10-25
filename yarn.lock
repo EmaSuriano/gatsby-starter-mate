@@ -4350,10 +4350,10 @@ contentful-batch-libs@^9.0.1:
     lodash "^4.0.1"
     moment "^2.18.1"
 
-contentful-import@^8.2.23:
-  version "8.2.23"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.2.23.tgz#52b346cdf4ded73ea589cac993e940d3971bbf4b"
-  integrity sha512-a8+mcHQdN4JRbM0YhZMV1oYrNM4D/N7pJYI/GfKHEdPyESNMyTdTk5kYKat1lAKwNYe++zw22Hox0qfqWQ1sqg==
+contentful-import@^8.2.24:
+  version "8.2.24"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.2.24.tgz#15b8c5f13e94d38c8303683141885ddb396f22f2"
+  integrity sha512-Eka44Qfv1Ft9UYfJgIuYppD1YMg40/wA4wqnFb9Nsnbt8v2LuAK6x1+n5a7IKylUZdh4tWvEpKeDsPeI9E0qkQ==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
