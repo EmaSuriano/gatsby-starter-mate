@@ -26,17 +26,17 @@
   },
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
-    "gatsby": "^3.14.6",
-    "gatsby-plugin-google-analytics": "^3.14.0",
-    "gatsby-theme-mate": "^1.4.4",
+    "gatsby": "^4.10.1",
+    "gatsby-plugin-google-analytics": "^4.10.0",
+    "gatsby-theme-mate": "^2.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "process": "^0.11.10",
-    "env-cmd": "^10.1.0",
     "chalk": "^5.0.1",
     "contentful-import": "^8.2.28",
-    "inquirer": "^8.2.1"
+    "env-cmd": "^10.1.0",
+    "inquirer": "^8.2.1",
+    "process": "^0.11.10"
   }
 }
