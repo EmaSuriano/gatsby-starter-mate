@@ -19,16 +19,15 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 
 ## Features 🛠
 
-- [Gatsby 3](https://www.gatsbyjs.org/)
+- [Gatsby 4](https://www.gatsbyjs.org/)
 - [Rebass](https://rebassjs.org/): styled component system
 - [React Awesome Reveal](https://github.com/dennismorello/react-awesome-reveal)
-- Typescript
 - CMS Integration with [Contentful](https://contentful.com)
 - PWA ready
 - SEO
 - Responsive design
 - Icons from [font-awesome](https://fontawesome.com/)
-- [Netlify](https://www.netlify.com) Deployment Friendly
+- [Netlify](https://www.netlify.com) and [Gatsby Cloud](https://www.gatsbyjs.com/products/cloud/) Deployment Friendly
 - Medium integration
 - Social sharing (Twitter, Facebook, Google, LinkedIn)
 - Google Analytics integration
