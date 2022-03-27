@@ -1,15 +1,16 @@
-const spaceImport = require('contentful-import');
-const inquirer = require('inquirer');
-const chalk = require('chalk');
-const os = require('os');
-const path = require('path');
-const { writeFileSync } = require('fs');
-const exportFile = require('./contentful-config.json');
+import spaceImport from 'contentful-import';
+import inquirer from 'inquirer';
+import chalk from 'chalk';
+import os from 'os';
+import path from 'path';
+import { writeFileSync, readFileSync } from 'fs';
 
 const validateSpaceId = (input) =>
   /^[a-z0-9]{12}$/.test(input) || 'Space ID must be 12 lowercase characters';
 
-const CONFIG_FILE_PATH = path.resolve(__dirname, '..', '.env');
+const ROOT_PATH = path.resolve();
+const CONFIG_FILE_PATH = path.resolve(ROOT_PATH, '.env');
+const CONFIG_PATH = path.resolve(ROOT_PATH, 'bin', 'contentful-config.json');
 const QUESTIONS = [
   {
     name: 'spaceId',
@@ -36,7 +37,8 @@ const setup = async () => {
   writeFileSync(CONFIG_FILE_PATH, envData.join(os.EOL));
 
   console.log('Importing content into your Contentful ...');
-  await spaceImport({ spaceId, managementToken, content: exportFile });
+  const content = JSON.parse(readFileSync(CONFIG_PATH, 'utf-8'));
+  await spaceImport({ spaceId, managementToken, content });
 
   console.log(
     `All set! You can now run ${chalk.yellow(
