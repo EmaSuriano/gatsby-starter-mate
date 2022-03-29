@@ -1,3 +1,4 @@
+// @ts-ignore
 import spaceImport from 'contentful-import';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
@@ -5,17 +6,17 @@ import os from 'os';
 import path from 'path';
 import { writeFileSync, readFileSync } from 'fs';
 
-const validateSpaceId = (input) =>
-  /^[a-z0-9]{12}$/.test(input) || 'Space ID must be 12 lowercase characters';
-
 const ROOT_PATH = path.resolve();
 const CONFIG_FILE_PATH = path.resolve(ROOT_PATH, '.env');
 const CONFIG_PATH = path.resolve(ROOT_PATH, 'bin', 'contentful-config.json');
+
 const QUESTIONS = [
   {
     name: 'spaceId',
     message: 'Your Space ID',
-    validate: validateSpaceId,
+    validate: (input: string) =>
+      /^[a-z0-9]{12}$/.test(input) ||
+      'Space ID must be 12 lowercase characters',
   },
   {
     name: 'deliveryToken',
