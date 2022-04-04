@@ -28,7 +28,7 @@
   "homepage": "https://github.com/EmaSuriano/gatsby-starter-mate#readme",
   "dependencies": {
     "gatsby": "^4.10.3",
-    "gatsby-plugin-google-analytics": "^4.10.0",
+    "gatsby-plugin-google-analytics": "^4.11.0",
     "gatsby-theme-mate": "2.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
