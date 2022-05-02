@@ -7139,10 +7139,10 @@ gatsby-parcel-config@^0.4.0:
     "@parcel/transformer-raw" "^2.3.2"
     "@parcel/transformer-react-refresh-wrap" "^2.3.2"
 
-gatsby-plugin-google-analytics@^4.12.1:
-  version "4.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.12.1.tgz#38f0d17b802efc3b1ac1767f1760e1ad3b9aa531"
-  integrity sha512-DcJ0CFLdLuWLnaMKtGHgJPTfIalYRAlNnLzDDN6gjCS+2ZcrV7WlttvHqBVS3Y3jd1x+nZMWBGbyd6nH/NFItw==
+gatsby-plugin-google-analytics@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-analytics/-/gatsby-plugin-google-analytics-4.13.0.tgz#5f7511a3c42fde1c6875c11180d4ef1901531a17"
+  integrity sha512-6Sxnah8ElfdQTtfxUw5k0iWVSKzcNYUH4hWwiO37fhJDOuFco9Wjy/eYKdb/+RlgXCJFiVrZ7PXkMRNJKxMnNA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     minimatch "3.0.4"
