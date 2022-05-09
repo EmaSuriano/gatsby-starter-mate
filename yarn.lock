@@ -5056,10 +5056,10 @@ contentful-batch-libs@^9.2.2:
     moment "^2.29.1"
     uuid "^8.3.2"
 
-contentful-import@^8.2.29:
-  version "8.2.29"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.2.29.tgz#888cc36ec3befb08feb3a66bb26218f074739352"
-  integrity sha512-4N1ipQodvzWeZaZPgxXk3Yszs6IZ/Ef9jPTeePeEEKpa4JRmcxvtwO8cHTVqeym48zsPU0QI8KO5sN9DKjeatw==
+contentful-import@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.3.0.tgz#2029a8ab0535270191dbb8141a54007458b14645"
+  integrity sha512-XCnq3GTJoPaUhg8Yimh/DbkoQ/R7KWhFS9Cbz2Fqj+SvzyOwmng2p8DWru24e/pfc/VGzlCOF1gWEKOm65MNkw==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
