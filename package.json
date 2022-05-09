@@ -36,7 +36,7 @@
   "devDependencies": {
     "@tsconfig/recommended": "^1.0.1",
     "@types/inquirer": "^8.2.1",
-    "chalk": "^4.1.2",
+    "chalk": "^5.0.1",
     "contentful-import": "^8.3.0",
     "env-cmd": "^10.1.0",
     "inquirer": "^8.2.4",
