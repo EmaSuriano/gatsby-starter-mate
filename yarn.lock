@@ -4562,21 +4562,21 @@ contentful-batch-libs@^9.2.2:
     moment "^2.29.1"
     uuid "^8.3.2"
 
-contentful-import@^8.3.0:
-  version "8.3.0"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.3.0.tgz#2029a8ab0535270191dbb8141a54007458b14645"
-  integrity sha512-XCnq3GTJoPaUhg8Yimh/DbkoQ/R7KWhFS9Cbz2Fqj+SvzyOwmng2p8DWru24e/pfc/VGzlCOF1gWEKOm65MNkw==
+contentful-import@^8.3.1:
+  version "8.3.1"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.3.1.tgz#b44835aaa63cd85f0cfd34f40cb18c5cae3b87bd"
+  integrity sha512-lCZWr13QZAwqQ1yfYGIx83/2Z41NlCw/FkM/I0RkY7BTWAW7dhanzyVxfGXW2KUWQLmFTxiLVJwvuLQt6Jr4sQ==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
     contentful-batch-libs "^9.2.2"
     contentful-management "^7.45.5"
+    date-fns "^2.28.0"
     joi "^17.5.0"
     listr "^0.14.1"
     listr-update-renderer "^0.5.0"
     listr-verbose-renderer "^0.6.0"
     lodash "^4.17.10"
-    moment "^2.22.2"
     p-queue "^6.6.2"
     yargs "^17.3.0"
 
@@ -4992,7 +4992,7 @@ date-fns@^1.27.2:
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.30.1.tgz#2e71bf0b119153dbb4cc4e88d9ea5acfb50dc05c"
   integrity sha512-hBSVCvSmWC+QypYObzwGOd9wqdDpOt+0wl0KbU+R+uuZBS1jN8VsD1ss3irQDknRj5NvxiTF6oj/nDRnN/UQNw==
 
-date-fns@^2.0.1, date-fns@^2.25.0:
+date-fns@^2.0.1, date-fns@^2.25.0, date-fns@^2.28.0:
   version "2.28.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.28.0.tgz#9570d656f5fc13143e50c975a3b6bbeb46cd08b2"
   integrity sha512-8d35hViGYx/QH0icHYCeLmsLmMUheMmTyV9Fcm6gvNwdw31yXXH+O85sOBJ+OLnLQMKZowvpKb6FgMIQjcpvQw==
@@ -9446,7 +9446,7 @@ mkdirp@^0.5.1, mkdirp@^0.5.4, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.6"
 
-moment@^2.22.2, moment@^2.29.1:
+moment@^2.29.1:
   version "2.29.3"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.3.tgz#edd47411c322413999f7a5940d526de183c031f3"
   integrity sha512-c6YRvhEo//6T2Jz/vVtYzqBzwvPT95JBQ+smCytzf7c50oMZRsR/a4w88aD34I+/QVSfnoAnSBFPJHItlOMJVw==
