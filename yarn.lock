@@ -4550,26 +4550,26 @@ content-type@^1.0.4, content-type@~1.0.4:
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
 
-contentful-batch-libs@^9.2.2:
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/contentful-batch-libs/-/contentful-batch-libs-9.3.0.tgz#f49411ffb7cac7b80a8fbf325aff55fa0326ea2d"
-  integrity sha512-sC633xVOY8wwFV43A1cxozdoRCw4Opg7OqTPUsKoS9XpAFqPj85ZOqzhfAwpVzgILwAGRYFGPbt0xgR1tVeByA==
+contentful-batch-libs@^9.4.1:
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/contentful-batch-libs/-/contentful-batch-libs-9.4.1.tgz#4acc776943265d28834c65cb122de502a22fca27"
+  integrity sha512-5IhHMxhxpvyHbPZFlN3fGxL5QgzxFUF70Xd4FQ+/omUdPa4P7hGfNmFkmBgnBb7EkG+z8TiEnuzXuk9e/SMHWg==
   dependencies:
     bfj "^7.0.2"
+    date-fns "^2.28.0"
     figures "^3.2.0"
     https-proxy-agent "^3.0.0"
     lodash.clonedeep "^4.5.0"
-    moment "^2.29.1"
     uuid "^8.3.2"
 
-contentful-import@^8.3.1:
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.3.1.tgz#b44835aaa63cd85f0cfd34f40cb18c5cae3b87bd"
-  integrity sha512-lCZWr13QZAwqQ1yfYGIx83/2Z41NlCw/FkM/I0RkY7BTWAW7dhanzyVxfGXW2KUWQLmFTxiLVJwvuLQt6Jr4sQ==
+contentful-import@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.3.2.tgz#49fa7695e03d266b811f6f0285f191ae652b812f"
+  integrity sha512-OQrzlSj9p2g3/kNrkQRrMxPvdxgL6iwD6E8qQzZLlVnGpZKhmZYfPBv9qZfFCHrqzj49JzwIWLkAp0b2nSGC1A==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
-    contentful-batch-libs "^9.2.2"
+    contentful-batch-libs "^9.4.1"
     contentful-management "^7.45.5"
     date-fns "^2.28.0"
     joi "^17.5.0"
