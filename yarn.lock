@@ -1283,7 +1283,7 @@
   dependencies:
     prop-types "^15.8.1"
 
-"@gatsbyjs/parcel-namer-relative-to-cwd@^1.9.0":
+"@gatsbyjs/parcel-namer-relative-to-cwd@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@gatsbyjs/parcel-namer-relative-to-cwd/-/parcel-namer-relative-to-cwd-1.9.0.tgz#9263de16d93463974d6fe0cd960eadca184a7d9f"
   integrity sha512-N/GUtMxnYgUdn7BeHFQ3iY4A13bN5a7Jfi+kT0fGbfTggMI3XDvIHWRoMfUDcRtUo2D/gL3sQq5gd1k8obye3A==
@@ -2267,6 +2267,14 @@
     nullthrows "^1.1.1"
     regenerator-runtime "^0.13.7"
     semver "^5.7.1"
+
+"@parcel/transformer-json@2.6.2":
+  version "2.6.2"
+  resolved "https://registry.yarnpkg.com/@parcel/transformer-json/-/transformer-json-2.6.2.tgz#37a5c3f4571c81e1a5f2d0c77f266b56e3866ad5"
+  integrity sha512-QGcIIvbPF/u10ihYvQhxXqb2QMXWSzcBxJrOSIXIl74TUGrWX05D5LmjDA/rzm/n/kvRnBkFNP60R/smYb8x+Q==
+  dependencies:
+    "@parcel/plugin" "2.6.2"
+    json5 "^2.2.0"
 
 "@parcel/types@2.6.2":
   version "2.6.2"
@@ -6356,19 +6364,19 @@ gatsby-legacy-polyfills@^2.24.0:
     "@babel/runtime" "^7.15.4"
     core-js-compat "3.9.0"
 
-gatsby-link@^4.24.0:
-  version "4.24.0"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-4.24.0.tgz#15abcd28a566cd801e3b3ce67c381f14acadcdb7"
-  integrity sha512-cUtjpRTPK2yzZibpnKRAB/PfHrOzGoOuDIhqalZ9VIoO11OnC/OsKBMltz5XjUYVy+0Yxva0S+q8C6frqHVJCA==
+gatsby-link@^4.24.1:
+  version "4.24.1"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-4.24.1.tgz#b0d10fa9a66def6fd4f920c919440bc22df19aeb"
+  integrity sha512-j8IcxlCzBX5J8srDn4wtxSKm8V+HM8GXfhVSMuRREiuaOxNNjhFOhfwyydrS+gYnEL8gVDOs9QTPEc2n+cn1fg==
   dependencies:
     "@types/reach__router" "^1.3.10"
-    gatsby-page-utils "^2.24.0"
+    gatsby-page-utils "^2.24.1"
     prop-types "^15.8.1"
 
-gatsby-page-utils@^2.24.0:
-  version "2.24.0"
-  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-2.24.0.tgz#66ae38761c4295cc2d79164c7b03528bbb299edd"
-  integrity sha512-4AEjt991hzZJw6ydyGmpwlnevNcjpoN4tTbAit+M7XCE0OpCXCZt4OxB8DdPbKdqA0E3whCTFiwefrN4axjBOg==
+gatsby-page-utils@^2.24.1:
+  version "2.24.1"
+  resolved "https://registry.yarnpkg.com/gatsby-page-utils/-/gatsby-page-utils-2.24.1.tgz#cb18569e20faf9195d6f37aadd79241c66b112c3"
+  integrity sha512-5PLXrSrMKpsBpUp8lDrKwbufQzUCIyWfz4eapQYUeLsnOFQ+lZkSWAbwrZQTRSzSR1N9TtU3qGLc9fQmCjveig==
   dependencies:
     "@babel/runtime" "^7.15.4"
     bluebird "^3.7.2"
@@ -6379,12 +6387,12 @@ gatsby-page-utils@^2.24.0:
     lodash "^4.17.21"
     micromatch "^4.0.5"
 
-gatsby-parcel-config@0.15.0:
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.15.0.tgz#4dc8df4ee59c24e18e7bdf75efb39630e8636641"
-  integrity sha512-hdJVL6QNygQT8BRuhyV5YjMZz2A27gJGLH8vWJJjCIsXX2/qi5nJRaEqRI0mRccA8G8/P7ezxKQiFQSwK8RZlA==
+gatsby-parcel-config@0.15.1:
+  version "0.15.1"
+  resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-0.15.1.tgz#19c828858f0ce202104f7c182022102f2df570c5"
+  integrity sha512-UcjyqmL8oaRX27QxKb2l6OpGawCVNL27fcutbZFUIppcpenPb7TGkpvyGcjUk2n6IS4cgwjDD6fenqCwtQrCSQ==
   dependencies:
-    "@gatsbyjs/parcel-namer-relative-to-cwd" "^1.9.0"
+    "@gatsbyjs/parcel-namer-relative-to-cwd" "1.9.0"
     "@parcel/bundler-default" "2.6.2"
     "@parcel/compressor-raw" "2.6.2"
     "@parcel/namer-default" "2.6.2"
@@ -6395,6 +6403,7 @@ gatsby-parcel-config@0.15.0:
     "@parcel/resolver-default" "2.6.2"
     "@parcel/runtime-js" "2.6.2"
     "@parcel/transformer-js" "2.6.2"
+    "@parcel/transformer-json" "2.6.2"
 
 gatsby-plugin-fontawesome-css@^1.2.0:
   version "1.2.0"
@@ -6441,10 +6450,10 @@ gatsby-plugin-manifest@^4.10.1:
     semver "^7.3.7"
     sharp "^0.30.3"
 
-gatsby-plugin-page-creator@^4.24.0:
-  version "4.24.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.24.0.tgz#3e26fa5a781cc8c5de5b84c66e8c8f8f7a9ea5db"
-  integrity sha512-a5jfGqn0VyJRnIHVgXnN5RZ/FMb7TTc4/DY/D/T2KcF4m5+WGemc5ddB5CYvZ470OgE1AnRIeHSDFN/MowH++A==
+gatsby-plugin-page-creator@^4.24.1:
+  version "4.24.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-4.24.1.tgz#1088c2c4ea115f65008ebc0fb21da1403c6326d1"
+  integrity sha512-fEPxxWMKMyb33cU3tl0Fgx119+w75MtEP/M7pf1F2XEipP6LTC93rJ5N40sIf1RNYsDz0cpRaWRFpxz9SzowZQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@babel/traverse" "^7.15.4"
@@ -6453,7 +6462,7 @@ gatsby-plugin-page-creator@^4.24.0:
     fs-exists-cached "^1.0.0"
     fs-extra "^10.1.0"
     gatsby-core-utils "^3.24.0"
-    gatsby-page-utils "^2.24.0"
+    gatsby-page-utils "^2.24.1"
     gatsby-plugin-utils "^3.18.0"
     gatsby-telemetry "^3.24.0"
     globby "^11.1.0"
@@ -6686,10 +6695,10 @@ gatsby-worker@^1.24.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.24.1:
-  version "4.24.1"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.24.1.tgz#1c72fa484ed84942cdd8439a4528fcb1b6d14194"
-  integrity sha512-3+1RGtXpMmN5AQzcJHy1c0L5RDLI92KF3z97uJ3cnbw2fSr5uxHoaenMJLNIoSfNViZ5FzIoYaqWzDyJHyvNMQ==
+gatsby@^4.24.6:
+  version "4.24.6"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.24.6.tgz#0af107c0699e829fe543f602b53d478f3f455360"
+  integrity sha512-LFfgmZ38gUJO7Z/dYfbKPFPu+fl1d711pFFiKsUcffehcJ6lYUgJmR0MoRMIZiG9yUlVgo1V0T8GC1azbdYzkA==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
@@ -6775,10 +6784,10 @@ gatsby@^4.24.1:
     gatsby-core-utils "^3.24.0"
     gatsby-graphiql-explorer "^2.24.0"
     gatsby-legacy-polyfills "^2.24.0"
-    gatsby-link "^4.24.0"
-    gatsby-page-utils "^2.24.0"
-    gatsby-parcel-config "0.15.0"
-    gatsby-plugin-page-creator "^4.24.0"
+    gatsby-link "^4.24.1"
+    gatsby-page-utils "^2.24.1"
+    gatsby-parcel-config "0.15.1"
+    gatsby-plugin-page-creator "^4.24.1"
     gatsby-plugin-typescript "^4.24.0"
     gatsby-plugin-utils "^3.18.0"
     gatsby-react-router-scroll "^5.24.0"
