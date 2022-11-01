@@ -37,7 +37,7 @@
     "@tsconfig/recommended": "^1.0.1",
     "@types/inquirer": "^9.0.2",
     "chalk": "^4.1.2",
-    "contentful-import": "^8.3.8",
+    "contentful-import": "^8.5.1",
     "env-cmd": "^10.1.0",
     "inquirer": "^9.1.4",
     "ts-node": "^10.9.1",
