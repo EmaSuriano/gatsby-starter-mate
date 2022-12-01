@@ -4487,33 +4487,33 @@ contentful-batch-libs@^9.4.2:
     lodash.clonedeep "^4.5.0"
     uuid "^8.3.2"
 
-contentful-import@^8.5.1:
-  version "8.5.1"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.5.1.tgz#f163e761410d0ad5769983b09b0e731fbc6ba2b1"
-  integrity sha512-kGcllCXIvZHppQhVbjJIDaDysZdm79UeF9a1XSroGlSzRsvG6DK2rX/tz1mYF3SuDNzFODF7tdmaE1P7DLsWbQ==
+contentful-import@^8.5.13:
+  version "8.5.13"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.5.13.tgz#3aa083336efd4267ae989fc84e11687828d39d90"
+  integrity sha512-0k4FpLZo1gTeyEg0Wtq2/VqQ7zbyikRXd6Rfv+xEzhDMu7xI2pZjyf/PMHFvzarB8EZpciDeinnMTqotbueong==
   dependencies:
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
     contentful-batch-libs "^9.4.2"
-    contentful-management "^10.19.0"
+    contentful-management "^10.21.5"
     date-fns "^2.29.3"
-    joi "^17.6.4"
+    joi "^17.7.0"
     listr "^0.14.1"
     listr-update-renderer "^0.5.0"
     listr-verbose-renderer "^0.6.0"
     lodash "^4.17.10"
     p-queue "^6.6.2"
-    yargs "^17.6.0"
+    yargs "^17.6.2"
 
-contentful-management@^10.19.0:
-  version "10.19.0"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-10.19.0.tgz#ce087a890b556375275ce8b817335b875d07b929"
-  integrity sha512-4cwHoIOw2zVewStaMTQjDesuYPzzC32GlzZlQVfjiY1Z9runiPZo+WlFbGzZdqBpTebrlU/v+KUPvZdxJzQ8hQ==
+contentful-management@^10.21.5:
+  version "10.21.5"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-10.21.5.tgz#24b047a3b4911dd348429e34cf131d98cd66978c"
+  integrity sha512-+8CbMjeAhyB/uWw1DNQX0MKf48rtKRe5FHNQeE7ZXQQhaaSuDGfP3UmimBSe3KYOfaGXUT/UCXYwTqoDpjz2gw==
   dependencies:
     "@types/json-patch" "0.0.30"
     axios "^0.27.1"
     contentful-sdk-core "^7.0.1"
-    fast-copy "^2.1.1"
+    fast-copy "^3.0.0"
     lodash.isplainobject "^4.0.6"
 
 contentful-resolve-response@^1.3.0:
@@ -5909,10 +5909,10 @@ fast-copy@^2.1.0, fast-copy@^2.1.3:
   resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.1.3.tgz#bf6e05ac3cb7a9d66fbf12c51dd4440e9ddd4afb"
   integrity sha512-LDzYKNTHhD+XOp8wGMuCkY4eTxFZOOycmpwLBiuF3r3OjOmZnURRD8t2dUAbmKuXGbo/MGggwbSjcBdp8QT0+g==
 
-fast-copy@^2.1.1:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-2.1.7.tgz#affc9475cb4b555fb488572b2a44231d0c9fa39e"
-  integrity sha512-ozrGwyuCTAy7YgFCua8rmqmytECYk/JYAMXcswOcm0qvGoE3tPb7ivBeIHTOK2DiapBhDZgacIhzhQIKU5TCfA==
+fast-copy@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/fast-copy/-/fast-copy-3.0.0.tgz#875ebf33b13948ae012b6e51d33da5e6e7571ab8"
+  integrity sha512-4HzS+9pQ5Yxtv13Lhs1Z1unMXamBdn5nA4bEi1abYpDNSpSp7ODYQ1KPMF6nTatfEzgH6/zPvXKU1zvHiUjWlA==
 
 fast-deep-equal@^3.1.1, fast-deep-equal@^3.1.3:
   version "3.1.3"
@@ -8062,10 +8062,10 @@ jimp@^0.16.1:
     "@jimp/types" "^0.16.1"
     regenerator-runtime "^0.13.3"
 
-joi@^17.4.2, joi@^17.6.4:
-  version "17.6.4"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.6.4.tgz#4d9536a059ef0762c718ae98673016b3ec151abd"
-  integrity sha512-tPzkTJHZQjSFCc842QpdVpOZ9LI2txApboNUbW70qgnRB14Lzl+oWQOPdF2N4yqyiY14wBGe8lc7f/2hZxbGmw==
+joi@^17.4.2, joi@^17.7.0:
+  version "17.7.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.7.0.tgz#591a33b1fe1aca2bc27f290bcad9b9c1c570a6b3"
+  integrity sha512-1/ugc8djfn93rTE3WRKdCzGGt/EtiYKxITMO4Wiv6q5JL1gl9ePt4kBsl1S499nbosspfctIQTpYIhSmHA3WAg==
   dependencies:
     "@hapi/hoek" "^9.0.0"
     "@hapi/topo" "^5.0.0"
@@ -13193,10 +13193,10 @@ yargs-parser@^18.1.2:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^21.0.0:
-  version "21.0.1"
-  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.0.1.tgz#0267f286c877a4f0f728fceb6f8a3e4cb95c6e35"
-  integrity sha512-9BK1jFpLzJROCI5TzwZL/TU4gqjK5xiHV/RfWLOahrjAko/e4DJkRDZQXfvqAsiZzzYhgAzbgz6lg48jcm4GLg==
+yargs-parser@^21.1.1:
+  version "21.1.1"
+  resolved "https://registry.yarnpkg.com/yargs-parser/-/yargs-parser-21.1.1.tgz#9096bceebf990d21bb31fa9516e0ede294a77d35"
+  integrity sha512-tVpsJW7DdjecAiFpbIB1e3qxIQsE6NoPc5/eTdrbbIC4h0LVsWhnoa3g+m2HclBIujHzsxZ4VJVA+GUuc2/LBw==
 
 yargs@^15.3.1, yargs@^15.4.1:
   version "15.4.1"
@@ -13215,10 +13215,10 @@ yargs@^15.3.1, yargs@^15.4.1:
     y18n "^4.0.0"
     yargs-parser "^18.1.2"
 
-yargs@^17.6.0:
-  version "17.6.0"
-  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.6.0.tgz#e134900fc1f218bc230192bdec06a0a5f973e46c"
-  integrity sha512-8H/wTDqlSwoSnScvV2N/JHfLWOKuh5MVla9hqLjK3nsfyy6Y4kDSYSvkU5YCUEPOSnRXfIyx3Sq+B/IWudTo4g==
+yargs@^17.6.2:
+  version "17.6.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-17.6.2.tgz#2e23f2944e976339a1ee00f18c77fedee8332541"
+  integrity sha512-1/9UrdHjDZc0eOU0HxOHoS78C69UD3JRMvzlJ7S79S2nTaWRA/whGCTV8o9e/N/1Va9YIV7Q4sOxD8VV4pCWOw==
   dependencies:
     cliui "^8.0.1"
     escalade "^3.1.1"
@@ -13226,7 +13226,7 @@ yargs@^17.6.0:
     require-directory "^2.1.1"
     string-width "^4.2.3"
     y18n "^5.0.5"
-    yargs-parser "^21.0.0"
+    yargs-parser "^21.1.1"
 
 yeast@0.1.2:
   version "0.1.2"
