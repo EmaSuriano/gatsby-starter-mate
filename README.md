@@ -7,7 +7,7 @@
 
 The target audience are Developers 💻 and Tech Writers ✍️.
 
-**[Check the Demo ✨](https://mate.gatsbyjs.io/)**
+**[Check the Demo ✨](https://gatsby-starter-mate.netlify.app/)**
 
 ## Why? 🤔
 
