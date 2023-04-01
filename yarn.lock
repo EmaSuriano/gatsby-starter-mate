@@ -5227,18 +5227,10 @@ engine.io@~6.2.1:
     engine.io-parser "~5.0.3"
     ws "~8.2.3"
 
-enhanced-resolve@^5.10.0:
+enhanced-resolve@^5.10.0, enhanced-resolve@^5.8.3:
   version "5.12.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.12.0.tgz#300e1c90228f5b570c4d35babf263f6da7155634"
   integrity sha512-QHTXI/sZQmko1cbDoNAa3mJ5qhWUUNAq3vR0/YiD379fWQrcfuoX1+HW2S0MTt7XmoPLapdaDKUtelUSPic7hQ==
-  dependencies:
-    graceful-fs "^4.2.4"
-    tapable "^2.2.0"
-
-enhanced-resolve@^5.8.3:
-  version "5.9.3"
-  resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.9.3.tgz#44a342c012cbc473254af5cc6ae20ebd0aae5d88"
-  integrity sha512-Bq9VSor+kjvW3f9/MiiR4eE3XYgOl7/rS8lnSxbRbF3kS0B2r+Y9w5krBWxZgDxASVZbdYrn5wT4j/Wb0J9qow==
   dependencies:
     graceful-fs "^4.2.4"
     tapable "^2.2.0"
@@ -6582,10 +6574,10 @@ gatsby-worker@^1.25.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.25.5:
-  version "4.25.5"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.25.5.tgz#86538a145c4301ddb4cae6dfab1c765ec938a72b"
-  integrity sha512-erPH6TcKFkhV/nrk3kIpDEA1XwktTXKo+wzPBIgzEF4SNrn0WkGPkxHEI/2B4RazkIBtxTfkLCKhRDCsmh5/mw==
+gatsby@^4.25.6:
+  version "4.25.6"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.25.6.tgz#1519be7cb429df13c110d921a0b9db68b8777260"
+  integrity sha512-6kkUBWtGgb+SMd36ZdHpFJ+f/sq62ngRMVkM0Tna5AKcGnzLZgnA1h9/OHlU3bSz9TGNsyRcU7yFSlwxmStQgw==
   dependencies:
     "@babel/code-frame" "^7.14.0"
     "@babel/core" "^7.15.5"
