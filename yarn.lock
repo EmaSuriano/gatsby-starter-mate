@@ -4054,10 +4054,10 @@ content-type@^1.0.4, content-type@~1.0.4:
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
 
-contentful-batch-libs@^9.4.2:
-  version "9.4.2"
-  resolved "https://registry.yarnpkg.com/contentful-batch-libs/-/contentful-batch-libs-9.4.2.tgz#b972c37fd8127734f6eca95cdf2a0f8ba12f7272"
-  integrity sha512-G58ykBrAycBnfGEawyU2xvVnbPt32EghJ6kZo/JrKdGXYAWm+FnpeJJV0lpABvApExzoWc3ChH6eHU8X+M/w4g==
+contentful-batch-libs@^9.5.0:
+  version "9.5.0"
+  resolved "https://registry.yarnpkg.com/contentful-batch-libs/-/contentful-batch-libs-9.5.0.tgz#b13e17fdf410a009d496b7ed5bb71d3a40b0a64f"
+  integrity sha512-YItT5z5hY/Xi6cM04XD8E1noW+fvb1CI2/Os83cabu7DZ0q6Y/L4vFCSpz+GUmFFbGa/Jyx19sTkh7kXyE7ZVA==
   dependencies:
     bfj "^7.0.2"
     date-fns "^2.28.0"
@@ -4066,16 +4066,16 @@ contentful-batch-libs@^9.4.2:
     lodash.clonedeep "^4.5.0"
     uuid "^8.3.2"
 
-contentful-import@^8.5.48:
-  version "8.5.48"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.5.48.tgz#629d65668f5dcf1eee08be3d08511ba78be0c00b"
-  integrity sha512-im1OlcX+HHoXmr+uDqGG6WBN9W1XNnckuEiVlggkYyYckrAZIt9pTM/FynkO3Lh33qON07QKo8SYvtyD5zwsOA==
+contentful-import@^8.5.56:
+  version "8.5.56"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-8.5.56.tgz#4b9dec17f1ac13cb54a7c17f114ab4d73435e2b2"
+  integrity sha512-K3o3MNveT6TfdyO6rzoQJim2tfjH/C5+EHbQ+wqkxLqpejt3con/ry3LEDyWfOInKfFx8tsct7yczfcMa4Q+pw==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     bluebird "^3.5.1"
     cli-table3 "^0.6.0"
-    contentful-batch-libs "^9.4.2"
-    contentful-management "^10.32.0"
+    contentful-batch-libs "^9.5.0"
+    contentful-management "^10.35.6"
     date-fns "^2.30.0"
     joi "^17.9.2"
     listr "^0.14.1"
@@ -4085,10 +4085,10 @@ contentful-import@^8.5.48:
     p-queue "^6.6.2"
     yargs "^17.7.2"
 
-contentful-management@^10.32.0:
-  version "10.32.0"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-10.32.0.tgz#46a53b16d1098a68d7bf726502ad7d19b673ebd1"
-  integrity sha512-vkvOs+7bFQ1Lbj0lcBqc8Fkn/p0VhGKfrRnDTGbouJoyJqB2ribIJ7J8i7/95+dsIewW8inXkwffUJxCChAwgw==
+contentful-management@^10.35.6:
+  version "10.35.6"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-10.35.6.tgz#7d76514f8e68a0e6f6757508066e4d842a3b961d"
+  integrity sha512-35tHt5zUPmtpTyrE8wqFro2Wzy50vBZ5z2vevAoWaiu/5onwyzq8FNj2aJBJzciNF1pDIMD/pB5YUKKlCk1bmQ==
   dependencies:
     "@contentful/rich-text-types" "^16.0.3"
     "@types/json-patch" "0.0.30"
