@@ -58,7 +58,7 @@ export const setup = async () => {
   console.log(MESSAGES.welcome);
 
   const {spaceId} = <any> await prompt(PROMPTS.spaceId);
-  const {deliveryToken} = <any> await prompt(PROMPTS.deliveryToken);
+  const {deliveryToken} = await prompt<{deliveryToken:string}>(PROMPTS.deliveryToken);
   const {managementToken} = await prompt<{managementToken:string}>(PROMPTS.managementToken);
 
   console.log(MESSAGES.env);
