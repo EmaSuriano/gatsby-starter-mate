@@ -26,4 +26,4 @@ jobs:
 
       - run: npx percy snapshot public/
         env:
-          PERCY_TOKEN: $
+          PERCY_TOKEN: ${{secrets.PERCY_TOKEN}}
