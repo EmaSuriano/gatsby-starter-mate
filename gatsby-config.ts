@@ -27,6 +27,19 @@ const plugins: GatsbyConfig['plugins'] = [
       spaceId: process.env.SPACE_ID,
     },
   },
+  {
+    resolve: `gatsby-omni-font-loader`,
+    options: {
+      enableListener: true,
+      preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+      web: [
+        {
+          name: `Cabin`,
+          file: `https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&display=swap`,
+        },
+      ],
+    },
+  },
 ];
 
 if (process.env.ANALYTICS_ID) {

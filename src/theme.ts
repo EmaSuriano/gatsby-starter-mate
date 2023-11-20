@@ -21,9 +21,4 @@ export const theme: Theme = {
       background: 'transparent',
     },
   },
-  fonts: {
-    body: 'Cabin, Open Sans, sans-serif',
-    heading: 'inherit',
-    monospace: 'monospace',
-  },
 };
