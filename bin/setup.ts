@@ -54,12 +54,13 @@ const PROMPTS = {
   },
 };
 
+type PromptResponse = Record<keyof typeof PROMPTS, string>;
+
 export const setup = async () => {
   console.log(MESSAGES.welcome);
 
-  const {spaceId} = <any> await prompt<{spaceId:string}>(PROMPTS.spaceId);
-  const {deliveryToken} = await prompt<{deliveryToken:string}>(PROMPTS.deliveryToken);
-  const {managementToken} = await prompt<{managementToken:string}>(PROMPTS.managementToken);
+  const { spaceId, deliveryToken, managementToken } =
+    await prompt<PromptResponse>(Object.values(PROMPTS));
 
   console.log(MESSAGES.env);
   const envData = [`SPACE_ID=${spaceId}`, `ACCESS_TOKEN=${deliveryToken}`];
