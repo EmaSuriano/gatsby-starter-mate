@@ -2,7 +2,7 @@
   "name": "gatsby-starter-mate",
   "version": "0.0.0",
   "description": "An accessible and fast portfolio starter for Gatsby integrated with Contentful CMS",
-  "license": "MIT",
+  "license": "0BSD",
   "scripts": {
     "build": "env-cmd --silent gatsby build",
     "start": "env-cmd --silent gatsby develop",

@@ -19,7 +19,7 @@ At the same time, as this portfolio is written with Gatsby is extremely easy to 
 
 ## Features 🛠
 
-- [Gatsby 4](https://www.gatsbyjs.org/)
+- [Gatsby 5](https://www.gatsbyjs.org/)
 - [Rebass](https://rebassjs.org/): styled component system
 - [React Awesome Reveal](https://github.com/dennismorello/react-awesome-reveal)
 - CMS Integration with [Contentful](https://contentful.com)
@@ -256,7 +256,3 @@ My final recommendation with shadowing is to try to keep as minimum as possible 
 ## Tracking with Google Analytics (Optional)
 
 This starter has the analytics plugin inside the `gatsby-config`, so the only need to do in order to enable it is to provide the `Tracking Id` for your site (starts with `UA-`). Just set a new variable inside your `.env` file called `ANALYTICS_ID` and analytics will be turn on automatically 😄
-
-## Contributing
-
-In case you want to add your contribution into this project, please refer to the [Gatsby Theme repository](https://github.com/EmaSuriano/gatsby-theme-mate) so then everybody using this starter will be able to get the changes.
