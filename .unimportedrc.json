@@ -1,0 +1,4 @@
+{
+  "entry": ["src/pages/**/*", "bin/setup.ts"],
+  "extensions": [".ts", ".tsx", ".jsx", ".d.ts", ".js"]
+}
