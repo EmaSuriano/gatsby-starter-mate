@@ -15,8 +15,6 @@ jobs:
 
       - run: yarn install --frozen-lockfile
 
-      - run: yarn add @percy/cli -D
-
       - run: yarn check-types
 
       - run: yarn lint
@@ -25,7 +23,3 @@ jobs:
         env:
           ACCESS_TOKEN: ${{secrets.ACCESS_TOKEN}}
           SPACE_ID: ${{secrets.SPACE_ID}}
-
-      - run: npx percy snapshot public/
-        env:
-          PERCY_TOKEN: ${{secrets.PERCY_TOKEN}}
