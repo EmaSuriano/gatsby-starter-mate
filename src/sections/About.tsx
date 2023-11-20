@@ -18,7 +18,7 @@ const About = () => {
       <Flex justifyContent="center" alignItems="center" flexWrap="wrap">
         <Box width={[1, 1, 4 / 6]} px={[1, 2, 4]} mt={2}>
           <Fade direction="down" triggerOnce>
-            <ReactMarkdown children={markdown} components={components} />
+            <ReactMarkdown components={components}>{markdown}</ReactMarkdown>
           </Fade>
         </Box>
 

@@ -1,9 +1,12 @@
-import baseTheme from '@rebass/preset';
+import baseTheme, { Theme } from '@rebass/preset';
 import colors from './colors.json';
 
-export const theme = {
+export const theme: Theme = {
   ...baseTheme,
-  colors,
+  colors: {
+    ...baseTheme.colors,
+    ...colors,
+  },
   queries: {
     xs: '@media screen and (max-width: 40em)',
     sm: '@media screen and (min-width: 40em) and (max-width: 52em)',

@@ -1,4 +1,7 @@
 declare module '@rebass/preset' {
+  const baseTheme: Theme;
+  export default baseTheme;
+
   export interface Theme {
     colors: Colors;
     fonts: Fonts;
@@ -11,8 +14,7 @@ declare module '@rebass/preset' {
     shadows: Shadows;
     text: Text;
     queries: Queries;
-    variants: any;
-    buttons: any;
+    buttons: Record<string, Button>;
   }
 
   interface Colors {
@@ -23,6 +25,12 @@ declare module '@rebass/preset' {
     muted: string;
     highlight: string;
   }
+
+  interface Button {
+    [key: string]: string | number;
+  }
+
+  interface Button {}
 
   interface Fonts {
     body: string;
@@ -66,14 +74,4 @@ declare module '@rebass/preset' {
     md: string;
     lg: string;
   }
-}
-
-declare module '*.svg' {
-  const content: any;
-  export default content;
-}
-
-declare module '*.json' {
-  const value: any;
-  export default value;
 }

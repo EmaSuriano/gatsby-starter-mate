@@ -1,10 +1,10 @@
-import { Colors } from '@rebass/preset';
+import { Theme } from '@rebass/preset';
 import styled from 'styled-components';
 
 type ResponsiveProp<T> = T[];
 
 type Props = {
-  color: keyof Colors;
+  color: keyof Theme['colors'];
   position?: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
   width: ResponsiveProp<string>;
   height: ResponsiveProp<string>;

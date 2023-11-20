@@ -9,7 +9,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "setup": "ts-node ./bin/setup.ts",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -65,10 +66,14 @@
     "@types/react-headroom": "^3.2.3",
     "@types/react-helmet": "^6.1.9",
     "@types/rebass": "^4.0.13",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "@typescript-eslint/parser": "^6.11.0",
     "chalk": "^4.1.2",
     "contentful-import": "^8.5.60",
     "enquirer": "^2.4.1",
     "env-cmd": "^10.1.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-react": "^7.33.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }

@@ -1,8 +1,8 @@
-import { Queries } from '@rebass/preset';
+import { Theme } from '@rebass/preset';
 import styled from 'styled-components';
 
 type Props = {
-  query: keyof Queries;
+  query: keyof Theme['queries'];
 };
 
 const Hide = styled.div<Props>`

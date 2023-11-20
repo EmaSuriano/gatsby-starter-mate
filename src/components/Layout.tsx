@@ -1,14 +1,9 @@
 import React, { ReactNode } from 'react';
-import { Theme } from '@rebass/preset';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { loadIcons } from '../utils/icons';
 import { theme } from '../theme';
 import Helmet from './Helmet';
 import 'tippy.js/dist/tippy.css';
-
-declare module 'styled-components' {
-  export interface DefaultTheme extends Theme {}
-}
 
 loadIcons();
 
@@ -40,7 +35,7 @@ type Props = {
 
 const Layout = ({ children }: Props) => (
   <main>
-    <ThemeProvider theme={theme as Theme}>
+    <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Helmet />
       {children}
