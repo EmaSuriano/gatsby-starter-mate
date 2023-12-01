@@ -2943,10 +2943,10 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
-"@types/rebass@^4.0.13":
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-4.0.13.tgz#3d8bb03a809203a789e4e39c6bcdf8910e741245"
-  integrity sha512-1uYoH5QONnCfJzWIBmcThtleciTTAixFHyPlwvszsqdsAecX0ZaGgclvtqho0Lhknt1TJYAL9raYhhLKvVK81w==
+"@types/rebass@^4.0.14":
+  version "4.0.14"
+  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-4.0.14.tgz#8f3e75861a9605c8457c36cb45fec088e92434fc"
+  integrity sha512-WBqyrPLdaOsfp6/mLE51LTMxbr5SfAQmLFQwwl6CNUeiaMLdRg0hOk+R9DokkzamHEN9gB87KZBd6YXlOIlqxQ==
   dependencies:
     "@types/react" "*"
     "@types/styled-components" "*"
