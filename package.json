@@ -73,7 +73,7 @@
     "contentful-import": "^9.4.11",
     "enquirer": "^2.4.1",
     "env-cmd": "^10.1.0",
-    "eslint": "^8.54.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
