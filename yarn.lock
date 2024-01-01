@@ -6793,10 +6793,17 @@ gatsby-sharp@^1.13.0:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-contentful@^8.12.4:
-  version "8.12.4"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.12.4.tgz#3326f956d2507b2ccd0d529b3e8cb4d8bfb7d821"
-  integrity sha512-POokmqEWwtnWM8N/0jWXi7HiJqhahkTCkhuo2exS8qBBbPFz0wx1ay9gZsUMYLp8/lCN7x33JXEgNQL6mCUB9Q==
+gatsby-sharp@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.13.0.tgz#4d55d877ed3a5c9cd7ac45f27e13d07acb99993b"
+  integrity sha512-DviUtgm7tatSd1Hm54o/orHimOcyXBO9OJkSfzEchPFClvOza+2Qe/lqZShio0gFDxmG0Jgn0XCLzG7uH5VyJQ==
+  dependencies:
+    sharp "^0.32.6"
+
+gatsby-source-contentful@^8.13.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.13.0.tgz#cf043b6a7b6f322f4ad3122cb4c54aff3b702085"
+  integrity sha512-WaYkfrSdfN24sGSaHBCkLfl66tzAbSdKrR9WS8Ombf4Fk9cHNmxixl5+dG4V0taG4P3bSWmyC6cVI/0+tMxFVQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@contentful/rich-text-react-renderer" "^15.17.0"
@@ -6807,9 +6814,9 @@ gatsby-source-contentful@^8.12.4:
     common-tags "^1.8.2"
     contentful "^9.3.5"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.1"
-    gatsby-plugin-utils "^4.12.3"
-    gatsby-source-filesystem "^5.12.1"
+    gatsby-core-utils "^4.13.0"
+    gatsby-plugin-utils "^4.13.0"
+    gatsby-source-filesystem "^5.13.0"
     is-online "^9.0.1"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.21"
@@ -6817,16 +6824,16 @@ gatsby-source-contentful@^8.12.4:
     semver "^7.5.3"
     url "^0.11.1"
 
-gatsby-source-filesystem@^5.12.1:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.12.1.tgz#200b141620e632bcefd23bd0fc468b070cfd89aa"
-  integrity sha512-JV6lttId7cBDasVaweFbKuDQP9VH8fFgI1Mg0sM/tfydfKTLXiEbBadKgEHbvbwAZsYjK+/KvT7A58dzrzDdXw==
+gatsby-source-filesystem@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.13.0.tgz#33d6a5307a268a67c931dd3602d3e9150b597905"
+  integrity sha512-yn4axQhIPHLQDMgrhEmerXyoawiTVB1haUz36BTlQers0HfMmODyjbnIK01Dt1IKAbYVfS0A2suBjBjIbNLwAg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chokidar "^3.5.3"
     file-type "^16.5.4"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.1"
+    gatsby-core-utils "^4.13.0"
     mime "^3.0.0"
     pretty-bytes "^5.6.0"
     valid-url "^1.0.9"
