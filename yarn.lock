@@ -1134,19 +1134,12 @@
   resolved "https://registry.yarnpkg.com/@babel/regjsgen/-/regjsgen-0.8.0.tgz#f0ba69b075e1f05fb2825b7fad991e7adbb18310"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.13", "@babel/runtime@^7.23.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.13", "@babel/runtime@^7.21.0", "@babel/runtime@^7.23.2", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
   version "7.23.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.23.2.tgz#062b0ac103261d68a966c4c7baf2ae3e62ec3885"
   integrity sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==
   dependencies:
     regenerator-runtime "^0.14.0"
-
-"@babel/runtime@^7.12.5", "@babel/runtime@^7.21.0", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2":
-  version "7.21.5"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.21.5.tgz#8492dddda9644ae3bda3b45eabe87382caee7200"
-  integrity sha512-8jI69toZqqcsnqGGqwGS4Qb1VwLOEp4hz+CXPywcvjs60u3B4Pom/U/7rm4W8tMOYEB+E9wgD0mW1l3r8qlI9Q==
-  dependencies:
-    regenerator-runtime "^0.13.11"
 
 "@babel/template@^7.20.7", "@babel/template@^7.22.15":
   version "7.22.15"
@@ -6614,10 +6607,10 @@ gatsby-cli@^5.12.4:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.12.1:
-  version "4.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.12.1.tgz#8bfa0d65033cfa4c47dd199482589e458bf4fc9d"
-  integrity sha512-YW7eCK2M6yGQerT5LkdOHLZTNYMsDvcgeDMRy0q66FWKj7twPZX428I6NaLCMeF5dYoj1HOOO0u96iNlW5jcKQ==
+gatsby-core-utils@^4.12.1, gatsby-core-utils@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.13.0.tgz#b286d9a5f31363d5264114b724a8d122850df2cd"
+  integrity sha512-+oJJsADfcEnzpQpof+L5qtP4iSeMaEPn1QSjXENlg/go9Pi/4eqb+Nn3y3q8bC/zy4hMWFWrPdMJmdW581uNvA==
   dependencies:
     "@babel/runtime" "^7.20.13"
     ci-info "2.0.0"
@@ -6803,16 +6796,16 @@ gatsby-plugin-typescript@^5.12.1:
     "@babel/runtime" "^7.20.13"
     babel-plugin-remove-graphql-queries "^5.12.1"
 
-gatsby-plugin-utils@^4.12.3:
-  version "4.12.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.12.3.tgz#685bb26c073ac0ecf50efe6cba5fa879905c0f75"
-  integrity sha512-AMagRfVAIwc3w66RZzq9cGPma3pkrGe/iyhktmHWDOtu45tOt0zlbSY91juuCw2Oov17WzJp2TWKQ/i0nkuLbA==
+gatsby-plugin-utils@^4.12.3, gatsby-plugin-utils@^4.13.0:
+  version "4.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-4.13.0.tgz#7715055942161fc20e4cc9e90c42cae15c0ff6b9"
+  integrity sha512-3qwhM6mUYjorRiD0D0cgmCHcKwroG2d4PlfErnapHJpM/ISGfdBBOfRhPyk2N0u3dbGeb3KQq5gImCCS73bvxg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     fastq "^1.15.0"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.1"
-    gatsby-sharp "^1.12.1"
+    gatsby-core-utils "^4.13.0"
+    gatsby-sharp "^1.13.0"
     graphql-compose "^9.0.10"
     import-from "^4.0.0"
     joi "^17.9.2"
@@ -6838,10 +6831,17 @@ gatsby-sharp@^1.12.1:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-source-contentful@^8.12.4:
-  version "8.12.4"
-  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.12.4.tgz#3326f956d2507b2ccd0d529b3e8cb4d8bfb7d821"
-  integrity sha512-POokmqEWwtnWM8N/0jWXi7HiJqhahkTCkhuo2exS8qBBbPFz0wx1ay9gZsUMYLp8/lCN7x33JXEgNQL6mCUB9Q==
+gatsby-sharp@^1.13.0:
+  version "1.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.13.0.tgz#4d55d877ed3a5c9cd7ac45f27e13d07acb99993b"
+  integrity sha512-DviUtgm7tatSd1Hm54o/orHimOcyXBO9OJkSfzEchPFClvOza+2Qe/lqZShio0gFDxmG0Jgn0XCLzG7uH5VyJQ==
+  dependencies:
+    sharp "^0.32.6"
+
+gatsby-source-contentful@^8.13.0:
+  version "8.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.13.0.tgz#cf043b6a7b6f322f4ad3122cb4c54aff3b702085"
+  integrity sha512-WaYkfrSdfN24sGSaHBCkLfl66tzAbSdKrR9WS8Ombf4Fk9cHNmxixl5+dG4V0taG4P3bSWmyC6cVI/0+tMxFVQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     "@contentful/rich-text-react-renderer" "^15.17.0"
@@ -6852,9 +6852,9 @@ gatsby-source-contentful@^8.12.4:
     common-tags "^1.8.2"
     contentful "^9.3.5"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.1"
-    gatsby-plugin-utils "^4.12.3"
-    gatsby-source-filesystem "^5.12.1"
+    gatsby-core-utils "^4.13.0"
+    gatsby-plugin-utils "^4.13.0"
+    gatsby-source-filesystem "^5.13.0"
     is-online "^9.0.1"
     json-stringify-safe "^5.0.1"
     lodash "^4.17.21"
@@ -6862,16 +6862,16 @@ gatsby-source-contentful@^8.12.4:
     semver "^7.5.3"
     url "^0.11.1"
 
-gatsby-source-filesystem@^5.12.1:
-  version "5.12.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.12.1.tgz#200b141620e632bcefd23bd0fc468b070cfd89aa"
-  integrity sha512-JV6lttId7cBDasVaweFbKuDQP9VH8fFgI1Mg0sM/tfydfKTLXiEbBadKgEHbvbwAZsYjK+/KvT7A58dzrzDdXw==
+gatsby-source-filesystem@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-5.13.0.tgz#33d6a5307a268a67c931dd3602d3e9150b597905"
+  integrity sha512-yn4axQhIPHLQDMgrhEmerXyoawiTVB1haUz36BTlQers0HfMmODyjbnIK01Dt1IKAbYVfS0A2suBjBjIbNLwAg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     chokidar "^3.5.3"
     file-type "^16.5.4"
     fs-extra "^11.1.1"
-    gatsby-core-utils "^4.12.1"
+    gatsby-core-utils "^4.13.0"
     mime "^3.0.0"
     pretty-bytes "^5.6.0"
     valid-url "^1.0.9"
@@ -11017,7 +11017,7 @@ regenerate@^1.4.2:
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.2.tgz#b9346d8827e8f5a32f7ba29637d398b69014848a"
   integrity sha512-zrceR/XhGYU/d/opr2EKO7aRHUeiBI8qjtfHqADTwZd6Szfy16la6kqD0MIUs5z5hx6AaKa+PixpPrR289+I0A==
 
-regenerator-runtime@^0.13.11, regenerator-runtime@^0.13.7:
+regenerator-runtime@^0.13.7:
   version "0.13.11"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
   integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
