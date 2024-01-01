@@ -2869,15 +2869,10 @@
     "@types/node" "*"
     form-data "^4.0.0"
 
-"@types/node@*":
-  version "17.0.36"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.36.tgz#c0d5f2fe76b47b63e0e0efc3d2049a9970d68794"
-  integrity sha512-V3orv+ggDsWVHP99K3JlwtH20R7J4IhI1Kksgc+64q5VxgfRkQG8Ws3MFm/FZOKDYGy9feGFlZ70/HpCNe9QaA==
-
-"@types/node@>=10.0.0", "@types/node@^20.3.3":
-  version "20.9.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.9.2.tgz#002815c8e87fe0c9369121c78b52e800fadc0ac6"
-  integrity sha512-WHZXKFCEyIUJzAwh3NyyTHYSR35SevJ6mZ1nWwJafKtiQbqRTIKSRcw3Ma3acqgsent3RRDqeVwpHntMk+9irg==
+"@types/node@*", "@types/node@>=10.0.0", "@types/node@^20.10.6":
+  version "20.10.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.10.6.tgz#a3ec84c22965802bf763da55b2394424f22bfbb5"
+  integrity sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==
   dependencies:
     undici-types "~5.26.4"
 
