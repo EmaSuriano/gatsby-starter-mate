@@ -75,7 +75,7 @@
     "env-cmd": "^10.1.0",
     "eslint": "^8.54.0",
     "eslint-plugin-react": "^7.33.2",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.2.2"
   }
 }
