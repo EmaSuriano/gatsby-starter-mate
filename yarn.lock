@@ -1467,10 +1467,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@eslint/eslintrc@^2.1.3":
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-2.1.3.tgz#797470a75fe0fbd5a53350ee715e85e87baff22d"
-  integrity sha512-yZzuIG+jnVu6hNSzFEN07e8BxF3uAzYtQb6uDkaYZLo6oYZDCq454c5kB8zxnzfCYyP4MIuyBn10L0DqwujTmA==
+"@eslint/eslintrc@^2.1.4":
+  version "2.1.4"
+  resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-2.1.4.tgz#388a269f0f25c1b6adc317b5a2c55714894c70ad"
+  integrity sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ==
   dependencies:
     ajv "^6.12.4"
     debug "^4.3.2"
@@ -1482,10 +1482,10 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@8.54.0":
-  version "8.54.0"
-  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.54.0.tgz#4fab9a2ff7860082c304f750e94acd644cf984cf"
-  integrity sha512-ut5V+D+fOoWPgGGNj83GGjnntO39xDy6DWxO0wb7Jp3DcMX0TfIqdzHF85VTQkerdyGmuuMD9AKAo5KiNlf/AQ==
+"@eslint/js@8.56.0":
+  version "8.56.0"
+  resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.56.0.tgz#ef20350fec605a7f7035a01764731b2de0f3782b"
+  integrity sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==
 
 "@fortawesome/fontawesome-common-types@6.4.2":
   version "6.4.2"
@@ -3756,10 +3756,10 @@ axios@^0.27.0:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
 
-axios@^1.4.0:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
-  integrity sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==
+axios@^1.6.2:
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.3.tgz#7f50f23b3aa246eff43c54834272346c396613f4"
+  integrity sha512-fWyNdeawGam70jXSVlKl+SUNVcL6j6W79CuSIPfi6HnDUmSCH6gyUys/HrqHeA/wU0Az41rRgean494d0Jb+ww==
   dependencies:
     follow-redirects "^1.15.0"
     form-data "^4.0.0"
@@ -4695,18 +4695,18 @@ contentful-batch-libs@^9.6.0:
     lodash.clonedeep "^4.5.0"
     uuid "^9.0.1"
 
-contentful-import@^9.4.11:
-  version "9.4.11"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.11.tgz#92884266b974de28c98937075afd2a15e2eac3f7"
-  integrity sha512-7Oajm+f8q7pfH8Ac82WUkCH5aWYSu1p1EhK/h+xILdn2yGjI0eWbPy4EbfUfBOjkjr32RlPXnNDIV4n+zgI/rw==
+contentful-import@^9.4.20:
+  version "9.4.20"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.20.tgz#228049f9c3c5cdd1ecb4a8a0540ef6dd345f4f12"
+  integrity sha512-KN2PwYI0BigBpQOi05YREMaUzqZ2Udi02X5py4nBCfV5l7Hext6iIfe3CnrH/t7LQeiS8KWrQvrlz+CsnaFleA==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     bluebird "^3.7.2"
     cli-table3 "^0.6.0"
     contentful-batch-libs "^9.6.0"
-    contentful-management "^11.5.1"
+    contentful-management "^11.7.3"
     date-fns "^2.30.0"
-    eslint "^8.54.0"
+    eslint "^8.56.0"
     eslint-config-standard "^17.1.0"
     joi "^17.11.0"
     listr "^0.14.1"
@@ -4716,14 +4716,14 @@ contentful-import@^9.4.11:
     p-queue "^6.6.2"
     yargs "^17.7.2"
 
-contentful-management@^11.5.1:
-  version "11.5.4"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.5.4.tgz#074279b343a1ddaf10a2156112397fa5ff31923b"
-  integrity sha512-VopfVqyzE+U5MBsDkwbrP+v9+vOZzx6q4cNTpcJWLmXU1CXcOhU9oFWbwlQXhkr+GYYpvnU9nPlU2R1KLxguIg==
+contentful-management@^11.7.3:
+  version "11.7.3"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.7.3.tgz#3cfde68b9bc024e0279ff2a25c3f659e29677238"
+  integrity sha512-geWq7ewX4huZdYdRwUcCsIH0R5jXfMI6pnRrl3F4SiMXsKoK6Bg2KPveq2dJAX0CWeU28Y6EyJ3cx0buCQ+B8w==
   dependencies:
     "@contentful/rich-text-types" "^16.3.0"
     "@types/json-patch" "0.0.30"
-    axios "^1.4.0"
+    axios "^1.6.2"
     contentful-sdk-core "^8.1.0"
     fast-copy "^3.0.0"
     lodash.isplainobject "^4.0.6"
@@ -5963,15 +5963,15 @@ eslint@^7.32.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-eslint@^8.54.0:
-  version "8.54.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.54.0.tgz#588e0dd4388af91a2e8fa37ea64924074c783537"
-  integrity sha512-NY0DfAkM8BIZDVl6PgSa1ttZbx3xHgJzSNJKYcQglem6CppHyMhRIQkBVSSMaSRnLhig3jsDbEzOjwCVt4AmmA==
+eslint@^8.54.0, eslint@^8.56.0:
+  version "8.56.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.56.0.tgz#4957ce8da409dc0809f99ab07a1b94832ab74b15"
+  integrity sha512-Go19xM6T9puCOWntie1/P997aXxFsOi37JIHRWI514Hc6ZnaHGKY9xFhrU65RT6CcBEzZoGG1e6Nq+DT04ZtZQ==
   dependencies:
     "@eslint-community/eslint-utils" "^4.2.0"
     "@eslint-community/regexpp" "^4.6.1"
-    "@eslint/eslintrc" "^2.1.3"
-    "@eslint/js" "8.54.0"
+    "@eslint/eslintrc" "^2.1.4"
+    "@eslint/js" "8.56.0"
     "@humanwhocodes/config-array" "^0.11.13"
     "@humanwhocodes/module-importer" "^1.0.1"
     "@nodelib/fs.walk" "^1.2.8"

@@ -70,7 +70,7 @@
     "@typescript-eslint/eslint-plugin": "^6.11.0",
     "@typescript-eslint/parser": "^6.11.0",
     "chalk": "^4.1.2",
-    "contentful-import": "^9.4.11",
+    "contentful-import": "^9.4.20",
     "enquirer": "^2.4.1",
     "env-cmd": "^10.1.0",
     "eslint": "^8.54.0",
