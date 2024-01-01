@@ -6778,13 +6778,6 @@ gatsby-sharp@^1.13.0:
   dependencies:
     sharp "^0.32.6"
 
-gatsby-sharp@^1.13.0:
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/gatsby-sharp/-/gatsby-sharp-1.13.0.tgz#4d55d877ed3a5c9cd7ac45f27e13d07acb99993b"
-  integrity sha512-DviUtgm7tatSd1Hm54o/orHimOcyXBO9OJkSfzEchPFClvOza+2Qe/lqZShio0gFDxmG0Jgn0XCLzG7uH5VyJQ==
-  dependencies:
-    sharp "^0.32.6"
-
 gatsby-source-contentful@^8.13.0:
   version "8.13.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-contentful/-/gatsby-source-contentful-8.13.0.tgz#cf043b6a7b6f322f4ad3122cb4c54aff3b702085"
@@ -6824,10 +6817,10 @@ gatsby-source-filesystem@^5.13.0:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-source-medium@^5.12.0:
-  version "5.12.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-5.12.0.tgz#9d15a9a41889b3ea14ec058264f9f0813f86fa26"
-  integrity sha512-/pylKNbDCxCSXwSikG88Ktv+Et70kd+oA6A3sXxeWm/8dWOZ12C3h8Km1cREVHoRNMgbpg9gzFtRuCa8SEzCJQ==
+gatsby-source-medium@^5.13.0:
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-5.13.0.tgz#e8841c7427afd249726a084cacd44c1d5de4c535"
+  integrity sha512-8NNH54sz8yfE+FGgk7C5TDBv9y53FCPN/7NP52n8DvIXwmjVUB/xtxOAqYVtzc8EMWiYTy+zJM4tBTv1jQ+ltg==
   dependencies:
     "@babel/runtime" "^7.20.13"
     axios "^0.21.1"
