@@ -6813,10 +6813,10 @@ gatsby-source-filesystem@^5.13.1:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-source-medium@^5.13.0:
-  version "5.13.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-5.13.0.tgz#e8841c7427afd249726a084cacd44c1d5de4c535"
-  integrity sha512-8NNH54sz8yfE+FGgk7C5TDBv9y53FCPN/7NP52n8DvIXwmjVUB/xtxOAqYVtzc8EMWiYTy+zJM4tBTv1jQ+ltg==
+gatsby-source-medium@^5.13.1:
+  version "5.13.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-5.13.1.tgz#e7e2839c0adc5d46c50c76cbda1962a02a7387fa"
+  integrity sha512-yrSxps5RA3s8/eG3Ttro/53ASlcdNIwCZmKfs/7m9wG5zn+kbUvbXc50etwB2Rn9LkIMlOGotQ5DV6sa12YboQ==
   dependencies:
     "@babel/runtime" "^7.20.13"
     axios "^0.21.1"

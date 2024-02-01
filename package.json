@@ -48,7 +48,7 @@
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-plugin-typescript": "^5.13.1",
     "gatsby-source-contentful": "^8.13.1",
-    "gatsby-source-medium": "^5.13.0",
+    "gatsby-source-medium": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
     "react": "^18.2.0",
     "react-awesome-reveal": "^4.2.7",
