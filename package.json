@@ -44,7 +44,7 @@
     "gatsby-plugin-image": "^3.13.0",
     "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-react-helmet": "^6.13.1",
-    "gatsby-plugin-sharp": "^5.12.3",
+    "gatsby-plugin-sharp": "^5.13.1",
     "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-plugin-typescript": "^5.13.1",
     "gatsby-source-contentful": "^8.13.1",
