@@ -1683,7 +1683,7 @@
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-8.5.1.tgz#fde96064ca446dec8c55a8c2f130957b070c6e06"
   integrity sha512-yN7kbciD87WzLGc5539Tn0sApjyiGHAJgKvG9W8C7O+6c7qmoQMfVs0W4bX17eqz6C78QJqqFrtgdK5EWf6Qow==
 
-"@hapi/hoek@^9.0.0":
+"@hapi/hoek@^9.0.0", "@hapi/hoek@^9.3.0":
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.3.0.tgz#8368869dcb735be2e7f5cb7647de78e167a251fb"
   integrity sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==
@@ -1705,7 +1705,7 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@hapi/topo@^5.0.0":
+"@hapi/topo@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-5.1.0.tgz#dc448e332c6c6e37a4dc02fd84ba8d44b9afb012"
   integrity sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==
@@ -2380,10 +2380,10 @@
   dependencies:
     any-observable "^0.3.0"
 
-"@sideway/address@^4.1.3":
-  version "4.1.4"
-  resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
-  integrity sha512-7vwq+rOHVWjyXxVlR76Agnvhy8I9rpzjosTESvmhNeXOXdZZB15Fl+TI9x1SiHZH5Jv2wTGduSxFDIaq0m3DUw==
+"@sideway/address@^4.1.5":
+  version "4.1.5"
+  resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.5.tgz#4bc149a0076623ced99ca8208ba780d65a99b9d5"
+  integrity sha512-IqO/DUQHUkPeixNQ8n0JA6102hT9CmaljNTPmQ1u8MEhBo/R4Q8eKLN/vGZxuebwOroDB4cbpjheD4+/sKFK4Q==
   dependencies:
     "@hapi/hoek" "^9.0.0"
 
@@ -4650,20 +4650,20 @@ contentful-batch-libs@^9.6.0:
     lodash.clonedeep "^4.5.0"
     uuid "^9.0.1"
 
-contentful-import@^9.4.20:
-  version "9.4.20"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.20.tgz#228049f9c3c5cdd1ecb4a8a0540ef6dd345f4f12"
-  integrity sha512-KN2PwYI0BigBpQOi05YREMaUzqZ2Udi02X5py4nBCfV5l7Hext6iIfe3CnrH/t7LQeiS8KWrQvrlz+CsnaFleA==
+contentful-import@^9.4.44:
+  version "9.4.44"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.44.tgz#6afd8467a3d4721a440c7d1796de1e9ad782aa4b"
+  integrity sha512-kHQF4yLxI7VtDyxzpuGLnIJA9w+9q/mCbvErFLaKr5GniYbwyILLWBYCyBs8WPCZl93VXeN+asrwjJj7lSheIA==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     bluebird "^3.7.2"
     cli-table3 "^0.6.0"
     contentful-batch-libs "^9.6.0"
-    contentful-management "^11.7.3"
+    contentful-management "^11.21.0"
     date-fns "^2.30.0"
-    eslint "^8.56.0"
+    eslint "^8.57.0"
     eslint-config-standard "^17.1.0"
-    joi "^17.11.0"
+    joi "^17.12.2"
     listr "^0.14.1"
     listr-update-renderer "^0.5.0"
     listr-verbose-renderer "^0.6.0"
@@ -4671,10 +4671,10 @@ contentful-import@^9.4.20:
     p-queue "^6.6.2"
     yargs "^17.7.2"
 
-contentful-management@^11.7.3:
-  version "11.7.3"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.7.3.tgz#3cfde68b9bc024e0279ff2a25c3f659e29677238"
-  integrity sha512-geWq7ewX4huZdYdRwUcCsIH0R5jXfMI6pnRrl3F4SiMXsKoK6Bg2KPveq2dJAX0CWeU28Y6EyJ3cx0buCQ+B8w==
+contentful-management@^11.21.0:
+  version "11.21.0"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.21.0.tgz#e07225330344caabfd9c0b5514815dc06297707f"
+  integrity sha512-yD70hdl2PY+QnvLc/ttYWmlApcS2zvBFndvKI/S1++TEMarr0j/SrzfCSQ+GQV9xX0lyJECNpLA0euzjVwwT8g==
   dependencies:
     "@contentful/rich-text-types" "^16.3.0"
     "@types/json-patch" "0.0.30"
@@ -5903,7 +5903,7 @@ eslint@^7.32.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-eslint@^8.56.0, eslint@^8.57.0:
+eslint@^8.57.0:
   version "8.57.0"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.57.0.tgz#c786a6fd0e0b68941aaf624596fb987089195668"
   integrity sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==
@@ -8302,14 +8302,14 @@ jest-worker@^27.4.5, jest-worker@^27.5.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-joi@^17.11.0, joi@^17.9.2:
-  version "17.11.0"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.11.0.tgz#aa9da753578ec7720e6f0ca2c7046996ed04fc1a"
-  integrity sha512-NgB+lZLNoqISVy1rZocE9PZI36bL/77ie924Ri43yEvi9GUUMPeyVIr8KdFTMUlby1p0PBYMk9spIxEUQYqrJQ==
+joi@^17.12.2, joi@^17.9.2:
+  version "17.12.2"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.12.2.tgz#283a664dabb80c7e52943c557aab82faea09f521"
+  integrity sha512-RonXAIzCiHLc8ss3Ibuz45u28GOsWE1UpfDXLbN/9NKbL4tCJf8TWYVKsoYuuh+sAUt7fsSNpA+r2+TBA6Wjmw==
   dependencies:
-    "@hapi/hoek" "^9.0.0"
-    "@hapi/topo" "^5.0.0"
-    "@sideway/address" "^4.1.3"
+    "@hapi/hoek" "^9.3.0"
+    "@hapi/topo" "^5.1.0"
+    "@sideway/address" "^4.1.5"
     "@sideway/formula" "^3.0.1"
     "@sideway/pinpoint" "^2.0.0"
 
