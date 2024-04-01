@@ -4433,10 +4433,10 @@ cli-cursor@^3.1.0:
   dependencies:
     restore-cursor "^3.1.0"
 
-cli-table3@^0.6.0:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/cli-table3/-/cli-table3-0.6.2.tgz#aaf5df9d8b5bf12634dc8b3040806a0c07120d2a"
-  integrity sha512-QyavHCaIC80cMivimWu4aWHilIpiDpfm3hGmqAmXVL1UsnbLuBSMd21hTX6VY4ZSDSM73ESLeF8TOYId3rBTbw==
+cli-table3@^0.6.4:
+  version "0.6.4"
+  resolved "https://registry.yarnpkg.com/cli-table3/-/cli-table3-0.6.4.tgz#d1c536b8a3f2e7bec58f67ac9e5769b1b30088b0"
+  integrity sha512-Lm3L0p+/npIQWNIiyF/nAn7T5dnOwR3xNTHXYEBFBFVPXzCVNZ5lqEC/1eo/EVfpDsQ1I+TX4ORPQgp+UI0CRw==
   dependencies:
     string-width "^4.2.0"
   optionalDependencies:
@@ -4710,16 +4710,16 @@ contentful-batch-libs@^9.6.0:
     lodash.clonedeep "^4.5.0"
     uuid "^9.0.1"
 
-contentful-import@^9.4.44:
-  version "9.4.44"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.44.tgz#6afd8467a3d4721a440c7d1796de1e9ad782aa4b"
-  integrity sha512-kHQF4yLxI7VtDyxzpuGLnIJA9w+9q/mCbvErFLaKr5GniYbwyILLWBYCyBs8WPCZl93VXeN+asrwjJj7lSheIA==
+contentful-import@^9.4.53:
+  version "9.4.53"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.53.tgz#6c738c920f184e63cf1abc421946b0d4ce3eaa86"
+  integrity sha512-5T+1qSA2PSPEOYJXAQLU+06HjasywzbKw/H1ujajybBFWE8+YReiM1VgdwUlrV3veN09zPg5wyQtF+GyGOVJYQ==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     bluebird "^3.7.2"
-    cli-table3 "^0.6.0"
+    cli-table3 "^0.6.4"
     contentful-batch-libs "^9.6.0"
-    contentful-management "^11.21.0"
+    contentful-management "^11.24.3"
     date-fns "^2.30.0"
     eslint "^8.57.0"
     eslint-config-standard "^17.1.0"
@@ -4731,10 +4731,10 @@ contentful-import@^9.4.44:
     p-queue "^6.6.2"
     yargs "^17.7.2"
 
-contentful-management@^11.21.0:
-  version "11.21.0"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.21.0.tgz#e07225330344caabfd9c0b5514815dc06297707f"
-  integrity sha512-yD70hdl2PY+QnvLc/ttYWmlApcS2zvBFndvKI/S1++TEMarr0j/SrzfCSQ+GQV9xX0lyJECNpLA0euzjVwwT8g==
+contentful-management@^11.24.3:
+  version "11.24.3"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.24.3.tgz#8553bf8b0c9961a3fea7d0d17d31b38dd102bf98"
+  integrity sha512-vgbjt/3efD+vLxQlLRhGFcqVLkRmQM53fdPTMc4utAbKAj9JkhyfF4wSV4lIrbwyOXTU5HMrxDbRUIAAEsLiHQ==
   dependencies:
     "@contentful/rich-text-types" "^16.3.0"
     "@types/json-patch" "0.0.30"
