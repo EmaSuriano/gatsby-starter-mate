@@ -50,7 +50,7 @@
     "gatsby-source-contentful": "^8.13.1",
     "gatsby-source-medium": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
-    "react": "^18.2.0",
+    "react": "^18.3.1",
     "react-awesome-reveal": "^4.2.8",
     "react-dom": "^18.2.0",
     "react-headroom": "^3.2.1",
@@ -62,7 +62,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
-    "@types/react": "^18.2.73",
+    "@types/react": "^18.3.1",
     "@types/react-dom": "^18.2.23",
     "@types/react-headroom": "^3.2.3",
     "@types/react-helmet": "^6.1.11",
