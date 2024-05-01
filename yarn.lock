@@ -4704,10 +4704,10 @@ contentful-batch-libs@^9.6.0:
     lodash.clonedeep "^4.5.0"
     uuid "^9.0.1"
 
-contentful-import@^9.4.53:
-  version "9.4.53"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.53.tgz#6c738c920f184e63cf1abc421946b0d4ce3eaa86"
-  integrity sha512-5T+1qSA2PSPEOYJXAQLU+06HjasywzbKw/H1ujajybBFWE8+YReiM1VgdwUlrV3veN09zPg5wyQtF+GyGOVJYQ==
+contentful-import@^9.4.55:
+  version "9.4.55"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.55.tgz#2ed1aabca429d5d8792ded8e9813c81b8b9cecf2"
+  integrity sha512-7EAWv4Tma4j+jJ0MM8t32QCy0ttQLA5RBY3mdzdIurlS3sZYCCeQHh7tyQ7on0RdhETIOAmOvRh6al/TA7iCzA==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     bluebird "^3.7.2"
@@ -4717,7 +4717,7 @@ contentful-import@^9.4.53:
     date-fns "^2.30.0"
     eslint "^8.57.0"
     eslint-config-standard "^17.1.0"
-    joi "^17.12.2"
+    joi "^17.12.3"
     listr "^0.14.1"
     listr-update-renderer "^0.5.0"
     listr-verbose-renderer "^0.6.0"
@@ -8556,10 +8556,10 @@ jest-worker@^27.4.5, jest-worker@^27.5.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-joi@^17.12.2, joi@^17.9.2:
-  version "17.12.2"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.12.2.tgz#283a664dabb80c7e52943c557aab82faea09f521"
-  integrity sha512-RonXAIzCiHLc8ss3Ibuz45u28GOsWE1UpfDXLbN/9NKbL4tCJf8TWYVKsoYuuh+sAUt7fsSNpA+r2+TBA6Wjmw==
+joi@^17.12.3, joi@^17.9.2:
+  version "17.13.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.0.tgz#b6f340b8029ee7af2397f821d17a4f03bf34b043"
+  integrity sha512-9qcrTyoBmFZRNHeVP4edKqIUEgFzq7MHvTNSDuHSqkpOPtiBkgNgcmTSqmiw1kw9tdKaiddvIDv/eCJDxmqWCA==
   dependencies:
     "@hapi/hoek" "^9.3.0"
     "@hapi/topo" "^5.1.0"
