@@ -10937,13 +10937,13 @@ rc@1.2.8, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-awesome-reveal@^4.2.8:
-  version "4.2.8"
-  resolved "https://registry.yarnpkg.com/react-awesome-reveal/-/react-awesome-reveal-4.2.8.tgz#e770330592ee5143e71cfeccf91bc3dd4f9c054f"
-  integrity sha512-G961DVTMwFbkmg7z+M5omz8Y+iicLc9gKm8hmtwJ/lFnYx9fEg7lSY/AyaNZFXYKNfAS5lv/WzL72kNRMCJDZA==
+react-awesome-reveal@^4.2.11:
+  version "4.2.11"
+  resolved "https://registry.yarnpkg.com/react-awesome-reveal/-/react-awesome-reveal-4.2.11.tgz#c76755cacdcf163b62fa041f3051073f0f11f6e8"
+  integrity sha512-BXdU3nzZkRYf6h2lIx4SCMEERhIQd7wKheHKRH8U9601m1U2W4LrwEpKbpUxIPWSjcUwci4w7EotdfF+9ZQHhQ==
   dependencies:
-    react-intersection-observer "^9.6.0"
-    react-is "^18.2.0"
+    react-intersection-observer "^9.10.2"
+    react-is "^18.3.1"
 
 react-dev-utils@^12.0.1:
   version "12.0.1"
@@ -11017,20 +11017,20 @@ react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-intersection-observer@^9.6.0:
-  version "9.8.1"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.8.1.tgz#9c3631c0c9acd624a2af1c192318752ea73b5d91"
-  integrity sha512-QzOFdROX8D8MH3wE3OVKH0f3mLjKTtEN1VX/rkNuECCff+aKky0pIjulDhr3Ewqj5el/L+MhBkM3ef0Tbt+qUQ==
+react-intersection-observer@^9.10.2:
+  version "9.10.2"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.10.2.tgz#d5b14f80c9a6bed525becc228db7dccac5d0ec1c"
+  integrity sha512-j2hGADK2hCbAlfaq6L3tVLb4iqngoN7B1fT16MwJ4J16YW/vWLcmAIinLsw0lgpZeMi4UDUWtHC9QDde0/P1yQ==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-is@^18.0.0, react-is@^18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
-  integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+react-is@^18.0.0, react-is@^18.3.1:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.3.1.tgz#e83557dc12eae63a99e003a46388b1dcbb44db7e"
+  integrity sha512-/LLMVyas0ljjAtoYiPqYiL8VWXzUUdThrmU5+n20DZv+a+ClRoevUzw5JxU+Ieh5/c87ytoTBV9G1FiKfNJdmg==
 
 react-markdown@^8.0.1:
   version "8.0.3"
