@@ -3742,12 +3742,12 @@ axios@^0.27.0:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
 
-axios@^1.6.2:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.3.tgz#7f50f23b3aa246eff43c54834272346c396613f4"
-  integrity sha512-fWyNdeawGam70jXSVlKl+SUNVcL6j6W79CuSIPfi6HnDUmSCH6gyUys/HrqHeA/wU0Az41rRgean494d0Jb+ww==
+axios@~1.6.8:
+  version "1.6.8"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.8.tgz#66d294951f5d988a00e87a0ffb955316a619ea66"
+  integrity sha512-v/ZHtJDU39mDpyBoFVkETcd/uNdxrWRrg3bKpOKzXFA6Bvqopts6ALSMU3y6ijYxbw2B+wPrIv46egTzJXCLGQ==
   dependencies:
-    follow-redirects "^1.15.0"
+    follow-redirects "^1.15.6"
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
 
@@ -4400,10 +4400,10 @@ cli-cursor@^3.1.0:
   dependencies:
     restore-cursor "^3.1.0"
 
-cli-table3@^0.6.4:
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/cli-table3/-/cli-table3-0.6.4.tgz#d1c536b8a3f2e7bec58f67ac9e5769b1b30088b0"
-  integrity sha512-Lm3L0p+/npIQWNIiyF/nAn7T5dnOwR3xNTHXYEBFBFVPXzCVNZ5lqEC/1eo/EVfpDsQ1I+TX4ORPQgp+UI0CRw==
+cli-table3@^0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/cli-table3/-/cli-table3-0.6.5.tgz#013b91351762739c16a9567c21a04632e449bf2f"
+  integrity sha512-+W/5efTR7y5HRD7gACw9yQjqMVvEMLBHmboM/kPWam+H+Hmyrgjh6YncVKK122YZkXrLudzTuAukUw9FnMf7IQ==
   dependencies:
     string-width "^4.2.0"
   optionalDependencies:
@@ -4677,20 +4677,20 @@ contentful-batch-libs@^9.6.0:
     lodash.clonedeep "^4.5.0"
     uuid "^9.0.1"
 
-contentful-import@^9.4.55:
-  version "9.4.55"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.55.tgz#2ed1aabca429d5d8792ded8e9813c81b8b9cecf2"
-  integrity sha512-7EAWv4Tma4j+jJ0MM8t32QCy0ttQLA5RBY3mdzdIurlS3sZYCCeQHh7tyQ7on0RdhETIOAmOvRh6al/TA7iCzA==
+contentful-import@^9.4.56:
+  version "9.4.56"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.56.tgz#706929fa9c95eff466d2ba35b5357b8347a44660"
+  integrity sha512-mXceMdldgHsUTauTXDY61DHUnOcb9P9BLV+hmVTkRzcvaiT4QKwnnlknwz/18mUwEOcJDrUatOOJHeTFUEoMRQ==
   dependencies:
     "@discoveryjs/json-ext" "^0.5.7"
     bluebird "^3.7.2"
-    cli-table3 "^0.6.4"
+    cli-table3 "^0.6.5"
     contentful-batch-libs "^9.6.0"
-    contentful-management "^11.24.3"
+    contentful-management "^11.26.1"
     date-fns "^2.30.0"
     eslint "^8.57.0"
     eslint-config-standard "^17.1.0"
-    joi "^17.12.3"
+    joi "^17.13.1"
     listr "^0.14.1"
     listr-update-renderer "^0.5.0"
     listr-verbose-renderer "^0.6.0"
@@ -4698,14 +4698,14 @@ contentful-import@^9.4.55:
     p-queue "^6.6.2"
     yargs "^17.7.2"
 
-contentful-management@^11.24.3:
-  version "11.24.3"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.24.3.tgz#8553bf8b0c9961a3fea7d0d17d31b38dd102bf98"
-  integrity sha512-vgbjt/3efD+vLxQlLRhGFcqVLkRmQM53fdPTMc4utAbKAj9JkhyfF4wSV4lIrbwyOXTU5HMrxDbRUIAAEsLiHQ==
+contentful-management@^11.26.1:
+  version "11.27.4"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.27.4.tgz#2de84f089a022ccb869142e5fa1e4c2c355f5fdd"
+  integrity sha512-YE9RvdH5IydBXdbOmig9Qz1MuLT0AsGbkF8q+koshxASv+I2PGjxzxVRsI6cxW2iAtItcSS2jkaczEs3Gioj9Q==
   dependencies:
     "@contentful/rich-text-types" "^16.3.0"
     "@types/json-patch" "0.0.30"
-    axios "^1.6.2"
+    axios "~1.6.8"
     contentful-sdk-core "^8.1.0"
     fast-copy "^3.0.0"
     lodash.isplainobject "^4.0.6"
@@ -6503,7 +6503,7 @@ flatted@^3.2.9:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.9.tgz#7eb4c67ca1ba34232ca9d2d93e9886e611ad7daf"
   integrity sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==
 
-follow-redirects@^1.14.0, follow-redirects@^1.14.9, follow-redirects@^1.15.0:
+follow-redirects@^1.14.0, follow-redirects@^1.14.9, follow-redirects@^1.15.6:
   version "1.15.6"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.6.tgz#7f815c0cda4249c74ff09e95ef97c23b5fd0399b"
   integrity sha512-wWN62YITEaOpSK584EZXJafH1AGpO8RVgElfkuXbTOrPX4fIfOyEpW/CsiNd8JdYrAoOvafRTOEnvsO++qCqFA==
@@ -8493,10 +8493,10 @@ jest-worker@^27.4.5, jest-worker@^27.5.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-joi@^17.12.3, joi@^17.9.2:
-  version "17.13.0"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.0.tgz#b6f340b8029ee7af2397f821d17a4f03bf34b043"
-  integrity sha512-9qcrTyoBmFZRNHeVP4edKqIUEgFzq7MHvTNSDuHSqkpOPtiBkgNgcmTSqmiw1kw9tdKaiddvIDv/eCJDxmqWCA==
+joi@^17.13.1, joi@^17.9.2:
+  version "17.13.3"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.13.3.tgz#0f5cc1169c999b30d344366d384b12d92558bcec"
+  integrity sha512-otDA4ldcIx+ZXsKHWmp0YizCweVRZG96J10b0FevjfuncLO1oX59THoAmHkNubYJ+9gWsYsp5k8v4ib6oDv1fA==
   dependencies:
     "@hapi/hoek" "^9.3.0"
     "@hapi/topo" "^5.1.0"
