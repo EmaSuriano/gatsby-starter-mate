@@ -74,7 +74,7 @@
     "enquirer": "^2.4.1",
     "env-cmd": "^10.1.0",
     "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.2",
+    "eslint-plugin-react": "^7.34.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2"
   }
