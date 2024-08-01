@@ -10942,12 +10942,12 @@ rc@1.2.8, rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-awesome-reveal@^4.2.12:
-  version "4.2.12"
-  resolved "https://registry.yarnpkg.com/react-awesome-reveal/-/react-awesome-reveal-4.2.12.tgz#aa012f62dae48e7e250bee12c234be3ac335c1de"
-  integrity sha512-cablqrGypakw34h+rMcn+CmDCMfS+n4MznL/0LBQpFksZ2FCRtKFWIYuKWWpY8lL2ttyBnWnMdlJJiuLHR99uA==
+react-awesome-reveal@^4.2.13:
+  version "4.2.13"
+  resolved "https://registry.yarnpkg.com/react-awesome-reveal/-/react-awesome-reveal-4.2.13.tgz#f3c3f70f66c3cb4bceb2d5172177fd539770c003"
+  integrity sha512-UBq3sLfa3kKaiaPEAUngvtjKiCmJsmp0OGz3732FNk07NS8v4JtXt2z6NhhmWB+4KBuWaiskkwX+ww+nYMtZ9w==
   dependencies:
-    react-intersection-observer "^9.10.3"
+    react-intersection-observer "^9.13.0"
     react-is "^18.3.1"
 
 react-dev-utils@^12.0.1:
@@ -11022,10 +11022,10 @@ react-helmet@^6.1.0:
     react-fast-compare "^3.1.1"
     react-side-effect "^2.1.0"
 
-react-intersection-observer@^9.10.3:
-  version "9.10.3"
-  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.10.3.tgz#70d21ad3c3719ea4fb4eb5a543b9755d31de3b8d"
-  integrity sha512-9NYfKwPZRovB6QJee7fDg0zz/SyYrqXtn5xTZU0vwLtLVBtfu9aZt1pVmr825REE49VPDZ7Lm5SNHjJBOTZHpA==
+react-intersection-observer@^9.13.0:
+  version "9.13.0"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.13.0.tgz#ee10827954cf6ccc204d027f8400a6ddb8df163a"
+  integrity sha512-y0UvBfjDiXqC8h0EWccyaj4dVBWMxgEx0t5RGNzQsvkfvZwugnKwxpu70StY4ivzYuMajavwUDjH4LJyIki9Lw==
 
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
