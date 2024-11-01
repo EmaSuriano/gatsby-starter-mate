@@ -2875,10 +2875,10 @@
     "@types/prop-types" "*"
     csstype "^3.0.2"
 
-"@types/rebass@^4.0.13":
-  version "4.0.13"
-  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-4.0.13.tgz#3d8bb03a809203a789e4e39c6bcdf8910e741245"
-  integrity sha512-1uYoH5QONnCfJzWIBmcThtleciTTAixFHyPlwvszsqdsAecX0ZaGgclvtqho0Lhknt1TJYAL9raYhhLKvVK81w==
+"@types/rebass@^4.0.15":
+  version "4.0.15"
+  resolved "https://registry.yarnpkg.com/@types/rebass/-/rebass-4.0.15.tgz#7f384d9b07fbe0a9ec804a1adf20cc940f2c71da"
+  integrity sha512-BQTdrpedL1skkB7gioAY4+Gg+Nkd42HDPRJILd1ghRrc/4pXF7kouYhP80OiB0MdSOn4bXu5Qck4aEg0eh0zKg==
   dependencies:
     "@types/react" "*"
     "@types/styled-components" "*"
