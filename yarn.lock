@@ -1183,10 +1183,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@discoveryjs/json-ext@^0.5.7":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
-  integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
+"@discoveryjs/json-ext@^0.6.3":
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.6.3.tgz#f13c7c205915eb91ae54c557f5e92bddd8be0e83"
+  integrity sha512-4B4OijXeVNOPZlYA2oEwWOTkzyltLao+xbotHQeqN++Rv27Y6s818+n2Qkp8q+Fxhn0t/5lA5X1Mxktud8eayQ==
 
 "@emotion/babel-plugin@^11.12.0":
   version "11.12.0"
@@ -4692,18 +4692,18 @@ contentful-batch-libs@^9.6.0:
     lodash.clonedeep "^4.5.0"
     uuid "^9.0.1"
 
-contentful-import@^9.4.58:
-  version "9.4.58"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.58.tgz#de249827d81e0cd5520feb39e2b34066de9ebf4b"
-  integrity sha512-0rF/NVdWZzmY1zTGthNAf1o0snDlQGOzFXswyeuaTxNsEjYbYbWNmz5iQiDxTHPyfjy97VzobMDWvKNXg5Dotg==
+contentful-import@^9.4.64:
+  version "9.4.64"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.64.tgz#ee248f93e6485d329a2d9bdfa658482a1aa2f399"
+  integrity sha512-mUn+ZzcbK3XYkhIx6Ed3XFjU3W9CcAToerRHXWkT3I3v1B4yL9fzqKfg+iTvQC49+lXhBomg87xfONbKTWq5Ug==
   dependencies:
-    "@discoveryjs/json-ext" "^0.5.7"
+    "@discoveryjs/json-ext" "^0.6.3"
     bluebird "^3.7.2"
     cli-table3 "^0.6.5"
     contentful-batch-libs "^9.6.0"
-    contentful-management "^11.31.4"
+    contentful-management "^11.35.1"
     date-fns "^2.30.0"
-    eslint "^8.57.0"
+    eslint "^8.57.1"
     eslint-config-standard "^17.1.0"
     joi "^17.13.1"
     listr "^0.14.1"
@@ -4713,10 +4713,10 @@ contentful-import@^9.4.58:
     p-queue "^6.6.2"
     yargs "^17.7.2"
 
-contentful-management@^11.31.4:
-  version "11.33.0"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.33.0.tgz#3bed7a5154790690218a77d393f55a1616b7523a"
-  integrity sha512-QIpKV9BWGQ4M9TTTeyJiIyCElMnQvzMijMpQA31uFAdFxfokRcyA6zyYoVA7tIsyOmpWIAcFbGcDiGROAMR+zA==
+contentful-management@^11.35.1:
+  version "11.35.1"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.35.1.tgz#0a99d3ea4b5ff7c0191bcf3a5f0bd0a99a2575db"
+  integrity sha512-PBOFpeOCzwx7+PQtHhgFRNB8wnlgUKUj+3rTucaMIYot5l9YA4804P9VYWq6Mg8/PJnFjavQrtay6HtqWDyYMw==
   dependencies:
     "@contentful/rich-text-types" "^16.6.1"
     axios "^1.7.4"
@@ -6067,7 +6067,7 @@ eslint@^7.32.0:
     text-table "^0.2.0"
     v8-compile-cache "^2.0.3"
 
-eslint@^8.57.0, eslint@^8.57.1:
+eslint@^8.57.1:
   version "8.57.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.57.1.tgz#7df109654aba7e3bbe5c8eae533c5e461d3c6ca9"
   integrity sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==
