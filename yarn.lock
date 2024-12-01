@@ -3739,10 +3739,10 @@ axios@^0.27.0:
     follow-redirects "^1.14.9"
     form-data "^4.0.0"
 
-axios@^1.7.4:
-  version "1.7.7"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.7.tgz#2f554296f9892a72ac8d8e4c5b79c14a91d0a47f"
-  integrity sha512-S4kL7XrjgBmvdGut0sN3yJxqYzrDOnivkBiN0OFs6hLiUam3UPvswUo0kqGyhqUZGEOytHyumEdXsAkgCOUf3Q==
+axios@^1.6.2, axios@^1.7.4:
+  version "1.7.8"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.8.tgz#1997b1496b394c21953e68c14aaa51b7b5de3d6e"
+  integrity sha512-Uu0wb7KNqK2t5K+YQyVCLM76prD5sRFjKHbJYCP1J7JFGEQ6nN7HWn9+04LAeiJ3ji54lgS/gZCH1oxyrf1SPw==
   dependencies:
     follow-redirects "^1.15.6"
     form-data "^4.0.0"
@@ -7011,13 +7011,13 @@ gatsby-source-filesystem@^5.13.1:
     valid-url "^1.0.9"
     xstate "^4.38.0"
 
-gatsby-source-medium@^5.13.1:
-  version "5.13.1"
-  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-5.13.1.tgz#e7e2839c0adc5d46c50c76cbda1962a02a7387fa"
-  integrity sha512-yrSxps5RA3s8/eG3Ttro/53ASlcdNIwCZmKfs/7m9wG5zn+kbUvbXc50etwB2Rn9LkIMlOGotQ5DV6sa12YboQ==
+gatsby-source-medium@^5.14.0:
+  version "5.14.0"
+  resolved "https://registry.yarnpkg.com/gatsby-source-medium/-/gatsby-source-medium-5.14.0.tgz#e689223e13a132d4971ec01656615bd724ece7ba"
+  integrity sha512-9pCAfLf8GxPu3yeYkb5ZdlH0YVsq8VZ80XYXAPLrwlExwYLnrhqX2Vl4ZPC+b6/Kt/24zmNjnRmuHYTFcfyhrA==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    axios "^0.21.1"
+    axios "^1.6.2"
 
 gatsby-telemetry@^4.13.1:
   version "4.13.1"
