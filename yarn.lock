@@ -3774,6 +3774,15 @@ axios@^1.6.2, axios@^1.7.4:
     form-data "^4.0.0"
     proxy-from-env "^1.1.0"
 
+axios@^1.7.9:
+  version "1.7.9"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.7.9.tgz#d7d071380c132a24accda1b2cfc1535b79ec650a"
+  integrity sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==
+  dependencies:
+    follow-redirects "^1.15.6"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
+
 axobject-query@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-3.2.1.tgz#39c378a6e3b06ca679f29138151e45b2b32da62a"
@@ -4744,16 +4753,16 @@ contentful-batch-libs@^9.6.0:
     lodash.clonedeep "^4.5.0"
     uuid "^9.0.1"
 
-contentful-import@^9.4.64:
-  version "9.4.64"
-  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.64.tgz#ee248f93e6485d329a2d9bdfa658482a1aa2f399"
-  integrity sha512-mUn+ZzcbK3XYkhIx6Ed3XFjU3W9CcAToerRHXWkT3I3v1B4yL9fzqKfg+iTvQC49+lXhBomg87xfONbKTWq5Ug==
+contentful-import@^9.4.77:
+  version "9.4.77"
+  resolved "https://registry.yarnpkg.com/contentful-import/-/contentful-import-9.4.77.tgz#a1678ecd9da7a8ecd00f823468298b6dbda49374"
+  integrity sha512-ectgCTC1oGvPQu0NLlp8NzuossnIReJADk0bnKhsTpbQhdanmdIsUJrOFdzH0PlnIpf0GIQyDgOl4wpKw01zgg==
   dependencies:
     "@discoveryjs/json-ext" "^0.6.3"
     bluebird "^3.7.2"
     cli-table3 "^0.6.5"
     contentful-batch-libs "^9.6.0"
-    contentful-management "^11.35.1"
+    contentful-management "^11.40.3"
     date-fns "^2.30.0"
     eslint "^8.57.1"
     eslint-config-standard "^17.1.0"
@@ -4765,14 +4774,14 @@ contentful-import@^9.4.64:
     p-queue "^6.6.2"
     yargs "^17.7.2"
 
-contentful-management@^11.35.1:
-  version "11.35.1"
-  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.35.1.tgz#0a99d3ea4b5ff7c0191bcf3a5f0bd0a99a2575db"
-  integrity sha512-PBOFpeOCzwx7+PQtHhgFRNB8wnlgUKUj+3rTucaMIYot5l9YA4804P9VYWq6Mg8/PJnFjavQrtay6HtqWDyYMw==
+contentful-management@^11.40.3:
+  version "11.40.3"
+  resolved "https://registry.yarnpkg.com/contentful-management/-/contentful-management-11.40.3.tgz#aedb78bba078dc5af332692ef95e6806ca1885b6"
+  integrity sha512-4MC2HJ7VAr8+vpyZoWEraWRxh7zHGbEUkMA4oM/wlOv9MX8N8utrokU9Z8hMqtXSwKkOBAYrJorvfxnRgJdVFA==
   dependencies:
     "@contentful/rich-text-types" "^16.6.1"
-    axios "^1.7.4"
-    contentful-sdk-core "^8.3.1"
+    axios "^1.7.9"
+    contentful-sdk-core "^9.0.1"
     fast-copy "^3.0.0"
 
 contentful-resolve-response@^1.9.0:
@@ -4781,17 +4790,6 @@ contentful-resolve-response@^1.9.0:
   integrity sha512-VTY1hZGh29yspBeveJ62cuDf+cw9Iq/NcKWBdNHjTq8hvgxz+E19+Pej3LW/02o98+D0XcKfcPYXIpm4lHY+eg==
   dependencies:
     fast-copy "^2.1.7"
-
-contentful-sdk-core@^8.3.1:
-  version "8.3.1"
-  resolved "https://registry.yarnpkg.com/contentful-sdk-core/-/contentful-sdk-core-8.3.1.tgz#773d59f286d1bd8e50a3ffd9e3f4f410da6fb929"
-  integrity sha512-HYy4ecFA76ERxz7P0jW7hgDcL8jH+bRckv2QfAwQ4k1yPP9TvxpZwrKnlLM69JOStxVkCXP37HvbjbFnjcoWdg==
-  dependencies:
-    fast-copy "^2.1.7"
-    lodash.isplainobject "^4.0.6"
-    lodash.isstring "^4.0.1"
-    p-throttle "^4.1.1"
-    qs "^6.11.2"
 
 contentful-sdk-core@^9.0.1:
   version "9.0.1"
@@ -9235,16 +9233,6 @@ lodash.foreach@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.foreach/-/lodash.foreach-4.5.0.tgz#1a6a35eace401280c7f06dddec35165ab27e3e53"
   integrity sha512-aEXTF4d+m05rVOAUG3z4vZZ4xVexLKZGF0lIxuHZ1Hplpk/3B6Z1+/ICICYRLm7c41Z2xiejbkCkJoTlypoXhQ==
 
-lodash.isplainobject@^4.0.6:
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
-  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
-
-lodash.isstring@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/lodash.isstring/-/lodash.isstring-4.0.1.tgz#d527dfb5456eca7cc9bb95d5daeaf88ba54a5451"
-  integrity sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=
-
 lodash.map@^4.6.0:
   version "4.6.0"
   resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
@@ -10566,11 +10554,6 @@ p-some@^6.0.0:
   dependencies:
     aggregate-error "^4.0.0"
     p-cancelable "^3.0.0"
-
-p-throttle@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/p-throttle/-/p-throttle-4.1.1.tgz#80b1fbd358af40a8bfa1667f9dc8b72b714ad692"
-  integrity sha512-TuU8Ato+pRTPJoDzYD4s7ocJYcNSEZRvlxoq3hcPI2kZDZ49IQ1Wkj7/gDJc3X7XiEAAvRGtDzdXJI0tC3IL1g==
 
 p-throttle@^6.1.0:
   version "6.2.0"
