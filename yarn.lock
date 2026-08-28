@@ -7055,10 +7055,10 @@ gatsby-cli@^5.14.0:
     yoga-layout-prebuilt "^1.10.0"
     yurnalist "^2.1.0"
 
-gatsby-core-utils@^4.14.0:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.14.0.tgz#d044327b9399f0449674f8abf1037d1a3ab4e84e"
-  integrity sha512-h0v20gB213PmhKjioCJ93SrUb7Hihnqxd6X6Iur4u1eiWTUDsGeV9g1bkquiuDl2qovUnjj7mOoHdWiu/Ax/9Q==
+gatsby-core-utils@^4.14.0, gatsby-core-utils@^4.16.0:
+  version "4.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-core-utils/-/gatsby-core-utils-4.16.0.tgz#31ec88ab51272bb8a58535505633a57e8c069899"
+  integrity sha512-QCZ9BmQp3YyYxH0Wf4bofayL3vJnayqSvsBUAhKXGh/Os0fn1KMNyAjPLnW+zrGFQaK05Vjdlp99I/Wnc3M33A==
   dependencies:
     "@babel/runtime" "^7.20.13"
     ci-info "2.0.0"
@@ -7324,13 +7324,13 @@ gatsby-source-medium@^5.14.0:
     "@babel/runtime" "^7.20.13"
     axios "^1.6.2"
 
-gatsby-transformer-remark@^6.14.0:
-  version "6.14.0"
-  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-6.14.0.tgz#b10a50436f7cacc27297faaf520956f40504aaae"
-  integrity sha512-npiLoL49LC2NhErb1/Q6ckY+Fo3OfAptWRM3cj6M0Ayoa+GA8nZMRn0UfVS6t1RM+NQ6HusKul/QXtkoVJhWRw==
+gatsby-transformer-remark@^6.16.0:
+  version "6.16.0"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-remark/-/gatsby-transformer-remark-6.16.0.tgz#040af325902674cd79d5712fcf8c4f51dfe50267"
+  integrity sha512-k1uq8G+EIC1nuDLMdvX/8SgcDCN572VlmvUsRu2oLdr9o3yz3Ulxz6qScejHLDT1UpBEixMtYjtiP5NHoUquCg==
   dependencies:
     "@babel/runtime" "^7.20.13"
-    gatsby-core-utils "^4.14.0"
+    gatsby-core-utils "^4.16.0"
     gray-matter "^4.0.3"
     hast-util-raw "^6.1.0"
     hast-util-to-html "^7.1.3"
