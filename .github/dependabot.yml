@@ -4,9 +4,17 @@ updates:
     directory: '/'
     schedule:
       interval: monthly
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 5
     assignees:
       - EmaSuriano
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+    rebase-strategy: auto
+    groups:
+      npm-patch-minor:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
