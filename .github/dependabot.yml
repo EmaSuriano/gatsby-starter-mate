@@ -7,3 +7,6 @@ updates:
     open-pull-requests-limit: 10
     assignees:
       - EmaSuriano
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
